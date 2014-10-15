@@ -532,11 +532,3 @@
 	max-width: 100%;
 	box-sizing: border-box;
 }
-
-.ui-buttonset {
-	position: relative;
-}
-.ui-helper-hidden-accessible {
-	left: auto;
-	top: auto;
-}

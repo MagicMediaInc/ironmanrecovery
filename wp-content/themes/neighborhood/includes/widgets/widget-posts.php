@@ -66,10 +66,10 @@
 						<span><?php printf(__('By %1$s on %2$s', 'swiftframework'), $post_author, $post_date); ?></span>
 						<div class="comments-likes">
 							<?php if ( comments_open() ) { ?>
-								<a href="<?php echo $post_permalink; ?>#comment-area"><i class="fa-comments"></i><span><?php echo $post_comments; ?></span></a>
+								<a href="<?php echo $post_permalink; ?>#comment-area"><i class="icon-comments"></i><span><?php echo $post_comments; ?></span></a>
 							<?php }	?>
 							<?php if (function_exists( 'lip_love_it_link' )) {
-								echo lip_love_it_link(get_the_ID(), '<i class="fa-heart"></i>', '<i class="fa-heart"></i>');
+								echo lip_love_it_link(get_the_ID(), '<i class="icon-heart"></i>', '<i class="icon-heart"></i>');
 							} ?>
 						</div>
 					</div>

@@ -73,7 +73,7 @@ class SwiftPageBuilderShortcode_jobs_overview extends SwiftPageBuilderShortcode 
         		}
         	}
         	if ($jobs_page && isset($jobs_page_title)) {
-	        	$items .= '<a href="'.get_permalink($jobs_page_id).'" class="read-more">'.__("View all vacancies", "swiftframework").' ['.$current_jobs.']<i class="fa-angle-right"></i></a>';
+	        	$items .= '<a href="'.get_permalink($jobs_page_id).'" class="read-more">'.__("View all vacancies", "swiftframework").' ['.$current_jobs.']<i class="icon-angle-right"></i></a>';
         	}
         }
         

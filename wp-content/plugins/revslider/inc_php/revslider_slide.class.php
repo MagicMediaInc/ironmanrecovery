@@ -4,7 +4,7 @@
 		
 		private $id;
 		private $sliderID;
-		private $slideOrder;		
+		private $slideOrder;
 		
 		private $imageUrl;
 		private $imageID;		
@@ -14,11 +14,6 @@
 		
 		private $params;
 		private $arrLayers;
-		private $arrChildren = null;
-		private $slider;
-		
-		private $postData;
-		private $templateID;
 		
 		public function __construct(){
 			parent::__construct();
@@ -57,12 +52,6 @@
 				$imageUrl = UniteFunctionsRev::getVal($params, "image");
 			}
 			
-			if(is_ssl()){
-				$imageUrl = str_replace("http://", "https://", $imageUrl);
-			}
-			
-			//dmp($imageUrl);exit();
-			
 			//set image path, file and url
 			$this->imageUrl = $imageUrl;
 			
@@ -76,199 +65,6 @@
 			
 			$this->params = $params;
 			$this->arrLayers = $layers;	
-			
-		}
-		
-		
-		/**
-		 * 
-		 * init by another slide
-		 */
-		private function initBySlide(RevSlide $slide){
-			
-			$this->id = "template";
-			$this->templateID = $slide->getID();
-			$this->sliderID = $slide->getSliderID();
-			$this->slideOrder = $slide->getOrder();
-			
-			$this->imageUrl = $slide->getImageUrl();
-			$this->imageID = $slide->getImageID();
-			$this->imageThumb = $slide->getThumbUrl();		
-			$this->imageFilepath = $slide->getImageFilepath();
-			$this->imageFilename = $slide->getImageFilename();
-			
-			$this->params = $slide->getParams();
-			
-			$this->arrLayers = $slide->getLayers();
-			
-			$this->arrChildren = $slide->getArrChildrenPure();
-		}
-		
-		
-		
-		/**
-		 * 
-		 * init slide by post data
-		 */
-		public function initByPostData($postData, RevSlide $slideTemplate, $sliderID){
-			
-			$this->postData = $this->postData;
-			
-			$postID = $postData["ID"];
-						
-			$arrWildcardsValues = RevOperations::getPostWilcardValues($postID);
-			$slideTemplateID = UniteFunctionsRev::getVal($arrWildcardsValues, "slide_template");
-						
-			if(!empty($slideTemplateID) && is_numeric($slideTemplateID)){
-				
-					//init by local template, if fail, init by global (slider) template
-				try{
-					
-					$slideTemplateLocal = new RevSlide();
-					$slideTemplateLocal->initByID($slideTemplateID);
-					$this->initBySlide($slideTemplateLocal);
-				}
-				catch(Exception $e){
-					$this->initBySlide($slideTemplate);
-				}
-								
-			}else{
-				//init by global template
-				$this->initBySlide($slideTemplate);
-				
-			}
-			
-			//set some slide params
-			$this->id = $postID;
-			$this->params["title"] = UniteFunctionsRev::getVal($postData, "post_title");
-			
-			if($this->params['enable_link'] == "true" && $this->params['link_type'] == "regular"){
-				$link = get_permalink($postID);
-				$this->params["link"] = str_replace("%link%", $link, $this->params["link"]);
-				$this->params["link"] = str_replace('-', '_REVSLIDER_', $this->params["link"]);
-				
-				//process meta tags:
-				$arrMatches = array();
-				preg_match('/%meta:\w+%/', $this->params["link"], $arrMatches);
-				
-				foreach($arrMatches as $match){
-					$meta = str_replace("%meta:", "", $match);
-					$meta = str_replace("%","",$meta);
-					$meta = str_replace('_REVSLIDER_', '-', $meta);
-					$metaValue = get_post_meta($postID,$meta,true);
-					$this->params["link"] = str_replace($match,$metaValue,$this->params["link"]);
-				}
-				
-				$this->params["link"] = str_replace('_REVSLIDER_','-',$this->params["link"]);
-				
-			}
-			
-			$status = $postData["post_status"];
-			
-			if($status == "publish")
-				$this->params["state"] = "published";
-			else
-				$this->params["state"] = "unpublished";
-			
-			//set image
-			$thumbID = UniteFunctionsWPRev::getPostThumbID($postID);
-			
-			if(!empty($thumbID))
-				$this->setImageByImageID($thumbID);
-			
-			//replace placeholders in layers:
-			$this->setLayersByPostData($postData, $sliderID);
-		}
-		
-		
-		/**
-		 * 
-		 * replace layer placeholders by post data
-		 */
-		private function setLayersByPostData($postData,$sliderID){
-			
-			$postID = $postData["ID"];
-			
-			$title = UniteFunctionsRev::getVal($postData, "post_title");
-			
-			$excerpt_limit = $this->getSliderParam($sliderID,"excerpt_limit",55,RevSlider::VALIDATE_NUMERIC);
-			$excerpt_limit = (int)$excerpt_limit;
-			$excerpt = UniteFunctionsWPRev::getExcerptById($postID, $excerpt_limit);
-			
-			$alias = UniteFunctionsRev::getVal($postData, "post_name");
-			
-			$content = UniteFunctionsRev::getVal($postData, "post_content");
-			
-			$link = get_permalink($postID);
-			
-			$postDate = UniteFunctionsRev::getVal($postData, "post_date_gmt");
-			$postDate = UniteFunctionsWPRev::convertPostDate($postDate);
-			
-			$dateModified = UniteFunctionsRev::getVal($postData, "post_modified");
-			$dateModified = UniteFunctionsWPRev::convertPostDate($dateModified);
-			
-			$authorID = UniteFunctionsRev::getVal($postData, "post_author");
-			$authorName = UniteFunctionsWPRev::getUserDisplayName($authorID);
-			
-			$postCatsIDs = $postData["post_category"];
-			$catlist = UniteFunctionsWPRev::getCategoriesHtmlList($postCatsIDs);
-			$taglist = UniteFunctionsWPRev::getTagsHtmlList($postID);
-			
-			$numComments = UniteFunctionsRev::getVal($postData, "comment_count");
-			
-			foreach($this->arrLayers as $key=>$layer){
-				
-				$text = UniteFunctionsRev::getVal($layer, "text");
-				
-				$text = str_replace("%title%", $title, $text);
-				$text = str_replace("%excerpt%", $excerpt, $text);
-				$text = str_replace("%alias%", $alias, $text);
-				$text = str_replace("%content%", $content, $text);
-				$text = str_replace("%link%", $link, $text);
-				$text = str_replace("%date%", $postDate , $text);
-				$text = str_replace("%date_modified%", $dateModified , $text);
-				$text = str_replace("%author_name%", $authorName , $text);
-				$text = str_replace("%num_comments%", $numComments , $text);
-				$text = str_replace("%catlist%", $catlist , $text);
-				$text = str_replace("%taglist%", $taglist , $text);
-				
-				//process meta tags:
-				$arrMatches = array();
-				$text = str_replace('-', '_REVSLIDER_', $text);
-				
-				preg_match('/%meta:\w+%/', $text, $arrMatches);
-				
-				foreach($arrMatches as $match){
-					$meta = str_replace("%meta:", "", $match);
-					$meta = str_replace("%","",$meta);
-					$meta = str_replace('_REVSLIDER_', '-', $meta);
-					$metaValue = get_post_meta($postID,$meta,true);
-					
-					$text = str_replace($match,$metaValue,$text);
-					
-				}
-				$text = str_replace('_REVSLIDER_','-',$text);
-
-				//replace event's template
-				if(UniteEmRev::isEventsExists()){
-					$eventData = UniteEmRev::getEventPostData($postID);
-					if(!empty($eventData)){
-						foreach($eventData as $eventKey=>$eventValue){
-							$eventPlaceholder = "%event_".$eventKey."%";							
-							$text = str_replace($eventPlaceholder, $eventValue , $text);
-						}
-					}
-				}
-				
-				
-				//$text = str_replace("location", "maxim" , $text);
-				
-				$layer["text"] = $text;
-				$this->arrLayers[$key] = $layer;
-			}						
-			
-			//$allMeta = get_post_meta($postID);
-			//dmp($allMeta);exit();
 		}
 		
 		
@@ -283,178 +79,6 @@
 			
 			$this->initByData($record);
 		}
-		 
-		
-		/**
-		 * 
-		 * set slide image by image id
-		 */
-		private function setImageByImageID($imageID){
-			
-			$this->imageID = $imageID;
-			
-			$this->imageUrl = UniteFunctionsWPRev::getUrlAttachmentImage($imageID);
-			$this->imageThumb = UniteFunctionsWPRev::getUrlAttachmentImage($imageID,UniteFunctionsWPRev::THUMB_MEDIUM);
-			
-			if(empty($this->imageUrl))
-				return(false);
-			
-			$this->params["background_type"] = "image";
-			
-			if(is_ssl()){
-				$this->imageUrl = str_replace("http://", "https://", $this->imageUrl);
-			}
-			
-			$this->imageFilepath = UniteFunctionsWPRev::getImagePathFromURL($this->imageUrl);
-		    $realPath = UniteFunctionsWPRev::getPathContent().$this->imageFilepath;
-		    
-		    if(file_exists($realPath) == false || is_file($realPath) == false)
-		    	$this->imageFilepath = "";
-		    
-			$this->imageFilename = basename($this->imageUrl);
-		}
-		
-		/**
-		 * 
-		 * set children array
-		 */
-		public function setArrChildren($arrChildren){
-			$this->arrChildren = $arrChildren;
-		}
-		
-		
-		/**
-		 * 
-		 * get children array
-		 */
-		public function getArrChildren(){
-			
-			$this->validateInited();
-			
-			if($this->arrChildren === null){
-				$slider = new RevSlider();
-				$slider->initByID($this->sliderID);
-				$this->arrChildren = $slider->getArrSlideChildren($this->id);
-			}
-			
-			return($this->arrChildren);				
-		}
-		
-		/**
-		 * 
-		 * return if the slide from post
-		 */
-		public function isFromPost(){
-			return !empty($this->postData);
-		}
-		
-		
-		/**
-		 * 
-		 * get post data
-		 */
-		public function getPostData(){
-			return($this->postData);
-		}
-		
-		
-		/**
-		 * 
-		 * get children array as is
-		 */
-		public function getArrChildrenPure(){
-			return($this->arrChildren);
-		}
-		
-		/**
-		 * 
-		 * return if the slide is parent slide
-		 */
-		public function isParent(){
-			$parentID = $this->getParam("parentid","");
-			return(!empty($parentID));
-		}
-		
-		
-		/**
-		 * 
-		 * get slide language
-		 */
-		public function getLang(){
-			$lang = $this->getParam("lang","all");
-			return($lang);
-		}
-		
-		/**
-		 * 
-		 * return parent slide. If the slide is parent, return this slide.
-		 */
-		public function getParentSlide(){
-			$parentID = $this->getParam("parentid","");
-			if(empty($parentID))
-				return($this);
-				
-			$parentSlide = new RevSlide();
-			$parentSlide->initByID($parentID);
-			return($parentSlide);
-		}
-		
-		/**
-		 * 
-		 * get array of children id's
-		 */
-		public function getArrChildrenIDs(){
-			$arrChildren = $this->getArrChildren();
-			$arrChildrenIDs = array();
-			foreach($arrChildren as $child){
-				$childID = $child->getID();
-				$arrChildrenIDs[] = $childID;
-			}
-			
-			return($arrChildrenIDs);
-		}
-		
-		
-		/**
-		 * 
-		 * get array of children array and languages, the first is current language.
-		 */
-		public function getArrChildrenLangs($includeParent = true){			
-			$this->validateInited();
-			$slideID = $this->id;
-			
-			if($includeParent == true){
-				$lang = $this->getParam("lang","all");
-				$arrOutput = array();
-				$arrOutput[] = array("slideid"=>$slideID,"lang"=>$lang,"isparent"=>true);
-			}
-			
-			$arrChildren = $this->getArrChildren();
-			
-			foreach($arrChildren as $child){
-				$childID = $child->getID();
-				$childLang = $child->getParam("lang","all");
-				$arrOutput[] = array("slideid"=>$childID,"lang"=>$childLang,"isparent"=>false);
-			}
-			
-			return($arrOutput);
-		}
-		
-		/**
-		 * 
-		 * get children language codes (including current slide lang code)
-		 */
-		public function getArrChildLangCodes($includeParent = true){
-			$arrLangsWithSlideID = $this->getArrChildrenLangs($includeParent);
-			$arrLangCodes = array();
-			foreach($arrLangsWithSlideID as $item){
-				$lang = $item["lang"];
-				$arrLangCodes[$lang] = $lang;
-			}
-			
-			return($arrLangCodes);
-		}
-		
 		
 		/**
 		 * 
@@ -488,14 +112,14 @@
 		 * 
 		 * modify layer links for export
 		 */
-		public function getLayersForExport($useDummy = false){
+		public function getLayersForExport(){
 			$this->validateInited();
 			$arrLayersNew = array();
 			foreach($this->arrLayers as $key=>$layer){
 				$imageUrl = UniteFunctionsRev::getVal($layer, "image_url");
 				if(!empty($imageUrl))
 					$layer["image_url"] = UniteFunctionsWPRev::getImagePathFromURL($layer["image_url"]);
-				
+					
 				$arrLayersNew[] = $layer;
 			}
 			
@@ -544,7 +168,7 @@
 
 		
 		/**
-		 * 	
+		 * 
 		 * get parameter from params array. if no default, then the param is a must!
 		 */
 		function getParam($name,$default=null){
@@ -582,7 +206,6 @@
 		 * get image url
 		 */
 		public function getImageUrl(){
-			
 			return($this->imageUrl);
 		}
 		
@@ -615,23 +238,6 @@
 		public function getSliderID(){
 			return($this->sliderID);
 		}
-		
-		/**
-		 * 
-		 * get slider param
-		 */
-		private function getSliderParam($sliderID,$name,$default,$validate=null){
-			
-			if(empty($this->slider)){
-				$this->slider = new RevSlider();
-				$this->slider->initByID($sliderID);
-			}
-			
-			$param = $this->slider->getParam($name,$default,$validate);
-			
-			return($param);
-		}
-		
 		
 		/**
 		 * 
@@ -684,7 +290,7 @@
 				
 				$params["background_type"] = "trans";
 			}
-				
+			
 			$jsonParams = json_encode($params);
 			
 			$arrInsert = array("params"=>$jsonParams,
@@ -704,40 +310,28 @@
 		 */
 		public function updateSlideImageFromData($data){
 			
-			$sliderID = UniteFunctionsRev::getVal($data, "slider_id");
-			$slider = new RevSlider();
-			$slider->initByID($sliderID);
+			$slideID = UniteFunctionsRev::getVal($data, "slide_id");			
+			$this->initByID($slideID);
 			
-			$slideID = UniteFunctionsRev::getVal($data, "slide_id");
 			$urlImage = UniteFunctionsRev::getVal($data, "url_image");
 			UniteFunctionsRev::validateNotEmpty($urlImage);
 			$imageID = UniteFunctionsRev::getVal($data, "image_id");
-			if($slider->isSlidesFromPosts()){
-				
-				if(!empty($imageID))
-					UniteFunctionsWPRev::updatePostThumbnail($slideID, $imageID);
-				
-			}else{
-				$this->initByID($slideID);
-								
-				$arrUpdate = array();
-				$arrUpdate["image"] = $urlImage;			
-				$arrUpdate["image_id"] = $imageID;
-				
-				$this->updateParamsInDB($arrUpdate);
-			}
+			
+			$arrUpdate = array();
+			$arrUpdate["image"] = $urlImage;			
+			$arrUpdate["image_id"] = $imageID;
+			
+			$this->updateParamsInDB($arrUpdate);
 			
 			return($urlImage);
 		}
-		
-		
 		
 		/**
 		 * 
 		 * update slide parameters in db
 		 */
-		private function updateParamsInDB($arrUpdate = array()){
-			$this->validateInited();
+		private function updateParamsInDB($arrUpdate){
+			
 			$this->params = array_merge($this->params,$arrUpdate);
 			$jsonParams = json_encode($this->params);
 			
@@ -745,35 +339,7 @@
 			
 			$this->db->update(GlobalsRevSlider::$table_slides,$arrDBUpdate,array("id"=>$this->id));
 		}
-		
-		
-		/**
-		 * 
-		 * update current layers in db
-		 */
-		private function updateLayersInDB($arrLayers = null){
-			$this->validateInited();
-			
-			if($arrLayers === null)
-				$arrLayers = $this->arrLayers;
-				
-			$jsonLayers = json_encode($arrLayers);
-			$arrDBUpdate = array("layers"=>$jsonLayers);
-			
-			$this->db->update(GlobalsRevSlider::$table_slides,$arrDBUpdate,array("id"=>$this->id));
-		} 
-		
-		
-		/**
-		 * 
-		 * update parent slideID 
-		 */
-		public function updateParentSlideID($parentID){
-			$arrUpdate = array();
-			$arrUpdate["parentid"] = $parentID;
-			$this->updateParamsInDB($arrUpdate);
-		}
-		
+
 		
 		/**
 		 * 
@@ -853,31 +419,21 @@
 		 * update slide from data
 		 * @param $data
 		 */
-		public function updateSlideFromData($data, $slideSettings){
+		public function updateSlideFromData($data){
 			
 			$slideID = UniteFunctionsRev::getVal($data, "slideid");
-			$this->initByID($slideID);						
+			$this->initByID($slideID);
 			
 			//treat params
 			$params = UniteFunctionsRev::getVal($data, "params");
 			$params = $this->normalizeParams($params);
 			
-			//modify the values according the settings
-			$params = $slideSettings->setStoredValues($params);
-			
-			//preserve old data that not included in the given data
-			$params = array_merge($this->params,$params);
-			
 			//treat layers
 			$layers = UniteFunctionsRev::getVal($data, "layers");
-			
 			if(gettype($layers) == "string"){
-				$layersStrip = stripslashes($layers);
-				$layersDecoded = json_decode($layersStrip);
-				if(empty($layersDecoded))
-					$layersDecoded = json_decode($layers);
-				
-				$layers = UniteFunctionsRev::convertStdClassToArray($layersDecoded);
+				$layers = stripslashes($layers);
+				$layers = json_decode($layers);
+				$layers = UniteFunctionsRev::convertStdClassToArray($layers);
 			}
 			
 			if(empty($layers) || gettype($layers) != "array")
@@ -890,32 +446,6 @@
 			$arrUpdate["params"] = json_encode($params);
 			
 			$this->db->update(GlobalsRevSlider::$table_slides,$arrUpdate,array("id"=>$this->id));
-			
-			RevOperations::updateDynamicCaptions();
-		}
-		
-		
-		
-		/**
-		 * 
-		 * delete slide by slideid
-		 */
-		public function deleteSlide(){
-			$this->validateInited();
-			
-			$this->db->delete(GlobalsRevSlider::$table_slides,"id='".$this->id."'");
-		}
-		
-		
-		/**
-		 * 
-		 * delete slide children
-		 */
-		public function deleteChildren(){
-			$this->validateInited();
-			$arrChildren = $this->getArrChildren();
-			foreach($arrChildren as $child)
-				$child->deleteSlide();
 		}
 		
 		
@@ -924,31 +454,10 @@
 		 * delete slide from data
 		 */
 		public function deleteSlideFromData($data){
-			
-			$sliderID = UniteFunctionsRev::getVal($data, "sliderID");
-			$slider = new RevSlider();
-			$slider->initByID($sliderID); 			
-
-			$isPost = $slider->isSlidesFromPosts();
-			
-			if($isPost == true){	//delete post	
-				
-				$postID = UniteFunctionsRev::getVal($data, "slideID");
-				UniteFunctionsWPRev::deletePost($postID);
-				
-			}else{		//delete slide
-				
-				$slideID = UniteFunctionsRev::getVal($data, "slideID");
-				$this->initByID($slideID);
-				$this->deleteChildren();
-				$this->deleteSlide();
-								
-			}
-			
-			RevOperations::updateDynamicCaptions();
-			
+			$slideID = UniteFunctionsRev::getVal($data, "slideID");
+			$this->initByID($slideID);
+			$this->db->delete(GlobalsRevSlider::$table_slides,"id='$slideID'");
 		}
-		
 		
 		/**
 		 * 
@@ -958,7 +467,6 @@
 			$params = $this->normalizeParams($params);
 			$this->params = $params;
 		}
-		
 		
 		/**
 		 * 
@@ -975,37 +483,17 @@
 		 */
 		public function toggleSlideStatFromData($data){
 			
-			$sliderID = UniteFunctionsRev::getVal($data, "slider_id");
-			$slider = new RevSlider();
-			$slider->initByID($sliderID);
-			
 			$slideID = UniteFunctionsRev::getVal($data, "slide_id");
-						
-			if($slider->isSlidesFromPosts()){
-				$postData = UniteFunctionsWPRev::getPost($slideID);
-				
-				$oldState = $postData["post_status"];
-				$newState = ($oldState == UniteFunctionsWPRev::STATE_PUBLISHED)?UniteFunctionsWPRev::STATE_DRAFT:UniteFunctionsWPRev::STATE_PUBLISHED;
-				
-				//update the state in wp
-				UniteFunctionsWPRev::updatePostState($slideID, $newState);
-				
-				//return state:
-				$newState = ($newState == UniteFunctionsWPRev::STATE_PUBLISHED)?"published":"unpublished";
-				
-			}else{
-				$this->initByID($slideID);
-				
-				$state = $this->getParam("state","published");
-				$newState = ($state == "published")?"unpublished":"published";
-				
-				$arrUpdate = array();
-				$arrUpdate["state"] = $newState;
-				
-				$this->updateParamsInDB($arrUpdate);
-				
-			}
-						
+			$this->initByID($slideID);
+			
+			$state = $this->getParam("state","published");
+			$newState = ($state == "published")?"unpublished":"published";
+			
+			$arrUpdate = array();
+			$arrUpdate["state"] = $newState;
+			
+			$this->updateParamsInDB($arrUpdate);
+			
 			return($newState);
 		}
 		
@@ -1014,8 +502,8 @@
 		 * 
 		 * updatye slide language from data
 		 */
-		private function updateLangFromData($data){
-						
+		public function updateLangFromData($data){
+			
 			$slideID = UniteFunctionsRev::getVal($data, "slideid");
 			$this->initByID($slideID);
 			
@@ -1028,175 +516,7 @@
 			$response = array();
 			$response["url_icon"] = UniteWpmlRev::getFlagUrl($lang);
 			$response["title"] = UniteWpmlRev::getLangTitle($lang);
-			$response["operation"] = "update";
-			
 			return($response);
-		}
-		
-		
-		/**
-		 * 
-		 * add language (add slide that connected to current slide) from data
-		 */
-		private function addLangFromData($data){
-			$sliderID = UniteFunctionsRev::getVal($data, "sliderid");
-			$slideID = UniteFunctionsRev::getVal($data, "slideid");
-			$lang = UniteFunctionsRev::getVal($data, "lang");
-			
-			//duplicate slide
-			$slider = new RevSlider();
-			$slider->initByID($sliderID);
-			$newSlideID = $slider->duplicateSlide($slideID);
-					
-			//update new slide
-			$this->initByID($newSlideID);
-			
-			$arrUpdate = array();
-			$arrUpdate["lang"] = $lang;
-			$arrUpdate["parentid"] = $slideID;
-			$this->updateParamsInDB($arrUpdate);
-						
-			$urlIcon = UniteWpmlRev::getFlagUrl($lang);
-			$title = UniteWpmlRev::getLangTitle($lang);
-			
-			$newSlide = new RevSlide();
-			$newSlide->initByID($slideID);
-			$arrLangCodes = $newSlide->getArrChildLangCodes();
-			$isAll = UniteWpmlRev::isAllLangsInArray($arrLangCodes);
-			
-			$html = "<li>
-								<img id=\"icon_lang_".$newSlideID."\" class=\"icon_slide_lang\" src=\"".$urlIcon."\" title=\"".$title."\" data-slideid=\"".$newSlideID."\" data-lang=\"".$lang."\">
-								<div class=\"icon_lang_loader loader_round\" style=\"display:none\"></div>								
-							</li>";
-			
-			$response = array();
-			$response["operation"] = "add";
-			$response["isAll"] = $isAll;
-			$response["html"] = $html;
-			
-			return($response);
-		}
-		
-		
-		/**
-		 * 
-		 * delete slide from language menu data
-		 */
-		private function deleteSlideFromLangData($data){
-			
-			$slideID = UniteFunctionsRev::getVal($data, "slideid");
-			$this->initByID($slideID);
-			$this->deleteSlide();
-			
-			$response = array();
-			$response["operation"] = "delete";
-			return($response);
-		}
-		
-		
-		/**
-		 * 
-		 * add or update language from data
-		 */
-		public function doSlideLangOperation($data){
-			
-			$operation = UniteFunctionsRev::getVal($data, "operation");
-			switch($operation){
-				case "add":
-					$response = $this->addLangFromData($data);	
-				break;
-				case "delete":
-					$response = $this->deleteSlideFromLangData($data);
-				break;
-				case "update":
-				default:
-					$response = $this->updateLangFromData($data);
-				break;
-			}
-			
-			return($response);
-		}
-		
-		/**
-		 * 
-		 * get thumb url
-		 */
-		public function getUrlImageThumb(){
-			
-			//get image url by thumb
-			if(!empty($this->imageID)){
-				$urlImage = UniteFunctionsWPRev::getUrlAttachmentImage($this->imageID, UniteFunctionsWPRev::THUMB_MEDIUM);
-			}else{
-				//get from cache
-				if(!empty($this->imageFilepath)){
-					$urlImage = UniteBaseClassRev::getImageUrl($this->imageFilepath,200,100,true);
-				}
-				else 
-					$urlImage = $this->imageUrl;
-			}
-			
-			if(empty($urlImage))
-				$urlImage = $this->imageUrl;
-			
-			return($urlImage);
-		}
-		
-		/**
-		 * 
-		 * replace image url's among slide image and layer images
-		 */
-		public function replaceImageUrls($urlFrom, $urlTo){
-			
-			$this->validateInited();
-						
-			$urlImage = UniteFunctionsRev::getVal($this->params, "image");
-			
-			if(strpos($urlImage, $urlFrom) !== false){
-				$imageNew = str_replace($urlFrom, $urlTo, $urlImage);
-				$this->params["image"] = $imageNew; 
-				$this->updateParamsInDB();
-			}
-			
-			
-			// update image url in layers
-			$isUpdated = false;
-			foreach($this->arrLayers as $key=>$layer){
-				$type =  UniteFunctionsRev::getVal($layer, "type");
-				if($type == "image"){
-					$urlImage = UniteFunctionsRev::getVal($layer, "image_url");
-					if(strpos($urlImage, $urlFrom) !== false){
-						$newUrlImage = str_replace($urlFrom, $urlTo, $urlImage);
-						$this->arrLayers[$key]["image_url"] = $newUrlImage;
-						$isUpdated = true;
-					}
-				}
-			}
-			
-			if($isUpdated == true)
-				$this->updateLayersInDB();
-			
-		}
-		
-		/**
-		 * 
-		 * replace transition styles on all slides
-		 */
-		public function changeTransition($transition){
-			$this->validateInited();
-			
-			$this->params["slide_transition"] = $transition;
-			$this->updateParamsInDB();
-		}
-		
-		/**
-		 * 
-		 * replace transition duration on all slides
-		 */
-		public function changeTransitionDuration($transitionDuration){
-			$this->validateInited();
-			
-			$this->params["transition_duration"] = $transitionDuration;
-			$this->updateParamsInDB();
 		}
 		
 	}

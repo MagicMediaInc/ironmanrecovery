@@ -6,20 +6,20 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.2.0
+ * @version     2.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-$customer_orders = get_posts( apply_filters( 'woocommerce_my_account_my_orders_query', array(
-	'numberposts' => $order_count,
-	'meta_key'    => '_customer_user',
-	'meta_value'  => get_current_user_id(),
-	'post_type'   => wc_get_order_types( 'view-orders' ),
-	'post_status' => array_keys( wc_get_order_statuses() )
-) ) );
+global $woocommerce;
+
+$customer_orders = get_posts( array(
+    'numberposts' => $order_count,
+    'meta_key'    => '_customer_user',
+    'meta_value'  => get_current_user_id(),
+    'post_type'   => 'shop_order',
+    'post_status' => 'publish'
+) );
 
 if ( $customer_orders ) : ?>
 
@@ -39,21 +39,24 @@ if ( $customer_orders ) : ?>
 
 		<tbody><?php
 			foreach ( $customer_orders as $customer_order ) {
-				$order      = wc_get_order();
+				$order = new WC_Order();
+
 				$order->populate( $customer_order );
+
+				$status     = get_term_by( 'slug', $order->status, 'shop_order_status' );
 				$item_count = $order->get_item_count();
 
 				?><tr class="order">
 					<td class="order-number">
-						<a href="<?php echo $order->get_view_order_url(); ?>">
+						<a href="<?php echo esc_url( add_query_arg('order', $order->id, get_permalink( woocommerce_get_page_id( 'view_order' ) ) ) ); ?>">
 							<?php echo $order->get_order_number(); ?>
 						</a>
 					</td>
 					<td class="order-date">
-						<time datetime="<?php echo date( 'Y-m-d', strtotime( $order->order_date ) ); ?>" title="<?php echo esc_attr( strtotime( $order->order_date ) ); ?>"><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></time>
+						<time datetime="<?php echo date('Y-m-d', strtotime( $order->order_date ) ); ?>" title="<?php echo esc_attr( strtotime( $order->order_date ) ); ?>"><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></time>
 					</td>
 					<td class="order-status" style="text-align:left; white-space:nowrap;">
-						<?php echo wc_get_order_status_name( $order->get_status() ); ?>
+						<?php echo ucfirst( __( $status->name, 'woocommerce' ) ); ?>
 					</td>
 					<td class="order-total">
 						<?php echo sprintf( _n( '%s for %s item', '%s for %s items', $item_count, 'woocommerce' ), $order->get_formatted_order_total(), $item_count ); ?>
@@ -62,31 +65,27 @@ if ( $customer_orders ) : ?>
 						<?php
 							$actions = array();
 
-							if ( in_array( $order->get_status(), apply_filters( 'woocommerce_valid_order_statuses_for_payment', array( 'pending', 'failed' ), $order ) ) ) {
+							if ( in_array( $order->status, apply_filters( 'woocommerce_valid_order_statuses_for_payment', array( 'pending', 'failed' ), $order ) ) )
 								$actions['pay'] = array(
 									'url'  => $order->get_checkout_payment_url(),
 									'name' => __( 'Pay', 'woocommerce' )
 								);
-							}
 
-							if ( in_array( $order->get_status(), apply_filters( 'woocommerce_valid_order_statuses_for_cancel', array( 'pending', 'failed' ), $order ) ) ) {
+							if ( in_array( $order->status, apply_filters( 'woocommerce_valid_order_statuses_for_cancel', array( 'pending', 'failed' ), $order ) ) )
 								$actions['cancel'] = array(
-									'url'  => $order->get_cancel_order_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ),
+									'url'  => $order->get_cancel_order_url(),
 									'name' => __( 'Cancel', 'woocommerce' )
 								);
-							}
 
 							$actions['view'] = array(
-								'url'  => $order->get_view_order_url(),
+								'url'  => add_query_arg( 'order', $order->id, get_permalink( woocommerce_get_page_id( 'view_order' ) ) ),
 								'name' => __( 'View', 'woocommerce' )
 							);
 
 							$actions = apply_filters( 'woocommerce_my_account_my_orders_actions', $actions, $order );
 
-							if ($actions) {
-								foreach ( $actions as $key => $action ) {
-									echo '<a href="' . esc_url( $action['url'] ) . '" class="button ' . sanitize_html_class( $key ) . '">' . esc_html( $action['name'] ) . '</a>';
-								}
+							foreach( $actions as $key => $action ) {
+								echo '<a href="' . esc_url( $action['url'] ) . '" class="button ' . sanitize_html_class( $key ) . '">' . esc_html( $action['name'] ) . '</a>';
 							}
 						?>
 					</td>

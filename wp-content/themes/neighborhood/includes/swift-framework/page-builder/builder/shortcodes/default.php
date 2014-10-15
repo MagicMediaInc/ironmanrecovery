@@ -141,9 +141,9 @@
 	        if ($type == "go_to_top") {
 	        $output .= '<a class="animate-top" href="#">'. $text .'</a>';
 	        } else if ($type == "go_to_top_icon1") {
-	        $output .= '<a class="animate-top" href="#"><i class="fa-arrow-up"></i></a>';
+	        $output .= '<a class="animate-top" href="#"><i class="icon-arrow-up"></i></a>';
 	        } else if ($type == "go_to_top_icon2") {
-	        $output .= '<a class="animate-top" href="#">'. $text .'<i class="fa-arrow-up"></i></a>';
+	        $output .= '<a class="animate-top" href="#">'. $text .'<i class="icon-arrow-up"></i></a>';
 	        }
 	        $output .= '</div>'.$this->endBlockComment('divider')."\n";
 	        $output = $this->startRow($el_position) . $output . $this->endRow($el_position);

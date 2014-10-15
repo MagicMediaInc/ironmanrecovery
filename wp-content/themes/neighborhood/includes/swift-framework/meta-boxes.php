@@ -48,9 +48,9 @@
 	}
 	if (isset($options['default_product_right_sidebar'])) {
 	$default_product_right_sidebar = $options['default_product_right_sidebar'];
-	}	
+	}
 	
-	if ($default_product_sidebar_config == "") {
+	if ($default_product_sidebar_config = "") {
 		$default_product_sidebar_config = "no-sidebars";
 	}
 	if ($default_product_left_sidebar == "") {
@@ -814,19 +814,22 @@
 			    'id' 	=> "{$prefix}heading_sidebar",
 			    'type' 	=> 'section'
 			),
-						
+			
 			// SIDEBAR CONFIG
 			array(
 				'name' => 'Sidebar configuration',
 				'id'   => "{$prefix}sidebar_config",
 				'type' => 'select',
+				// Array of 'key' => 'value' pairs for select box
 				'options' => array(
 					'no-sidebars'		=> 'No Sidebars',
 					'left-sidebar'		=> 'Left Sidebar',
 					'right-sidebar'		=> 'Right Sidebar',
 					'both-sidebars'		=> 'Both Sidebars'
 				),
+				// Select multiple values, optional. Default is false.
 				'multiple' => false,
+				// Default value, can be string (single value) or array (for both single and multiple values)
 				'std'  => $default_product_sidebar_config,
 				'desc' => 'Choose the sidebar configuration for the detail page of this portfolio item.',
 			),

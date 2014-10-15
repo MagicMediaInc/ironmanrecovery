@@ -2,23 +2,23 @@
 /*
 WPUpdates Theme Updater Class
 http://wp-updates.com
-v2.0
+v1.1
 
 Example Usage:
 require_once('wp-updates-theme.php');
-new WPUpdatesThemeUpdater_318( 'http://wp-updates.com/api/2/theme', basename(get_template_directory()) );
+new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 1, basename(get_template_directory()) );
 */
 
-if( !class_exists('WPUpdatesThemeUpdater_318') ) {
-    class WPUpdatesThemeUpdater_318 {
+if( !class_exists('WPUpdatesThemeUpdater') ) {
+    class WPUpdatesThemeUpdater {
     
         var $api_url;
-    	var $theme_id = 318;
+    	var $theme_id;
     	var $theme_slug;
-    	var $license_key;
     
-        function __construct( $api_url, $theme_slug, $license_key = null ) {
+        function __construct( $api_url, $theme_id, $theme_slug ) {
     		$this->api_url = $api_url;
+    		$this->theme_id = $theme_id;
     		$this->theme_slug = $theme_slug;
     
     		add_filter( 'pre_set_site_transient_update_themes', array(&$this, 'check_for_update') );
@@ -35,8 +35,6 @@ if( !class_exists('WPUpdatesThemeUpdater_318') ) {
     		    'slug' => $this->theme_slug,
     			'version' => $transient->checked[$this->theme_slug]
     		);
-    		if ($this->license_key) $request_args['license'] = $this->license_key;
-    		
     		$request_string = $this->prepare_request( 'theme_update', $request_args );
     		$raw_response = wp_remote_post( $this->api_url, $request_string );
         	

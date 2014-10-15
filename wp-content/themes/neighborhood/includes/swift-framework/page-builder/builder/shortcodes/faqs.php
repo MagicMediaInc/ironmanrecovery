@@ -24,7 +24,7 @@ class SwiftPageBuilderShortcode_faqs extends SwiftPageBuilderShortcode {
        	
        	$items_nav .= '<ul class="faqs-nav clearfix">';
        	foreach ($cats as $cat) {
-       		$items_nav .= '<li><a href="#'.$cat->slug.'"><i class="fa-list"></i>'.$cat->name.'<span class="count">'.$cat->count.'</span></a></li>';
+       		$items_nav .= '<li><a href="#'.$cat->slug.'"><i class="icon-list"></i>'.$cat->name.'<span class="count">'.$cat->count.'</span></a></li>';
        	}
        	$items_nav .= '</ul>';
        	
@@ -64,7 +64,7 @@ class SwiftPageBuilderShortcode_faqs extends SwiftPageBuilderShortcode {
 							
 			endwhile;
 			
-			$items .= '<div class="spb_divider go_to_top_icon1 spb_content_element "><a class="animate-top" href="#"><i class="fa-arrow-up"></i></a></div>';
+			$items .= '<div class="spb_divider go_to_top_icon1 spb_content_element "><a class="animate-top" href="#"><i class="icon-arrow-up"></i></a></div>';
 			$items .= '</ul>';
 			
 			

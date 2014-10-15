@@ -267,28 +267,28 @@
 				
 				$content = '[blank_spacer height="40px" width="1/1" el_position="first last"] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
 				
-				[chart percentage="80" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-mobile-phone" align="center"]
+				[chart percentage="80" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-mobile-phone" align="center"]
 				<h3 style="text-align: center;">Incredibly Responsive</h3>
 				<p style="text-align: center;">Neighborhood is completely responsive. And when we say responsive, we mean it won’t only work on mobile devices; it’ll look damn good!</p>
-				<p style="text-align: center;"><a class="read-more" href="/features#responsive">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+				<p style="text-align: center;"><a class="read-more" href="/features#responsive">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 				[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 				
-				[chart percentage="66" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-pencil" align="center"]
+				[chart percentage="66" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-pencil" align="center"]
 				<h3 style="text-align: center;">Swift Page Builder</h3>
 				<p style="text-align: center;">Quickly &amp; easily create beautiful pages. Choose any combination of 40 elements to create unique pages that do your content justice.</p>
-				<p style="text-align: center;"><a class="read-more" href="/features#pagebuilder">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+				<p style="text-align: center;"><a class="read-more" href="/features#pagebuilder">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 				[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 				
-				[chart percentage="55" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-font" align="center"]
+				[chart percentage="55" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-font" align="center"]
 				<h3 style="text-align: center;">Superior Typography</h3>
 				<p style="text-align: center;">Neighborhood includes pro Font Deck support. Or you can choose from 600+ Google Web fonts &amp; control the colour, size &amp; line height.</p>
-				<p style="text-align: center;"><a class="read-more" href="/features#fonts">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+				<p style="text-align: center;"><a class="read-more" href="/features#fonts">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 				[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
 				
-				[chart percentage="88" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-eye-open" align="center"]
+				[chart percentage="88" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-eye-open" align="center"]
 				<h3 style="text-align: center;">Stunning Sliders</h3>
 				<p style="text-align: center;">Neighborhood comes with 3 sliders. The ever popular Revolution Slider, Woo Slider and our own innovative and stunning Swift Slider.</p>
-				<p style="text-align: center;"><a class="read-more" href="/features#sliders">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+				<p style="text-align: center;"><a class="read-more" href="/features#sliders">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 				[/spb_text_block] [blank_spacer height="40px" width="1/1" el_position="first last"] [impact_text include_button="yes" button_style="standard" title="Take the tour" href="/features/" color="accent" size="normal" type="roundedarrow" target="_self" position="cta_align_right" alt_background="alt-five" el_class="mt0 mb0 bb0 bt0" width="1/1" el_position="first last"]
 				<h2>Neighborhood: A clean, responsive &amp; retina-ready multipurpose eCommerce WordPress theme.</h2>
 				[/impact_text] [blank_spacer height="40px" width="1/1" el_position="first last"] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/1" el_position="first last"]
@@ -325,29 +325,29 @@
 				
 				$content = '[impact_text include_button="yes" button_style="standard" title="Buy now" href="/features/" color="accent" size="normal" type="roundedarrow" target="_self" position="cta_align_right" alt_background="alt-seven" el_class="mb0 mt0 bt0" width="1/1" el_position="first last"]
 				<h2>Neighborhood: A clean, responsive &amp; retina-ready multipurpose eCommerce WordPress theme.</h2>
-				[/impact_text] [blank_spacer height="60px" width="1/1" el_position="first last"] [spb_text_block title="Incredibly Responsive" icon="fa-mobile-phone" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
+				[/impact_text] [blank_spacer height="60px" width="1/1" el_position="first last"] [spb_text_block title="Incredibly Responsive" icon="icon-mobile-phone" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
 				
 				Neighborhood is completely responsive. And when we say responsive, we mean it won’t only work on mobile devices; it’ll look damn good!
 				
-				<a class="read-more" href="/features#responsive">Find out more <i class="fa-chevron-right">&gt;</i></a>
+				<a class="read-more" href="/features#responsive">Find out more <i class="icon-chevron-right">&gt;</i></a>
 				
-				[/spb_text_block] [spb_text_block title="Swift Page Builder" icon="fa-pencil" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
+				[/spb_text_block] [spb_text_block title="Swift Page Builder" icon="icon-pencil" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 				
 				Quickly &amp; easily create beautiful pages. Choose any combination of 40 elements to create unique pages that do your content justice.
 				
-				<a class="read-more" href="/features#pagebuilder">Find out more <i class="fa-chevron-right">&gt;</i></a>
+				<a class="read-more" href="/features#pagebuilder">Find out more <i class="icon-chevron-right">&gt;</i></a>
 				
-				[/spb_text_block] [spb_text_block title="Superior Typography" icon="fa-font" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
+				[/spb_text_block] [spb_text_block title="Superior Typography" icon="icon-font" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 				
 				Neighborhood includes pro Font Deck support. Or you can choose from 600+ Google Web fonts &amp; control the colour, size &amp; line height.
 				
-				<a class="read-more" href="/features#fonts">Find out more <i class="fa-chevron-right">&gt;</i></a>
+				<a class="read-more" href="/features#fonts">Find out more <i class="icon-chevron-right">&gt;</i></a>
 				
-				[/spb_text_block] [spb_text_block title="Stunning Sliders" icon="fa-eye-open" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
+				[/spb_text_block] [spb_text_block title="Stunning Sliders" icon="icon-eye-open" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
 				
 				Neighborhood comes with 3 sliders. The ever popular Revolution Slider, Woo Slider and our own innovative and stunning Swift Slider.
 				
-				<a class="read-more" href="/features#sliders">Find out more <i class="fa-chevron-right">&gt;</i></a>
+				<a class="read-more" href="/features#sliders">Find out more <i class="icon-chevron-right">&gt;</i></a>
 				
 				[/spb_text_block] [blank_spacer height="36px" width="1/1" el_position="first last"] [portfolio_carousel title="Recent Projects" item_count="6" category="all" alt_background="alt-one" el_class="mt0 mb0" width="1/1" el_position="first last"] [testimonial_slider title="What our clients say" text_size="large" item_count="6" order="date" category="all" animation="fade" autoplay="no" alt_background="alt-seven" el_class="mt0 mb0 bt0" width="1/1" el_position="first last"]';		
 			
@@ -357,28 +357,28 @@
 				<h2>Neighborhood: A clean, responsive &amp; retina-ready multipurpose eCommerce WordPress theme.</h2>
 				[/impact_text] [blank_spacer height="60px" width="1/1" el_position="first last"] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
 				
-				[chart percentage="80" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-mobile-phone" align="center"]
+				[chart percentage="80" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-mobile-phone" align="center"]
 				<h3 style="text-align: center;">Incredibly Responsive</h3>
 				<p style="text-align: center;">Neighborhood is completely responsive. And when we say responsive, we mean it won’t only work on mobile devices; it’ll look damn good!</p>
-				<p style="text-align: center;"><a class="read-more" href="/features#responsive">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+				<p style="text-align: center;"><a class="read-more" href="/features#responsive">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 				[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 				
-				[chart percentage="66" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-pencil" align="center"]
+				[chart percentage="66" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-pencil" align="center"]
 				<h3 style="text-align: center;">Swift Page Builder</h3>
 				<p style="text-align: center;">Quickly &amp; easily create beautiful pages. Choose any combination of 40 elements to create unique pages that do your content justice.</p>
-				<p style="text-align: center;"><a class="read-more" href="/features#pagebuilder">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+				<p style="text-align: center;"><a class="read-more" href="/features#pagebuilder">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 				[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 				
-				[chart percentage="88" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-eye-open" align="center"]
+				[chart percentage="88" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-eye-open" align="center"]
 				<h3 style="text-align: center;">Stunning Sliders</h3>
 				<p style="text-align: center;">Neighborhood comes with 3 sliders. The ever popular Revolution Slider, Woo Slider and our own innovative and stunning Swift Slider.</p>
-				<p style="text-align: center;"><a class="read-more" href="/features#sliders">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+				<p style="text-align: center;"><a class="read-more" href="/features#sliders">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 				[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
 				
-				[chart percentage="55" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-font" align="center"]
+				[chart percentage="55" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-font" align="center"]
 				<h3 style="text-align: center;">Superior Typography</h3>
 				<p style="text-align: center;">Neighborhood includes pro Font Deck support. Or you can choose from 600+ Google Web fonts &amp; control the colour, size &amp; line height.</p>
-				<p style="text-align: center;"><a class="read-more" href="/features#fonts">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+				<p style="text-align: center;"><a class="read-more" href="/features#fonts">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 				[/spb_text_block] [blank_spacer height="36px" width="1/1" el_position="first last"] [portfolio_carousel title="Recent Projects" item_count="5" category="all" alt_background="alt-one" el_class="mt0 mb0 bb0" width="1/1" el_position="first last"] [testimonial_slider title="Testimonials" text_size="large" item_count="6" order="date" category="all" animation="slide" autoplay="no" alt_background="alt-four" el_class="mt0 bt0" width="1/1" el_position="first last"] [blank_spacer height="20px" width="1/1" el_position="first last"] [recent_posts title="Latest From Our Blog" item_count="4" category="all" excerpt_length="16" width="1/1" el_position="first last"] [blank_spacer height="31px" width="1/1" el_position="first last"]';	
 				
 			} else if ($template_id == "sf-about-us") {
@@ -401,32 +401,32 @@
 		 		<p style="text-align: center;">[hr]</p>
 		 		[one_third]
 		 		
-		 		[chart percentage="85" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-eye-open" align="center"]
+		 		[chart percentage="85" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-eye-open" align="center"]
 		 		<h3 style="text-align: center;">Branding &amp; Identity: <span style="color: #1bbeb4;">85%</span></h3>
 		 		<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis.</p>
 		 		&nbsp;
 		 		
-		 		[chart percentage="80" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-tasks" align="center"]
+		 		[chart percentage="80" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-tasks" align="center"]
 		 		<h3 style="text-align: center;">Project Management: <span style="color: #1bbeb4;">80%</span></h3>
 		 		<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis.</p>
 		 		[/one_third]
 		 		
 		 		[one_third]
 		 		
-		 		[chart percentage="60" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-bullhorn" align="center"]
+		 		[chart percentage="60" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-bullhorn" align="center"]
 		 		<h3 style="text-align: center;">Marketing: <span style="color: #1bbeb4;">60%</span></h3>
 		 		<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis.</p>
-		 		 [chart percentage="50" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-truck" align="center"]
+		 		 [chart percentage="50" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-truck" align="center"]
 		 		<h3 style="text-align: center;">Logistics: <span style="color: #1bbeb4;">50%</span></h3>
 		 		<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis.</p>
 		 		[/one_third]
 		 		
 		 		[one_third_last]
 		 		
-		 		[chart percentage="75" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-sitemap" align="center"]
+		 		[chart percentage="75" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-sitemap" align="center"]
 		 		<h3 style="text-align: center;">User Interface Design: <span style="color: #1bbeb4;">75%</span></h3>
 		 		<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis.</p>
-		 		 [chart percentage="95" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-camera" align="center"]
+		 		 [chart percentage="95" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-camera" align="center"]
 		 		<h3 style="text-align: center;">Photography: <span style="color: #1bbeb4;">95%</span></h3>
 		 		<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis.</p>
 		 		[/one_third_last]
@@ -553,28 +553,28 @@
 	
 	        	$content = '[spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
 	        	
-	        	[chart percentage="100" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-mobile-phone" align="center"]
+	        	[chart percentage="100" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-mobile-phone" align="center"]
 	        	<h3 style="text-align: center;">Incredibly Responsive</h3>
 	        	<p style="text-align: center;">Neighborhood is completely responsive. And when we say responsive, we mean it won’t only work on mobile devices; it’ll look damn good too!</p>
-	        	<p style="text-align: center;"><a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+	        	<p style="text-align: center;"><a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 	        	[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 	        	
-	        	[chart percentage="100" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-pencil" align="center"]
+	        	[chart percentage="100" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-pencil" align="center"]
 	        	<h3 style="text-align: center;">Swift Page Builder</h3>
 	        	<p style="text-align: center;">Quickly &amp; easily create beautiful pages. Choose any combination of 37 elements to create unique pages that do your content justice.</p>
-	        	<p style="text-align: center;"><a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+	        	<p style="text-align: center;"><a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 	        	[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 	        	
-	        	[chart percentage="100" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-font" align="center"]
+	        	[chart percentage="100" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-font" align="center"]
 	        	<h3 style="text-align: center;">Superior Typography</h3>
 	        	<p style="text-align: center;">Neighborhood includes pro Font Deck support. Or you can choose from 600+ Google Web fonts &amp; control the colour, size &amp; line height.</p>
-	        	<p style="text-align: center;"><a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+	        	<p style="text-align: center;"><a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 	        	[/spb_text_block] [spb_text_block pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
 	        	
-	        	[chart percentage="100" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="fa-eye-open" align="center"]
+	        	[chart percentage="100" size="170" barcolour="#1bbeb4" trackcolour="#baebe8" content="icon-eye-open" align="center"]
 	        	<h3 style="text-align: center;">Stunning Sliders</h3>
 	        	<p style="text-align: center;">Neighborhood comes with 3 sliders included. The ever popular Revolution Slider, Woo Slider and our own innovative and stunning Swift Slider.</p>
-	        	<p style="text-align: center;"><a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a></p>
+	        	<p style="text-align: center;"><a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a></p>
 	        	[/spb_text_block] [blank_spacer height="40px" width="1/1" el_position="first last"] [divider type="thin" text="Go to top" full_width="yes" width="1/1" el_position="first last"] [blank_spacer height="18px" width="1/1" el_position="first last"] [spb_text_block title="Our Capabilities" pb_margin_bottom="no" pb_border_bottom="no" width="1/1" el_position="first last"]
 	        	
 	        	[progress_bar percentage="75" name="User Interface Design" value="75%" type="" colour="#1bbeb4"]
@@ -589,53 +589,53 @@
 	        	
 	        	[progress_bar percentage="50" name="Logistics" value="50%" type="" colour="#1bbeb4"]
 	        	
-	        	[/spb_text_block] [blank_spacer height="28px" width="1/1" el_position="first last"] [clients_featured title="Our Amazing Clients" category="all" alt_background="alt-two" el_class="no-arrow" width="1/1" el_position="first last"] [blank_spacer height="28px" width="1/1" el_position="first last"] [spb_text_block title="Unlimited Colors" icon="fa-tint" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
+	        	[/spb_text_block] [blank_spacer height="28px" width="1/1" el_position="first last"] [clients_featured title="Our Amazing Clients" category="all" alt_background="alt-two" el_class="no-arrow" width="1/1" el_position="first last"] [blank_spacer height="28px" width="1/1" el_position="first last"] [spb_text_block title="Unlimited Colors" icon="icon-tint" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
 	        	
 	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
 	        	
-	        	<a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a>
+	        	<a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a>
 	        	
-	        	[/spb_text_block] [spb_text_block title="Extensive Options" icon="fa-wrench" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
-	        	
-	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
-	        	
-	        	<a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a>
-	        	
-	        	[/spb_text_block] [spb_text_block title="Shortcode Library" icon="fa-cog" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
+	        	[/spb_text_block] [spb_text_block title="Extensive Options" icon="icon-wrench" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 	        	
 	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
 	        	
-	        	<a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a>
+	        	<a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a>
 	        	
-	        	[/spb_text_block] [spb_text_block title="Font Awesome Icons" icon="fa-bolt" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
-	        	
-	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
-	        	
-	        	<a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a>
-	        	
-	        	[/spb_text_block] [blank_spacer height="30px" width="1/1" el_position="first last"] [spb_text_block title="Page Templates" icon="fa-file-alt" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
+	        	[/spb_text_block] [spb_text_block title="Shortcode Library" icon="icon-cog" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
 	        	
 	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
 	        	
-	        	<a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a>
+	        	<a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a>
 	        	
-	        	[/spb_text_block] [spb_text_block title="5-Star Support" icon="fa-trophy" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
-	        	
-	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
-	        	
-	        	<a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a>
-	        	
-	        	[/spb_text_block] [spb_text_block title="Translation Ready" icon="fa-globe" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
+	        	[/spb_text_block] [spb_text_block title="Font Awesome Icons" icon="icon-bolt" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
 	        	
 	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
 	        	
-	        	<a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a>
+	        	<a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a>
 	        	
-	        	[/spb_text_block] [spb_text_block title="SEO Optimized" icon="fa-search" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
+	        	[/spb_text_block] [blank_spacer height="30px" width="1/1" el_position="first last"] [spb_text_block title="Page Templates" icon="icon-file-alt" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="first"]
 	        	
 	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
 	        	
-	        	<a class="read-more" href="#">Find out more <i class="fa-chevron-right">&gt;</i></a>
+	        	<a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a>
+	        	
+	        	[/spb_text_block] [spb_text_block title="5-Star Support" icon="icon-trophy" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
+	        	
+	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
+	        	
+	        	<a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a>
+	        	
+	        	[/spb_text_block] [spb_text_block title="Translation Ready" icon="icon-globe" pb_margin_bottom="no" pb_border_bottom="no" width="1/4"]
+	        	
+	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
+	        	
+	        	<a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a>
+	        	
+	        	[/spb_text_block] [spb_text_block title="SEO Optimized" icon="icon-search" pb_margin_bottom="no" pb_border_bottom="no" width="1/4" el_position="last"]
+	        	
+	        	Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid un ut out labore et dolore magna minim veniam, quis.
+	        	
+	        	<a class="read-more" href="#">Find out more <i class="icon-chevron-right">&gt;</i></a>
 	        	
 	        	[/spb_text_block] [blank_spacer height="30px" width="1/1" el_position="first last"] [testimonial_slider title="Client testimonials" text_size="large" item_count="6" order="rand" category="all" animation="fade" autoplay="no" alt_background="alt-two" el_class="mb0 bb0 no-arrow" width="1/1" el_position="first last"]';
 	        

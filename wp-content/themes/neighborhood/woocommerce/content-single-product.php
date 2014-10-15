@@ -6,7 +6,7 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.1.0
+ * @version     1.6.4
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -34,8 +34,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <div itemscope itemtype="http://schema.org/Product" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-	<div class="entry-title" itemprop="name"><?php the_title(); ?></div>
 
 	<?php
 		/**
@@ -51,15 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		
 		<div class="summary-top clearfix">
 			
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-			
-				<p itemprop="price" class="price"><?php echo $product->get_price_html(); ?></p>
-				
-				<meta itemprop="priceCurrency" content="<?php echo get_woocommerce_currency(); ?>" />
-				
-				<?php if (!$catalog_mode) { ?><link itemprop="availability" href="http://schema.org/<?php echo $product->is_in_stock() ? 'InStock' : 'OutOfStock'; ?>" /><?php } ?>
-			
-			</div>
+			<p itemprop="price" class="price"><?php echo $product->get_price_html(); ?></p>
 			
 			<?php
 				if ( comments_open() ) {
@@ -97,20 +87,20 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			?>
 			<?php if (function_exists('be_previous_post_link') && $has_cat != 0) { ?>
 			<div class="product-navigation">
-				<div class="nav-previous"><?php previous_post_link( '%link', '<i class="fa-angle-right"></i>', true, '', 'product_cat' ); ?></div>
-				<div class="nav-next"><?php next_post_link( '%link', '<i class="fa-angle-left"></i>', true, '', 'product_cat' ); ?></div>
+				<div class="nav-previous"><?php be_previous_post_link( '%link', '<i class="icon-angle-right"></i>', true, '', 'product_cat' ); ?></div>
+				<div class="nav-next"><?php be_next_post_link( '%link', '<i class="icon-angle-left"></i>', true, '', 'product_cat' ); ?></div>
 			</div>
 			<?php } ?>
 		
 		</div>
 		
+		<?php if (!$catalog_mode) { ?>
+		<link itemprop="availability" href="http://schema.org/<?php echo $product->is_in_stock() ? 'InStock' : 'OutOfStock'; ?>" />
+		<?php } ?>	
+		
 		<?php if ($product_short_description != "") { ?>
 			<div class="product-short">
 				<?php echo do_shortcode($product_short_description); ?>
-			</div>
-		<?php } else { ?>
-			<div class="product-short">
-				<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
 			</div>
 		<?php } ?>	
 					

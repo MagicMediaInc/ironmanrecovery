@@ -1,3 +1,108 @@
+<?php
+
+function show_mini_cart() {
+    
+    ?>
+    
+    <div class="mini-cart-wrap">
+        <?php
+        global $woocommerce;
+		
+        ob_start();
+
+        $cart_count = $woocommerce->cart->cart_contents_count;
+        $cart_count_text = sf_product_items_text($cart_count);
+
+        ?>	
+        <div class="parent shopping-bag-ite">
+            <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'swiftframework'); ?>"><i class="sf-cart"></i><?php echo $woocommerce->cart->get_cart_total(); ?></a>
+
+        <ul class="sub-menu">     
+        <li>                                      
+        <div class="shopping-bag">
+
+        <?php if ( sizeof($cart_count)>0 ) { ?>
+
+        <div class="bag-header"><?php echo $cart_count_text; ?> <?php _e('in the shopping bag', 'swiftframework'); ?></div>
+
+        <div class="bag-contents">
+
+        <?php foreach ($woocommerce->cart->cart_contents as $cart_item_key => $cart_item) { ?>
+
+        <?php
+        $bag_product = $cart_item['data']; 
+        $product_title = $bag_product->get_title();
+        ?>
+
+        <?php if ($bag_product->exists() && $cart_item['quantity']>0) { ?>                                            
+
+        <div class="bag-product clearfix">   	
+
+        <figure><a class="bag-product-img" href="<?php echo get_permalink($cart_item['product_id']); ?>"><?php echo $bag_product->get_image(); ?></a></figure>                   
+
+        <div class="bag-product-details">
+                    <div class="bag-product-title">
+                            <a href="<?php echo get_permalink($cart_item['product_id']); ?>">
+                                    <?php echo apply_filters('woocommerce_cart_widget_product_title', $product_title, $bag_product); ?></a>
+                    </div>
+            <div class="bag-product-price"><?php _e("Unit Price:", "swiftframework"); ?> <?php echo woocommerce_price($bag_product->get_price()); ?></div>
+            <div class="bag-product-quantity"><?php _e('Quantity:', 'swiftframework'); ?> <?php echo $cart_item['quantity']; ?></div>
+        </div>
+
+        <?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'woocommerce') ), $cart_item_key ); ?>
+
+        </div>
+
+        <?php } ?>
+
+        <?php } ?>
+
+        </div>
+
+        <div class="bag-buttons">
+        <?php
+        $language_myqtrans = qtrans_getLanguage();
+        if ($language_myqtrans =="es") {
+        $span="español";
+        }else {
+        $span="otro idiona";
+        }
+        ?>
+
+        <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('View shopping bag', 'swiftframework'); ?></span><span><?php _e('View shopping bag', 'swiftframework'); ?></span></a>
+
+        <a class="sf-roll-button checkout-button" href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>"><span><?php _e('Proceed to checkout', 'swiftframework'); ?></span><span><?php _e('Proceed to checkout', 'swiftframework'); ?></span></a>
+
+        </div>
+
+        <?php } else { ?>
+
+        <div class="bag-header"><?php _e("0 items in the shopping bag", "swiftframework"); ?></div>
+
+        <div class="bag-empty"><?php _e('Unfortunately, your shopping bag is empty.','swiftframework'); ?></div>                                   
+
+        <div class="bag-buttons">
+
+        <?php $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>
+
+        <a class="sf-roll-button shop-button" href="<?php echo esc_url( $shop_page_url ); ?>"><span><?php _e('Go to the shop', 'swiftframework'); ?></span><span><?php _e('Go to the shop', 'swiftframework'); ?></span></a>
+
+        </div>
+
+        <?php } ?>
+
+        </div>
+        </li>                                                                                                    
+        </ul>                                                                                                          
+        </div>
+
+
+        </div>     
+
+    <?php
+}
+?>
+
 <!DOCTYPE html>
 
 <!--// OPEN HTML //-->
@@ -5,6 +110,9 @@
 
 	<!--// OPEN HEAD //-->
 	<head>
+		<script>
+			var url_home = "<?php echo get_home_url(); ?>";		
+		</script>
 		<?php
 			$options = get_option('sf_neighborhood_options');
 			$enable_responsive = $options['enable_responsive'];
@@ -89,47 +197,34 @@
 		<?php if (isset($options['custom_favicon'])) { ?><link rel="shortcut icon" href="<?php echo $options['custom_favicon']; ?>" /><?php } ?>
 		
 		<?php
-			$custom_fonts = $google_font_one = $google_font_two = $google_font_three = $google_font_subset = $subset_output = "";
-			
+			$custom_fonts = $google_font_one = $google_font_two = $google_font_three = "";
+
 			$body_font_option = $options['body_font_option'];
 			if (isset($options['google_standard_font'])) {
-			$google_font_one = $options['google_standard_font'];
+			$google_standard_font = explode(':', $options['google_standard_font']);
+			$google_font_one = str_replace("+", " ", $google_standard_font[0]);
 			}
 			$headings_font_option = $options['headings_font_option'];
 			if (isset($options['google_heading_font'])) {
-			$google_font_two = $options['google_heading_font'];
-			}
-			$menu_font_option = $options['menu_font_option'];
-			if (isset($options['google_menu_font'])) {
-			$google_font_three = $options['google_menu_font'];
+			$google_heading_font = explode(':', $options['google_heading_font']);
+			$google_font_two = str_replace("+", " ", $google_heading_font[0]);
 			}
 			
-			if (isset($options['google_font_subset'])) {
-			$google_font_subset = $options['google_font_subset'];
-				$s = 0;
-				if (is_array($google_font_subset)) {
-					foreach ($google_font_subset as $subset) {
-						if ($subset == "none") {
-							break;
-						}
-						if ($s > 0) {
-						$subset_output .= ','.$subset;
-						} else {
-						$subset_output = ':'.$subset;
-						}
-						$s++;
-					}
-				}
+			$menu_font_option = $options['menu_font_option'];
+			if (isset($options['google_menu_font'])) {
+			$google_menu_font = explode(':', $options['google_menu_font']);
+			$google_font_three = str_replace("+", " ", $google_menu_font[0]);
 			}
+			
 			    
 			if ($body_font_option == "google" && $google_font_one != "") {
-				$custom_fonts .= "'".$google_font_one.$subset_output."', ";
+				$custom_fonts .= "'".$google_font_one."', ";
 			}
 			if ($headings_font_option == "google" && $google_font_two != "") {
-				$custom_fonts .= "'".$google_font_two.$subset_output."', ";
+				$custom_fonts .= "'".$google_font_two."', ";
 			}
 			if ($menu_font_option == "google" && $google_font_three != "") {
-				$custom_fonts .= "'".$google_font_three.$subset_output."', ";
+				$custom_fonts .= "'".$google_font_three."', ";
 			}
 			
 			$fontdeck_js = $options['fontdeck_js'];
@@ -160,7 +255,7 @@
 				wf.async = 'false';
 				var s = document.getElementsByTagName('script')[0];
 				s.parentNode.insertBefore(wf, s);
-			})();
+			})();			
 		</script>
 		<?php } ?>
 		<?php if (($body_font_option == "fontdeck") || ($headings_font_option == "fontdeck") || ($menu_font_option == "fontdeck")) { ?>
@@ -182,6 +277,11 @@
 	
 	<!--// OPEN BODY //-->
 	<body <?php body_class($page_class.' '.$is_responsive.' '.$extra_page_class); ?>>
+		<input type="hidden" name="languague" id="lang" value="<?= qtrans_getLanguage(); ?>"/>
+		<!--// NO JS ALERT //-->
+		<noscript>
+			<div class="no-js-alert"><?php _e("Please enable JavaScript to view this website.", "swiftframework"); ?></div>
+		</noscript>	
 		
 		<!--// OPEN #container //-->
 		<?php if ($page_layout == "fullwidth") { ?>
@@ -191,7 +291,7 @@
 		<?php } ?>
 			
 			<?php
-				if ($ss_enable && sf_woocommerce_activated()) {
+				if ($ss_enable) { 
 					echo sf_super_search();
 				}
 			?>
@@ -206,8 +306,8 @@
 					
 				<div id="header-section" class="<?php echo $header_layout; ?> <?php echo $logo_class; ?>">
 				<?php echo sf_header(); ?>
+                                <?php show_mini_cart(); ?>
 				</div>
-				
 				<?php if ($enable_promo_bar) { ?>
 					<!--// OPEN #promo-bar //-->
 					<div id="promo-bar">
@@ -220,8 +320,11 @@
 			</div>
 			
 			<?php if ($enable_mini_header) { ?>
-			
+			<div id="mini-header">
+                                
 				<?php echo sf_mini_header(); ?>
+                                <?php show_mini_cart(); ?>
+                                </div>
 			
 			<?php } ?>
 				
@@ -235,7 +338,18 @@
 							sf_swift_slider();
 						} else if ($rev_slider_alias != "") { ?>
 							<div class="home-slider-wrap">
-								<?php putRevSlider($rev_slider_alias); ?>
+								<?php
+									$language_myqtrans = qtrans_getLanguage();
+									if ($language_myqtrans == "es"){
+										putRevSlider("sliderHome");
+									}
+									if ($language_myqtrans == "fr"){
+										putRevSlider("sliderHomeFrances");
+									} 
+									if ($language_myqtrans == "pt"){
+										putRevSlider("sliderHomePortugues");
+									}  
+								 ?>
 							</div>
 				<?php }
 					}

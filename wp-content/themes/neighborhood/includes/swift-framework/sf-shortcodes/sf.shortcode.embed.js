@@ -34,13 +34,6 @@ function embedSelectedShortcode() {
 		var icon_cont = document.getElementById('icon-cont').value;	
 		var icon_float = document.getElementById('icon-float').value;	
 		
-		// Image Banner
-		var imagebanner_image = document.getElementById('imagebanner-image').value;
-		var imagebanner_animation = document.getElementById('imagebanner-animation').value;
-		var imagebanner_contentpos = document.getElementById('imagebanner-contentpos').value;
-		var imagebanner_textalign = document.getElementById('imagebanner-textalign').value;
-		var imagebanner_extraclass = document.getElementById('imagebanner-extraclass').value;
-		
 		// Typography
 		var typography_type = document.getElementById('typography-type').value;
 
@@ -119,15 +112,6 @@ function embedSelectedShortcode() {
 			shortcodeHTML = '[icon image="'+icon_image+'" size="'+icon_size+'" cont="'+icon_cont+'" float="'+icon_float+'"]';	
 		}
 		
-		
-		/////////////////////////////////////////
-		////	IMAGE BANNER SHORTCODE OUTPUT
-		/////////////////////////////////////////
-
-		if (shortcode_select == 'shortcode-imagebanner') {
-			shortcodeHTML = '[sf_imagebanner image="'+imagebanner_image+'" animation="'+imagebanner_animation+'" contentpos="'+imagebanner_contentpos+'" textalign="'+imagebanner_textalign+'" extraclass="'+imagebanner_extraclass+'"]<br/>Enter your Image Banner content here<br/>[/sf_imagebanner]';	
-		}
-
 
 		/////////////////////////////////////////
 		////	SOCIAL SHORTCODE OUTPUT

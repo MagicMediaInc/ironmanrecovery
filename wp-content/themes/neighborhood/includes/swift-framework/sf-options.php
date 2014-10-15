@@ -651,16 +651,7 @@ function setup_framework_options(){
     						'desc' => '',
     						'options' => array('1' => 'On','0' => 'Off'),
     						'std' => '1'
-    						),
-    					array(
-    						'id' => 'disable_search',
-    						'type' => 'button_set',
-    						'title' => __('Disable Search', Redux_TEXT_DOMAIN), 
-    						'sub_desc' => __('Enable this option to disable the search option in the header.', Redux_TEXT_DOMAIN),
-    						'desc' => '',
-    						'options' => array('1' => 'On','0' => 'Off'),
-    						'std' => '0'
-    						),
+    						)
     					)
     				);
     $sections[] = array(
@@ -1624,15 +1615,6 @@ function setup_framework_options(){
     				'desc' => __('<p class="description">These are the options for fonts used within the theme.</p>', Redux_TEXT_DOMAIN),
     				'fields' => array(
     					array(
-    						'id' => 'google_font_subset',
-    						'type' => 'multi_select',
-    						'title' => __('Google Font Subset', Redux_TEXT_DOMAIN), 
-    						'sub_desc' => __('If you are using Google Fonts, and need to use a subset, then please choose it here. Ensure that your chosen font(s) support this subset. NOTE: Hold CMD/CTRL and click to select multiple subsets.', Redux_TEXT_DOMAIN),
-    						'desc' => '',
-    						'options' => array('none' => 'None', 'latin' => 'Latin', 'latin-ext' => 'Latin Extended', 'greek' => 'Greek', 'greek-ext' => 'Greek Extended', 'cyrillic' => 'Cyrillic Extended'),
-    						'std' => 'none'
-    						),
-    					array(
     						'id' => 'body_font_option',
     						'type' => 'button_set',
     						'title' => __('Body Font', Redux_TEXT_DOMAIN), 
@@ -2037,7 +2019,7 @@ function setup_framework_options(){
     							'id' => 'jobs_page',
     							'type' => 'pages_select',
     							'title' => __('Jobs Page', Redux_TEXT_DOMAIN), 
-    							'sub_desc' => __('Select the page that is your jobs index page. This is used to link to the page from various places. This setting does not display jobs, but will appear on the Jobs overview asset to link to all jobs.', Redux_TEXT_DOMAIN),
+    							'sub_desc' => __('Select the page that is your jobs index page. This is used to link to the page from various places.', Redux_TEXT_DOMAIN),
     							'desc' => '',
     							'std' => '',
     							'args' => array()
@@ -2058,15 +2040,6 @@ function setup_framework_options(){
     							'desc' => '',
     							'options' => array('1' => 'On','0' => 'Off'),
     							'std' => '1'
-    							),
-    						array(
-    							'id' => 'overlay_transition_type',
-    							'type' => 'button_set',
-    							'title' => __('Product Overlay Transition Type', Redux_TEXT_DOMAIN), 
-    							'sub_desc' => __('Choose what type of transition between product images on hover you would like.', Redux_TEXT_DOMAIN),
-    							'desc' => '',
-    							'options' => array('slideup' => 'Slide Up', 'slideleft' => 'Slide Left', 'fade' => 'Fade'),
-    							'std' => 'slideup'
     							),
     						array(
     							'id' => 'enable_pb_product_pages',
@@ -2096,9 +2069,18 @@ function setup_framework_options(){
     							'std' => '0'
     							),
     						array(
+    							'id' => 'enable_one_page_checkout',
+    							'type' => 'button_set',
+    							'title' => __('One page checkout mode', Redux_TEXT_DOMAIN), 
+    							'sub_desc' => __('Enable this setting to change the checkout page to be a single page layout.', Redux_TEXT_DOMAIN),
+    							'desc' => '',
+    							'options' => array('1' => 'On','0' => 'Off'),
+    							'std' => '0'
+    							),
+    						array(
     							'id' => 'enable_product_zoom',
     							'type' => 'button_set',
-    							'title' => __('Enable image zoom on product images', Redux_TEXT_DOMAIN), 
+    							'title' => __('Enable image zoon on product images', Redux_TEXT_DOMAIN), 
     							'sub_desc' => __('Choose whether you would like to enable product image zoom functionality on the product detail page images.', Redux_TEXT_DOMAIN),
     							'desc' => '',
     							'options' => array('1' => 'On','0' => 'Off'),
@@ -2224,7 +2206,7 @@ function setup_framework_options(){
     						array(
     							'id' => 'shipping_modal',
     							'type' => 'textarea',
-    							'title' => __('Shipping information modal', Redux_TEXT_DOMAIN), 
+    							'title' => __('Email customer care modal', Redux_TEXT_DOMAIN), 
     							'sub_desc' => __('The content that appears in the modal box for the shipping information help link.', Redux_TEXT_DOMAIN),
     							'desc' => '',
     							'std' => 'Enter your shipping information here. (Text/HTML/Shortcodes accepted).'
@@ -2353,7 +2335,7 @@ function setup_framework_options(){
     							'id' => 'youtube_username',
     							'type' => 'text',
     							'title' => __('YouTube', Redux_TEXT_DOMAIN),
-    							'sub_desc' => "Your YouTube URL",
+    							'sub_desc' => "Your YouTube username",
     							'desc' => '',
     							'std' => ''
     							),
@@ -2390,13 +2372,13 @@ function setup_framework_options(){
     							'std' => ''
     							),
     						array(
-    							'id' => 'xing_url',
+    							'id' => 'ecus_fb_url',
     							'type' => 'text',
-    							'title' => __('Xing', Redux_TEXT_DOMAIN),
-    							'sub_desc' => "Your Xing URL",
+    							'title' => __('Facebook Ecus', Redux_TEXT_DOMAIN),
+    							'sub_desc' => "URL de facebook ecus",
     							'desc' => '',
     							'std' => ''
-    							),
+    							)
     					)
     				);	
     		                

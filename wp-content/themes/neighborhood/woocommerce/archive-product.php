@@ -75,7 +75,7 @@
 	$has_products = true;
 	
 	get_header('shop'); ?>
-		
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
@@ -87,7 +87,7 @@
 	?>
 
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true )  && $default_show_page_heading) : ?>
-	
+			
 	<div class="row">
 		<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
 			<div class="heading-text">
@@ -136,24 +136,15 @@
 
 	<?php endif; ?>
 	
+	
 	<div class="inner-page-wrap <?php echo $page_wrap_class; ?> clearfix">
 		
 		<!-- OPEN section -->
 		<section class="<?php echo $page_class; ?>">
 		
 			<div class="page-content <?php echo $content_class; ?>">
-			
-			<?php if ( version_compare( WOOCOMMERCE_VERSION, "2.1.0" ) >= 0 ) {
-			
-				wc_get_template( 'loop/result-count.php' );
-				
-				global $woocommerce;
-	
-				$orderby = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-		
-				wc_get_template( 'loop/orderby.php', array( 'orderby' => $orderby ) );
 						
-			} else if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) {
+			<?php if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) {
 				
 				woocommerce_get_template( 'loop/result-count.php' );
 				
@@ -187,21 +178,7 @@
 	
 			<?php if ( have_posts() ) : ?>
 				
-				<?php if ( version_compare( WOOCOMMERCE_VERSION, "2.1.0" ) >= 0 ) { ?>
-					
-					<?php woocommerce_product_loop_start(); ?>
-		
-						<?php woocommerce_product_subcategories(); ?>
-		
-						<?php while ( have_posts() ) : the_post(); ?>
-		
-							<?php wc_get_template_part( 'content', 'product' ); ?>
-		
-						<?php endwhile; // end of the loop. ?>
-		
-					<?php woocommerce_product_loop_end(); ?>
-				
-				<?php } else if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) { ?>
+				<?php if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) { ?>
 	
 					<?php woocommerce_product_loop_start(); ?>
 		
@@ -258,7 +235,7 @@
 		</section>
 	
 		<?php if ($sidebar_config == "left-sidebar") { ?>
-					
+				
 		<aside class="sidebar left-sidebar span3">
 			<?php dynamic_sidebar($left_sidebar); ?>
 		</aside>
@@ -275,7 +252,7 @@
 			<?php dynamic_sidebar($right_sidebar); ?>
 		</aside>
 		
-		<?php } ?>		
+		<?php } ?>
 			
 	</div>
 

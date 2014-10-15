@@ -6,7 +6,7 @@
 	 *
 	 * @author 		WooThemes
 	 * @package 	WooCommerce/Templates
-	 * @version     2.1.0
+	 * @version     1.6.4
 	 */
 	
 	if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -20,9 +20,9 @@
 	// Store column count for displaying the grid
 	if ( empty( $woocommerce_loop['columns'] ) )
 		$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
-	
+	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
 	// Ensure visibility
-	if ( ! $product || ! $product->is_visible() )
+	if ( ! $product->is_visible() )
 		return;
 	
 	// Increase loop count
@@ -37,29 +37,13 @@
 	
 	$options = get_option('sf_neighborhood_options');
 	$product_overlay_transition = $options['product_overlay_transition'];
-	$overlay_transition_type = "";
-	
-	if (isset($options['overlay_transition_type'])) {
-		$overlay_transition_type = $options['overlay_transition_type'];
-	}
-	
-	if (is_singular('portfolio')) {
-	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
-	}
 ?>
 <li <?php post_class( $classes ); ?>>
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
-	<?php if ($product_overlay_transition) {
-		if ($overlay_transition_type == "slideleft") { ?>
-		<figure class="product-transition-alt">	
-	<?php } else if ($overlay_transition_type == "fade") { ?>
-		<figure class="product-transition-fade">	
-	<?php } else { ?>
-		<figure class="product-transition">					
-	<?php }
-	?>
+	<?php if ($product_overlay_transition) { ?>
+	<figure class="product-transition">			
 	<?php } else { ?>
 	<figure>
 	<?php } ?>
@@ -67,13 +51,14 @@
 			
 			$image_html = "";
 			
-			if (is_out_of_stock()) {
-						
-				echo '<span class="out-of-stock-badge">' . __( 'Out of Stock', 'swiftframework' ) . '</span>';
-		
-			} else if ($product->is_on_sale()) {
+			if ($product->is_on_sale()) {
 				
-				echo apply_filters('woocommerce_sale_flash', '<span class="onsale">'.__( 'Sale!', 'woocommerce' ).'</span>', $post, $product);				
+				echo apply_filters('woocommerce_sale_flash', '<span class="onsale">'.__( 'Sale!', 'woocommerce' ).'</span>', $post, $product);
+		
+			} else if (is_out_of_stock()) {
+				
+				echo '<span class="out-of-stock-badge">' . __( 'Out of Stock', 'swiftframework' ) . '</span>';
+			
 			} else if (!$product->get_price()) {
 				
 				echo '<span class="free-badge">' . __( 'Free', 'swiftframework' ) . '</span>';
@@ -91,7 +76,7 @@
 			}
 	
 			if ( has_post_thumbnail() ) {
-				$image_html = wp_get_attachment_image( get_post_thumbnail_id(), 'shop_catalog' );					
+				$image_html = wp_get_attachment_image( get_post_thumbnail_id(), 'shop_single' );					
 			}
 		?>
 		
@@ -188,6 +173,8 @@
 			echo $product->get_categories( ', ', '<span class="posted_in">' . _n( '', '', $size, 'woocommerce' ) . ' ', '</span>' );
 		?>
 	</div>
+
+	
 
 	<?php
 		/**

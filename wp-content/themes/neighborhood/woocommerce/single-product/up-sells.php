@@ -9,7 +9,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $product, $woocommerce, $woocommerce_loop, $sf_carouselID;
+global $product, $woocommerce, $woocommerce_loop;
 
 $upsells = $product->get_upsells();
 
@@ -30,24 +30,14 @@ $args = array(
 
 $products = new WP_Query( $args );
 
-//$woocommerce_loop['columns'] 	= $columns;
+//$woocommerce_loop['columns'] = $columns;
 $woocommerce_loop['columns'] = 4;
-
-
-if ($sf_carouselID == "") {
-$sf_carouselID = 1;
-} else {
-$sf_carouselID++;
-}
-
 
 if ( $products->have_posts() ) : ?>
 
-	<div class="upsells products product-carousel" data-columns="<?php echo $woocommerce_loop['columns']; ?>">
+	<div class="upsells products">
 		
 		<h4 class="lined-heading"><span><?php _e( 'You may also like&hellip;', 'woocommerce' ) ?></span></h4>
-		
-		<div class="carousel-overflow">
 				
 		<?php woocommerce_product_loop_start(); ?>
 
@@ -59,16 +49,8 @@ if ( $products->have_posts() ) : ?>
 
 		<?php woocommerce_product_loop_end(); ?>
 		
-		</div>
-		
-		<a href="#" class="prev"><i class="fa-chevron-left"></i></a><a href="#" class="next"><i class="fa-chevron-right"></i></a>
-		
 	</div>
 
 <?php endif;
-
-global $include_carousel, $include_isotope;
-$include_carousel = true;
-$include_isotope = true;
 
 wp_reset_postdata();

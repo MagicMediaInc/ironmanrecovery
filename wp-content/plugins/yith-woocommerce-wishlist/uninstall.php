@@ -4,7 +4,7 @@
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Wishlist
- * @version 1.1.5
+ * @version 1.0.6
  */
 
 // If uninstall not called from WordPress exit
@@ -12,6 +12,8 @@ if( !defined( 'WP_UNINSTALL_PLUGIN' ) )
     { exit; }
 
 global $wpdb;
+require_once( 'yith-wcwl.php' );	
+
 	
 // Delete option from options table
 delete_option( 'yith_wcwl_version' );

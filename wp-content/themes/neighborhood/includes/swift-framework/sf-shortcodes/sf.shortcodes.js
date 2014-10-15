@@ -21,7 +21,6 @@ $j(document).ready(function() {
 		'0' : $j([]),
 		'shortcode-buttons' : $j('#shortcode-buttons'),
 		'shortcode-icons' : $j('#shortcode-icons'),
-		'shortcode-imagebanner' : $j('#shortcode-imagebanner'),
 		'shortcode-social' : $j('#shortcode-social'),
 		'shortcode-typography' : $j('#shortcode-typography'),
 		'shortcode-tooltip' : $j('#shortcode-tooltip'),

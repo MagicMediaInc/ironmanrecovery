@@ -151,7 +151,7 @@ class SwiftPageBuilderShortcode_team_carousel extends SwiftPageBuilderShortcode 
     					
     			$items .= '</ul></div>';
     			
-    			$items .= '<a href="#" class="prev"><i class="fa-chevron-left"></i></a><a href="#" class="next"><i class="fa-chevron-right"></i></a>';
+    			$items .= '<a href="#" class="prev"><i class="icon-chevron-left"></i></a><a href="#" class="next"><i class="icon-chevron-right"></i></a>';
     			
     		}
     		

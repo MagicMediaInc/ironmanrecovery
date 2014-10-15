@@ -1,44 +1,44 @@
 <?php
 /** 
- * As configurações básicas do WordPress.
+ * A configuração de base do WordPress
  *
- * Esse arquivo contém as seguintes configurações: configurações de MySQL, Prefixo de Tabelas,
- * Chaves secretas, Idioma do WordPress, e ABSPATH. Você pode encontrar mais informações
+ * Este ficheiro define os seguintes parâmetros: MySQL settings, Table Prefix,
+ * Secret Keys, WordPress Language, e ABSPATH. Pode obter mais informação
  * visitando {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. Você pode obter as configurações de MySQL de seu servidor de hospedagem.
+ * wp-config.php} no Codex. As definições de MySQL são-lhe fornecidas pelo seu serviço de alojamento.
  *
- * Esse arquivo é usado pelo script ed criação wp-config.php durante a
- * instalação. Você não precisa usar o site, você pode apenas salvar esse arquivo
- * como "wp-config.php" e preencher os valores.
+ * Este ficheiro é usado para criar o script  wp-config.php, durante
+ * a instalação, mas não tem que usar essa funcionalidade se não quiser. 
+ * Salve este ficheiro como "wp-config.php" e preencha os valores.
  *
  * @package WordPress
  */
 
-// ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
-/** O nome do banco de dados do WordPress */
-define('DB_NAME', 'nomedoBD');
+// ** Definições de MySQL - obtenha estes dados do seu serviço de alojamento** //
+/** O nome da base de dados do WordPress */
+define('DB_NAME', 'database_name_here');
 
-/** Usuário do banco de dados MySQL */
+/** O nome do utilizador de MySQL */
 define('DB_USER', 'username_here');
 
-/** Senha do banco de dados MySQL */
+/** A password do utilizador de MySQL  */
 define('DB_PASSWORD', 'password_here');
 
-/** nome do host do MySQL */
+/** O nome do serviddor de  MySQL  */
 define('DB_HOST', 'localhost');
 
-/** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
+/** O "Database Charset" a usar na criação das tabelas. */
 define('DB_CHARSET', 'utf8');
 
-/** O tipo de collate do banco de dados. Não altere isso se tiver dúvidas. */
+/** O "Database Collate type". Se tem dúvidas não mude. */
 define('DB_COLLATE', '');
 
 /**#@+
- * Chaves únicas de autenticação e salts.
+ * Chaves Únicas de Autenticação.
  *
- * Altere cada chave para um frase única!
- * Você pode gerá-las usando o {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * Você pode alterá-las a qualquer momento para desvalidar quaisquer cookies existentes. Isto irá forçar todos os usuários a fazerem login novamente.
+ * Mude para frases únicas e diferentes!
+ * Pode gerar frases automáticamente em {@link https://api.wordpress.org/secret-key/1.1/salt/ Serviço de chaves secretas de WordPress.org}
+ * Pode mudar estes valores em qualquer altura para invalidar todos os cookies existentes o que terá como resultado obrigar todos os utilizadores a voltarem a fazer login
  *
  * @since 2.6.0
  */
@@ -54,28 +54,37 @@ define('NONCE_SALT',       'put your unique phrase here');
 /**#@-*/
 
 /**
- * Prefixo da tabela do banco de dados do WordPress.
+ * Prefixo das tabelas de WordPress.
  *
- * Você pode ter várias instalações em um único banco de dados se você der para cada um um único
- * prefixo. Somente números, letras e sublinhados!
+ * Pode suportar múltiplas instalações numa só base de dados, ao dar a cada
+ * instalação um prefixo único. Só algarismos, letras e underscores, por favor!
  */
 $table_prefix  = 'wp_';
 
+/**
+ * Idioma de Localização do WordPress, Inglês por omissão.
+ *
+ * Mude isto para localizar o WordPress. Um ficheiro MO correspondendo ao idioma
+ * escolhido deverá existir na directoria wp-content/languages. Instale por exemplo
+ * pt_PT.mo em wp-content/languages e defina WPLANG como 'pt_PT' para activar o
+ * suporte para a língua portuguesa.
+ */
+define('WPLANG', 'pt_PT');
 
 /**
- * Para desenvolvedores: Modo debugging WordPress.
+ * Para developers: WordPress em modo debugging.
  *
- * altere isto para true para ativar a exibição de avisos durante o desenvolvimento.
- * é altamente recomendável que os desenvolvedores de plugins e temas usem o WP_DEBUG
- * em seus ambientes de desenvolvimento.
+ * Mude isto para true para mostrar avisos enquanto estiver a testar.
+ * É vivamente recomendado aos autores de temas e plugins usarem WP_DEBUG
+ * no seu ambiente de desenvolvimento.
  */
 define('WP_DEBUG', false);
 
-/* Isto é tudo, pode parar de editar! :) */
+/* E é tudo. Pare de editar! */
 
-/** Caminho absoluto para o diretório WordPress. */
+/** Caminho absoluto para a pasta do WordPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-	
-/** Configura as variáveis do WordPress e arquivos inclusos. */
+
+/** Define as variáveis do WordPress e ficheiros a incluir. */
 require_once(ABSPATH . 'wp-settings.php');

@@ -1,0 +1,343 @@
+/*PERSONALIZADOR DE COLCHONES*/
+
+
+
+
+#personalizador-de-colchones{
+	font-weight: 800;
+	color: #4D4D4D;
+	opacity:1;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+#personalizador-de-colchones.oculto{
+	display: none;
+}
+
+#personalizador-de-colchones a{
+	transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-webkit-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+}
+#personalizador-de-colchones h4{
+	font-weight: 800;
+	color: #4D4D4D;
+	font-size:18px;
+}
+.personalizador{
+	margin:0px 20px;
+}
+.personalizador h5{
+	margin:40px 0px;
+	text-align: center;
+}
+.titulo-seccion{
+	margin:40px;
+	text-align: center;
+}
+#titulos{
+	text-align: center;
+	padding:77px 0px 0px 0px;
+	margin:0;
+}
+#titulos li{
+	display:inline;
+	text-decoration: none;
+	
+}
+#titulos .titulo{
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	cursor: pointer;
+	padding-top:77px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	text-align: center;
+	display:inline;
+	margin:10px;
+}
+#titulos .titulo.activo{
+	color: #0092bc;
+}
+#titulo-individual{
+	background-image: url(../img/individual.png);
+}
+#titulo-pareja{
+	background-image: url(../img/pareja.png);
+	padding-left: 12px;
+}
+/*.personalizador{
+	opacity:0;
+	height:0px;
+	overflow: hidden;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+
+}*/
+.personalizador.activo{
+	opacity: 1;
+}
+.personalizador .ui-widget-content {
+	border: none;
+	height:20px;
+	margin:20px auto;
+	background: url(../img/banda-normal.jpg) repeat-x;
+	/*background: #4d4d4d;*/
+	cursor: pointer;
+}
+.personalizador.activo .ui-widget-content {
+	border: none;
+	height:20px;
+	margin:20px auto;
+	/*background: #0092bc;*/
+	background: url(../img/banda.jpg) repeat-x;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+	outline: none;
+	cursor: pointer;
+	border: none;
+	background: transparent;	
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.personalizador .peso.ui-widget-content .ui-state-default{
+	width: 42px;
+	height: 42px;
+	top: -1em;
+	background-image: url(../img/bote.png);
+}
+.personalizador.activo .peso.ui-widget-content .ui-state-default{
+	background-image: url(../img/bote-activo.png);
+}
+.personalizador .altura.ui-widget-content .ui-state-default{
+	width: 13px;
+	height: 48px;
+	top: -1.4em;
+	margin-left: -.1em;
+	background-image: url(../img/regla.png);
+}
+.personalizador.activo .altura.ui-widget-content .ui-state-default{
+	background-image: url(../img/regla-activo.png);
+}
+
+.personalizador .apoyo.ui-widget-content .ui-state-default{
+	width: 14px;
+	height: 14px;
+	top:.1em;
+	margin-left: -.1em;
+	background-image: url(../img/cursor.png);
+}
+.personalizador.activo .apoyo.ui-widget-content .ui-state-default{
+	background-image: url(../img/cursor-activo.png);
+}
+.rangos{
+	color:#a8a8a8;
+	font-size:0.8em;
+}
+.rango{
+	display: block;
+	float:left;
+	width:25%;
+}
+.clear{
+	clear:both;
+}
+.seccion-personalizador{
+	position:relative;
+	width:85%;
+	margin:auto;
+}
+.tipo{
+	font-size: 0.65em;
+	position: relative;
+	top: -4px;
+}
+.apoyos{
+	overflow: hidden;
+}
+.apoyo-img{
+	width:27px;
+	height:33px;
+	background-repeat:no-repeat;
+	background-position: center center;
+	cursor: pointer;
+}
+.personalizador .apoyo-img.apoyo1{
+	float:left;
+	background-image:url(../img/apoyo1.png);
+}
+.personalizador.activo .apoyo-img.apoyo1{
+	background-image:url(../img/apoyo1-activo.png);
+}
+.personalizador .apoyo-img.apoyo2{
+	position:absolute;
+	margin-left:-9px;
+	left:50%;
+	background-image:url(../img/apoyo2.png);
+}
+.personalizador.activo .apoyo-img.apoyo2{
+	background-image:url(../img/apoyo2-activo.png);
+}
+.personalizador .apoyo-img.apoyo3{
+	float:right;
+	background-image:url(../img/apoyo3.png);
+}
+.personalizador.activo .apoyo-img.apoyo3{
+	background-image:url(../img/apoyo3-activo.png);
+}
+
+
+#container-colchones{
+	display: none;
+	height:0;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+#container-colchones.activo{
+	opacity: 1;
+	display: block;
+	height:auto;
+}
+
+#container-colchones h3{
+	font-size: 18px;
+	color: #4d4d4d;
+	line-height: 20px;
+	margin: 0px 0px 25px;
+}
+
+#container-colchones h3 span{
+	text-transform: uppercase;
+	font-size: 34px;
+	color: rgb(0, 147, 189);
+	position: relative;
+	top: 4px;
+}
+
+#capa-custom-pareja{display: none;}
+.seccion-tamano{
+	text-align: center;
+	font-size:0.9em;
+	font-weight: bold;
+	margin:20px 0px;
+}
+.seccion-tamano ul{
+	padding:0;
+	margin:10px auto;
+}
+.seccion-tamano h3{
+	color: #0092bc;
+	margin-top:10px;
+}
+.seccion-tamano .tipo{
+	font-size: 0.5em;
+	top: -8px;
+}
+.seccion-tamano ul li{
+	list-style: none;
+	display: inline;
+	position:relative;
+	margin:5px;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+
+}
+.seccion-tamano ul li.activo{
+	color: #0092bc;
+}
+#colchones-pareja, #colchones-individual{
+	height:0px;
+	overflow:hidden;
+	opacity:0;
+}
+#colchones-pareja.activo, #colchones-individual.activo{
+	height:100%;
+	opacity:1;
+}
+
+#personalizadores{
+	height:0;
+	opacity: 0;
+	overflow:hidden;	
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+	padding-top:20px;
+}
+#personalizadores.activo{
+	height:100%;
+	opacity: 1;
+}
+#personalizador-individual{}
+
+.precio {
+	position: absolute;
+	top: 12px;
+	left: 0px;
+	width:100%;
+	text-align:center;
+	font-size: 11px;
+	color: #0092bc;
+}
+#restaurar-valores {
+	padding-top: 69px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 100px;
+	margin: 20px auto;
+	background-image: url(../img/refresh-icon2.png);
+	text-align: center;
+	cursor: pointer;
+}
+
+@media (min-width: 992px) {
+	/*.personalizador{
+    	margin:0px 40px;
+	}*/
+	/*#titulo-individual{
+    	float:right;
+	}
+	#titulo-pareja{
+		float:left;
+	}*/
+	.personalizador h5{
+    	text-align: left;
+	}
+	.seccion-personalizador .valor{
+		position:absolute;
+		top:0px;
+		right:10px;
+	}
+	#titulos .titulo{
+		margin:0px 55px;
+	}
+}
+	
+
+@media (max-width: 480px) {
+	#container-colchones h3,#container-colchones h3 span{
+		display: block;
+		margin:auto;
+		text-align:center;
+	}
+}
+	

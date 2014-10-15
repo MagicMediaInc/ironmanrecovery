@@ -4,7 +4,7 @@
  *
  * @author Your Inspiration Themes
  * @package YIHT WooCommerce Wishlist
- * @version 1.1.5
+ * @version 1.0.6
  */
 
 /**

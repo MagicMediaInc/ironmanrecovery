@@ -2,23 +2,15 @@
 if(!class_exists('Redux_Options') ){
 
     // Windows-proof constants: replace backward by forward slashes - thanks to: https://github.com/peterbouwmeester
-    $_dir     = trailingslashit( str_replace( '\\', '/', dirname( __FILE__ ) ) );
-    $wp_content_dir = trailingslashit( str_replace( '\\', '/', WP_CONTENT_DIR ) );
-    $relative_url   = str_replace( $wp_content_dir, '', $_dir );
-    $wp_content_url = ( is_ssl() ? str_replace( 'http://', 'https://', WP_CONTENT_URL ) : WP_CONTENT_URL );
-    $_url     = trailingslashit( $wp_content_url ) . $relative_url;
-        
-    if (strpos($_url, 'wp-content//wp-content') !== false) {
-    	$temp_url = str_replace('wp-content//wp-content', 'wp-content', $_url);
-    	$_url = $temp_url;
-    }
+    $fslashed_dir = trailingslashit(str_replace('\\','/', dirname(__FILE__)));
+    $fslashed_abs = trailingslashit(str_replace('\\','/', ABSPATH));
     
     if(!defined('Redux_OPTIONS_DIR')) {
-        define('Redux_OPTIONS_DIR', $_dir);
+        define('Redux_OPTIONS_DIR', $fslashed_dir);
     }
     
     if(!defined('Redux_OPTIONS_URL')) {
-        define('Redux_OPTIONS_URL', $_url);
+        define('Redux_OPTIONS_URL', site_url(str_replace($fslashed_abs, '', $fslashed_dir)));
     }
     
     class Redux_Options {

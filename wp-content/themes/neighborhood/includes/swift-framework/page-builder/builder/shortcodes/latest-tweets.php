@@ -34,7 +34,7 @@ class SwiftPageBuilderShortcode_latest_tweets extends SwiftPageBuilderShortcode 
             
             $output .= "\n\t".'<div class="spb_latest_tweets_widget '.$width.$el_class.'">';
             $output .= "\n\t\t".'<div class="spb_wrapper latest-tweets-wrap clearfix">';
-            $output .= "\n\t\t\t".'<div class="twitter-bird"><i class="fa-twitter"></i></div><ul class="tweet-wrap">'. $tweet_output ."</ul>";
+            $output .= "\n\t\t\t".'<div class="twitter-bird"><i class="icon-twitter"></i></div><ul class="tweet-wrap">'. $tweet_output ."</ul>";
             $output .= "\n\t\t".'</div> '.$this->endBlockComment('.spb_wrapper');
             $output .= "\n\t".'</div> '.$this->endBlockComment($width);
     

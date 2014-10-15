@@ -31,7 +31,7 @@ class lip_most_loved_widget extends WP_Widget {
 						$most_loved = get_posts( $args );
 						foreach( $most_loved as $loved ) : ?>
 							<li class="loved-item">
-							 	<div class="loved-count"><i class="fa-heart"></i><?php echo get_post_meta($loved->ID, '_li_love_count', true); ?></div>
+							 	<div class="loved-count"><i class="icon-heart"></i><?php echo get_post_meta($loved->ID, '_li_love_count', true); ?></div>
 								<a href="<?php echo get_permalink($loved->ID); ?>"><?php echo get_the_title($loved->ID); ?></a><br/>
 							</li>
 						<?php endforeach; ?>

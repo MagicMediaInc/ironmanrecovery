@@ -142,10 +142,10 @@ class SwiftPageBuilderShortcode_portfolio_carousel extends SwiftPageBuilderShort
 						if (!$alt) {
 						$alt = $image['title'];
 						}
-					    $items .= "<li><a ".$link_config."><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$alt}' /></a></li>";
+					    $items .= "<li><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$alt}' /></li>";
 					}
 																	
-					$items .= '</ul></div>';
+					$items .= '</ul><div class="open-item"><a '.$link_config.'><i class="icon-plus"></i></a></div></div>';
 					
 				} else {
 				
@@ -155,7 +155,7 @@ class SwiftPageBuilderShortcode_portfolio_carousel extends SwiftPageBuilderShort
 						$items .= '<a '.$link_config.'>';
 						
 						$items .= '<div class="overlay"><div class="thumb-info">';
-						$items .= '<i class="fa-'.$item_icon.'"></i>';
+						$items .= '<i class="icon-'.$item_icon.'"></i>';
 						$items .= '</div></div>';
 						
 						$items .= '<img itemprop="image" src="'.$image[0].'" width="'.$image[1].'" height="'.$image[2].'" alt="'.$item_title.'" />';
@@ -167,7 +167,7 @@ class SwiftPageBuilderShortcode_portfolio_carousel extends SwiftPageBuilderShort
 				$items .= '</figure>';
 				
 				$items .= '<div class="item-details clearfix">';
-				$items .= '<h4 class="portfolio-item-title"><a href="'.$permalink.'"><span>'. $item_title .'</span><i class="fa-angle-right"></i></a></h4>';
+				$items .= '<h4 class="portfolio-item-title"><a href="'.$permalink.'"><span>'. $item_title .'</span><i class="icon-angle-right"></i></a></h4>';
 				$items .= '</div>';
 
 				$items .= '</li>';
@@ -179,7 +179,7 @@ class SwiftPageBuilderShortcode_portfolio_carousel extends SwiftPageBuilderShort
 			
 			$items .= '</ul></div>';
     		
-    		$items .= '<a href="#" class="prev"><i class="fa-chevron-left"></i></a><a href="#" class="next"><i class="fa-chevron-right"></i></a>';
+    		$items .= '<a href="#" class="prev"><i class="icon-chevron-left"></i></a><a href="#" class="next"><i class="icon-chevron-right"></i></a>';
         	
         	$width = spb_translateColumnWidthToSpan($width);
     		$el_class = $this->getExtraClass($el_class);

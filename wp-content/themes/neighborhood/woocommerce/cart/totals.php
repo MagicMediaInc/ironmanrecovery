@@ -42,9 +42,9 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
-					<tr class="shipping">
+					<tr class="shipping_ironman">
 						<th><?php _e( 'Shipping', 'woocommerce' ); ?></th>
-						<td><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
+						<td><b><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></b></td>
 					</tr>
 
 					<?php do_action( 'woocommerce_cart_totals_after_shipping' ); ?>

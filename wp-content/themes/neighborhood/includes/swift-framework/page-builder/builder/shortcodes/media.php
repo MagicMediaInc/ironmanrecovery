@@ -91,7 +91,7 @@ class SwiftPageBuilderShortcode_spb_single_image extends SwiftPageBuilderShortco
         } else if ($lightbox == "yes") {
         $output .= "\n\t\t\t".'<a class="view" href="'.$img_url[0].'" rel="image-gallery">';
         $output .= '<div class="overlay"><div class="thumb-info">';
-        $output .= '<i class="fa-search"></i>';
+        $output .= '<i class="icon-search"></i>';
         $output .= '</div></div>';
         $output .= $img['thumbnail'];
         $output .= '</a>';

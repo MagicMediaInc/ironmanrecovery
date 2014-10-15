@@ -146,7 +146,7 @@
 						<?php } ?>
 						</div>
 						
-						<?php } else if ($footer_config == "footer-8") { ?>
+						<?php } else { ?>
 						
 						<div class="span3">
 						<?php if ( function_exists('dynamic_sidebar') ) { ?>
@@ -164,16 +164,7 @@
 						<?php } ?>
 						</div>
 						
-						<?php } else { ?>
-												
-						<div class="span12">
-						<?php if ( function_exists('dynamic_sidebar') ) { ?>
-							<?php dynamic_sidebar('Footer Column 1'); ?>
 						<?php } ?>
-						</div>
-						
-						<?php } ?>
-						
 					</div>
 				</div>	
 			
@@ -192,8 +183,34 @@
 			<!--// OPEN #copyright //-->
 			<footer id="copyright" class="<?php echo $copyright_class; ?>">
 				<div class="container">
-					<p class="twelve columns"><?php echo do_shortcode(stripslashes($copyright_text)); ?><?php echo $swiftideas_backlink; ?></p>
-					<div class="beam-me-up three columns offset-by-one"><a href="#"><?php echo do_shortcode(stripslashes($go_top_text)); ?><i class="fa-arrow-up"></i></a></div>
+					<p class="twelve columns"><?php //echo do_shortcode(stripslashes($copyright_text)); ?>
+					<?php
+						$language_myqtrans = qtrans_getLanguage();
+						if ($language_myqtrans == "es"){
+					?>
+						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com/aviso-legal/">Aviso legal</a> y <a href="http://ironmanrecovery.com/politica-de-privacidad/">Política de privacidad</a>.</p>
+					<?php
+						}
+					?>
+					<?php
+						$language_myqtrans = qtrans_getLanguage();
+						if ($language_myqtrans == "fr"){
+					?>
+						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com/aviso-legal/?lang=fr">Mentions légales</a> et <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=fr">Politique de confidentialité</a>.</p>
+					<?php
+						}
+					?>
+					<?php
+						$language_myqtrans = qtrans_getLanguage();
+						if ($language_myqtrans == "pt"){
+					?>
+						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com/aviso-legal/?lang=pt">Aviso legal</a> e <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=pt">Política de privacidade</a>.</p>
+					<?php
+						}
+					?>
+						
+					<?php echo $swiftideas_backlink; ?></p>
+					<div class="beam-me-up three columns offset-by-one"><a href="#"><?php echo do_shortcode(stripslashes($go_top_text)); ?><i class="icon-arrow-up"></i></a></div>
 				</div>
 			<!--// CLOSE #copyright //-->
 			</footer>
@@ -205,7 +222,7 @@
 		
 		<?php
 			// INCLUDED FUNCTIONALITY SETUP
-			global $post, $has_portfolio, $has_blog, $has_products, $include_maps, $include_isotope, $include_carousel, $include_parallax, $has_progress_bar, $has_chart, $has_team, $sf_has_imagebanner;
+			global $post, $has_portfolio, $has_blog, $has_products, $include_maps, $include_isotope, $include_carousel, $include_parallax, $has_progress_bar, $has_chart, $has_team;
 				
 			$sf_inc_class = "";
 			
@@ -245,9 +262,6 @@
 			}
 			if ($has_team) {
 				$sf_inc_class .= "has-team ";
-			}
-			if ($sf_has_imagebanner) {
-				$sf_inc_class .= "has-imagebanner ";
 			}
 			
 			$options = get_option('sf_neighborhood_options');

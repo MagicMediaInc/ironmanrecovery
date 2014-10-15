@@ -27,42 +27,38 @@ $options = get_option('sf_neighborhood_options');
 	<p>
 	<?php
 		$size = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
-		echo $product->get_categories( ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', $size, 'swiftframework' ) . ' ', '.</span>' );
+		echo $product->get_categories( ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', $size, 'woocommerce' ) . ' ', '.</span>' );
 	?>
 	</p>
 	<p>
 	<?php
 		$size = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
-		echo $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $size, 'swiftframework' ) . ' ', '.</span>' );
+		echo $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $size, 'woocommerce' ) . ' ', '.</span>' );
 	?>
 	</p>
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 	
 	<div id="email-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="email-form-modal" aria-hidden="true">
-		<div class="modal-dialog">
-		    <div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa-times"></i></button>
-					<h3 id="email-form-modal"><?php _e("Contact Us", "swiftframework"); ?></h3>
-				</div>
-				<div class="modal-body">
-					<?php echo do_shortcode($options['email_modal']); ?>
-				</div>
-			</div>
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="email-form-modal"><?php _e("Contact Us", "swiftframework"); ?></h3>
+		</div>
+		<div class="modal-body">
+			
+			<?php echo do_shortcode($options['email_modal']); ?>
+			
 		</div>
 	</div>
 	
 	<div id="feedback-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="feedback-form-modal" aria-hidden="true">
-		<div class="modal-dialog">
-		    <div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa-times"></i></button>
-					<h3 id="feedback-form-modal"><?php _e("Leave Feedback", "swiftframework"); ?></h3>
-				</div>
-				<div class="modal-body">
-					<?php echo do_shortcode($options['feedback_modal']); ?>
-				</div>
-			</div>
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="feedback-form-modal"><?php _e("Leave Feedback", "swiftframework"); ?></h3>
+		</div>
+		<div class="modal-body">
+			
+			<?php echo do_shortcode($options['feedback_modal']); ?>
+			
 		</div>
 	</div>
 

@@ -75,7 +75,7 @@ class SwiftPageBuilderShortcode_testimonial extends SwiftPageBuilderShortcode {
         	}
         
 			if ($testimonials_page && isset($testimonials_page_title)) {
-				$items .= '<a href="'.get_permalink($testimonials_page_id).'" class="read-more">'.__("More", "swiftframework").'<i class="fa-angle-right"></i></a>';
+				$items .= '<a href="'.get_permalink($testimonials_page_id).'" class="read-more">'.__("More", "swiftframework").'<i class="icon-angle-right"></i></a>';
 			}
 		}
         

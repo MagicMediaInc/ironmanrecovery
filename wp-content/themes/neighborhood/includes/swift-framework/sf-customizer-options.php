@@ -210,13 +210,6 @@
 			'priority'       => 2,
 		) ) );
 		
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'topbar_link_color', array(
-			'label' => __( 'Top Bar Link Color', 'swiftframework' ),
-			'section' => 'header_styling',
-			'settings' => 'topbar_link_color',
-			'priority' => 3,
-		) ) );
-
 		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'topbar_link_hover_color', array(
 			'label'   => __( 'Top Bar Link Hover Color', 'swiftframework' ),
 			'section' => 'header_styling',

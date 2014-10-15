@@ -6,11 +6,9 @@
  * @version 0.0.1
  */
 
-define( 'YITH_FUNCTIONS', true);
-
-/* === Include Common Framework File === */
-require_once( 'google_fonts.php' );
-require_once( 'yith-panel.php' );
+if( !defined('YITH_FUNCTIONS')) {
+    define( 'YITH_FUNCTIONS', true);
+}
 
 if ( ! function_exists( 'yit_is_woocommerce_active' ) ) {
     /**

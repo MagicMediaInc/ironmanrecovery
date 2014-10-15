@@ -4,12 +4,12 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.1.0
+ * @version     1.6.4
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $woocommerce, $product, $sf_catalog_mode;
+global $woocommerce, $product, $catalog_mode;
 
 // Put grouped products into an array
 $grouped_products = array();
@@ -70,7 +70,7 @@ foreach ( $product->get_children() as $child_id ) {
 		</tbody>
 	</table>
 	
-	<?php if (!$sf_catalog_mode) { ?>
+	<?php if (!$catalog_mode) { ?>
 
 		<?php if ( $quantites_required ) : ?>
 	

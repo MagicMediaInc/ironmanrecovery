@@ -79,9 +79,9 @@
 	        if ($button_style == "arrow") {
 	        
 		        if ($position == "cta_align_left") {
-		        	$button = '<a class="impact-text-arrow arrow-left" href="'.$href.'" target="'.$target.'"><i class="fa-angle-left"></i></a>';
+		        	$button = '<a class="impact-text-arrow arrow-left" href="'.$href.'" target="'.$target.'"><i class="icon-angle-left"></i></a>';
 		        } else { 
-		        	$button = '<a class="impact-text-arrow arrow-right" href="'.$href.'" target="'.$target.'"><i class="fa-angle-right"></i></a>';
+		        	$button = '<a class="impact-text-arrow arrow-right" href="'.$href.'" target="'.$target.'"><i class="icon-angle-right"></i></a>';
 		        }
 	        
 	        }

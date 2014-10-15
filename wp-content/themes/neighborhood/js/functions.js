@@ -60,40 +60,41 @@ Custom jQuery functions.
 			var deviceAgent = navigator.userAgent.toLowerCase(),
 				agentID = deviceAgent.match(/(iphone|ipod|ipad|android|iemobile)/);
 			
-			jQuery('.search-options .ss-dropdown').on('click', function(e) {
-				e.preventDefault();
-				
-				var option = jQuery(this),
-					dropdown = option.find( 'ul' );
-								
+			jQuery('.search-options .ss-dropdown').each(function(e, element){
+				var option = jQuery(element);
+				var dropdown = jQuery( this ).find( 'ul' );
+
 				if (agentID) {
-					if (dropdown.hasClass('show-dropdown')) {
-						dropdown.removeClass('show-dropdown');
-					} else {
-						dropdown.addClass('show-dropdown');							
-					}
+					option.on( 'click', function() {
+						if (option.is(':visible')) {
+							dropdown.removeClass('show-dropdown');
+						} else {
+							dropdown.addClass('show-dropdown');							
+						}
+					});
 				} else {
-					if (dropdown.hasClass('show-dropdown')) {
+					option.on( 'focus', function() {
 						dropdown.css('top', 30);
+						dropdown.addClass('show-dropdown');
+						}).on( 'blur', function() {
+						dropdown.css('top',0);
 						dropdown.removeClass('show-dropdown');
-					} else {
-						dropdown.css('top', -10);
-						dropdown.addClass('show-dropdown');							
-					}
+					});
 				}
 			});
-						
+			
 			jQuery('.ss-option').on('click', function(e) {
 				e.preventDefault();
 				
 				var selectedOption = jQuery(this).attr('data-attr_value');
 				var parentOption = jQuery(this).parent().parent().parent();
-								
+				
 				parentOption.find('li').removeClass('selected');
 				jQuery(this).parent().addClass('selected');
 				
 				parentOption.attr('data-attr_value', selectedOption);
 				parentOption.find('span').text(jQuery(this).text());
+				parentOption.blur();
 			});
 			
 			jQuery('.swift-search-link').on('click', function(e) {
@@ -146,11 +147,7 @@ Custom jQuery functions.
 				var attrValue = jQuery(this).attr('data-attr_value');
 				if (attrValue !== "") {
 					if (attr === "product_cat") {
-						if (queryString == "") {
-							queryString += "?product_cat=" + attrValue;
-						} else {
-							queryString += "&product_cat=" + attrValue;
-						}
+						queryString += "?product_cat=" + attrValue;
 					} else {
 						if (queryString === "") {
 						queryString += "?filter_" + attr + "=" + attrValue;				
@@ -191,7 +188,7 @@ Custom jQuery functions.
 			
 			if (jQuery('body').hasClass('header-overlay')) {
 				header.headerOverlaySet();
-				$window.smartresize(function(){  
+				jQuery(window).smartresize(function(){  
 					header.headerOverlaySet();
 				});
 			}
@@ -278,7 +275,7 @@ Custom jQuery functions.
 							
 		},
 		miniHeaderInit: function() {
-			miniHeader.find('a[title="home"]').html('<i class="fa-home"></i>');
+			miniHeader.find('a[title="home"]').html('<i class="icon-home"></i>');
 		},
 		miniHeaderShow: function() {
 			jQuery('body').addClass('has-mini-header');
@@ -318,9 +315,6 @@ Custom jQuery functions.
 	
 	var nav = {
 		init: function() {
-			
-			var lastAjaxSearchValue = "",
-				searchTimer = false;
 		
 			// Add parent class to items with sub-menus
 			jQuery("ul.sub-menu").parent().addClass('parent');
@@ -344,7 +338,7 @@ Custom jQuery functions.
 			var menuTopReset = 80;
 			
 			// Enable hover dropdowns for window size above tablet width
-			jQuery("nav").find(".menu li.parent").not(".no-hover").hoverIntent({
+			jQuery("nav").find(".menu li.parent").hoverIntent({
 				over: function() {
 					if (jQuery('#container').width() > 767 || jQuery('body').hasClass('responsive-fixed')) {
 						
@@ -418,7 +412,7 @@ Custom jQuery functions.
 				jQuery('#main-navigation').toggle();
 			});
 			
-			$window.smartresize(function(){  
+			jQuery(window).smartresize(function(){  
 				if (jQuery('#container').width() > 767 || jQuery('body').hasClass('responsive-fixed')) {
 					var menus = jQuery('nav').find('ul.menu');
 					menus.each(function() {
@@ -433,43 +427,6 @@ Custom jQuery functions.
 				jQuery('li.aux-languages > a').text(currentLanguage);
 			}
 			
-			
-			// AJAX SEARCH
-			jQuery('li.menu-search a').on('click', function(e) {
-				e.preventDefault();
-				
-				var subSearchMenu = jQuery(this).parent().find('.sub-menu'),
-					menuContainer = jQuery(this).closest('nav'),
-					menuTop = 44,
-					menuTopReset = 64;
-				
-				if (menuContainer.hasClass("mini-menu") || menuContainer.parent().hasClass("mini-menu")) {
-					menuTop = 40;
-					menuTopReset = 58;
-				}
-				
-				if (!subSearchMenu.hasClass('show-dropdown')) {
-					subSearchMenu.addClass('show-dropdown').css('top', menuTop);
-					subSearchMenu.css('z-index', parseInt(subSearchMenu.css('z-index')) + 1);
-				} else {
-					if (jQuery('#container').width() > 767 || jQuery('body').hasClass('responsive-fixed')) {
-						subSearchMenu.removeClass('show-dropdown').css('top', menuTopReset);
-					}
-				}
-				
-			});
-			
-			jQuery('.ajax-search-form input[name=s]').on('keyup', function(e) {
-				var searchvalue = e.currentTarget.value;
-
-				clearTimeout(searchTimer);								
-	            if (lastAjaxSearchValue != jQuery.trim(searchvalue) && searchvalue.length >= 3) {
-	                searchTimer = setTimeout( function() {
-	                	nav.ajaxSearch(e);
-	                }, 400);
-	            }
-			});
-			
 		},
 		hideNav: function(subnav) {
 			setTimeout(function() {
@@ -477,32 +434,6 @@ Custom jQuery functions.
 					subnav.css("display", "none");
 				}
 			}, 300);
-		},
-		ajaxSearch: function(e) {			
-			var searchInput = jQuery(e.currentTarget),
-				searchValues = searchInput.parents('form').serialize() + '&action=sf_ajaxsearch',
-				results = jQuery('.ajax-search-results'),
-				loadingIndicator = jQuery('.ajax-search-wrap .ajax-loading');
-
-			jQuery.ajax({
-				url: ajaxurl,
-				type: "POST",
-				data: searchValues,
-				beforeSend: function() {
-					loadingIndicator.fadeIn(50);
-				},
-				success: function(response) {
-				    if (response == 0) {
-				    	response = "";
-			        } else {
-			        	results.html(response);
-					}
-				},
-				complete: function() {
-				    loadingIndicator.fadeOut(200);
-				    results.slideDown(400);
-				}
-			});
 		}
 	};
 	
@@ -519,7 +450,6 @@ Custom jQuery functions.
 				button.addClass("product-added");
 				button.text(added_text);
 			});
-			
 			jQuery('.show-products-link').on('click', function(e) {
 				e.preventDefault();
 				var linkHref = jQuery(this).attr('href').replace('?', '');
@@ -533,7 +463,15 @@ Custom jQuery functions.
 					window.location = document.location + '?' + linkHref;
 				}
 			});
-						
+			
+			jQuery('.woocommerce-ordering select').customSelect({customClass:'woo-select'});
+			jQuery('.variations_form').find('select').each( function() {
+				jQuery(this).customSelect({customClass:'woo-select'});
+			});
+			jQuery('#calc_shipping_country').customSelect({customClass:'woo-select'});
+			jQuery('#billing_country').customSelect({customClass:'woo-select'});
+			jQuery('#shipping_country').customSelect({customClass:'woo-select'});
+			
 			jQuery('ul.products li').hover(function() {
 				var imageOverlay = jQuery(this).find('.image-overlay');
 				imageOverlay.animate({
@@ -549,8 +487,8 @@ Custom jQuery functions.
 			if (jQuery.fn.imagesLoaded) {
 				woocommerce.productSetup();
 				
-				$window.smartresize(function(){  
-					woocommerce.productSetupResize();
+				jQuery(window).smartresize(function(){  
+					woocommerce.productSetup();
 				});
 			}
 			
@@ -560,33 +498,36 @@ Custom jQuery functions.
 	            }
 	        });
 	        
+	        jQuery('.variations select').change( function() {
+	        	if (jQuery('#sf-included').hasClass('has-productzoom')) {
+	        		jQuery('.zoomContainer').remove();
+	        		setTimeout(function() {
+	        			jQuery('.product-slider-image').each(function() {
+	        				jQuery(this).data('zoom-image', jQuery(this).parent().find('a.zoom').attr('href'));
+	        			});
+	        			jQuery('#product-img-slider li:first').find('.product-slider-image').elevateZoom({
+	        			    zoomType: "inner",
+	        				cursor: "crosshair",
+	        				responsive: true,
+	        				zoomWindowFadeIn: 500,
+	        				zoomWindowFadeOut: 750
+	        			});
+	        		}, 500)
+	        	}
+	        });
+	        
 		},
 		productSetup: function() {
 			jQuery('ul.products').imagesLoaded(function() {
-				var products = jQuery('ul.products');
-				setTimeout(function() {
-					var product = products.find('li').first();
-					var productImageHeight = product.find('.product-image > img').height();
-					if (jQuery('#container').width() <= 1024 && product.find('figure > figcaption').is(":visible")) {
+				jQuery('ul.products li').each(function() {
+					var productImageHeight = jQuery(this).find('.product-image > img').height();
+					if (jQuery('#container').width() <= 1024) {
 						productImageHeight = productImageHeight + 20;
 					}
-					products.find('li').each(function() {
-						jQuery(this).find('figure').css('padding-bottom', productImageHeight  + 'px');
-					});
-					woocommerce.resizeCarousel();
-				}, 300);
+					jQuery(this).find('figure').css('padding-bottom', productImageHeight  + 'px');
+				});
 			});
-		},
-		productSetupResize: function() {
-			var products = jQuery('ul.products');
-			var productImageHeight = products.find('li').first().find('.product-image > img').height();
-			console.log(productImageHeight);
-			if (jQuery('#container').width() <= 1024 && jQuery(this).find('figure > figcaption').is(":visible")) {
-				productImageHeight = productImageHeight + 20;
-			}
-			products.find('li').each(function() {
-				jQuery(this).find('figure').css('padding-bottom', productImageHeight  + 'px');
-			});
+			
 		},
 		productCarousel: function() {
 			
@@ -600,13 +541,7 @@ Custom jQuery functions.
 				var carouselPrev = jQuery(this).parent().parent().find('.prev');
 				var carouselNext = jQuery(this).parent().parent().find('.next');
 				var carouselColumns = parseInt(jQuery(this).parent().parent().attr("data-columns"), 10);
-			
-				if (isMobileAlt & jQuery(window).width() <= 480) {
-					carouselColumns = 2;
-				} else if (isMobileAlt & jQuery(window).width() <= 320) {
-					carouselColumsn = 1;
-				}
-				
+	
 				jQuery(this).imagesLoaded(function () {
 					jQuery(this).carouFredSel({
 						items				: carouselColumns,
@@ -633,7 +568,7 @@ Custom jQuery functions.
 						},
 						onCreate : function() {
 							woocommerce.resizeCarousel();
-							$window.smartresize(function() {
+							jQuery(window).smartresize(function() {
 								woocommerce.resizeCarousel();
 							});
 						}	
@@ -664,39 +599,6 @@ Custom jQuery functions.
 					}
 				});
 				
-			});
-		},
-		variations: function() {
-			jQuery('.variations select').each( function() {
-				var variationSelect = jQuery(this);
-				variationSelect.live("change", function(){
-					if (jQuery('#sf-included').hasClass('has-productzoom')) {
-						jQuery('.zoomContainer').remove();
-						setTimeout(function() {
-							jQuery('.product-slider-image').each(function() {
-								jQuery(this).data('zoom-image', jQuery(this).parent().find('a.zoom').attr('href'));
-							});
-							jQuery('#product-img-slider li:first').find('.product-slider-image').elevateZoom({
-								zoomType: "inner",
-								cursor: "crosshair",
-								responsive: true,
-								zoomWindowFadeIn: 500,
-								zoomWindowFadeOut: 750
-							});
-							jQuery('#product-img-slider').flexslider(0);
-						}, 500);
-					} else {
-						setTimeout(function() {
-		                    jQuery('#product-img-slider').flexslider(0);
-		                    var flexViewport = jQuery('#product-img-slider').find('.flex-viewport'),
-		                        flexsliderHeight = flexViewport.find('ul.slides').css('height');
-			                flexViewport.animate({
-			                	'height': flexsliderHeight
-			                }, 300);
-			                jQuery('#product-img-slider').flexslider(0);
-		                }, 500);
-					}
-				});
 			});
 		}
 	};
@@ -821,8 +723,34 @@ Custom jQuery functions.
 				pauseOnHover: true,
 				start: function(postsSlider) {
 					jQuery('.swift-slider-loading').fadeOut(200);
-					if (postsSlider.slides) {
-						postsSlider.slides.eq(postsSlider.currentSlide).addClass('flex-active-slide'); 
+					postsSlider.slides.eq(postsSlider.currentSlide).addClass('flex-active-slide'); 
+					if (postsSlider.slides.eq(postsSlider.currentSlide).has('.flex-caption-large')) {
+						var chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.fw-chart');
+						if (jQuery('body').hasClass("browser-ie")) {
+						chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.chart');
+						}
+						chart.each( function() {
+							var countValue = parseInt(jQuery(this).attr('data-count'), 10);
+							jQuery(this).data('easyPieChart').update(80);
+							jQuery(this).find('span').replaceWith("<span>0</span>");
+							jQuery(this).find('span').animateNumber(countValue);
+						});
+					}
+					postsSlider.slides.eq(postsSlider.currentSlide).find('.comment-chart:not(.fw-chart) span').replaceWith("<span>0</span>");
+				},
+				before: function(postsSlider) {
+					if (postsSlider.slides.eq(postsSlider.currentSlide).has('.flex-caption-large')) {
+						var chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.fw-chart');
+						if (jQuery('body').hasClass("browser-ie")) {
+						chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.chart');
+						}
+						chart.each( function() {
+							jQuery(this).data('easyPieChart').update(0);
+							jQuery(this).find('span').replaceWith("<span>0</span>");
+						});
+					}
+					setTimeout( function() {
+						postsSlider.slides.eq(postsSlider.currentSlide).addClass('flex-active-slide');
 						if (postsSlider.slides.eq(postsSlider.currentSlide).has('.flex-caption-large')) {
 							var chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.fw-chart');
 							if (jQuery('body').hasClass("browser-ie")) {
@@ -831,40 +759,10 @@ Custom jQuery functions.
 							chart.each( function() {
 								var countValue = parseInt(jQuery(this).attr('data-count'), 10);
 								jQuery(this).data('easyPieChart').update(80);
-								jQuery(this).find('span').replaceWith("<span>0</span>");
 								jQuery(this).find('span').animateNumber(countValue);
 							});
 						}
-						postsSlider.slides.eq(postsSlider.currentSlide).find('.comment-chart:not(.fw-chart) span').replaceWith("<span>0</span>");
-					}
-				},
-				before: function(postsSlider) {
-					if (postsSlider.slides) {
-						if (postsSlider.slides.eq(postsSlider.currentSlide).has('.flex-caption-large')) {
-							var chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.fw-chart');
-							if (jQuery('body').hasClass("browser-ie")) {
-							chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.chart');
-							}
-							chart.each( function() {
-								jQuery(this).data('easyPieChart').update(0);
-								jQuery(this).find('span').replaceWith("<span>0</span>");
-							});
-						}
-						setTimeout( function() {
-							postsSlider.slides.eq(postsSlider.currentSlide).addClass('flex-active-slide');
-							if (postsSlider.slides.eq(postsSlider.currentSlide).has('.flex-caption-large')) {
-								var chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.fw-chart');
-								if (jQuery('body').hasClass("browser-ie")) {
-								chart = postsSlider.slides.eq(postsSlider.currentSlide).find('.chart');
-								}
-								chart.each( function() {
-									var countValue = parseInt(jQuery(this).attr('data-count'), 10);
-									jQuery(this).data('easyPieChart').update(80);
-									jQuery(this).find('span').animateNumber(countValue);
-								});
-							}
-						}, 1000);
-					}
+					}, 1000);
 				}
 			});
 			jQuery('.content-slider').each(function() {
@@ -891,7 +789,7 @@ Custom jQuery functions.
 						size: 70,
 						barColor: jQuery(this).attr('data-barcolor'),
 						trackColor: 'transparent',
-						scaleColor: false
+						scaleColor: 'transparent'
 					});
 					jQuery(this).find('span').replaceWith("<span>0</span>");
 				});
@@ -955,7 +853,7 @@ Custom jQuery functions.
 			portfolio.setItemHeight();
 			
 			// PORTFOLIO WINDOW RESIZE
-			$window.smartresize(function(){  
+			jQuery(window).smartresize(function(){  
 					portfolio.windowResized();
 			});
 			
@@ -1047,7 +945,7 @@ Custom jQuery functions.
 				blogItems.isotope("reLayout");
 				
 				// BLOG WINDOW RESIZE
-				$window.smartresize(function(){  
+				jQuery(window).smartresize(function(){  
 						blog.windowResized();
 				});
 			} else {
@@ -1168,7 +1066,7 @@ Custom jQuery functions.
 							jQuery(this).fitVids();
 							flexSlider.thumb();
 							carouselWidgets.resizeCarousels();
-							$window.smartresize(function() {
+							jQuery(window).smartresize(function() {
 								carouselWidgets.resizeCarousels();	
 							});
 						}	
@@ -1221,7 +1119,7 @@ Custom jQuery functions.
 						size: jQuery(this).attr('data-size'),
 						barColor: jQuery(this).attr('data-barcolor'),
 						trackColor: jQuery(this).attr('data-trackcolor'),
-						scaleColor: false
+						scaleColor: 'transparent'
 					});
 				});
 			}
@@ -1230,15 +1128,10 @@ Custom jQuery functions.
 			widgets.accordion();
 			widgets.tabs();
 			widgets.toggle();	
-			widgets.introAnimations();
-			
-			if (sfIncluded.hasClass('has-imagebanner')) {
-			widgets.imageBanners();
-			}
 			
 			// RESIZE ASSETS
 			widgets.resizeAssets();
-			$window.smartresize(function() {  
+			jQuery(window).smartresize(function() {  
 				widgets.resizeAssets();
 			});
 			
@@ -1360,60 +1253,6 @@ Custom jQuery functions.
 					jQuery(this).data('easyPieChart').update(animatePercentage);
 				}
 			});
-		},
-		introAnimations: function() {
-			if (!isMobileAlt) {
-				jQuery('.sf-animation').each(function() {
-	
-					var animatedItem = jQuery(this),
-						itemAnimation = animatedItem.data('animation'),
-						itemDelay = animatedItem.data('delay');
-										
-					animatedItem.appear(function() {			
-						if (itemAnimation == 'fade-from-left') {
-							animatedItem.delay(itemDelay).animate({
-								'opacity' : 1,
-								'left' : '0px'
-							}, 600, 'easeOutCubic');
-						} else if (itemAnimation == 'fade-from-right') {
-							animatedItem.delay(itemDelay).animate({
-								'opacity' : 1,
-								'right' : '0px'
-							}, 600, 'easeOutCubic');
-						} else if(itemAnimation == 'fade-from-bottom') {
-							if (animatedItem.hasClass('image-banner-content')) {
-								animatedItem.delay(itemDelay).animate({
-									'opacity' : 1,
-									'bottom' : '50%'
-								}, 1000, 'easeOutCubic');
-							} else {
-								animatedItem.delay(itemDelay).animate({
-									'opacity' : 1,
-									'bottom' : '0px'
-								}, 600, 'easeOutCubic');
-							}
-						} else if (itemAnimation == 'fade-in') {
-							animatedItem.delay(itemDelay).animate({
-								'opacity' : 1
-							}, 600, 'easeOutCubic');
-						} else if (itemAnimation == 'grow') {
-							setTimeout(function(){ 
-								animatedItem.addClass('sf-animate');
-							}, itemDelay);
-						} else {
-							setTimeout(function() {
-								animatedItem.addClass('sf-animate');						
-							}, itemDelay);
-						}
-					}, {accX: 0, accY: -150}, 'easeInCubic');
-				
-				});
-			}
-		},
-		imageBanners: function() {
-			jQuery('.sf-image-banner').each(function() {
-				jQuery(this).find('.image-banner-content').vCenter();
-			});
 		}
 	};
 	
@@ -1501,7 +1340,7 @@ Custom jQuery functions.
 			});
 			
 			map.fullscreenMap();
-			$window.smartresize(function(){
+			jQuery(window).smartresize(function(){
 				map.fullscreenMap();
 			});
 			
@@ -1618,6 +1457,19 @@ Custom jQuery functions.
 				e.preventDefault();
 				jQuery('body,html').animate({scrollTop: 0}, 800);           
 			});
+			jQuery('.animate-advisor').on('click', function(e) {
+				e.preventDefault();
+				jQuery('body,html').animate({scrollTop: 1265}, 800);           
+			});
+			 jQuery('.animate-android').on('click', function(e) {
+                e.preventDefault();
+                jQuery('body,html').animate({scrollTop: 2050}, 800);           
+            });    
+            
+            jQuery('.animate-iphone').on('click', function(e) {
+                e.preventDefault();
+                jQuery('body,html').animate({scrollTop: 2225}, 800);           
+            });   
 		},
 		load:function() {
 			var deviceAgent = navigator.userAgent.toLowerCase(),
@@ -1663,10 +1515,7 @@ Custom jQuery functions.
 	// LOAD + READY FUNCTION
 	/////////////////////////////////////////////
 	
-	var $window = jQuery(window),
-		sfIncluded = jQuery('#sf-included'),
-		deviceAgent = navigator.userAgent.toLowerCase(),
-		isMobileAlt = deviceAgent.match(/(iphone|ipod|ipad|android|iemobile)/);
+	var sfIncluded = jQuery('#sf-included');
 	
 	var onReady = {
 		init: function(){
@@ -1711,7 +1560,6 @@ Custom jQuery functions.
 			map.init();
 			}
 			reloadFunctions.load();
-			woocommerce.variations();
 		}
 	};
 	
@@ -1942,7 +1790,7 @@ Custom jQuery functions.
 	$.easyPieChart.defaultOptions = {
 		barColor: '#ef1e25',
 		trackColor: '#f2f2f2',
-		scaleColor: false,
+		scaleColor: '#dfe0e0',
 		lineCap: 'round',
 		size: 110,
 		lineWidth: 3,
@@ -2064,9 +1912,9 @@ Custom jQuery functions.
 
 
 /*!
- * jquery.customSelect() - v0.4.1
+ * jquery.customSelect() - v0.4.2
  * http://adam.co/lab/jquery/customselect/
- * 2013-05-13
+ * 2013-05-22
  *
  * Copyright 2013 Adam Coulombe
  * @license http://www.opensource.org/licenses/mit-license.html MIT License
@@ -2077,7 +1925,7 @@ Custom jQuery functions.
     'use strict';
 
     $.fn.extend({
-        customSelect: function (options) {
+        customSelect: function (setOptions) {
             // filter out <= IE6
             if (typeof document.body.style.maxHeight === 'undefined') {
                 return this;
@@ -2087,7 +1935,7 @@ Custom jQuery functions.
                     mapClass:    true,
                     mapStyle:    true
             },
-            options = $.extend(defaults, options),
+            options = $.extend(defaults, setOptions),
             prefix = options.customClass,
             changed = function ($select,customSelectSpan) {
                 var currentSelected = $select.find(':selected'),
@@ -2096,10 +1944,8 @@ Custom jQuery functions.
 
                 customSelectSpanInner.html(html);
                 
-                if (currentSelected.attr('disabled')) {
-                	customSelectSpan.addClass(getClass('DisabledOption'));
-                } else {
-                	customSelectSpan.removeClass(getClass('DisabledOption'));
+                if (currentSelected.attr('disabled')) {customSelectSpan.addClass(getClass('DisabledOption'));
+                } else {customSelectSpan.removeClass(getClass('DisabledOption'));
                 }
                 
                 setTimeout(function () {
@@ -2114,7 +1960,8 @@ Custom jQuery functions.
             return this.each(function () {
                 var $select = $(this),
                     customSelectInnerSpan = $('<span />').addClass(getClass('Inner')),
-                    customSelectSpan = $('<span />');
+                    customSelectSpan = $('<span />'),
+                    position = $select.position();
 
                 $select.after(customSelectSpan.append(customSelectInnerSpan));
                 
@@ -2131,16 +1978,16 @@ Custom jQuery functions.
                     .addClass('hasCustomSelect')
                     .on('update', function () {
 						changed($select,customSelectSpan);
-						
+
                         var selectBoxWidth = parseInt($select.outerWidth(), 10) -
                                 (parseInt(customSelectSpan.outerWidth(), 10) -
                                     parseInt(customSelectSpan.width(), 10));
-						
+
 						// Set to inline-block before calculating outerHeight
 						customSelectSpan.css({
                             display: 'inline-block'
                         });
-						
+
                         var selectBoxHeight = customSelectSpan.outerHeight();
 
                         if ($select.attr('disabled')) {
@@ -2160,7 +2007,9 @@ Custom jQuery functions.
                             position:             'absolute',
                             opacity:              0,
                             height:               selectBoxHeight,
-                            fontSize:             customSelectSpan.css('font-size')
+                            fontSize:             customSelectSpan.css('font-size'),
+                            left:                 position.left,
+                            top:                  position.top
                         });
                     })
                     .on('change', function () {
@@ -2172,12 +2021,12 @@ Custom jQuery functions.
                             $select.blur();
                             $select.focus();
                         }else{
-                            if(e.which==13||e.which==27){
+                            if(e.which===13||e.which===27||e.which===9){
                                 changed($select,customSelectSpan);
                             }
                         }
                     })
-                    .on('mousedown', function (e) {
+                    .on('mousedown', function () {
                         customSelectSpan.removeClass(getClass('Changed'));
                     })
                     .on('mouseup', function (e) {
@@ -2190,7 +2039,7 @@ Custom jQuery functions.
                                 customSelectSpan.addClass(getClass('Open'));
                                 e.stopPropagation();
                                 $(document).one('mouseup.'+getClass('Open'), function (e) {
-                                    if( e.target != $select.get(0) && $.inArray(e.target,$select.find('*').get()) < 0 ){
+                                    if( e.target !== $select.get(0) && $.inArray(e.target,$select.find('*').get()) < 0 ){
                                         $select.blur();
                                     }else{
                                         changed($select,customSelectSpan);
@@ -2215,163 +2064,3 @@ Custom jQuery functions.
         }
     });
 })(jQuery);
-
-
-/*
- * jQuery.appear
- * https://github.com/bas2k/jquery.appear/
- * http://code.google.com/p/jquery-appear/
- *
- * Copyright (c) 2009 Michael Hixson
- * Copyright (c) 2012 Alexander Brovikov
- * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
- */
-(function($) {
-    $.fn.appear = function(fn, options) {
-
-        var settings = $.extend({
-
-            //arbitrary data to pass to fn
-            data: undefined,
-
-            //call fn only on the first appear?
-            one: true,
-
-            // X & Y accuracy
-            accX: 0,
-            accY: 0
-
-        }, options);
-
-        return this.each(function() {
-
-            var t = $(this);
-
-            //whether the element is currently visible
-            t.appeared = false;
-
-            if (!fn) {
-
-                //trigger the custom event
-                t.trigger('appear', settings.data);
-                return;
-            }
-
-            var w = $(window);
-
-            //fires the appear event when appropriate
-            var check = function() {
-
-                //is the element hidden?
-                if (!t.is(':visible')) {
-
-                    //it became hidden
-                    t.appeared = false;
-                    return;
-                }
-
-                //is the element inside the visible window?
-                var a = w.scrollLeft();
-                var b = w.scrollTop();
-                var o = t.offset();
-                var x = o.left;
-                var y = o.top;
-
-                var ax = settings.accX;
-                var ay = settings.accY;
-                var th = t.height();
-                var wh = w.height();
-                var tw = t.width();
-                var ww = w.width();
-
-                if (y + th + ay >= b &&
-                    y <= b + wh + ay &&
-                    x + tw + ax >= a &&
-                    x <= a + ww + ax) {
-
-                    //trigger the custom event
-                    if (!t.appeared) t.trigger('appear', settings.data);
-
-                } else {
-
-                    //it scrolled out of view
-                    t.appeared = false;
-                }
-            };
-
-            //create a modified fn with some additional logic
-            var modifiedFn = function() {
-
-                //mark the element as visible
-                t.appeared = true;
-
-                //is this supposed to happen only once?
-                if (settings.one) {
-
-                    //remove the check
-                    w.unbind('scroll', check);
-                    var i = $.inArray(check, $.fn.appear.checks);
-                    if (i >= 0) $.fn.appear.checks.splice(i, 1);
-                }
-
-                //trigger the original fn
-                fn.apply(this, arguments);
-            };
-
-            //bind the modified fn to the element
-            if (settings.one) t.one('appear', settings.data, modifiedFn);
-            else t.bind('appear', settings.data, modifiedFn);
-
-            //check whenever the window scrolls
-            w.scroll(check);
-
-            //check whenever the dom changes
-            $.fn.appear.checks.push(check);
-
-            //check now
-            (check)();
-        });
-    };
-
-    //keep a queue of appearance checks
-    $.extend($.fn.appear, {
-
-        checks: [],
-        timeout: null,
-
-        //process the queue
-        checkAll: function() {
-            var length = $.fn.appear.checks.length;
-            if (length > 0) while (length--) ($.fn.appear.checks[length])();
-        },
-
-        //check the queue asynchronously
-        run: function() {
-            if ($.fn.appear.timeout) clearTimeout($.fn.appear.timeout);
-            $.fn.appear.timeout = setTimeout($.fn.appear.checkAll, 20);
-        }
-    });
-
-    //run checks when these methods are called
-    $.each(['append', 'prepend', 'after', 'before', 'attr',
-        'removeAttr', 'addClass', 'removeClass', 'toggleClass',
-        'remove', 'css', 'show', 'hide'], function(i, n) {
-        var old = $.fn[n];
-        if (old) {
-            $.fn[n] = function() {
-                var r = old.apply(this, arguments);
-                $.fn.appear.run();
-                return r;
-            }
-        }
-    });
-
-})(jQuery);
-
-
-/////////////////////////////////////////////
-// vCenter PLUGIN
-/////////////////////////////////////////////
-
-(function($) {$.fn.vCenter = function() {return this.each(function(){var height = $(this).outerHeight();$(this).css('margin-bottom',-height/2);});};})(jQuery);
-(function($) {$.fn.vCenterTop = function() {return this.each(function(){var height = $(this).outerHeight();$(this).css('margin-top',-height/2);});};})(jQuery);

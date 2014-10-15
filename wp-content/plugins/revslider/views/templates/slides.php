@@ -22,7 +22,9 @@
 					
 		<?php endif?>
 		
-		<?php if($wpmlActive == true):?>
+		<?php if($wpmlActive == true):?>	
+			<?php echo $selectLangsFilter?>
+			<span id="loader_langs" class="loader_round mleft_10" style="display:none"></span>
 			<div id="langs_float_wrapper" class="langs_float_wrapper" style="display:none">
 				<?php echo $langFloatMenu?>
 			</div>
@@ -45,7 +47,7 @@
 		
 	</div>
 	
-	<div id="dialog_copy_move" data-textclose="<?php _e("Close",REVSLIDER_TEXTDOMAIN)?>" data-textupdate="<?php _e("Do It!",REVSLIDER_TEXTDOMAIN)?>" title="<?php _e("Copy / move slide",REVSLIDER_TEXTDOMAIN)?>" style="display:none">
+	<div id="dialog_copy_move" data-textclose="<?php _e("Close")?>" data-textupdate="<?php _e("Do It!")?>" title="<?php _e("Copy / move slide",REVSLIDER_TEXTDOMAIN)?>" style="display:none">
 		
 		<br>
 		
@@ -54,7 +56,7 @@
 		
 		<br><br>
 		
-		<?php _e("Choose Operation",REVSLIDER_TEXTDOMAIN)?> :
+		<?php _e("Choose Operation")?> :
 		 
 		<input type="radio" id="radio_copy" value="copy" name="copy_move_operation" checked />
 		<label for="radio_copy" style="cursor:pointer;"><?php _e("Copy",REVSLIDER_TEXTDOMAIN)?></label>
@@ -67,9 +69,6 @@
 	<?php require self::getPathTemplate("dialog_preview_slide");?>
 	
 	<script type="text/javascript">
-	
-		var g_patternViewSlide = '<?php echo $patternViewSlide?>';
-		
 		jQuery(document).ready(function() {
 			
 			RevSliderAdmin.initSlidesListView("<?php echo $sliderID?>");

@@ -36,40 +36,34 @@
         },
         galleryImagesControls: function() {
             $('.gallery_widget_add_images').live("click", function(e) {
-                	
-            	e.preventDefault();
-            	
-            	var file_frame = "",
-            		parentField = $(this).parent().find('.attach_image'),
-            		attachedImages = $(this).parent().find('.gallery_widget_attached_images_list');
-            	
-            	// If the media frame already exists, reopen it.
-            	if ( file_frame ) {
-            		file_frame.open();
-            		return;
-            	}
-            	
-            	// Create the media frame.
-            	file_frame = wp.media.frames.file_frame = wp.media({
-            		title: jQuery( this ).data( 'uploader_title' ),
-            		button: {
-            			text: jQuery( this ).data( 'uploader_button_text' ),
-            		},
-            		multiple: false  // Set to true to allow multiple files to be selected
-            	});
-            	
-            	// When an image is selected, run a callback.
-            	file_frame.on( 'select', function() {
-            		// We set multiple to false so only get one image from the uploader
-            		attachment = file_frame.state().get('selection').first().toJSON();
-            		
-            		parentField.val(attachment.id);
-            		attachedImages.empty();
-            		attachedImages.append('<li class="added" media_id="'+attachment.id+'"><img src="'+attachment.url+'" alt="" rel="'+attachment.id+'"></li>');
-            	});
-            	
-            	// Finally, open the modal
-            	file_frame.open();
+                $(this).addClass('spb_current_active_media_button');
+                e.preventDefault();
+                var selected_ids = $(this).parent().find('.gallery_widget_attached_images_ids').val();
+                tb_show('Add/remove picture', 'media-upload.php?type=image&post_id=' +  $('#post_ID').val() +'&tab=spb_images&single_image=' + ($(this).attr('use-single')=='true' ? 'true' : 'false') + '&selected_ids=' + encodeURIComponent(selected_ids) + '&TB_iframe=true&height=343&width=800');
+				
+                return false;
+
+                var attached_img_div = $(this).next(),
+                    site_img_div	 = $(this).next().next();
+
+                if ( attached_img_div.css('display') == 'block' ) {
+                    $(this).addClass('button-primary').text('Finish Adding Images');
+                    //
+                    attached_img_div.hide();
+                    site_img_div.show();
+
+                    hideEditFormSaveButton();
+                }
+                else {
+                    $(this).removeClass('button-primary').text($(this).attr('use-single')=='true' ? 'Add Image' : 'Add images');
+                    //
+                    attached_img_div.show();        // $this->addAction('admin_head', 'header');.show();
+                    site_img_div.hide();
+
+                    cloneSelectedImages(site_img_div, attached_img_div);
+
+                    showEditFormSaveButton();
+                }
             });
 
             $('.gallery_widget_img_select li').live("click", function(e) {
@@ -680,7 +674,7 @@ function spb_getContentFromTinyMCE() {
 
 	//if ( tinyMCE.activeEditor ) {
 	if ( isTinyMceActive() ) {
-		var spb_ed = tinyMCE.get('content'); // get editor instance
+		var spb_ed = tinyMCE.activeEditor; // get editor instance
 		content = spb_ed.save();
 	} else {
 		content = jQuery('#content').val();

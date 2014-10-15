@@ -45,8 +45,7 @@ function jobs_register() {
         'public' => true,  
         'show_ui' => true,
         'show_in_menu' => true,
-        'show_in_nav_menus' => false,
-        'menu_icon'=> 'dashicons-hammer',
+        'show_in_nav_menus' => false, 
         'rewrite' => false,
         'supports' => array('title', 'editor'),
         'has_archive' => true,
@@ -56,7 +55,7 @@ function jobs_register() {
     register_post_type( 'jobs' , $args );  
 }  
 
-add_filter("manage_edit-jobs_columns", "jobs_edit_columns");   
+add_filter("manage_edit-team_columns", "jobs_edit_columns");   
   
 function jobs_edit_columns($columns){  
         $columns = array(  

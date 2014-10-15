@@ -90,7 +90,6 @@ if ( ! class_exists( 'RW_Meta_Box' ) )
 			add_filter( 'default_hidden_meta_boxes', array( $this, 'hide' ), 10, 2 );
 
 			// Save post meta
-			add_action( 'pre_post_update', array( $this, 'save_post' ) );
 			add_action( 'save_post', array( $this, 'save_post' ) );
 
 			// Attachment uses other hooks

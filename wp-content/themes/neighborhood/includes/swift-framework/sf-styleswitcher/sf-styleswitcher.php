@@ -22,7 +22,7 @@
 	?>
 		
 		<div class="style-switcher">
-			<h4>Style Switcher<a class="switch-button"><i class="fa-cog"></i></a></h4>
+			<h4>Style Switcher<a class="switch-button"><i class="icon-cog"></i></a></h4>
 			
 			<div class="switch-cont">
 				

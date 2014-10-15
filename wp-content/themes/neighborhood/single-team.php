@@ -21,7 +21,9 @@
 		</div>
 		<?php 
 			// BREADCRUMBS
-			echo sf_breadcrumbs();
+			if (!$remove_breadcrumbs) {
+				echo sf_breadcrumbs();
+			}
 		?>
 	</div>
 </div>
@@ -68,8 +70,8 @@
 		
 		<div class="pagination-wrap portfolio-pagination clearfix">
 			
-			<div class="nav-previous"><?php next_post_link(__('<i class="fa-angle-left"></i> <span class="nav-text">%link</span>', 'swiftframework'), '%title'); ?></div>
-			<div class="nav-next"><?php previous_post_link(__('<span class="nav-text">%link</span><i class="fa-angle-right"></i>', 'swiftframework'), '%title'); ?></div>
+			<div class="nav-previous"><?php next_post_link(__('<i class="icon-angle-left"></i> <span class="nav-text">%link</span>', 'swiftframework'), '%title'); ?></div>
+			<div class="nav-next"><?php previous_post_link(__('<span class="nav-text">%link</span><i class="icon-angle-right"></i>', 'swiftframework'), '%title'); ?></div>
 
 		</div>
 

@@ -121,10 +121,10 @@ class SwiftPageBuilderShortcode_recent_posts extends SwiftPageBuilderShortcode {
     						if (!$alt) {
     						$alt = $image['title'];
     						}
-    					    $items .= "<li><a ".$link_config."><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$alt}' /></a></li>";
+    					    $items .= "<li><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$alt}' /></li>";
     					}
     																	
-    					$items .= '</ul></div>';
+    					$items .= '</ul><div class="open-item"><a '.$link_config.'><i class="icon-plus"></i></a></div></div>';
     					
     				} else {
     				
@@ -133,7 +133,7 @@ class SwiftPageBuilderShortcode_recent_posts extends SwiftPageBuilderShortcode {
     					$items .= '<a '.$link_config.'>';
     					
     					$items .= '<div class="overlay"><div class="thumb-info">';
-    					$items .= '<i class="fa-'.$item_icon.'"></i>';
+    					$items .= '<i class="icon-'.$item_icon.'"></i>';
     					$items .= '</div></div>';
     					    					  					    					
     					if ($image) {
@@ -155,10 +155,10 @@ class SwiftPageBuilderShortcode_recent_posts extends SwiftPageBuilderShortcode {
 					$items .= '<span class="post-date">'.$post_date.'</span>';
 					$items .= '<div class="comments-likes">';
 					if ( comments_open() ) {
-					$items .= '<a href="'.$post_permalink.'#comment-area"><i class="fa-comments"></i><span>'. $post_comments .'</span></a> ';
+					$items .= '<a href="'.$post_permalink.'#comment-area"><i class="icon-comments"></i><span>'. $post_comments .'</span></a> ';
 					}
 					if (function_exists( 'lip_love_it_link' )) {
-					$items .= lip_love_it_link(get_the_ID(), '<i class="fa-heart"></i>', '<i class="fa-heart"></i>', false);
+					$items .= lip_love_it_link(get_the_ID(), '<i class="icon-heart"></i>', '<i class="icon-heart"></i>', false);
 					}
 					$items .= '</div>';				
 					$items .= '</div>';

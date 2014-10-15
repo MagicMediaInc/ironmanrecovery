@@ -55,7 +55,6 @@
 								<option value="shortcode-chart"><?php _e('Chart', 'swiftframework');?></option>
 								<option value="shortcode-columns"><?php _e('Columns', 'swiftframework');?></option>
 								<option value="shortcode-icons"><?php _e('Icons', 'swiftframework');?></option>
-								<option value="shortcode-imagebanner"><?php _e('Image Banner', 'swiftframework'); ?></option>
 								<option value="shortcode-labelledpricingtables"><?php _e('Labelled Pricing Table', 'swiftframework');?></option>
 								<option value="shortcode-lists"><?php _e('Lists', 'swiftframework');?></option>
 								<option value="shortcode-modal"><?php _e('Modal', 'swiftframework');?></option>
@@ -188,63 +187,6 @@
 								</select>
 							</div>
 						</div>
-
-						
-						<!--//////////////////////////////
-						////	IMAGE BANNER
-						//////////////////////////////-->
-	
-						<div id="shortcode-imagebanner" class="shortcode-option">
-							<h5><?php _e('Image Banner', 'swift-framework-admin'); ?></h5>
-							<div class="option">
-								<label for="imagebanner-image"><?php _e('Background Image', 'swift-framework-admin'); ?></label>
-								<input id="imagebanner-image" name="imagebanner-image" type="text" value=""/>
-								<p class="info">Provide the URL here for the background image that you would like to use.</p>
-							</div>
-							<div class="option">
-								<label for="imagebanner-animation"><?php _e('Content Animation', 'swift-framework-admin'); ?></label>
-								<select id="imagebanner-animation" name="imagebanner-animation">
-									<option value="none"><?php _e('None', 'swift-framework-admin'); ?></option>
-									<option value="fade-in"><?php _e('Fade in', 'swift-framework-admin'); ?></option>
-									<option value="fade-from-left"><?php _e('Fade from left', 'swift-framework-admin'); ?></option>
-									<option value="fade-from-right"><?php _e('Fade from right', 'swift-framework-admin'); ?></option>
-									<option value="fade-from-bottom"><?php _e('Fade from bottom', 'swift-framework-admin'); ?></option>
-									<option value="move-up"><?php _e('Move up', 'swift-framework-admin'); ?></option>
-									<option value="grow"><?php _e('Grow', 'swift-framework-admin'); ?></option>
-									<option value="helix"><?php _e('Helix', 'swift-framework-admin'); ?></option>	
-									<option value="flip"><?php _e('Flip', 'swift-framework-admin'); ?></option>	
-									<option value="pop-up"><?php _e('Pop up', 'swift-framework-admin'); ?></option>	
-									<option value="spin"><?php _e('Spin', 'swift-framework-admin'); ?></option>	
-									<option value="flip-x"><?php _e('Flip X', 'swift-framework-admin'); ?></option>	
-									<option value="flip-y"><?php _e('Flip Y', 'swift-framework-admin'); ?></option>	
-								</select>
-								<p class="info">Choose the intro animation for the content.</p>
-							</div>
-							<div class="option">
-								<label for="imagebanner-contentpos"><?php _e('Content Position', 'swift-framework-admin'); ?></label>
-								<select id="imagebanner-contentpos" name="imagebanner-contentpos">
-									<option value="left"><?php _e('Left', 'swift-framework-admin'); ?></option>
-									<option value="center"><?php _e('Center', 'swift-framework-admin'); ?></option>
-									<option value="right"><?php _e('Right', 'swift-framework-admin'); ?></option>
-								</select>
-								<p class="info">Choose the alignment for the content.</p>
-							</div>
-							<div class="option">
-								<label for="imagebanner-textalign"><?php _e('Text Align', 'swift-framework-admin'); ?></label>
-								<select id="imagebanner-textalign" name="imagebanner-textalign">
-									<option value="left"><?php _e('Left', 'swift-framework-admin'); ?></option>
-									<option value="center"><?php _e('Center', 'swift-framework-admin'); ?></option>
-									<option value="right"><?php _e('Right', 'swift-framework-admin'); ?></option>
-								</select>
-								<p class="info">Choose the alignment for the text within the content.</p>
-							</div>
-							<div class="option">
-								<label for="imagebanner-extraclass"><?php _e('Extra class', 'swift-framework-admin'); ?></label>
-								<input id="imagebanner-extraclass" name="imagebanner-extraclass" type="text" value=""/>
-								<p class="info">Provide any extra classes you'd like to add here (optional).</p>
-							</div>
-						</div>
-						
 
 						<!--//////////////////////////////
 						////	SOCIAL
@@ -476,7 +418,7 @@
 							<div class="option">
 								<label for="chart-content"><?php _e('Content', 'swiftframework');?></label>
 								<input id="chart-content" name="chart-content" type="text" value=''/>
-								<p class="info">Enter the content for the center of the chart, i.e. a number or percentage. NOTE: if you'd like to include a font awesome icon here, just enter the icon name, i.e. "fa-magic".</p>
+								<p class="info">Enter the content for the center of the chart, i.e. a number or percentage. NOTE: if you'd like to include a font awesome icon here, just enter the icon name, i.e. "icon-magic".</p>
 							</div>
 							<div class="option">
 								<label for="chart-size"><?php _e('Chart Size', 'swiftframework');?></label>

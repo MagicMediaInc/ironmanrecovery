@@ -4,7 +4,7 @@
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Wishlist
- * @version 1.1.5
+ * @version 1.0.6
  */
 
 global $wpdb, $yith_wcwl, $woocommerce;
@@ -54,12 +54,7 @@ else
 { $wishlist = isset( $_SESSION['yith_wcwl_products'] ) ? $_SESSION['yith_wcwl_products'] : array(); }
 
 // Start wishlist page printing
-if( function_exists('wc_print_notices') ) {
-    wc_print_notices();
-}else{
-    $woocommerce->show_messages();
-}
- ?>
+$woocommerce->show_messages() ?>
 <div id="yith-wcwl-messages"></div>
 
 <form id="yith-wcwl-form" action="<?php echo esc_url( $yith_wcwl->get_wishlist_url() ) ?>" method="post">
@@ -67,8 +62,6 @@ if( function_exists('wc_print_notices') ) {
     do_action( 'yith_wcwl_before_wishlist_title' );
 
     $wishlist_title = get_option( 'yith_wcwl_wishlist_title' );
-    $wishlist_title = function_exists( 'icl_translate' ) ? icl_translate( 'Plugins', 'plugin_yit_wishlist_title_text', $wishlist_title ) : $wishlist_title;
-
     if( !empty( $wishlist_title ) )
     { echo apply_filters( 'yith_wcwl_wishlist_title', '<h2>' . $wishlist_title . '</h2>' ); }
 
@@ -103,8 +96,7 @@ if( function_exists('wc_print_notices') ) {
 
                 if( $product_obj !== false && $product_obj->exists() ) : ?>
                     <tr id="yith-wcwl-row-<?php echo $values['ID'] ?>">
-                        <?php $remove_wishlist = esc_attr( "remove_item_from_wishlist( '" . esc_url( $yith_wcwl->get_remove_url( $values['ID'] ) ) . "', 'yith-wcwl-row-" . $values['ID'] ."');" ); ?>
-                        <td class="product-remove"><div><a href="javascript:void(0)" onclick="<?php echo $remove_wishlist ?>" class="remove" title="<?php _e( 'Remove this product', 'yit' ) ?>">&times;</a></td>
+                        <td class="product-remove"><div><a href="javascript:void(0)" onclick="remove_item_from_wishlist( '<?php echo esc_url( $yith_wcwl->get_remove_url( $values['ID'] ) )?>', 'yith-wcwl-row-<?php echo $values['ID'] ?>');" class="remove" title="<?php _e( 'Remove this product', 'yit' ) ?>">&times;</a></td>
                         <td class="product-thumbnail">
                             <a href="<?php echo esc_url( get_permalink( apply_filters( 'woocommerce_in_cart_product', $values['prod_id'] ) ) ) ?>">
                                 <?php echo $product_obj->get_image() ?>
@@ -117,12 +109,10 @@ if( function_exists('wc_print_notices') ) {
                             <td class="product-price">
                                 <?php
                                 if( $product_obj->price != '0' ) {
-                                    $wc_price = function_exists('wc_price') ? 'wc_price' : 'woocommerce_price';
-
                                     if( get_option( 'woocommerce_tax_display_cart' ) == 'excl' )
-                                        { echo apply_filters( 'woocommerce_cart_item_price_html', $wc_price( $product_obj->get_price_excluding_tax() ), $values, '' ); }
+                                        { echo apply_filters( 'woocommerce_cart_item_price_html', woocommerce_price( $product_obj->get_price_excluding_tax() ), $values, '' ); }
                                     else
-                                        { echo apply_filters( 'woocommerce_cart_item_price_html', $wc_price( $product_obj->get_price() ), $values, '' ); }
+                                        { echo apply_filters( 'woocommerce_cart_item_price_html', woocommerce_price( $product_obj->get_price() ), $values, '' ); }
                                 } else {
                                     echo apply_filters( 'yith_free_text', __( 'Free!', 'yit' ) );
                                 }
@@ -147,8 +137,8 @@ if( function_exists('wc_print_notices') ) {
                         <?php endif ?>
                         <?php if( get_option( 'yith_wcwl_add_to_cart_show' ) == 'yes' ) : ?>
                             <td class="product-add-to-cart">
-                                <?php if(isset($stock_status) && $stock_status != 'Out'): ?>
-                                    <?php echo YITH_WCWL_UI::add_to_cart_button( $values['prod_id'], isset($availability['class']) ); ?>
+                                <?php if($stock_status!='Out'): ?>
+                                    <?php echo YITH_WCWL_UI::add_to_cart_button( $values['prod_id'], $availability['class'] ) ?>
                                 <?php endif ?>
                             </td>
                         <?php endif ?>

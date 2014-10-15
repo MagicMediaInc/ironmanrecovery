@@ -1,14 +1,4 @@
 <?php	
-	/**
-	 * The Template for displaying all single products.
-	 *
-	 * Override this template by copying it to yourtheme/woocommerce/single-product.php
-	 *
-	 * @author 		WooThemes
-	 * @package 	WooCommerce/Templates
-	 * @version     1.6.4
-	 */
-	 
 	$options = get_option('sf_neighborhood_options');
 	$default_show_page_heading = $options['default_show_page_heading'];
 	$default_page_heading_bg_alt = $options['woo_page_heading_bg_alt'];

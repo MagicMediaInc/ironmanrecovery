@@ -17,7 +17,6 @@
 		const RELATED_NONE = "";
 		const TYPE_TEXT = "text";
 		const TYPE_COLOR = "color";
-		const TYPE_DATE = "date";
 		const TYPE_SELECT = "list";
 		const TYPE_CHECKBOX = "checkbox";
 		const TYPE_RADIO = "radio";
@@ -28,16 +27,14 @@
 		const ID_PREFIX = "";
 		const TYPE_CONTROL = "control";
 		const TYPE_BUTTON = "button";
-		const TYPE_MULTIPLE_TEXT = "multitext";
 		const TYPE_IMAGE = "image";
 		const TYPE_CHECKLIST = "checklist";
 		
 		//------------------------------------------------------------
 		//set data types  
 		const DATATYPE_NUMBER = "number";
-		const DATATYPE_NUMBEROREMTY = "number_empty";
 		const DATATYPE_STRING = "string";
-		const DATATYPE_FREE = "free";
+		const DATATYPE_BOOLEAN = "boolean";
 		
 		const CONTROL_TYPE_ENABLE = "enable";
 		const CONTROL_TYPE_DISABLE = "disable";
@@ -144,7 +141,7 @@
 		private function validateParamItems($arrParams){
 			if(!isset($arrParams["items"])) throw new Exception("no select items presented");
 			if(!is_array($arrParams["items"])) throw new Exception("the items parameter should be array");
-			//if(empty($arrParams["items"])) throw new Exception("the items array should not be empty");			
+			if(empty($arrParams["items"])) throw new Exception("the items array should not be empty");			
 		}
 		
 
@@ -168,14 +165,17 @@
 		}
 				
 
-		/**
-		 * 
-		 * modify the values of settings array
-		 */
-		private function modifySettingsValues(){
-			
-		}
-		
+		//-----------------------------------------------------------------------------------------------
+		// get json client object for javascript
+		public function getJsonClientString(){
+			$arrSettingTypes = array();
+			foreach($this->arrSettings as $setting){
+				if(isset($setting["name"]))
+					$arrSettingTypes[$setting["name"]] = $setting["datatype"]; 
+			}
+			$strJson = json_encode($arrSettingTypes);
+			return($strJson);
+		}		
 		
 		/**
 		 * 
@@ -183,40 +183,6 @@
 		 */
 		public function getArrSettings(){
 			return($this->arrSettings);
-		}
-		
-		
-		/**
-		 * 
-		 * get the keys of the settings
-		 */
-		public function getArrSettingNames(){
-			$arrKeys = array();
-			$arrNames = array();
-			foreach($this->arrSettings as $setting){
-				$name = UniteFunctionsRev::getVal($setting, "name");
-				if(!empty($name))
-					$arrNames[] = $name;
-			}
-			
-			return($arrNames);
-		}
-
-		/**
-		 * 
-		 * get the keys of the settings
-		 */
-		public function getArrSettingNamesAndTitles(){
-			$arrKeys = array();
-			$arrNames = array();
-			foreach($this->arrSettings as $setting){
-				$name = UniteFunctionsRev::getVal($setting, "name");
-				$title = UniteFunctionsRev::getVal($setting, "text");
-				if(!empty($name))
-					$arrNames[$name] = $title;
-			}
-			
-			return($arrNames);
 		}
 		
 		
@@ -297,12 +263,6 @@
 		public function addTextBox($name,$defaultValue = "",$text = "",$arrParams = array()){
 			$this->add($name,$defaultValue,$text,self::TYPE_TEXT,$arrParams);
 		}
-		
-		//-----------------------------------------------------------------------------------------------
-		//add multiple text box element
-		public function addMultipleTextBox($name,$defaultValue = "",$text = "",$arrParams = array()){
-			$this->add($name,$defaultValue,$text,self::TYPE_MULTIPLE_TEXT,$arrParams);
-		}
 
 		//-----------------------------------------------------------------------------------------------
 		//add image selector
@@ -314,11 +274,6 @@
 		//add color picker setting
 		public function addColorPicker($name,$defaultValue = "",$text = "",$arrParams = array()){
 			$this->add($name,$defaultValue,$text,self::TYPE_COLOR,$arrParams);
-		}
-		//-----------------------------------------------------------------------------------------------
-		//add date picker setting
-		public function addDatePicker($name,$defaultValue = "",$text = "",$arrParams = array()){
-			$this->add($name,$defaultValue,$text,self::TYPE_DATE,$arrParams);
 		}
 		
 		/**
@@ -418,7 +373,7 @@
 		 * 
 		 * add saporator
 		 */
-		public function addSap($text, $name="", $opened = false, $icon=""){
+		public function addSap($text, $name="", $opened = false){
 			
 			if(empty($text))
 				UniteFunctionsRev::throwError("sap $name must have a text");
@@ -427,7 +382,6 @@
 			$sap = array();
 			$sap["name"] = $name; 
 			$sap["text"] = $text; 
-			$sap["icon"] = $icon;
 			
 			if($opened == true) $sap["opened"] = true;
 			
@@ -511,24 +465,31 @@
 			$setting["type"] = $type;
 			$setting["text"] = $text;
 			$setting["value"] = $defaultValue;
-						
+
+			//set data type:
+			switch($setting["type"]){
+				case self::TYPE_COLOR:
+					$dataType = self::DATATYPE_STRING;
+				break;
+				default:
+					switch(getType($defaultValue)){
+						case "integer":							
+						case "double":
+							$dataType = self::DATATYPE_NUMBER;
+						break;
+						case "boolean":
+							$dataType = self::DATATYPE_BOOLEAN;
+						break;
+						case "string":							
+						default:
+							$dataType = self::DATATYPE_STRING;
+						break;
+					}
+				break;
+			} 			
+			$setting["datatype"] = $dataType;
 			
 			$setting = array_merge($setting,$arrParams);
-			
-			//set datatype
-			if(!isset($setting["datatype"])){
-				$datatype = self::DATATYPE_STRING;
-				switch ($type){
-					case self::TYPE_TEXTAREA:
-						$datatype = self::DATATYPE_FREE;
-					break;
-					default:
-						$datatype = self::DATATYPE_STRING;
-					break;
-				}
-				
-				$setting["datatype"] = $datatype;
-			}
 			
 			//addsection and sap keys
 			$setting = $this->checkAndAddSectionAndSap($setting);
@@ -690,12 +651,11 @@
 				
 				$sapName = (string)UniteFunctionsRev::getVal($attribs, "name");
 				$sapLabel = (string)UniteFunctionsRev::getVal($attribs, "label");
-				$sapIcon = (string)UniteFunctionsRev::getVal($attribs, "icon");				
 				
 				UniteFunctionsRev::validateNotEmpty($sapName,"sapName");
 				UniteFunctionsRev::validateNotEmpty($sapLabel,"sapLabel");
 				
-				$this->addSap($sapLabel,$sapName,false,$sapIcon);
+				$this->addSap($sapLabel,$sapName);
 				
 				//--- add fields
 				$fieldset = (array)$fieldset;				
@@ -750,9 +710,6 @@
 						case self::TYPE_TEXT:
 							$this->addTextBox($fieldName,$fieldDefaultValue,$fieldLabel,$arrParams);
 						break;
-						case self::TYPE_MULTIPLE_TEXT:
-							$this->addMultipleTextBox($fieldName,$fieldDefaultValue,$fieldLabel,$arrParams);
-						break;
 						case self::TYPE_STATIC_TEXT:
 							$this->addStaticText($fieldLabel, $fieldName, $arrParams);
 						break;
@@ -773,10 +730,7 @@
 						break;
 						case self::TYPE_CUSTOM:
 							$this->add($fieldName, $fieldDefaultValue, $fieldLabel, self::TYPE_CUSTOM, $arrParams);
-						break;
-						case self::TYPE_BUTTON:
-							$this->addButton($fieldName, $fieldDefaultValue, $arrParams);
-						break;
+						break;						
 						case self::TYPE_CONTROL:
 							$parent = UniteFunctionsRev::getVal($arrParams, "parent");
 							$child =  UniteFunctionsRev::getVal($arrParams, "child");
@@ -793,7 +747,7 @@
 						break;
 						case "bulk_control_end":
 							$this->endBulkControl();
-						break;		
+						break;			
 						default:
 							UniteFunctionsRev::throwError("wrong type: $fieldType");
 						break;						
@@ -927,76 +881,38 @@
 		
 		/**
 		 * 
-		 * modify some value by it's datatype
-		 */
-		public function modifyValueByDatatype($value,$datatype){
-			if(is_array($value)){
-				foreach($value as $key => $val){
-					$value[$key] = $this->modifyValueByDatatypeFunc($val,$datatype);
-				}
-			}else{
-				$value = $this->modifyValueByDatatypeFunc($value,$datatype);
-			}
-			return($value);
-		}
-		
-		/**
-		 * 
-		 * modify some value by it's datatype
-		 */
-		public function modifyValueByDatatypeFunc($value,$datatype){
-			switch($datatype){
-				case self::DATATYPE_STRING:
-					$value = strip_tags($value, '<link>');
-				break;
-				case self::DATATYPE_NUMBER:
-					$value = floatval($value);	//turn every string to float
-					if(!is_numeric($value))
-						$value = 0;
-				break;
-				case self::DATATYPE_NUMBEROREMTY:
-					$value = trim($value);
-					if($value !== "")
-						$value = floatval($value);	//turn every string to float
-				break;
-			}
-			
-			return $value;
-		}
-		
-		/**
-		 * 
 		 * set values from array of stored settings elsewhere.
 		 */
 		public function setStoredValues($arrValues){
-			
-			foreach($this->arrSettings as $key=>$setting){
-				
+
+			foreach($this->arrSettings as $key=>$setting){				
 				$name = UniteFunctionsRev::getVal($setting, "name");
 				
 				//type consolidation
 				$type = UniteFunctionsRev::getVal($setting, "type");
 				
-				$datatype = UniteFunctionsRev::getVal($setting, "datatype");
-				
-				//skip custom type
 				$customType = UniteFunctionsRev::getVal($setting, "custom_type");
-								
 				if(!empty($customType))
-					continue;
-						
-				if(array_key_exists($name, $arrValues)){
-					$value = $arrValues[$name];
-					$value = $this->modifyValueByDatatype($value, $datatype);					
-					$this->arrSettings[$key]["value"] = $value;
-					$arrValues[$name] = $value;
-				}
+					$type .= ".".$customType;
 				
-			}//end foreach
+				switch($type){
+					case "custom.kenburns_position":
+						$name = $setting["name"];
+						if(array_key_exists($name."_hor", $arrValues)){
+							$value_vert = UniteFunctionsRev::getVal($arrValues, $name."_vert","random");
+							$value_hor = UniteFunctionsRev::getVal($arrValues, $name."_hor","random");						
+							$this->arrSettings[$key]["value"] = "$value_vert,$value_hor";
+						}
+					break;
+					default:
+						if(array_key_exists($name, $arrValues)){
+							$this->arrSettings[$key]["value"] = $arrValues[$name];
+						}
+					break;
+				}
+			}
 			
-			return($arrValues);
 		}
-
 		
 		/**
 		 * get setting values. replace from stored ones if given
@@ -1037,33 +953,6 @@
 			}
 			
 			return($arrSettingsOutput);
-		}
-
-		
-		/**
-		* Update values from post meta
-		 */
-		public function updateValuesFromPostMeta($postID){
-
-			//update setting values array from meta
-			$arrNames = $this->getArrSettingNames();
-			$arrValues = array();
-			$arrMeta = get_post_meta($postID);
-
-			if(!empty($arrMeta) && is_array($arrMeta)){
-				foreach($arrNames as $name){
-					if(array_key_exists($name, $arrMeta) == false)
-						continue;
-					
-					$value = get_post_meta($postID, $name,true);
-					$arrValues[$name] = $value;				
-				}
-			}
-			
-			//dmp($postID);dmp($arrValues);exit();
-			
-			$this->setStoredValues($arrValues);
-			
 		}
 		
 		

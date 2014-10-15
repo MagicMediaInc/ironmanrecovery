@@ -21,8 +21,8 @@ if ( $wp_query->max_num_pages <= 1 )
 			'format' 		=> '',
 			'current' 		=> max( 1, get_query_var('paged') ),
 			'total' 		=> $wp_query->max_num_pages,
-			'prev_text' 	=> '<i class="fa-angle-left"></i>' . __("Prev", "swiftframework"),
-			'next_text' 	=> __("Next", "swiftframework") . '<i class="fa-angle-right"></i>',
+			'prev_text' 	=> '<i class="icon-angle-left"></i>' . __("Prev", "swiftframework"),
+			'next_text' 	=> __("Next", "swiftframework") . '<i class="icon-angle-right"></i>',
 			'type'			=> 'list',
 			'end_size'		=> 3,
 			'mid_size'		=> 3

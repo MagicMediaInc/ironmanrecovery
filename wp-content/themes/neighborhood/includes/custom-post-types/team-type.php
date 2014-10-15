@@ -46,7 +46,6 @@ function team_register() {
         'show_ui' => true,
         'show_in_menu' => true,
         'show_in_nav_menus' => false,
-        'menu_icon'=> 'dashicons-groups',
         'rewrite' => false,
         'supports' => array('title', 'editor', 'thumbnail'),
         'has_archive' => true,

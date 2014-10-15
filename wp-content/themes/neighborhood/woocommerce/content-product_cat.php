@@ -11,7 +11,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $woocommerce_loop, $sidebars;
+global $woocommerce_loop;
 
 // Store loop count we're currently on
 if ( empty( $woocommerce_loop['loop'] ) )
@@ -20,14 +20,6 @@ if ( empty( $woocommerce_loop['loop'] ) )
 // Store column count for displaying the grid
 if ( empty( $woocommerce_loop['columns'] ) )
 	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
-		
-if ($sidebars == "no-sidebars") {
-	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
-} else if ($sidebars == "both-sidebars") {
-	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
-} else {
-	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
-}
 
 // Increase loop count
 $woocommerce_loop['loop']++;
@@ -51,17 +43,15 @@ $woocommerce_loop['loop']++;
 			 */
 			do_action( 'woocommerce_before_subcategory_title', $category );
 		?>
-		
-		<div class="product-cat-info">
-			
-			<h3><?php echo $category->name; ?></h3>
-	
-			<?php if ( $category->count > 0 ) {
-				echo apply_filters( 'woocommerce_subcategory_count_html', ' <span class="count">' . $category->count . ' '. __("items", "swiftframework") . '</span>', $category );
-				}
+
+		<h3>
+			<?php
+				echo $category->name;
+
+				if ( $category->count > 0 )
+					echo apply_filters( 'woocommerce_subcategory_count_html', ' <mark class="count">(' . $category->count . ')</mark>', $category );
 			?>
-			
-		</div>
+		</h3>
 
 		<?php
 			/**

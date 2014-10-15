@@ -5,8 +5,6 @@
 		const ACTION_ADMIN_MENU = "admin_menu";
 		const ACTION_ADMIN_INIT = "admin_init";	
 		const ACTION_ADD_SCRIPTS = "admin_enqueue_scripts";
-		const ACTION_ADD_METABOXES = "add_meta_boxes";
-		const ACTION_SAVE_POST = "save_post";
 		
 		const ROLE_ADMIN = "admin";
 		const ROLE_EDITOR = "editor";
@@ -20,7 +18,6 @@
 		private static $tempVars = array();
 		private static $startupError = "";
 		private static $menuRole = self::ROLE_ADMIN;
-		private static $arrMetaBoxes = "";		//option boxes that will be added to post
 		
 		
 		/**
@@ -38,8 +35,6 @@
 				
 			//add internal hook for adding a menu in arrMenus
 			self::addAction(self::ACTION_ADMIN_MENU, "addAdminMenu");
-			self::addAction(self::ACTION_ADD_METABOXES, "onAddMetaboxes");
-			self::addAction(self::ACTION_SAVE_POST, "onSavePost");
 			
 			//if not inside plugin don't continue
 			if($this->isInsidePlugin() == true){
@@ -50,120 +45,7 @@
 			//a must event for any admin. call onActivate function.
 			$this->addEvent_onActivate();
 			self::addActionAjax("show_image", "onShowImage");
-			
-			
 		}		
-		
-		/**
-		 * 
-		 * add some meta box
-		 * return metabox handle
-		 */
-		public static function addMetaBox($title,$content = null, $customDrawFunction = null,$location="post"){
-			
-			$box = array();
-			$box["title"] = $title;
-			$box["location"] = $location;
-			$box["content"] = $content;
-			$box["draw_function"] = $customDrawFunction;
-			
-			self::$arrMetaBoxes[] = $box;			
-		}
-		
-		
-		/**
-		 * 
-		 * on add metaboxes
-		 */
-		public static function onAddMetaboxes(){
-			
-			foreach(self::$arrMetaBoxes as $index=>$box){
-				
-				$title = $box["title"];
-				$location = $box["location"];
-				
-				$boxID = "mymetabox_".self::$dir_plugin.'_'.$index;
-				$function = array(self::$t, "onAddMetaBoxContent");
-				
-				if(is_array($location)){
-					foreach($location as $loc)
-						add_meta_box($boxID,$title,$function,$loc,'normal','default');
-				}else
-			    	add_meta_box($boxID,$title,$function,$location,'normal','default');
-			}
-		}
-		
-		/**
-		 * 
-		 * on save post meta. Update metaboxes data from post, add it to the post meta 
-		 */
-		public static function onSavePost(){
-			
-			//protection against autosave
-			if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ){
-				$postID = UniteFunctionsRev::getPostVariable("ID");
-	        	return $postID;
-			}
-			
-			$postID = UniteFunctionsRev::getPostVariable("ID");
-			if(empty($postID))
-				return(false);
-				
-				
-			foreach(self::$arrMetaBoxes as $box){
-				$content = UniteFunctionsRev::getVal($box, "content");
-				if(gettype($content) != "object")
-					continue;
-					
-				$arrSettingNames = $content->getArrSettingNames();
-				foreach($arrSettingNames as $name){
-					$value = UniteFunctionsRev::getPostVariable($name);
-					update_post_meta( $postID, $name, $value );
-				}	//end foreach settings
-
-			} //end foreach meta
-			
-		}
-		
-		/**
-		 * 
-		 * on add metabox content
-		 */
-		public static function onAddMetaBoxContent($post,$boxData){
-			
-			$postID = $post->ID;
-			
-			$boxID = UniteFunctionsRev::getVal($boxData, "id");
-			$index = str_replace("mymetabox_".self::$dir_plugin.'_',"",$boxID);
-			
-			$arrMetabox = self::$arrMetaBoxes[$index];
-			
-			$content = UniteFunctionsRev::getVal($arrMetabox, "content");
-			
-			$contentType = getType($content);
-			switch ($contentType){
-				case "string":
-					echo $content;
-				break;
-				default:		//settings object					
-					$output = new UniteSettingsProductSidebarRev();
-					$output->setDefaultInputClass(UniteSettingsProductSidebarRev::INPUT_CLASS_LONG);					
-					$content->updateValuesFromPostMeta($postID);										
-					$output->init($content);
-
-					//draw element
-					$drawFunction = UniteFunctionsRev::getVal($arrMetabox, "draw_function");
-					if(!empty($drawFunction))
-						call_user_func($drawFunction,$output);
-					else
-						$output->draw();
-						
-				break;
-			}
-			
-		}
-		
-		
 		
 		/**
 		 * 
@@ -201,29 +83,24 @@
 		 */
 		public static function addCommonScripts(){
 
-            $prefix = (is_ssl()) ? 'https://' : 'http://';
-                
 			//include jquery ui
 			if(GlobalsRevSlider::$isNewVersion){	//load new jquery ui library
-				$urlJqueryUI = $prefix."ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js";
+				
+				$urlJqueryUI = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js";
 				self::addScriptAbsoluteUrl($urlJqueryUI,"jquery-ui");
-				//self::addStyle("jquery-ui-1.10.3.custom.min","jui-smoothness","css/jui/new");
-				wp_enqueue_style('jui-smoothness', esc_url_raw($prefix.'ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/jquery-ui.css'), array(), null);
+				self::addStyle("jquery-ui-1.9.2.custom.min","jui-smoothness","css/jui/new");
 				
 				if(function_exists("wp_enqueue_media"))
 					wp_enqueue_media();
 				
 			}else{	//load old jquery ui library
 				
-				$urlJqueryUI = $prefix."ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js";
+				$urlJqueryUI = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js";
 				self::addScriptAbsoluteUrl($urlJqueryUI,"jquery-ui");
-				//self::addStyle("jquery-ui-1.8.18.custom","jui-smoothness","css/jui/old");
-				wp_enqueue_style('jui-smoothness', esc_url_raw($prefix.'ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/jquery-ui.css'), array(), null);
+				self::addStyle("jquery-ui-1.8.18.custom","jui-smoothness","css/jui/old");
 				
 			}
-			
-			
-			
+						
 			self::addScriptCommon("settings","unite_settings");
 			self::addScriptCommon("admin","unite_admin");
 			self::addScriptCommon("jquery.tipsy","tipsy");
@@ -337,7 +214,7 @@
 		 * 
 		 * require settings file, the filename without .php
 		 */
-		public static function requireSettings($settingsFile){
+		protected static function requireSettings($settingsFile){
 			
 			try{
 				require self::$path_plugin."settings/$settingsFile.php";
@@ -395,7 +272,7 @@
 			foreach(self::$arrMenuPages as $menu){
 				$title = $menu["title"];
 				$pageFunctionName = $menu["pageFunction"];
-				add_menu_page( $title, $title, $role, self::$dir_plugin, array(self::$t, $pageFunctionName), 'dashicons-update' );
+				add_menu_page( $title, $title, $role, self::$dir_plugin, array(self::$t, $pageFunctionName) );
 			}
 			
 		}
@@ -532,17 +409,6 @@
 			$linkBack = self::getViewUrl($viewBack);
 			$htmlLinkBack = UniteFunctionsRev::getHtmlLink($linkBack, "Go Back");
 			
-			//check if css table exist, if not, we need to verify that the current captions.css can be parsed
-			if(UniteFunctionsWPRev::isDBTableExists(GlobalsRevSlider::TABLE_CSS_NAME)){
-				$captions = RevOperations::getCaptionsCssContentArray();
-				if($captions === false){
-					$message = "CSS parse error! Please make sure your captions.css is valid CSS before updating the plugin!";
-					echo "<div style='color:#B80A0A;font-size:18px;'><b>Update Error: </b> $message</div><br>";
-					echo $htmlLinkBack;
-					exit();
-				}
-			}
-			
 			$zip = new UniteZipRev();
 						
 			try{
@@ -597,7 +463,7 @@
 				
 				$success = move_uploaded_file($filepathTemp, $filepathZip);
 				if($success == false)
-					UniteFunctionsRev::throwError("Can't move the uploaded file here: ".$filepathZip.".");
+					UniteFunctionsRev::throwError("Can't move the uploaded file here: {$filepathZip}.");
 				
 				if(function_exists("unzip_file") == true){
 					WP_Filesystem();
@@ -627,7 +493,7 @@
 				//check some file in folder to validate it's the real one:
 				$checkFilepath = $pathUpdateProduct.$productFolder.".php";
 				if(file_exists($checkFilepath) == false)
-					UniteFunctionsRev::throwError("Wrong update extracted folder. The file: ".$checkFilepath." not found.");
+					UniteFunctionsRev::throwError("Wrong update extracted folder. The file: {$checkFilepath} not found.");
 				
 				//copy the plugin without the captions file.
 				//$pathOriginalPlugin = $pathUpdate."copy/";
@@ -635,8 +501,6 @@
 				
 				$arrBlackList = array();
 				$arrBlackList[] = "rs-plugin/css/captions.css";
-				$arrBlackList[] = "rs-plugin/css/dynamic-captions.css";
-				$arrBlackList[] = "rs-plugin/css/static-captions.css";
 				
 				UniteFunctionsRev::copyDir($pathUpdateProduct, $pathOriginalPlugin,"",$arrBlackList);
 				

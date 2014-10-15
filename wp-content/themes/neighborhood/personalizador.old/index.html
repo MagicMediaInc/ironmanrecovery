@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+       
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <style type="text/css">
+        
+        	
+	    </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="container">
+        <div style="display:none">
+        	<div> - Presión individual obtenida: <strong><span id="muestra-presion-individual">0</span> (tipo <span id="muestra-tipo-individual">A</span>)</strong></div>
+        	<div> - Presión de la pareja obtenida: <strong><span id="muestra-presion-pareja">0</span> (tipo <span id="muestra-tipo-pareja">A</span>)</strong></div>
+        	<div> - Medida del colchón elegida: <strong><span id="muestra-ancho">0</span>x<span id="muestra-alto">0</span></strong></div>
+        </div>
+	        <div class="row">
+	        	<div class="span12">
+	        		<h4 class="titulo-seccion">¿DUERMES SÓLO O EN PAREJA?</h4>
+	        	</div>
+	        </div><!--row-->
+	        <div class="row">
+		        <div class="span12">
+		        	<ul id="titulos">
+			        	<li>
+					        <div id="titulo-individual" class="titulo" data-tipo="individual">
+					        	Individual
+				        	</div>
+			        	</li>
+			        	<li>
+				        	<div id="titulo-pareja" class="titulo" data-tipo="pareja">
+					        	En pareja
+				        	</div>
+				        </li>
+				       </ul> <!--titulos-->
+		        </div><!-span12-->
+	        </div><!--row-->
+	        <div id="personalizadores" class="row">
+		        <div class="span6">
+		        	<div class="personalizador" id="personalizador-individual" data-peso=0 data-altura=0 data-apoyo=0 data-presion="0">
+			        	<div class="seccion-personalizador">
+				        	<h5>¿CUÁNTO PESAS?</h5>
+				        	<div id="slider-peso-individual" class="peso"></div>
+						    <div class="valor"><span class="num">0</span><span class="tipo">kg</span></div>
+				        	<div class=""></div>
+			        	</div>
+			        	
+			        	<div class="seccion-personalizador">
+				        	<h5>¿CUÁNTO MIDES?</h5>
+				        	<div id="slider-altura-individual" class="altura"></div>
+						    <div class="valor"><span class="num">0</span><span class="tipo">cm</span></div>
+				        	<div class="rangos">
+					        	<div class="rango">0</div>
+					        	<div class="rango">50</div>
+					        	<div class="rango">100</div>
+					        	<div class="rango">150 <span style="float:right;position:relative;right:-10px">200</span></div>
+				        	</div>
+				        	<div class="clear"></div>
+			        	</div><!--seccionPersonalizador-->
+			        	<div class="seccion-personalizador">
+				        	<h5>¿QUÉ SENSACIÓN DE APOYO PREFIERES?</h5>
+				        	<div class="apoyos">
+					        	<div class="apoyo-img apoyo1"></div>
+					        	<div class="apoyo-img apoyo2"></div>
+					        	<div class="apoyo-img apoyo3"></div>
+				        	</div>
+				        	<div id="slider-apoyo-individual" class="apoyo"></div>
+						    <div class="valor"><span class="num texto">Normal</span></div>
+			        	</div><!--seccionPersonalizador-->
+		        	</div><!--personalizador-->
+		        </div><!--col-->
+		        <div class="span6">
+		        	<div class="personalizador" id="personalizador-pareja" data-peso=0 data-altura=0 data-apoyo=0 data-presion="0">
+			        	<div class="seccion-personalizador">
+				        	<h5>¿Y TU PAREJA?</h5>
+				        	<div id="slider-peso-individual" class="peso"></div>
+						    <div class="valor"><span class="num">0</span><span class="tipo">kg</span></div>
+				        	<div class=""></div>
+			        	</div>
+			        	
+			        	<div class="seccion-personalizador">
+				        	<h5>¿Y TU PAREJA?</h5>
+				        	<div id="slider-altura-individual" class="altura"></div>
+						    <div class="valor"><span class="num">0</span><span class="tipo">cm</span></div>
+				        	<div class="rangos">
+					        	<div class="rango">0</div>
+					        	<div class="rango">50</div>
+					        	<div class="rango">100</div>
+					        	<div class="rango">150 <span style="float:right;position:relative;right:-10px">200</span></div>
+				        	</div>
+				        	<div class="clear"></div>
+			        	</div><!--seccionPersonalizador-->
+			        	<div class="seccion-personalizador">
+				        	<h5>¿Y TU PAREJA?</h5>
+				        	<div class="apoyos">
+					        	<div class="apoyo-img apoyo1"></div>
+					        	<div class="apoyo-img apoyo2"></div>
+					        	<div class="apoyo-img apoyo3"></div>
+				        	</div>
+				        	<div id="slider-apoyo-individual" class="apoyo"></div>
+						    <div class="valor"><span class="num texto">Normal</span></div>
+			        	</div><!--seccionPersonalizador-->
+		        	</div><!--personalizador-->
+		        </div><!--col-->
+	        </div><!--row-->
+        </div>
+        <div id="container-colchones" class="container">
+	        <div class="row">
+		        <div class="span12">
+		        	<h4 class="titulo-seccion">¿QUÉ MEDIDA PREFIERES?</h4>
+		        </div>
+	        </div>
+	        <div id="colchones-individual" class="row">
+		        <div class="span4">
+			        <div class="seccion-tamano">
+				        <img style="width:60px;margin-bottom:10px" src="img/colchon-small.png" />
+				        <ul>
+					        <li class="alto-190"><span class="ancho">80</span>x<span class="alto">190</span></li>
+					        <li class="alto-200"><span class="ancho">80</span>x<span class="alto">200</span></li>
+					        <li class="alto-210"><span class="ancho">80</span>x<span class="alto">210</span></li>
+				        </ul>
+				        <h3>1199<span class="tipo">€</span></h3>
+			        </div>
+		        </div>
+		        <div class="span4">
+			        <div class="seccion-tamano">
+				        <img style="width:67px;margin-bottom:5px" src="img/colchon-small.png" />
+				        <ul>
+					        <li class="alto-190"><span class="ancho">90</span>x<span class="alto">190</span></li>
+					        <li class="alto-200"><span class="ancho">90</span>x<span class="alto">200</span></li>
+					        <li class="alto-210"><span class="ancho">90</span>x<span class="alto">210</span></li>
+				        </ul>
+				        <h3>1199<span class="tipo">€</span></h3>
+			        </div>
+		        </div>
+		        <div class="span4">
+			        <div class="seccion-tamano">
+				        <img src="img/colchon-small.png" />
+				        <ul>
+					        <li class="alto-190"><span class="ancho">100</span>x<span class="alto">190</span></li>
+					        <li class="alto-200"><span class="ancho">100</span>x<span class="alto">200</span></li>
+					        <li class="alto-210"><span class="ancho">100</span>x<span class="alto">210</span></li>
+				        </ul>
+				        <h3>1199<span class="tipo">€</span></h3>
+			        </div>
+		        </div>
+	        </div><!--row-->
+	        <div id="colchones-pareja" class="row">
+		        <div class="span3">
+			        <div class="seccion-tamano">
+				        <img style="width:87px;margin-bottom:9px" src="img/colchon-big.png" />
+				        <ul>
+					        <li class="alto-190"><span class="ancho">150</span>x<span class="alto">190</span></li>
+					        <li class="alto-200"><span class="ancho">150</span>x<span class="alto">200</span></li>
+					        <li class="alto-210"><span class="ancho">150</span>x<span class="alto">210</span></li>
+				        </ul>
+				        <h3>1199<span class="tipo">€</span></h3>
+			        </div>
+		        </div>
+		        <div class="span3">
+			        <div class="seccion-tamano">
+				         <img style="width:91px;margin-bottom:7px" src="img/colchon-big.png" />
+				        <ul>
+					        <li class="alto-190"><span class="ancho">160</span>x<span class="alto">190</span></li>
+					        <li class="alto-200"><span class="ancho">160</span>x<span class="alto">200</span></li>
+					        <li class="alto-210"><span class="ancho">160</span>x<span class="alto">210</span></li>
+				        </ul>
+				        <h3>1199<span class="tipo">€</span></h3>
+			        </div>
+		        </div>
+		        <div class="span3">
+			        <div class="seccion-tamano">
+				         <img style="width:95px;margin-bottom:5px" src="img/colchon-big.png" />
+				        <ul>
+					        <li class="alto-190"><span class="ancho">180</span>x<span class="alto">190</span></li>
+					        <li class="alto-200"><span class="ancho">180</span>x<span class="alto">200</span></li>
+					        <li class="alto-210"><span class="ancho">180</span>x<span class="alto">210</span></li>
+				        </ul>
+				        <h3>1199<span class="tipo">€</span></h3>
+			        </div>
+		        </div>
+		        <div class="span3">
+			        <div class="seccion-tamano">
+				        <img src="img/colchon-big.png" />
+				        <ul>
+					        <li class="alto-190"><span class="ancho">200</span>x<span class="alto">190</span></li>
+					        <li class="alto-200"><span class="ancho">200</span>x<span class="alto">200</span></li>
+					        <li class="alto-210"><span class="ancho">200</span>x<span class="alto">210</span></li>
+				        </ul>
+				        <h3>1199<span class="tipo">€</span></h3>
+			        </div>
+		        </div>
+	        </div>
+        </div>
+      
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

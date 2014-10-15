@@ -130,13 +130,13 @@
 		} else {
 		
 			$terms = get_terms($option, $term_args);
-						
+			
 			$sf_ss_dropdown .= '<div id="'.$option_id.'" class="ss-dropdown" tabindex="'.$index.'" data-attr_value="'.$default_term_id.'">';
 			$sf_ss_dropdown .= '<span>'.$text.'</span>';
 			$sf_ss_dropdown .= '<ul>';
 			$sf_ss_dropdown .= '<li>';
 			$sf_ss_dropdown .= '<a class="ss-option" href="#" data-attr_value="">'.__("Any", "swiftframework").'</a>';
-			$sf_ss_dropdown .= '<i class="fa-check"></i>';
+			$sf_ss_dropdown .= '<i class="icon-ok"></i>';
 			$sf_ss_dropdown .= '</li>';	
 			
 			foreach ($terms as $term) {
@@ -152,7 +152,7 @@
 					$sf_ss_dropdown .= '<a class="ss-option" href="#" data-attr_value="'.$term->term_id.'">'.$term->name.'</a>';
 				}
 				
-				$sf_ss_dropdown .= '<i class="fa-check"></i>';
+				$sf_ss_dropdown .= '<i class="icon-ok"></i>';
 				$sf_ss_dropdown .= '</li>';	
 			}
 		
@@ -164,38 +164,8 @@
 		return $sf_ss_dropdown;
 	}
 	
-	function sf_custom_get_attribute_taxonomies() {
-		$transient_name = 'wc_attribute_taxonomies';
-		$attribute_taxonomies = "";
-		
-		if ( sf_woocommerce_activated() ) {
-        
-	        if ( false === ( $attribute_taxonomies = get_transient( $transient_name ) ) ) {
-	
-	            global $wpdb;
-	
-	            $attribute_taxonomies = $wpdb->get_results( "SELECT * FROM " . $wpdb->prefix . "woocommerce_attribute_taxonomies" );
-	
-	            set_transient( $transient_name, $attribute_taxonomies );
-	        }
-        
-        }
-
-        return apply_filters( 'woocommerce_attribute_taxonomies', $attribute_taxonomies );
-	}
-	
-	function sf_custom_get_attribute_taxonomy_name($name) {
-		$taxonomy = $name;
-		$taxonomy = strtolower( stripslashes( strip_tags( $taxonomy ) ) );
-		$taxonomy = preg_replace( '/&.+?;/', '', $taxonomy ); // Kill entities
-		$taxonomy = str_replace( array( '.', '\'', '"' ), '', $taxonomy ); // Kill quotes and full stops.
-		$taxonomy = str_replace( array( ' ', '_' ), '-', $taxonomy ); // Replace spaces and underscores.
-		return 'pa_' . $taxonomy;
-	}
-	
  	/* TOP BAR
- 	================================================== */
- 	if (!function_exists('sf_top_bar')) { 
+ 	================================================== */ 
 	function sf_top_bar() {
 	
 		// VARIABLES
@@ -235,7 +205,7 @@
 		
 		// TOP BAR SWIFT SEARCH OUTPUT
 		if ($ss_enable) {
-			$swift_search_output .= '<div class="tb-text"><a class="swift-search-link" href="#"><i class="fa-search-plus"></i><span>'.do_shortcode($tb_search_text).'</span></a></div>';
+			$swift_search_output .= '<div class="tb-text"><a class="swift-search-link" href="#"><i class="icon-zoom-in"></i><span>'.do_shortcode($tb_search_text).'</span></a></div>';
 		}
 		
 		// TOP BAR LEFT OUTPUT
@@ -303,11 +273,10 @@
 		// TOP BAR RETURN		
 		return $tb_output;
 	}
-	}
+	
 	
 	/* HEADER
-	================================================== */
-	if (!function_exists('sf_header')) {
+	================================================== */ 
 	function sf_header() {
 	
 		// VARIABLES
@@ -322,8 +291,8 @@
 		$header_output .= '<header id="header" class="clearfix">'. "\n";
 		$header_output .= '<div class="container">'. "\n";
 		$header_output .= '<div class="row">'. "\n";
-		$header_output .= '<div class="header-left span4">'.sf_woo_links('header-menu', 'logo-left').'</div>'. "\n";
-		$header_output .= sf_logo('span4 logo-center');
+		$header_output .= '<div class="header-left span5">'.sf_woo_links('header-menu', 'logo-left').'</div>'. "\n";
+		$header_output .= sf_logo('span3 logo-center');
 		$header_output .= '<div class="header-right span4">'.sf_aux_links('header-menu', TRUE).'</div>'. "\n";
 		$header_output .= '</div> <!-- CLOSE .row -->'. "\n";
 		$header_output .= '</div> <!-- CLOSE .container -->'. "\n";
@@ -393,19 +362,7 @@
 		$header_output .= '<div class="container">'. "\n";
 		$header_output .= '<div class="row">'. "\n";
 		$header_output .= sf_logo('span4 logo-right');
-		$header_output .= '<div class="header-left span8">';
-		$header_output .= sf_main_menu('main-navigation');
-		$header_output .= '<nav>'. "\n";
-		$header_output .= '<ul class="menu">'. "\n";
-		if ($show_cart) {
-		$header_output .= sf_get_cart();
-		}
-		if ( class_exists( 'YITH_WCWL_UI' ) &&  $show_wishlist)  {
-		$header_output .= sf_get_wishlist();
-		}
-		$header_output .= '</ul>'. "\n";
-		$header_output .= '</nav>'. "\n";
-		$header_output .= '</div>'. "\n";
+		$header_output .= '<div class="header-left span8">'.sf_main_menu('main-navigation').'</div>'. "\n";
 		$header_output .= '</div> <!-- CLOSE .row -->'. "\n";
 		$header_output .= '</div> <!-- CLOSE .container -->'. "\n";
 		$header_output .= '</header>'. "\n";
@@ -417,15 +374,14 @@
 		return $header_output;
 		
 	}
-	}
 	
 	function sf_mini_header() {
 		
 		$mini_header_output = '';
 		
-		$mini_header_output .= '<div id="mini-header">';
+		$mini_header_output .= '';
 		$mini_header_output .= sf_main_menu('mini-navigation', 'full');
-		$mini_header_output .= '</div>';
+		$mini_header_output .= '';
 	
 		return $mini_header_output;
 	}
@@ -441,8 +397,7 @@
 	
 		
 	/* LOGO
-	================================================== */
-	if (!function_exists('sf_logo')) { 
+	================================================== */ 
 	function sf_logo($logo_class) {
 		
 		//VARIABLES
@@ -459,60 +414,41 @@
 		if ($logo == "") {
 		$logo = get_template_directory_uri() . '/images/logo.png';
 		}
-		
 		if ($retina_logo == "") {
 		$retina_logo = $logo;
 		}
 		$logo_output = "";		
 		$logo_alt = get_bloginfo( 'name' );
 		$logo_link_url = home_url();
-		$disable_search = false;
-		if (isset($options['disable_search'])) {
-			$disable_search = $options['disable_search'];
-		}
 		
-		$logos = array('logo', 'retina_logo');
-		foreach ($logos as $this_logo) {
-			if (stripos(${$this_logo}, 'http://') === 0) {
-				${$this_logo} = substr(${$this_logo}, 5);
-			}
-		}
 		
 		// LOGO OUTPUT
 		$logo_output .= '<div id="logo" class="'.$logo_class.' clearfix">'. "\n";
 		$logo_output .= '<a href="'.$logo_link_url.'">'. "\n";
-		$logo_output .= '<img class="standard" src="'.$logo.'" alt="'.$logo_alt.'" />'. "\n";
-		$logo_output .= '<img class="retina" src="'.$retina_logo.'" alt="'.$logo_alt.'" />'. "\n";
+		//$logo_output .= '<img class="standard" src="'.$logo.'" alt="'.$logo_alt.'" />'. "\n";
+		//$logo_output .= '<img class="retina" src="'.$retina_logo.'" alt="'.$logo_alt.'" />'. "\n";
 		$logo_output .= '</a>'. "\n";
-		$logo_output .= '<a href="#" class="visible-phone show-main-nav"><i class="fa-align-justify"></i></a>'. "\n";
+		$logo_output .= '<a href="#" class="visible-phone show-main-nav"><i class="icon-align-justify"></i></a>'. "\n";
 		if ($show_cart) {
 		$logo_output .= '<a href="'.$woocommerce->cart->get_cart_url().'" class="visible-phone mobile-cart-link"><i class="sf-cart"></i></a>'. "\n";
 		}
-		if (!$disable_search) {
-		$logo_output .= '<a href="#" class="visible-phone mobile-search-link"><i class="fa-search"></i></a>'. "\n";
-		}
+		$logo_output .= '<a href="#" class="visible-phone mobile-search-link"><i class="icon-search"></i></a>'. "\n";
 		$logo_output .= '</div>'. "\n";
 		
 		
 		// LOGO RETURN		
 		return $logo_output;
 	}
-	}
 	
 	
 	/* MENU
 	================================================== */ 
-	if (!function_exists('sf_main_menu')) {
 	function sf_main_menu($id, $layout = "") {
 	
 		// VARIABLES
 		$options = get_option('sf_neighborhood_options');
 		$show_cart = $options['show_cart'];
 		$show_wishlist = $options['show_wishlist'];
-		$disable_search = false;
-		if (isset($options['disable_search'])) {
-			$disable_search = $options['disable_search'];
-		}
 		$menu_output = $menu_full_output = "";
 		$main_menu_args = array(
 			'echo'            => false,
@@ -547,13 +483,11 @@
 			$menu_full_output .= '<nav>'. "\n";			
 			}
 			$menu_full_output .= '<ul class="menu">'. "\n";
-			if (!$disable_search) {
-			$menu_full_output .= '<li class="menu-search no-hover"><a href="#"><i class="fa-search"></i></a>'. "\n";
+			$menu_full_output .= '<li class="menu-search parent"><a href="#"><i class="icon-search"></i></a>'. "\n";
 			$menu_full_output .= '<ul class="sub-menu">'. "\n";
-			$menu_full_output .= '<li><div class="ajax-search-wrap"><div class="ajax-loading"></div><form method="get" class="ajax-search-form" action="'.home_url().'/"><input type="text" placeholder="'.__("Search", "swiftframework").'" name="s" autocomplete="off" /></form><div class="ajax-search-results"></div></div></li>'. "\n";			
+			$menu_full_output .= '<li><form method="get" class="search-form" action="'.home_url().'/"><input type="text" placeholder="'.__("Search", "swiftframework").'" name="s" /></form></li>'. "\n";
 			$menu_full_output .= '</ul>'. "\n";
 			$menu_full_output .= '</li>'. "\n";
-			}
 			if ($show_cart) {
 			$menu_full_output .= sf_get_cart();
 			}
@@ -573,7 +507,7 @@
 		// MENU RETURN		
 		return $menu_output;
 	}
-	}
+	
 	
 	/* WOO LINKS
 	================================================== */ 
@@ -593,20 +527,18 @@
 		// WOO LINKS OUTPUT
 		$woo_links_output .= '<nav class="'.$position.'">'. "\n";
 		$woo_links_output .= '<ul class="menu">'. "\n";
-		if ( sf_woocommerce_activated() ) {
-			if (is_user_logged_in()) {
-				global $current_user;
-				get_currentuserinfo();
-				$woo_links_output .= '<li class="tb-welcome">' . __("Welcome", "swiftframework") . " " . $current_user->display_name . '</li>'. "\n";
-			} else {
-				$woo_links_output .= '<li class="tb-welcome">' . __("Welcome", "swiftframework") . '</li>'. "\n";
-			}
+		if (is_user_logged_in()) {
+			global $current_user;
+			get_currentuserinfo();
+			$woo_links_output .= '<li class="tb-welcome">' . __("Welcome", "swiftframework") . " " . $current_user->display_name . '</li>'. "\n";
+		} else {
+			$woo_links_output .= '<li class="tb-welcome">' . __("Welcome", "swiftframework") . '</li>'. "\n";
 		}
 		if ($ss_enable) {
 			if ($position == "top-menu") {
-			$woo_links_output .= '<li class="tb-woo-custom clearfix"><a class="swift-search-link" href="#"><i class="fa-search-plus"></i><span>'.do_shortcode($tb_search_text).'</span></a></li>'. "\n";
+			$woo_links_output .= '<li class="tb-woo-custom clearfix"><a class="swift-search-link" href="#"><i class="icon-zoom-in"></i><span>'.do_shortcode($tb_search_text).'</span></a></li>'. "\n";
 			} else {
-			$woo_links_output .= '<li class="hs-woo-custom clearfix"><a class="swift-search-link" href="#"><i class="fa-search-plus"></i><span>'.do_shortcode($tb_search_text).'</span></a></li>'. "\n";		
+			$woo_links_output .= '<li class="hs-woo-custom clearfix"><a class="swift-search-link" href="#"><i class="icon-zoom-in"></i><span>'.do_shortcode($tb_search_text).'</span></a></li>'. "\n";		
 			}
 		}
 		$woo_links_output .= '</ul>'. "\n";
@@ -681,7 +613,7 @@
 			}
 		}
 		if (($position == "header-menu" && !$alt_version) && $ss_enable) {
-		$aux_links_output .= '<li><a class="swift-search-link" href="#"><i class="fa-search-plus"></i><span>'.do_shortcode($tb_search_text).'</span></a></li>'. "\n";		
+		$aux_links_output .= '<li><a class="swift-search-link" href="#"><i class="icon-zoom-in"></i><span>'.do_shortcode($tb_search_text).'</span></a></li>'. "\n";		
 		}
 		$aux_links_output .= '</ul>'. "\n";
 		$aux_links_output .= '</nav>'. "\n";
@@ -697,7 +629,7 @@
 		$cart_output = "";
 		
 		// Check if WooCommerce is active
-		if ( sf_woocommerce_activated() ) {
+		if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 		
 			global $woocommerce;
 			
@@ -770,7 +702,7 @@
         
         }
 		
-		return $cart_output;
+		//return $cart_output;
 	
 	}
 	
@@ -801,7 +733,7 @@
 			$count = 0;
 		}
 		
-		$wishlist_output .= '<li class="parent wishlist-item"><a class="wishlist-link" href="'.$yith_wcwl->get_wishlist_url().'" title="'.__("View your wishlist", "swiftframework").'"><i class="fa-star"></i><span>'.$count.'</span></a>';
+		$wishlist_output .= '<li class="parent wishlist-item"><a class="wishlist-link" href="'.$yith_wcwl->get_wishlist_url().'" title="'.__("View your wishlist", "swiftframework").'"><i class="icon-star"></i><span>'.$count.'</span></a>';
 		$wishlist_output .= '<ul class="sub-menu">';
 		$wishlist_output .= '<li>';
 		$wishlist_output .= '<div class="wishlist-bag">';
@@ -897,145 +829,5 @@
 		$wishlist_output .= '</li>'; 
 				
 		return $wishlist_output;
-	}
-	
-	
-	/* AJAX SEARCH
-	================================================== */
-	if (!function_exists('sf_ajaxsearch')) {
-		function sf_ajaxsearch() {
-			$search_term = trim($_POST['s']);
-			$search_query_args = array(
-				's' => $search_term,
-				'post_type' => 'any',
-				'post_status' => 'publish',
-				'suppress_filters' => false,
-				'numberposts' => -1
-			);
-			$search_query_args = http_build_query($search_query_args);
-			$search_results = get_posts( $search_query_args );
-			$count = count($search_results);
-			$shown_results = 5;
-			
-			$search_results_ouput = "";
-			
-			if (!empty($search_results)) {
-				
-				$sorted_posts = $post_type = array();
-				
-				foreach ($search_results as $search_result) {
-					$sorted_posts[$search_result->post_type][] = $search_result;
-				    // Check we don't already have this post type in the post_type array
-				    if (empty($post_type[$search_result->post_type])) {
-				    	// Add the post type object to the post_type array
-				        $post_type[$search_result->post_type] = get_post_type_object($search_result->post_type);
-				    }			
-				}
-				
-				$i = 0;
-				foreach ($sorted_posts as $key => $type) {
-					$search_results_ouput .= '<div class="search-result-pt">';
-			        if(isset($post_type[$key]->labels->name)) {
-			            $search_results_ouput .= "<h6>".$post_type[$key]->labels->name."</h6>";
-			        } else if(isset($key)) {
-			            $search_results_ouput .= "<h6>".$key."</h6>";
-			        } else {
-			            $search_results_ouput .= "<h6>".__("Other", "swiftframework")."</h6>";			        
-			        }
-		
-			        foreach ($type as $post) {
-			        	
-			        	$img_icon = "";
-			        	
-			        	$post_format = get_post_format($post->ID);
-			        	if ( $post_format == "" ) {
-			        		$post_format = 'standard';
-			        	}
-			        	$post_type = get_post_type($post->ID);
-			        	
-			        	if ($post_type == "post") {
-			        		if ($post_format == "quote" || $post_format == "status") {
-			        			$img_icon = "fa-quote-left";
-			        		} else if ($post_format == "image") {
-			        			$img_icon = "fa-picture-o";
-			        		} else if ($post_format == "chat") {
-			        			$img_icon = "fa-comments-o";
-			        		} else if ($post_format == "audio") {
-			        			$img_icon = "fa-music";
-			        		} else if ($post_format == "video") {
-			        			$img_icon = "fa-film";
-			        		} else if ($post_format == "link") {
-			        			$img_icon = "fa-link";
-			        		} else {
-			        			$img_icon = "fa-pencil";
-			        		}
-			        	} else if ($post_type == "product") {
-			        		$img_icon = "fa-shopping-cart";
-			        	} else if ($post_type == "portfolio") {
-			        		$img_icon = "fa-picture-o";
-			        	} else if ($post_type == "team") {
-			        		$img_icon = "fa-user";
-			        	} else if ($post_type == "galleries") {
-			        		$img_icon = "fa-picture-o";
-			        	} else {
-			        		$img_icon = "fa-file";
-			        	}
-			        	
-			        	$post_title = get_the_title($post->ID);
-			        	$post_permalink = get_permalink($post->ID);
-			        	
-			        	$image = get_the_post_thumbnail( $post->ID, 'thumbnail' );
-			        	
-			            $search_results_ouput .= '<div class="search-result">';
-			        	
-			        	if ($image) {
-			        		$search_results_ouput .= '<div class="search-item-img"><a href="'.$post_permalink.'">'.$image.'</div>';
-			        	} else {
-			        		$search_results_ouput .= '<div class="search-item-img"><a href="'.$post_permalink.'" class="img-holder"><i class="'.$img_icon.'"></i></a></div>';
-			        	}
-			        	            				
-			            $search_results_ouput .= '<div class="search-item-content">';
-			            $search_results_ouput .= '<h5><a href="'.$post_permalink.'">'.$post_title.'</a></h5>';
-			            $search_results_ouput .= '</div>';
-			            
-			            $search_results_ouput .= '</div>';
-			        	
-			        	$i++;
-			        	if ($i == $shown_results) break;
-			        }
-			       
-			       $search_results_ouput .= '</div>';
-			        if ($i == $shown_results) break;
-			    }
-			    
-			    if ($count > 1) {
-			    	$search_results_ouput .= '<a href="'.get_search_link($search_term).'" class="all-results">'.sprintf(__("View all %d results", "swiftframework"), $count).'</a>';
-			    }
-				
-			} else {
-				
-				$search_results_ouput .= '<div class="no-search-results">';
-				$search_results_ouput .= '<h6>'.__("No results", "swiftframework").'</h6>';
-				$search_results_ouput .= '<p>'.__("No search results could be found, please try another query.", "swiftframework").'</p>';
-				$search_results_ouput .= '</div>';
-				
-			}
-			
-			echo $search_results_ouput;
-			die();
-		}
-		add_action('wp_ajax_sf_ajaxsearch', 'sf_ajaxsearch');
-		add_action('wp_ajax_nopriv_sf_ajaxsearch', 'sf_ajaxsearch');	
-	}
-	
-	if (!function_exists('sf_ajaxurl')) {
-		function sf_ajaxurl() {
-		?>
-			<script type="text/javascript">
-			var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
-			</script>
-		<?php 
-		}
-		add_action('wp_head','sf_ajaxurl');
 	}
 ?>

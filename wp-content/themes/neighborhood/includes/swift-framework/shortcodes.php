@@ -93,44 +93,12 @@
 		), $atts));
 		
 		if ($cont == "yes") {
-			return '<div class="sf-icon-cont cont-'.$size.' sf-icon-float-'.$float.'"><i class="fa-'.$image.' sf-icon icon-'.$size.'"></i></div>';
+			return '<div class="sf-icon-cont cont-'.$size.' sf-icon-float-'.$float.'"><i class="icon-'.$image.' sf-icon icon-'.$size.'"></i></div>';
 		} else {
-			return '<i class="fa-'.$image.' sf-icon sf-icon-float-'.$float.' icon-'.$size.'"></i>';	
+			return '<i class="icon-'.$image.' sf-icon sf-icon-float-'.$float.' icon-'.$size.'"></i>';	
 		}		
 	}
 	add_shortcode('icon', 'sf_icon');
-	
-	
-	/* IMAGE BANNER SHORTCODE
-	================================================== */
-	function sf_imagebanner($atts, $content = null) {
-		extract(shortcode_atts(array(
-			"image"			=> "",
-			"animation" 	=> "fade-in",
-			"contentpos"	=> "center",
-			"textalign"	=> "center",
-			"extraclass"	=> ""
-		), $atts));
-		
-		$image_banner = "";
-		
-		$image_banner .= '<div class="sf-image-banner '.$extraclass.'">';	
-		
-		$image_banner .= '<div class="image-banner-content sf-animation content-'.$contentpos.' text-'.$textalign.'" data-animation="'.$animation.'" data-delay="200">';	
-		$image_banner .= do_shortcode($content);
-		$image_banner .= '</div>';
-		
-		$image_banner .= '<img src="'.$image.'" alt="" />';
-		
-		$image_banner .= '</div>';	
-		
-		global $sf_has_imagebanner;
-		$sf_has_imagebanner = true;
-			
-		return $image_banner;
-		
-	}
-	add_shortcode('sf_imagebanner', 'sf_imagebanner');
 	
 
 	/* COLUMN SHORTCODES
@@ -625,6 +593,7 @@
 
 		$twitter = $options['twitter_username'];
 		$facebook = $options['facebook_page_url'];
+		$ecus_fb_url = $options['ecus_fb_url'];
 		$dribbble = $options['dribbble_username'];
 		$vimeo = $options['vimeo_username'];
 		$tumblr = $options['tumblr_username'];
@@ -639,11 +608,6 @@
 		$pinterest = $options['pinterest_username'];
 		$instagram = $options['instagram_username'];
 		$yelp = $options['yelp_url'];
-		$xing = "";
-		
-		if (isset($options['xing_url'])) {
-		$xing = $options['xing_url'];
-		}
 		
 		$social_icons = '';
 		
@@ -654,6 +618,9 @@
 			}
 			if ($facebook) {
 				$social_icons .= '<li class="facebook"><a href="'.$facebook.'" target="_blank">Facebook</a></li>'."\n";
+			}
+			if ($ecus_fb_url) {
+				$social_icons .= '<li class="facebook"><a href="'.$ecus_fb_url.'" target="_blank">Facebook</a></li>'."\n";
 			}
 			if ($dribbble) {
 				$social_icons .= '<li class="dribbble"><a href="http://www.dribbble.com/'.$dribbble.'" target="_blank">Dribbble</a></li>'."\n";
@@ -683,7 +650,7 @@
 				$social_icons .= '<li class="flickr"><a href="'.$flickr.'" target="_blank">Flickr</a></li>'."\n";
 			}
 			if ($youtube) {
-				$social_icons .= '<li class="youtube"><a href="'.$youtube.'" target="_blank">YouTube</a></li>'."\n";
+				$social_icons .= '<li class="youtube"><a href="http://www.youtube.com/user/'.$youtube.'" target="_blank">YouTube</a></li>'."\n";
 			}
 			if ($behance) {
 				$social_icons .= '<li class="behance"><a href="http://www.behance.net/'.$behance.'" target="_blank">Behance</a></li>'."\n";
@@ -697,19 +664,20 @@
 			if ($yelp) {
 				$social_icons .= '<li class="yelp"><a href="'.$yelp.'/" target="_blank">Yelp</a></li>'."\n";
 			}
-			if ($xing) {
-				$social_icons .= '<li class="xing"><a href="'.$xing.'/" target="_blank">Xing</a></li>'."\n";
-			}
 		
 		} else {
 		
 			$social_type = explode(',', $type);
+			
 			foreach ($social_type as $id) {
 				if ($id == "twitter") {
 					$social_icons .= '<li class="twitter"><a href="http://www.twitter.com/'.$twitter.'" target="_blank">Twitter</a></li>'."\n";
 				}
 				if ($id == "facebook") {
 					$social_icons .= '<li class="facebook"><a href="'.$facebook.'" target="_blank">Facebook</a></li>'."\n";
+				}
+				if ($id == "ecus_fb_url") {
+					$social_icons .= '<li class="facebook"><a href="'.$ecus_fb_url.'" target="_blank">Facebook</a></li>'."\n";
 				}
 				if ($id == "dribbble") {
 					$social_icons .= '<li class="dribbble"><a href="http://www.dribbble.com/'.$dribbble.'" target="_blank">Dribbble</a></li>'."\n";
@@ -739,7 +707,7 @@
 					$social_icons .= '<li class="flickr"><a href="'.$flickr.'" target="_blank">Flickr</a></li>'."\n";
 				}
 				if ($id == "youtube") {
-					$social_icons .= '<li class="youtube"><a href="'.$youtube.'" target="_blank">YouTube</a></li>'."\n";
+					$social_icons .= '<li class="youtube"><a href="http://www.youtube.com/user/'.$youtube.'" target="_blank">YouTube</a></li>'."\n";
 				}
 				if ($id == "behance") {
 					$social_icons .= '<li class="behance"><a href="http://www.behance.net/'.$behance.'" target="_blank">Behance</a></li>'."\n";
@@ -752,9 +720,6 @@
 				}
 				if ($id == "yelp") {
 					$social_icons .= '<li class="yelp"><a href="'.$yelp.'" target="_blank">Yelp</a></li>'."\n";
-				}
-				if ($id == "xing") {
-					$social_icons .= '<li class="xing"><a href="'.$xing.'/" target="_blank">Xing</a></li>'."\n";
 				}
 			}
 		}
@@ -888,7 +853,7 @@
 		
 		$chart_output .= '<div class="chart-shortcode chart-'.$size.' chart-'.$align.'" data-linewidth="'.$linewidth.'" data-percent="0" data-animatepercent="'.$percentage.'" data-size="'.$size.'" data-barcolor="'.$barcolour.'" data-trackcolor="'.$trackcolour.'">';
 		if ($content != "") {
-			if (strpos($content, 'fa') !== false) {
+			if (strpos($content, 'icon') !== false) {
 			    $chart_output .= '<span><i class="'.$content.'"></i></span>';
 			} else {
 			$chart_output .= '<span>'.$content.'</span>';

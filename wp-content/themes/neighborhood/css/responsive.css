@@ -11,6 +11,981 @@
 	LARGE DISPLAYS
 -------------------------------------------- */
 
+
+/*********** 320PX ************************************************/
+
+@media only screen and (min-width: 239px) and (max-width: 240px){
+
+        .mini-cart-wrap {
+                display: none;
+        }
+	.descripcion-{
+
+		margin-left: 0;
+		text-indent: 0;
+	}
+
+	.descripcion- p{
+
+		font-size: 10px;
+	}
+
+	.banner-left-t24{
+
+		position: relative;
+		top: 3100px;
+
+	}
+
+	.descripcion-producto{
+
+		margin-top: -550px;
+	}
+
+	.page-producto{
+
+		overflow: hidden;
+		height: 3660px;
+	}
+
+}
+
+@media only screen and (min-width: 319px) and (max-width: 320px){
+
+	.descripcion-{
+
+		margin-left: 0;
+		text-indent: 0;
+	}
+
+	.descripcion- p{
+
+		font-size: 10px;
+	}
+
+	.banner-left-t24{
+
+		position: relative;
+		top: 2410px;
+
+	}
+
+	.banner-right-t24{
+
+		position: relative;
+		top: -780px;
+	}
+
+	.banner-left-beneficios{
+
+		position: relative;
+		top: 2700px;
+		text-align: center;
+		
+	}
+
+	.banner-right-beneficios{
+
+		position: relative;
+		top: -800px;
+	}
+
+	.banner-left-beneficios .informacion{
+
+		margin-bottom: 50px;
+		display: inline-block;
+	}
+
+	.banner-left-almh{
+
+		position: relative;
+		top: 1650px;
+		text-align: center;
+		
+	}
+
+	.banner-right-almh{
+
+		position: relative;
+		top: -830px;
+	}
+
+	.banner-left-almh .informacion{
+
+		margin-bottom: 50px;
+		display: inline-block;
+	}
+
+	.banner-left-opiniones{
+
+	 	position: relative;
+		top: 640px;
+		text-align: center;
+		display: inline;
+	 }
+
+	 .banner-left-opiniones > .informacion{
+
+	 	margin-bottom: 80px;
+	 	display: block;
+	 }
+
+	 .banner-right-opiniones{
+
+	 	position: relative;
+		top: -800px;
+	 }
+
+	 .banner-right-opiniones div:first-child{
+
+		height: 100px !important;
+	 }
+
+	 .banner-left-certificados{
+
+		position: relative;
+		top: 2200px;
+		text-align: center;
+		display: inline;
+
+	}
+
+	.banner-right-certificados{
+		
+		position: relative;
+		top: -850px;
+
+	}
+
+	.banner-left-certificados .informacion{
+
+		margin-bottom: 110px;
+	}
+
+	/*.descripcion-producto{
+
+		position: relative;
+		top: -750px;
+	}*/
+
+	.descripcion-producto p{
+
+		margin-top: 10px;
+	}
+
+	.descripcion-producto form{
+
+		margin: 0;
+	}
+
+	.banner-bottom-product{
+
+		text-align: center !important;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding: 25px 15px;
+	}
+
+	.tienda .part-left-product{
+
+		padding: 23px 5px !important;
+	}
+
+	.tienda .part-right-product{
+
+		padding: 23px 10px !important;
+	}
+
+	.simbol-product{
+
+		padding: 15px 15px 15px 10px;
+	}
+
+	.text-product-left{
+
+		padding: 18px 5px 0 10px;
+	}
+
+	.banner-bottom-product .part-left-product h1 span{
+
+		font-size: 42px;
+	}
+
+	.banner-bottom-product .part-left-product h1 span.weak{
+
+		font-size: 38px;
+	}
+
+	.page-content{
+
+		margin-bottom: 0px !important;
+	}
+
+	.animate-advisor{
+		display: block;
+		margin: 0px 0 -30px;
+	}
+
+	.entry-summary, .summary{
+
+		margin-bottom: 10px;
+	}
+
+	.textwidget p.text_welcome{
+
+		margin-top: 0;
+	}
+
+	.woocommerce .help-bar ul{
+
+		text-align: center;
+	}
+
+	.place-order{
+
+		text-align: center;
+	}
+	
+	input#place_order{
+
+		margin-top: 20px;
+	}
+
+	.woocommerce #payment #place_order, .woocommerce-page #payment #place_order{
+
+		float: none;
+	}
+
+	.woocommerce #payment .terms, .woocommerce-page #payment .terms{
+		
+		padding: 1em 3em;
+		text-align: center;
+
+	}
+
+	.banner-left-contacto{
+
+		position: relative;
+		top: 810px;
+		text-align: center;
+		display: inline;
+	}
+
+	#wpcf7-f458-p210-o1{
+
+		position: relative;
+		margin-top: -750px;
+	}
+
+	.wrap-form{
+
+		overflow: hidden;
+		height: 1610px;
+	}
+}
+
+/*********** 480PX ************************************************/
+
+/*iPhone 3 and 4 */
+@media only screen and (min-width: 479px) and (max-width: 480px){
+
+	.page-producto{
+
+		margin-bottom: 30px;
+	}
+
+	/*.banner-left{
+
+		position: relative;
+		top: 2050px;
+		text-align: center;
+
+	}*/
+
+	.banner-right-t24{
+
+		position: relative;
+		top: -780px;
+	}
+
+	.banner-left-t24{
+
+		position: relative;
+		top: 2040px;
+		text-align: center;
+		display: inline-block;
+
+	}
+
+	.banner-left-beneficios{
+
+		position: relative;
+		top: 2420px;
+		text-align: center;
+		
+	}
+
+	.banner-left-beneficios .informacion{
+
+		margin-bottom: 50px;
+		display: inline-block;
+	}
+
+	.banner-right-beneficios{
+
+		position: relative;
+		top: -810px;
+	}
+
+	.banner-left-opiniones{
+
+	 	position: relative;
+		top: 600px;
+		text-align: center;
+		display: inline;
+	 }
+
+	 .banner-left-opiniones > .informacion{
+
+	 	margin-bottom: 80px;
+	 	display: block;
+	 }
+
+	 .banner-right-opiniones{
+
+	 	position: relative;
+		top: -800px;
+	 }
+
+	 .banner-right-opiniones div:first-child{
+
+		height: 100px !important;
+	 }
+
+	/*.descripcion-producto{
+
+		position: relative;
+		top: -750px;
+	}*/
+
+	.banner-left-almh{
+
+		position: relative;
+		top: 1650px;
+		text-align: center;
+		
+	}
+
+	.banner-right-almh{
+
+		position: relative;
+		top: -800px;
+	}
+
+	.banner-left-certificados{
+
+		position: relative;
+		top: 1720px;
+		text-align: center;
+		display: inline;
+
+	}
+
+	.banner-right-certificados{
+		
+		position: relative;
+		top: -810px;
+
+	}
+
+	.banner-left-certificados .informacion{
+
+		margin-bottom: 60px;
+	}
+
+	.transporte-product, .garantia-product, .informacion-product{
+
+		text-align: center;
+	}
+
+	.banner-bottom-product{
+
+		text-align: center !important;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding: 25px 80px;
+	}
+
+	.tienda .part-right-product{
+
+		padding: 23px 30px !important;
+	}
+
+	.tienda .part-left-product{
+
+		padding: 23px 30px !important;
+	}
+
+	.textwidget p.text_welcome{
+
+		margin-top: 0;
+	}
+
+	.woocommerce .help-bar ul{
+
+		text-align: center;
+
+	}
+
+	.woocommerce .help-bar ul li{
+
+		margin-left: 15px !important;
+		float: none;
+	}
+
+	.woocommerce .help-bar ul li:first-child{
+
+		margin: none;
+	}
+
+	.banner-left-contacto{
+
+		position: relative;
+		top: 750px;
+		text-align: center;
+		display: inline;
+	}
+
+	#wpcf7-f458-p210-o1{
+
+		position: relative;
+		margin-top: -750px;
+	}
+
+	.wrap-form{
+
+		overflow: hidden;
+		height: 1610px;
+	}
+
+	.banner-left-almh{
+
+		position: relative;
+		top: 1650px;
+		text-align: center;
+		
+	}
+
+	.banner-right-almh{
+
+		position: relative;
+		top: -800px;
+	}
+}
+
+/*********** 568PX ************************************************/
+
+/*iPhone 5, 5s and 5c */
+@media only screen and (min-width: 567px) and (max-width: 568px){
+
+	.page-producto{
+
+		margin-bottom: 30px;
+	}
+
+	/*.banner-left{
+
+		position: relative;
+		top: 2050px;
+		text-align: center;
+
+	}*/
+
+	.banner-right-t24{
+
+		position: relative;
+		top: -780px;
+	}
+
+	.banner-left-t24{
+
+		position: relative;
+		top: 1980px;
+		text-align: center;
+		display: inline-block;
+
+	}
+
+	.banner-left-beneficios{
+
+		position: relative;
+		top: 2420px;
+		text-align: center;
+		
+	}
+
+	.banner-left-beneficios .informacion{
+
+		margin-bottom: 50px;
+		display: inline-block;
+	}
+
+	.banner-right-beneficios{
+
+		position: relative;
+		top: -810px;
+	}
+
+	.banner-left-opiniones{
+
+	 	position: relative;
+		top: 560px;
+		text-align: center;
+		display: inline;
+	 }
+
+	 .banner-left-opiniones > .informacion{
+
+	 	margin-bottom: 80px;
+	 	display: block;
+	 }
+
+	 .banner-right-opiniones{
+
+	 	position: relative;
+		top: -820px;
+	 }
+
+	 .banner-right-opiniones div:first-child{
+
+		height: 100px !important;
+	 }
+
+	 .banner-left-almh{
+
+		position: relative;
+		top: 1650px;
+		text-align: center;
+		
+	}
+
+	.banner-right-almh{
+
+		position: relative;
+		top: -800px;
+	}
+
+	/*.descripcion-producto{
+
+		position: relative;
+		top: -750px;
+	}*/
+
+	.banner-left-certificados{
+
+		position: relative;
+		top: 1620px;
+		text-align: center;
+		display: inline;
+
+	}
+
+	.banner-right-certificados{
+		
+		position: relative;
+		top: -810px;
+
+	}
+
+	.banner-left-certificados .informacion{
+
+		margin-bottom: 60px;
+	}
+
+	.transporte-product, .garantia-product, .informacion-product{
+
+		text-align: center;
+	}
+
+	.banner-bottom-product{
+
+		text-align: center !important;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding: 25px 80px;
+	}
+
+	.tienda .part-right-product{
+
+		padding: 23px 30px !important;
+	}
+
+	.tienda .part-left-product{
+
+		padding: 23px 30px !important;
+	}
+
+	.textwidget p.text_welcome{
+
+		margin-top: 0;
+	}
+
+	.woocommerce .help-bar ul{
+
+		text-align: center;
+
+	}
+
+	.woocommerce .help-bar ul li{
+
+		margin-left: 15px !important;
+		float: none;
+	}
+
+	.woocommerce .help-bar ul li:first-child{
+
+		margin: none;
+	}
+
+	.banner-left-contacto{
+
+		position: relative;
+		top: 710px;
+		text-align: center;
+		display: inline;
+	}
+
+	#wpcf7-f458-p210-o1{
+
+		position: relative;
+		margin-top: -750px;
+	}
+
+	.wrap-form{
+
+		overflow: hidden;
+		height: 1610px;
+	}
+}
+
+
+/*********** 360PX ************************************************/
+
+@media only screen and (min-width: 359px) and (max-width: 360px){
+
+		.mini-cart-wrap {
+                display: none;
+        }
+	.banner-left-beneficios{
+
+		position: relative;
+		top: 2530px;
+		text-align: center;
+		
+	}
+
+	.banner-left-beneficios .informacion{
+
+		display: block;
+	}
+
+	.banner-right-beneficios{
+
+		position: relative;
+		top: -800px;
+	}
+
+
+}
+
+
+/*********** 384PX ************************************************/
+
+@media only screen and (min-width: 383px) and (max-width: 384px){
+.mini-cart-wrap {
+                display: none ;
+        }
+		.page-producto{
+
+		margin-bottom: 30px;
+	}
+
+	/*.banner-left{
+
+		position: relative;
+		top: 2050px;
+		text-align: center;
+
+	}*/
+
+	/*.descripcion-producto{
+
+		position: relative;
+		top: -750px;
+	}*/
+
+	.banner-left-almh{
+
+		position: relative;
+		top: 1650px;
+		text-align: center;
+		
+	}
+
+	.banner-right-almh{
+
+		position: relative;
+		top: -800px;
+	}
+
+	.banner-right-t24{
+
+		position: relative;
+		top: -780px;
+	}
+
+	.banner-left-t24{
+
+		position: relative;
+		top: 2180px;
+		text-align: center;
+		display: inline-block;
+
+	}
+
+	.banner-left-beneficios{
+
+		position: relative;
+		top: 2430px;
+		text-align: center;
+		
+	}
+
+	.banner-left-beneficios .informacion{
+
+		margin-bottom: 50px;
+		display: inline-block;
+	}
+
+	.banner-right-beneficios{
+
+		position: relative;
+		top: -810px;
+	}
+
+	.banner-left-opiniones{
+
+	 	position: relative;
+		top: 640px;
+		text-align: center;
+		display: inline;
+	 }
+
+	 .banner-left-opiniones > .informacion{
+
+	 	margin-bottom: 80px;
+	 	display: block;
+	 }
+
+	 .banner-right-opiniones{
+
+	 	position: relative;
+		top: -800px;
+	 }
+
+	 .banner-right-opiniones div:first-child{
+
+		height: 100px !important;
+	 }
+
+	 .banner-left-contacto{
+
+		position: relative;
+		top: 770px;
+		text-align: center;
+		display: inline;
+	}
+
+	#wpcf7-f458-p210-o1{
+
+		position: relative;
+		margin-top: -750px;
+	}
+
+	.wrap-form{
+
+		overflow: hidden;
+		height: 1610px;
+	}
+
+	.banner-left-certificados{
+
+		position: relative;
+		top: 1940px;
+		text-align: center;
+		display: inline;
+
+	}
+
+	.banner-right-certificados{
+		
+		position: relative;
+		top: -810px;
+
+	}
+
+	.banner-left-certificados .informacion{
+
+		margin-bottom: 60px;
+	}
+
+}
+
+
+
+
+
+/*********** 600PX ************************************************/
+
+@media only screen and (min-width: 599px) and (max-width: 600px){
+
+		.page-producto{
+
+		margin-bottom: 30px;
+	}
+
+	/*.banner-left{
+
+		position: relative;
+		top: 2050px;
+		text-align: center;
+
+	}*/
+
+	.banner-right-t24{
+
+		position: relative;
+		top: -780px;
+	}
+
+	.banner-left-t24{
+
+		position: relative;
+		top: 1980px;
+		text-align: center;
+		display: inline-block;
+
+	}
+
+	/*.descripcion-producto{
+
+		position: relative;
+		top: -750px;
+	}*/
+
+	.banner-left-beneficios{
+
+		position: relative;
+		top: 2430px;
+		text-align: center;
+		
+	}
+
+	.banner-left-beneficios .informacion{
+
+		margin-bottom: 50px;
+		display: inline-block;
+	}
+
+	.banner-right-beneficios{
+
+		position: relative;
+		top: -810px;
+	}
+
+	.banner-left-opiniones{
+
+	 	position: relative;
+		top: 590px;
+		text-align: center;
+		display: inline;
+	 }
+
+	 .banner-left-opiniones > .informacion{
+
+	 	margin-bottom: 80px;
+	 	display: block;
+	 }
+
+	 .banner-right-opiniones{
+
+	 	position: relative;
+		top: -800px;
+	 }
+
+	 .banner-right-opiniones div:first-child{
+
+		height: 100px !important;
+	 }
+
+	 .banner-left-contacto{
+
+		position: relative;
+		top: 710px;
+		text-align: center;
+		display: inline;
+	}
+
+	#wpcf7-f458-p210-o1{
+
+		position: relative;
+		margin-top: -750px;
+	}
+
+	.wrap-form{
+
+		overflow: hidden;
+		height: 1530px;
+	}
+
+	.banner-left-certificados{
+
+		position: relative;
+		top: 1590px;
+		text-align: center;
+		display: inline;
+
+	}
+
+	.banner-right-certificados{
+		
+		position: relative;
+		top: -810px;
+
+	}
+
+	.banner-left-certificados .informacion{
+
+		margin-bottom: 60px;
+	}
+
+	.banner-left-almh{
+
+		position: relative;
+		top: 1650px;
+		text-align: center;
+		
+	}
+
+	.banner-right-almh{
+
+		position: relative;
+		top: -800px;
+	}
+
+}
+
+
 @media only screen and (min-width: 1200px) {
 	
 	/* LAYOUT */
@@ -66,16 +1041,13 @@
 		width: 170px;
 	}
 	body.woocommerce .has-no-sidebar ul.products li.product, body.woocommerce .has-no-sidebar .upsells.products ul.products li.product {
-		width: 270px;
+		width: 370px;
 	}
-	body.woocommerce .has-one-sidebar ul.products li.product {
-		width: 270px;
+	body.woocommerce .has-one-sidebar ul.products li.product, body.woocommerce .has-one-sidebar .upsells.products ul.products li.product {
+		width: 420px;
 	}
 	body.woocommerce .has-both-sidebars ul.products li.product, body.woocommerce .has-both-sidebars ul.products li.product {
 		width: 270px;
-	}
-	body.woocommerce .has-one-sidebar .upsells.products ul.products li.product, body.woocommerce .has-one-sidebar .related.products ul.products li.product  {
-		width: 170px;
 	}
 	
 	/* WIDGETS */
@@ -85,6 +1057,7 @@
 	.spb_portfolio_carousel_widget.span12 .caroufredsel_wrapper {
 		min-width: 1200px;
 	}
+
 }
 
 @media only screen and (min-width: 1250px) {
@@ -116,11 +1089,21 @@
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 	
 	.mobile-search-form {
-		display: none!important;	
+		display: none;	
 	}
+
+	.banner-bottom-product{
+
+		text-align: center !important;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding: 25px 15px;
+	}
+
+	
 	
 }
 
@@ -162,9 +1145,7 @@
 		text-overflow: ellipsis;
 		width: 75%;
 	}
-	.spb_parallax_asset {
-		background-attachment: scroll;
-	}
+
 }
 
 /* --------------------------------------------
@@ -172,6 +1153,7 @@
 -------------------------------------------- */
 
 @media only screen and (max-width: 979px) {
+    
 	
 	/* LAYOUT */
 	.boxed-layout {
@@ -227,16 +1209,13 @@
 		width: 104px;
 	}
 	body.woocommerce .has-no-sidebar ul.products li.product, body.woocommerce .has-no-sidebar .upsells.products ul.products li.product {
-		width: 166px;
+		width: 228px;
 	}
-	body.woocommerce .has-one-sidebar ul.products li.product {
+	body.woocommerce .has-one-sidebar ul.products li.product, body.woocommerce .has-one-sidebar .upsells.products ul.products li.product {
 		width: 166px;
 	}
 	body.woocommerce .has-both-sidebars ul.products li.product, body.woocommerce .has-both-sidebars ul.products li.product {
 		width: 166px;
-	}
-	body.woocommerce .has-one-sidebar .upsells.products ul.products li.product, body.woocommerce .has-one-sidebar .related.products ul.products li.product  {
-		width: 104px;
 	}
 	
 	
@@ -278,12 +1257,13 @@
 	}
 	.woocommerce .help-bar ul {
 		float: none;
-		text-align: center;
+		text-align: center !important;
 	}
 	.woocommerce .help-bar ul li {
-		display: inline-block;
-		float: none;
+		display: block;
+		text-align: center;
 		margin-top: 15px;
+		margin-left: 0;
 	}
 	.woocommerce-cart .woocommerce .span9, .woocommerce-cart .woocommerce .span3 {
 		width: 100%;
@@ -293,13 +1273,93 @@
 		height: auto;
 		overflow: hidden;
 	}
+
 	.woocommerce-cart .woocommerce .span3 {
 		margin-top: 40px;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {	
+	.rightcamp {
+		width:720px !important;
+		
+	}
+	.plazos_entrega{
+		width: :50% !important;
+		margin-top:-110px;
+	}
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1200px) {
+    .mini-cart-wrap {
+                width: 94%;
+        }
+	.rightcamp {
+		width:590px !important;
+		padding-left:30px;
+	}
+	.newslettrain {
+		left:543px;
+		top:-158px;
+	}
+	.pformnewsletter {
+		width:214px;
+	}
+	.mc4wp-form input[type="submit"], .mc4wp-form button, .mc4wp-form input[type="button"] {
+		width:214px;
+	}
+	#mc4wp_email {
+		background: url(http://ironmanrecovery.com/wp-content/themes/neighborhood/images/icon-newsletter.png) no-repeat scroll 197px 11px !important;
+	}
+	.plazos_entrega{
+		width: :40% !important;
+		margin-top:-110px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 969px) {
+    .mini-cart-wrap {
+                width: 80%;
+        }
+	.rightcamp {
+		width:380px !important;
+		padding-left:30px;
+	}
+	.newslettrain {
+		left:418px;
+		top:-128px;
+	}
+	.pformnewsletter {
+		width:165px;
+	}
+	.mc4wp-form input[type="submit"], .mc4wp-form button, .mc4wp-form input[type="button"] {
+		width:165px;
+	}
+	#mc4wp_email {
+		background: url(http://ironmanrecovery.com/wp-content/themes/neighborhood/images/icon-newsletter.png) no-repeat scroll 148px 11px !important;
+	}
+	.plazos_entrega{
+		width: :40% !important;
+		margin-top:-50px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    .mini-cart-wrap {
+                display: none;
+        }
+	.plazos_entrega{
+		width: :100% !important;
+		margin-top:-50px;
 	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {	
-	
+	.mini-cart-wrap {
+                width: 86%;
+        }
+
 	.recent-posts-list li .recent-post-image {
 		float: none;
 	}
@@ -307,16 +1367,18 @@
 		margin-left: 0;
 		padding: 15px 0;
 	}
-	
-	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-		clear: none!important;
+
+	.part-left-product{
+
+		float: left;
+		display: inline !important;
+		padding: 55px 0 !important
 	}
-	.woocommerce ul.products li.product.first, .woocommerce-page ul.products li.product.first {
-		clear: both!important;
+
+	.part-right-product{
+
+		float: right;
 	}
-	.woocommerce ul.products li.product:nth-child(2n), .woocommerce-page ul.products li.product:nth-child(2n) {
-		float: left!important;
-	}	
 
 }
 
@@ -325,7 +1387,9 @@
 -------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
-
+    .mini-cart-wrap {
+                width: 100%;
+        }
 	/* LAYOUT */
 	.boxed-layout {
 		width: 100%;
@@ -375,6 +1439,7 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
 	#page-wrap {
 		padding: 0 20px;
 	}
@@ -409,11 +1474,8 @@
 	#top-bar .tb-left, #top-bar .tb-right {
 		display: none;
 	}
-	#header-section #header, #header-section.header-4 #header {
+	#header-section #header, #header-section.header-4 #header, #header-section.header-5 #header {
 		padding: 15px 0 0;
-	}
-	#header-section.header-5 #header {
-		padding: 15px 0;
 	}
 	#header-section > #main-nav {
 		border-top: 0;
@@ -470,7 +1532,7 @@
 	nav .menu ul.sub-menu li:first-child:before {
 		display: none;
 	}
-	.header-right > nav:first-child, .header-2 .header-right, .header-3 .header-left, .header-3 .header-right, .header-1 .header-left, .header-1 .header-right, .header-5 .header-left {
+	.header-right > nav:first-child, .header-2 .header-right, .header-3 .header-left, .header-3 .header-right, .header-1 .header-left, .header-1 .header-right {
 		display: none;
 	}
 	nav#main-navigation .menu ul ul {
@@ -586,14 +1648,9 @@
 	body.woocommerce .has-no-sidebar ul.products li.product, body.woocommerce .has-no-sidebar .upsells.products ul.products li.product {
 		width: 22%;
 	}
-	body.woocommerce .has-one-sidebar ul.products li.product {
+	body.woocommerce .has-one-sidebar ul.products li.product, body.woocommerce .has-one-sidebar .upsells.products ul.products li.product {
 		width: 30%;
 		margin-left: 5%;
-	}
-	body.woocommerce .has-one-sidebar .upsells.products ul.products li.product, body.woocommerce .has-one-sidebar .related.products ul.products li.product  {
-		width: 46%;
-		margin-right: 4%;
-		margin-left: 0;
 	}
 	body.woocommerce .has-both-sidebars ul.products li.product, body.woocommerce .has-both-sidebars ul.products li.product {
 		width: 49%;
@@ -608,16 +1665,6 @@
 	}
 	.woocommerce .woocommerce-message a.button {
 		display: block;
-	}
-	#commentform label[for="rating"] {
-		display: block;
-		float: none;
-	}
-	.woocommerce p.stars, .woocommerce-page p.stars {
-		height: auto;
-	}
-	#commentform .woocommerce p.stars a, #commentform .woocommerce-page p.stars a {
-		margin-bottom: 10px;
 	}
 	
 	/* WIDGETS */
@@ -723,6 +1770,9 @@
 		font-size: 16px;
 		line-height: 28px;
 	}
+	.spb_parallax_asset {
+		background-attachment: scroll;
+	}
 	
 	/* WOOCOMMERCE */
 	.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
@@ -754,16 +1804,12 @@
 	.woocommerce .shipping-calc {
 		float: none;
 		width: 100%;
-		height: auto;
+		margin-bottom: 30px;
 	}
 	.woocommerce .coupon {
 		float: none;
 		width: 100%;
 		margin-left: 0;
-		height: auto;
-		overflow: hidden;
-		margin-bottom: 40px;
-		padding-top: 10px;
 	}
 	.woocommerce span.onsale, .woocommerce .wc-new-badge, .woocommerce .out-of-stock-badge {
 		display: none;
@@ -796,9 +1842,7 @@
 		margin-top: 10px;
 		margin-bottom: 0;
 	}
-	#order-details {
-		padding-right: 0;
-	}
+        
 }
 
 /* --------------------------------------------
@@ -806,7 +1850,9 @@
 -------------------------------------------- */
 
 @media only screen and (max-width: 479px) {
-	
+	.mini-cart-wrap {
+                display: none;
+        }
 	/* HEADER */
 	#super-search-go {
 		width: 69%;

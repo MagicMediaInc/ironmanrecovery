@@ -144,15 +144,15 @@
 					}
 					$output .= '</div>';
 					if ( comments_open() ) {
-						$output .= '<div class="comment-chart chart" data-percent="1" data-count="'.$post_comments.'" data-barcolor="'.$secondary_accent_color.'"><span>0</span><i class="fa-comments"></i></div>'. "\n";
+						$output .= '<div class="comment-chart chart" data-percent="1" data-count="'.$post_comments.'" data-barcolor="'.$secondary_accent_color.'"><span>0</span><i class="icon-comments"></i></div>'. "\n";
 					}
 					if (function_exists( 'lip_get_love_count' )) {
-					$output .= '<div class="loveit-chart chart" data-percent="1" data-count="'.lip_get_love_count($post->ID).'" data-barcolor="'.$accent_color.'"><span>0</span><i class="fa-heart"></i></div>'. "\n";
+					$output .= '<div class="loveit-chart chart" data-percent="1" data-count="'.lip_get_love_count($post->ID).'" data-barcolor="'.$accent_color.'"><span>0</span><i class="icon-heart"></i></div>'. "\n";
 					}
 					$output .= '</div>'. "\n";
 					$output .= '</div>'. "\n";
 					$output .= '<div class="flex-caption-headline clearfix">'. "\n";
-					$output .= '<h4><a href="'.$post_permalink.'"><span>'. $post_title .'</span><i class="fa-angle-right"></i></a></h4>'. "\n";
+					$output .= '<h4><a href="'.$post_permalink.'"><span>'. $post_title .'</span><i class="icon-angle-right"></i></a></h4>'. "\n";
 					$output .= '</div></div></div>'. "\n";
 					$output .= '<img src="'.$image[0].'" width="'.$image[1].'" height="'.$image[2].'" alt="'.$post_title.'" />'. "\n";
 				} else {
@@ -161,10 +161,10 @@
 					$output .= '<div class="excerpt">'. $post_excerpt .'</div>'. "\n";
 					$output .= '<div class="cl-charts">'. "\n";
 					if ( comments_open() ) {
-						$output .= '<div class="comment-chart fw-chart chart" data-percent="1" data-count="'.$post_comments.'" data-barcolor="'.$secondary_accent_alt_color.'"><span>0</span><i class="fa-comments"></i></div>'. "\n";
+						$output .= '<div class="comment-chart fw-chart chart" data-percent="1" data-count="'.$post_comments.'" data-barcolor="'.$secondary_accent_alt_color.'"><span>0</span><i class="icon-comments"></i></div>'. "\n";
 					}
 					if (function_exists( 'lip_get_love_count' )) {
-					$output .= '<div class="loveit-chart fw-chart chart" data-percent="1" data-count="'.lip_get_love_count($post->ID).'" data-barcolor="'.$accent_color.'"><span>0</span><i class="fa-heart"></i></div>'. "\n";
+					$output .= '<div class="loveit-chart fw-chart chart" data-percent="1" data-count="'.lip_get_love_count($post->ID).'" data-barcolor="'.$accent_color.'"><span>0</span><i class="icon-heart"></i></div>'. "\n";
 					}	
 					$output .= '</div>'. "\n";
 					$output .= '<div class="details clearfix">'. "\n";

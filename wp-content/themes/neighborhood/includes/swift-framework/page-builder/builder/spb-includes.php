@@ -39,7 +39,7 @@
 	require_once( $shortcodes_dir . 'portfolio.php' );
 	require_once( $shortcodes_dir . 'blog.php' );
 	
-	if ( sf_woocommerce_activated() ) {
+	if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 	require_once( $shortcodes_dir . 'products.php' );
 	}
 	

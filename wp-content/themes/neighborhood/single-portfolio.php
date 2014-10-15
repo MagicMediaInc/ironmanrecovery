@@ -35,7 +35,7 @@
 		</div>
 	<?php } ?>
 		
-	<div class="inner-page-wrap has-no-sidebar row clearfix">
+	<div class="inner-page-wrap row clearfix">
 			
 		<!-- OPEN article -->
 		<article <?php post_class('portfolio-article span12 clearfix'); ?> id="<?php the_ID(); ?>" itemscope itemtype="http://schema.org/CreativeWork">
@@ -146,7 +146,7 @@
 					<span class="date"><?php _e("Date: ", "swiftframework"); ?><span><?php echo $item_date; ?></span></span>
 					<span class="tags-wrap"><?php _e("Category: ", "swiftframework"); ?><span class="tags"><?php echo $item_categories; ?></span></span>
 					<?php if ($item_link) { ?>
-					<a class="item-link" href="<?php echo $item_link; ?>" target="_blank"><?php _e("View Project", "swiftframework"); ?><i class="fa-angle-right"></i></a>
+					<a class="item-link" href="<?php echo $item_link; ?>" target="_blank"><?php _e("View Project", "swiftframework"); ?><i class="icon-angle-right"></i></a>
 					<?php } ?>
 				</div>
 				
@@ -164,16 +164,16 @@
 					<div class="share-text"><?php _e("Share:", "swiftframework"); ?></div>
 					<div class="comments-likes">
 					<?php if (function_exists( 'lip_love_it_link' )) {
-						echo lip_love_it_link(get_the_ID(), '<i class="fa-heart"></i>', '<i class="fa-heart"></i>', false);
+						echo lip_love_it_link(get_the_ID(), '<i class="icon-heart"></i>', '<i class="icon-heart"></i>', false);
 					} ?>
 					</div>
 					<ul>
-					    <li><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank" class="product_share_facebook"><i class="fa-facebook"></i></a></li>
-					    <li><a href="https://twitter.com/share?url=<?php the_permalink(); ?>" target="_blank" class="product_share_twitter"><i class="fa-twitter"></i></a></li>   
+					    <li><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank" class="product_share_facebook"><i class="icon-facebook"></i></a></li>
+					    <li><a href="https://twitter.com/share?url=<?php the_permalink(); ?>" target="_blank" class="product_share_twitter"><i class="icon-twitter"></i></a></li>   
 					    <li><a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,
-					      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa-google-plus"></i></a></li>
-						<li><a href="mailto:?subject=<?php the_title(); ?>&body=<?php echo strip_tags(get_the_excerpt()); ?> <?php the_permalink(); ?>" class="product_share_email"><i class="fa-envelope"></i></a></li>
-					    <li><a class="permalink item-link" href="<?php the_permalink(); ?>"><i class="fa-link"></i></a></li>
+					      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="icon-google-plus"></i></a></li>
+						<li><a href="mailto:?subject=<?php the_title(); ?>&body=<?php echo strip_tags(get_the_excerpt()); ?> <?php the_permalink(); ?>" class="product_share_email"><i class="icon-envelope"></i></a></li>
+					    <li><a class="permalink item-link" href="<?php the_permalink(); ?>"><i class="icon-link"></i></a></li>
 					</ul>						
 				</div>
 				
@@ -183,8 +183,8 @@
 			
 			
 			<div class="pagination-wrap portfolio-pagination clearfix">
-				<div class="nav-previous"><?php next_post_link(__('<i class="fa-angle-left"></i> <span class="nav-text">%link</span>', 'swiftframework'), '%title'); ?></div>
-				<div class="nav-next"><?php previous_post_link(__('<span class="nav-text">%link</span><i class="fa-angle-right"></i>', 'swiftframework'), '%title'); ?></div>
+				<div class="nav-previous"><?php next_post_link(__('<i class="icon-angle-left"></i> <span class="nav-text">%link</span>', 'swiftframework'), '%title'); ?></div>
+				<div class="nav-next"><?php previous_post_link(__('<span class="nav-text">%link</span><i class="icon-angle-right"></i>', 'swiftframework'), '%title'); ?></div>
 			</div>	
 				
 		<!-- CLOSE article -->

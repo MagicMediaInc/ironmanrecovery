@@ -116,9 +116,9 @@
 	        $tabs_nav .= '<ul class="nav nav-tabs">';
 	        foreach ( $tab_titles as $tab ) {
 	        	if ($tab_count == 0) {
-	            $tabs_nav .= '<li class="active"><a href="#'. preg_replace("#[[:punct:]]#", "", (strtolower(str_replace(' ', '-', $tab[0])))) .'" data-toggle="tab">' . $tab[0] . '</a></li>';
+	            $tabs_nav .= '<li class="active"><a href="#'. sanitize_title( $tab[0] ) .'" data-toggle="tab">' . $tab[0] . '</a></li>';
 	        	} else {
-	            $tabs_nav .= '<li><a href="#'. preg_replace("#[[:punct:]]#", "", (strtolower(str_replace(' ', '-', $tab[0])))) .'" data-toggle="tab">' . $tab[0] . '</a></li>';        	
+	            $tabs_nav .= '<li><a href="#'. sanitize_title( $tab[0] ) .'" data-toggle="tab">' . $tab[0] . '</a></li>';        	
 	        	}
 	        	$tab_count++;
 	        }

@@ -60,6 +60,12 @@ function my_theme_register_required_plugins() {
 		),
 		
 		array(
+			'name' 		=> 'Previous and Next Post in Same Taxonomy',
+			'slug' 		=> 'previous-and-next-post-in-same-taxonomy',
+			'required' 	=> false,
+		),
+		
+		array(
 			'name' 		=> 'Breadcrumb NavXT',
 			'slug' 		=> 'breadcrumb-navxt',
 			'required' 	=> false,

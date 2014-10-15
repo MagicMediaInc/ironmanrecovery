@@ -80,30 +80,28 @@
 			$product_ids_on_sale = woocommerce_get_product_ids_on_sale();
 			
 			$meta_query = array();
-			$meta_query[] = $woocommerce->query->visibility_meta_query();
+			$meta_query[] = $woocommerce->query->visibility_meta_query();
 			$meta_query[] = $woocommerce->query->stock_status_meta_query();
-			
+			  
 			$args = array(
 				'no_found_rows' => 1,
 				'post_status'   => 'publish',
 				'post_type'     => 'product',
 				'orderby'       => 'date',
 				'order'         => 'ASC',
-				'product_cat' => $category,
-				'posts_per_page' => $item_count,
 				'meta_query'    => $meta_query,
 				'post__in'      => $product_ids_on_sale
 			);
 		} else {
 			$args = array(
-				'post_type' => 'product',
-				'post_status' => 'publish',
-				'product_cat' => $category,
-				'ignore_sticky_posts'   => 1,
-				'posts_per_page' => $item_count,
-				'meta_key' 		=> 'total_sales',
-				'orderby' 		=> 'meta_value'
-			);	    
+					'post_type' => 'product',
+					'post_status' => 'publish',
+					'product_cat' => $category,
+					'ignore_sticky_posts'   => 1,
+					'posts_per_page' => $item_count,
+					'meta_key' 		=> 'total_sales',
+					'orderby' 		=> 'meta_value'
+				);	    
 		}
 		
 		// OUTPUT PRODUCTS    
@@ -131,9 +129,7 @@
 	    			
 	    			if ($image) {
 	    				$image_html = '<img itemprop="image" src="'.$image[0].'" width="'.$image[1].'" height="'.$image[2].'" alt="'.$image_title.'" />';   			
-	    			} else {
-	    				$image_html = '<img itemprop="image" src="'.$image_link.'" width="70" height="70" alt="'.$image_title.'" />';
-	    			}      			
+	    			}            			
 	           	}
 	           	
 	           	if ( comments_open() ) {
@@ -205,218 +201,214 @@
 	    }	    
 		
 	}
-	
-	if ( ! function_exists( 'sf_product_items' ) ) {
-		function sf_product_items($asset_type, $category, $carousel, $product_size, $item_count, $width) {
-			
-			global $woocommerce, $woocommerce_loop;
-			
-			$args = array();
-			
-			// ARRAY ARGUMENTS
-			if ($asset_type == "latest-products") {
-				$args = array(
-						'post_type' => 'product',
-						'post_status' => 'publish',
-						'product_cat' => $category,
-						'ignore_sticky_posts'   => 1,
-						'posts_per_page' => $item_count
-					);	    
-			} else if ($asset_type == "featured-products") {			
-				$args = array(
-					    'post_type' => 'product',
-					    'post_status' => 'publish',
-					    'product_cat' => $category,
-						'ignore_sticky_posts'   => 1,
-					    'meta_key' => '_featured',
-					    'meta_value' => 'yes',
-					    'posts_per_page' => $item_count
-					);
-			} else if ($asset_type == "top-rated") {
-				add_filter( 'posts_clauses',  array( $woocommerce->query, 'order_by_rating_post_clauses' ) );
-						
-				$args = array(
-					    'post_type' => 'product',
-					    'post_status' => 'publish',
-					    'product_cat' => $category,
-						'ignore_sticky_posts'   => 1,
-					    'posts_per_page' => $item_count
-					);
-				$args['meta_query'] = $woocommerce->query->get_meta_query();
-			
-			} else if ($asset_type == "recently-viewed") {			
-	
-				// Get recently viewed product cookies data
-				$viewed_products = ! empty( $_COOKIE['woocommerce_recently_viewed'] ) ? (array) explode( '|', $_COOKIE['woocommerce_recently_viewed'] ) : array();
-				$viewed_products = array_filter( array_map( 'absint', $viewed_products ) );
-			
-				// If no data, quit
-				if ( empty( $viewed_products ) )
-					return '<p class="no-products">'.__( "You haven't viewed any products yet.", "swiftframework").'</p>';
-			
-				// Create query arguments array
-			    $args = array(
-						'post_type'      => 'product',
-						'post_status'    => 'publish',
-						'product_cat' => $category,
-						'ignore_sticky_posts'   => 1,
-	    				'posts_per_page' => $item_count, 
-	    				'no_found_rows'  => 1, 
-	    				'post__in'       => $viewed_products, 
-	    				'orderby'        => 'rand'
-	    			);
-			
-				// Add meta_query to query args
-				//$args['meta_query'] = array();
-			
-			    // Check products stock status
-			    //$args['meta_query'][] = $woocommerce->query->stock_status_meta_query();
-	
-			} else if ($asset_type == "sale-products") {
-				// Get products on sale
-				$product_ids_on_sale = woocommerce_get_product_ids_on_sale();
-				
-				$meta_query = array();
-				$meta_query[] = $woocommerce->query->visibility_meta_query();
-				$meta_query[] = $woocommerce->query->stock_status_meta_query();
-				  
-				$args = array(
-					'no_found_rows' => 1,
-					'post_status'   => 'publish',
-					'post_type'     => 'product',
-					'orderby'       => 'date',
-					'order'         => 'ASC',
+		
+	function sf_product_items($asset_type, $category, $carousel, $product_size, $item_count, $width) {
+		
+		global $woocommerce, $woocommerce_loop;
+		
+		$args = array();
+		
+		// ARRAY ARGUMENTS
+		if ($asset_type == "latest-products") {
+			$args = array(
+					'post_type' => 'product',
+					'post_status' => 'publish',
 					'product_cat' => $category,
-					'meta_query'    => $meta_query,
-					'posts_per_page' => $item_count,
-					'post__in'      => $product_ids_on_sale
+					'ignore_sticky_posts'   => 1,
+					'posts_per_page' => $item_count
+				);	    
+		} else if ($asset_type == "featured-products") {			
+			$args = array(
+				    'post_type' => 'product',
+				    'post_status' => 'publish',
+				    'product_cat' => $category,
+					'ignore_sticky_posts'   => 1,
+				    'meta_key' => '_featured',
+				    'meta_value' => 'yes',
+				    'posts_per_page' => $item_count
 				);
-			} else {
-				$args = array(
-						'post_type' => 'product',
-						'post_status' => 'publish',
-						'product_cat' => $category,
-						'ignore_sticky_posts'   => 1,
-						'posts_per_page' => $item_count,
-						'meta_key' 		=> 'total_sales',
-						'orderby' 		=> 'meta_value'
-					);	    
-			}
+		} else if ($asset_type == "top-rated") {
+			add_filter( 'posts_clauses',  array( $woocommerce->query, 'order_by_rating_post_clauses' ) );
+					
+			$args = array(
+				    'post_type' => 'product',
+				    'post_status' => 'publish',
+				    'product_cat' => $category,
+					'ignore_sticky_posts'   => 1,
+				    'posts_per_page' => $item_count
+				);
+			$args['meta_query'] = $woocommerce->query->get_meta_query();
+		
+		} else if ($asset_type == "recently-viewed") {			
+
+			// Get recently viewed product cookies data
+			$viewed_products = ! empty( $_COOKIE['woocommerce_recently_viewed'] ) ? (array) explode( '|', $_COOKIE['woocommerce_recently_viewed'] ) : array();
+			$viewed_products = array_filter( array_map( 'absint', $viewed_products ) );
+		
+			// If no data, quit
+			if ( empty( $viewed_products ) )
+				return '<p class="no-products">'.__( "You haven't viewed any products yet.", "swiftframework").'</p>';
+		
+			// Create query arguments array
+		    $args = array(
+					'post_type'      => 'product',
+					'post_status'    => 'publish',
+					'product_cat' => $category,
+					'ignore_sticky_posts'   => 1,
+    				'posts_per_page' => $item_count, 
+    				'no_found_rows'  => 1, 
+    				'post__in'       => $viewed_products, 
+    				'orderby'        => 'rand'
+    			);
+		
+			// Add meta_query to query args
+			//$args['meta_query'] = array();
+		
+		    // Check products stock status
+		    //$args['meta_query'][] = $woocommerce->query->stock_status_meta_query();
+
+		} else if ($asset_type == "sale-products") {
+			// Get products on sale
+			$product_ids_on_sale = woocommerce_get_product_ids_on_sale();
 			
-			ob_start();
+			$meta_query = array();
+			$meta_query[] = $woocommerce->query->visibility_meta_query();
+			$meta_query[] = $woocommerce->query->stock_status_meta_query();
+			  
+			$args = array(
+				'no_found_rows' => 1,
+				'post_status'   => 'publish',
+				'post_type'     => 'product',
+				'orderby'       => 'date',
+				'order'         => 'ASC',
+				'meta_query'    => $meta_query,
+				'post__in'      => $product_ids_on_sale
+			);
+		} else {
+			$args = array(
+					'post_type' => 'product',
+					'post_status' => 'publish',
+					'product_cat' => $category,
+					'ignore_sticky_posts'   => 1,
+					'posts_per_page' => $item_count,
+					'meta_key' 		=> 'total_sales',
+					'orderby' 		=> 'meta_value'
+				);	    
+		}
+		
+		ob_start();
+				
+		// OUTPUT PRODUCTS    
+	    $products = new WP_Query( $args );
+	    
+	    global $sidebars;
+	    $columns = 4;
+	    if ($sidebars == "no-sidebars") {
+	   	    if ($width == "3/4") {
+		   	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
+		   	    $columns = 3;	   	    
+	   	    } else if ($width == "1/2") {
+		   	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
+		   	    $columns = 2;	
+		   	} else if ($width == "1/4") {
+		   	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 1 );
+		   	    $columns = 1;   	    
+	   	    } else {
+	   	    	if ($product_size == "mini") {
+	   	    		$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 6 );
+	   	    		$columns = 6;
+	   	    	} else {
+	   	    		$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
+	   	    	}
+	   	    }
+	    } else if ($sidebars == "one-sidebar") {
+	    	if ($width == "3/4") {
+	    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
+	    	    $columns = 3;	   	    
+	    	} else if ($width == "1/2") {
+	    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
+	    	    $columns = 2;	
+	    	} else if ($width == "1/4") {
+	    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 1 );
+	    	    $columns = 1;   	    
+	    	} else {
+	    		if ($product_size == "mini") {
+					$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
+				} else {
+					$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
+					$columns = 3;
+				}
+	    	}
+	    } else {
+	    	if ($width == "3/4") {
+	    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
+	    	    $columns = 2;	   	    
+	    	} else if ($width == "1/2") {
+	    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 1 );
+	    	    $columns = 1;	
+	    	} else if ($width == "1/4") {
+	    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 1 );
+	    	    $columns = 1;   	    
+	    	} else {
+	    		if ($product_size == "mini") {
+	    			$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
+	    			$columns = 3;
+	    		} else {
+					$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
+					$columns = 2;
+	    		}
+	    	}
+	    }
+	    	    
+		if ( $products->have_posts() ) { ?>
+		   
+			<?php if ($carousel == "yes") { ?>
+				
+				<div class="product-carousel" data-columns="<?php echo $columns; ?>">
 					
-			// OUTPUT PRODUCTS    
-		    $products = new WP_Query( $args );
-		    
-		    global $sidebars;
-		    $columns = 4;
-		    if ($sidebars == "no-sidebars") {
-		   	    if ($width == "3/4") {
-			   	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
-			   	    $columns = 3;	   	    
-		   	    } else if ($width == "1/2") {
-			   	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
-			   	    $columns = 2;	
-			   	} else if ($width == "1/4") {
-			   	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 1 );
-			   	    $columns = 1;   	    
-		   	    } else {
-		   	    	if ($product_size == "mini") {
-		   	    		$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 6 );
-		   	    		$columns = 6;
-		   	    	} else {
-		   	    		$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
-		   	    	}
-		   	    }
-		    } else if ($sidebars == "one-sidebar") {
-		    	if ($width == "3/4") {
-		    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
-		    	    $columns = 3;	   	    
-		    	} else if ($width == "1/2") {
-		    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
-		    	    $columns = 2;	
-		    	} else if ($width == "1/4") {
-		    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 1 );
-		    	    $columns = 1;   	    
-		    	} else {
-		    		if ($product_size == "mini") {
-						$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
-					} else {
-						$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
-						$columns = 3;
-					}
-		    	}
-		    } else {
-		    	if ($width == "3/4") {
-		    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
-		    	    $columns = 2;	   	    
-		    	} else if ($width == "1/2") {
-		    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 1 );
-		    	    $columns = 1;	
-		    	} else if ($width == "1/4") {
-		    	    $woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 1 );
-		    	    $columns = 1;   	    
-		    	} else {
-		    		if ($product_size == "mini") {
-		    			$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
-		    			$columns = 3;
-		    		} else {
-						$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 2 );
-						$columns = 2;
-		    		}
-		    	}
-		    }
-		    	    
-			if ( $products->have_posts() ) { ?>
-			   
-				<?php if ($carousel == "yes") { ?>
-					
-					<div class="product-carousel" data-columns="<?php echo $columns; ?>">
+					<div class="carousel-overflow">
+									
+						<ul class="products list-<?php echo $asset_type; ?>">
 						
-						<div class="carousel-overflow">
-										
-							<ul class="products list-<?php echo $asset_type; ?>">
-							
-								<?php while ( $products->have_posts() ) : $products->the_post(); ?>
-							
-									<?php woocommerce_get_template_part( 'content', 'product' ); ?>
-							
-								<?php endwhile; // end of the loop. ?>
-							 
-							</ul>
-												
-						</div>
+							<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 						
-						<a href="#" class="prev"><i class="fa-chevron-left"></i></a><a href="#" class="next"><i class="fa-chevron-right"></i></a>
+								<?php woocommerce_get_template_part( 'content', 'product' ); ?>
 						
+							<?php endwhile; // end of the loop. ?>
+						 
+						</ul>
+											
 					</div>
 					
-				<?php } else {  ?> 
+					<a href="#" class="prev"><i class="icon-chevron-left"></i></a><a href="#" class="next"><i class="icon-chevron-right"></i></a>
+					
+				</div>
 				
-				<ul class="products list-<?php echo $asset_type; ?>">
-				
-					<?php while ( $products->have_posts() ) : $products->the_post(); ?>
-				
-						<?php woocommerce_get_template_part( 'content', 'product' ); ?>
-				
-					<?php endwhile; // end of the loop. ?>
-				 
-				</ul>
-				
-				<?php } ?>
-			   
-			<?php }
-		       
-	       $product_list_output = ob_get_contents();
-	       ob_end_clean();
+			<?php } else {  ?> 
+			
+			<ul class="products list-<?php echo $asset_type; ?>">
+			
+				<?php while ( $products->have_posts() ) : $products->the_post(); ?>
+			
+					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
+			
+				<?php endwhile; // end of the loop. ?>
+			 
+			</ul>
+			
+			<?php } ?>
+		   
+		<?php }
 	       
-	       wp_reset_query();
-	       wp_reset_postdata();
-	       remove_filter( 'posts_clauses',  array( $woocommerce->query, 'order_by_rating_post_clauses' ) );
-	       
-	       return $product_list_output;
-		
-		}
+       $product_list_output = ob_get_contents();
+       ob_end_clean();
+       
+       wp_reset_query();
+       wp_reset_postdata();
+       remove_filter( 'posts_clauses',  array( $woocommerce->query, 'order_by_rating_post_clauses' ) );
+       
+       return $product_list_output;
+	
 	}	    	
 	
 ?>

@@ -32,7 +32,7 @@
 	    	    "heading" => __("Title icon", "swift_page_builder"),
 	    	    "param_name" => "icon",
 	    	    "value" => "",
-	    	    "description" => __("Icon to the left of the title text. You can get the code from <a href='http://fortawesome.github.com/Font-Awesome/' target='_blank'>here</a>. E.g. fa-cloud", "swift_page_builder")
+	    	    "description" => __("Icon to the left of the title text. You can get the code from <a href='http://fortawesome.github.com/Font-Awesome/' target='_blank'>here</a>. E.g. icon-cloud", "swift_page_builder")
 	    	),
 	        array(
 	            "type" => "textarea_html",

@@ -9,7 +9,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $product, $woocommerce_loop, $sf_carouselID;
+global $product, $woocommerce_loop, $carouselID;
 
 $related = $product->get_related(12);
 
@@ -30,10 +30,10 @@ $products = new WP_Query( $args );
 //$woocommerce_loop['columns'] = $columns;
 $woocommerce_loop['columns'] = 4;
 
-if ($sf_carouselID == "") {
-$sf_carouselID = 1;
+if ($carouselID == "") {
+$carouselID = 1;
 } else {
-$sf_carouselID++;
+$carouselID++;
 }
 
 if ( $products->have_posts() ) : ?>
@@ -56,7 +56,7 @@ if ( $products->have_posts() ) : ?>
 		
 		</div>
 		
-		<a href="#" class="prev"><i class="fa-chevron-left"></i></a><a href="#" class="next"><i class="fa-chevron-right"></i></a>
+		<a href="#" class="prev"><i class="icon-chevron-left"></i></a><a href="#" class="next"><i class="icon-chevron-right"></i></a>
 		
 	</div>
 

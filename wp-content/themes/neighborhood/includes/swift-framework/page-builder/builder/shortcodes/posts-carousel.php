@@ -160,10 +160,11 @@ class SwiftPageBuilderShortcode_posts_carousel extends SwiftPageBuilderShortcode
 						if (!$alt) {
 						$alt = $image['title'];
 						}
-					    $items .= "<li><a ".$link_config."><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$alt}' /></a></li>";
+					    $items .= "<li><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$alt}' /></li>";
 					}
 																	
 					$items .= '</ul>';
+					$items .= '<div class="open-item"><a '.$link_config.'><i class="icon-resize-full"></i></a></div>';
 					$items .= '</div>';
 					
 				} else {
@@ -175,7 +176,7 @@ class SwiftPageBuilderShortcode_posts_carousel extends SwiftPageBuilderShortcode
 					if ($image) {
 					
 					$items .= '<div class="overlay"><div class="thumb-info">';
-					$items .= '<i class="fa-'.$item_icon.'"></i>';
+					$items .= '<i class="icon-'.$item_icon.'"></i>';
 					$items .= '</div></div>';
 					
 					$items .= '<img itemprop="image" src="'.$image[0].'" width="'.$image[1].'" height="'.$image[2].'" alt="'.$item_title.'" />';
@@ -213,7 +214,7 @@ class SwiftPageBuilderShortcode_posts_carousel extends SwiftPageBuilderShortcode
 					
 			$items .= '</ul></div>';
 			
-			$items .= '<a href="#" class="prev"><i class="fa-chevron-left"></i></a><a href="#" class="next"><i class="fa-chevron-right"></i></a>';
+			$items .= '<a href="#" class="prev"><i class="icon-chevron-left"></i></a><a href="#" class="next"><i class="icon-chevron-right"></i></a>';
     		
 			$width = spb_translateColumnWidthToSpan($width);
 			$el_class = $this->getExtraClass($el_class);

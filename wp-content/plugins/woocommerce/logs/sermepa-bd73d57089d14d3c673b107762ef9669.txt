@@ -1,0 +1,572 @@
+01-07-2014 @ 11:56:16 - Generating payment form for order #657. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:56:16 - Digest calculation for 2978000657322742420978589799Q80438U005 is 07db571376fc56b7c4f7b520b0828034a2bfb944.
+01-07-2014 @ 11:56:16 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 297800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0657
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=657&key=order_52cbdd5000381
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=657&order=order_52cbdd5000381&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 07db571376fc56b7c4f7b520b0828034a2bfb944
+)
+
+01-07-2014 @ 11:56:21 - Generating payment form for order #658. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:56:21 - Digest calculation for 3438000658322742420978589799Q80438U005 is 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0.
+01-07-2014 @ 11:56:21 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 343800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0658
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=658&key=order_52cbdd546c30f
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=658&order=order_52cbdd546c30f&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0
+)
+
+01-07-2014 @ 11:56:40 - Generating payment form for order #657. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:56:40 - Digest calculation for 2978000657322742420978589799Q80438U005 is 07db571376fc56b7c4f7b520b0828034a2bfb944.
+01-07-2014 @ 11:56:40 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 297800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0657
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=657&key=order_52cbdd5000381
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=657&order=order_52cbdd5000381&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 07db571376fc56b7c4f7b520b0828034a2bfb944
+)
+
+01-07-2014 @ 11:56:45 - Generating payment form for order #657. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:56:45 - Digest calculation for 2978000657322742420978589799Q80438U005 is 07db571376fc56b7c4f7b520b0828034a2bfb944.
+01-07-2014 @ 11:56:45 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 297800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0657
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=657&key=order_52cbdd5000381
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=657&order=order_52cbdd5000381&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 07db571376fc56b7c4f7b520b0828034a2bfb944
+)
+
+01-07-2014 @ 11:57:02 - Generating payment form for order #658. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:57:02 - Digest calculation for 3438000658322742420978589799Q80438U005 is 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0.
+01-07-2014 @ 11:57:02 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 343800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0658
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=658&key=order_52cbdd546c30f
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=658&order=order_52cbdd546c30f&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0
+)
+
+01-07-2014 @ 11:57:06 - Generating payment form for order #658. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:57:06 - Digest calculation for 3438000658322742420978589799Q80438U005 is 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0.
+01-07-2014 @ 11:57:06 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 343800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0658
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=658&key=order_52cbdd546c30f
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=658&order=order_52cbdd546c30f&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0
+)
+
+01-07-2014 @ 11:57:10 - Generating payment form for order #658. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:57:10 - Digest calculation for 3438000658322742420978589799Q80438U005 is 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0.
+01-07-2014 @ 11:57:10 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 343800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0658
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=658&key=order_52cbdd546c30f
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=658&order=order_52cbdd546c30f&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0
+)
+
+01-07-2014 @ 11:57:15 - Generating payment form for order #658. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:57:15 - Digest calculation for 3438000658322742420978589799Q80438U005 is 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0.
+01-07-2014 @ 11:57:15 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 343800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0658
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=658&key=order_52cbdd546c30f
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=658&order=order_52cbdd546c30f&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0
+)
+
+01-07-2014 @ 11:57:18 - Generating payment form for order #658. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:57:18 - Digest calculation for 3438000658322742420978589799Q80438U005 is 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0.
+01-07-2014 @ 11:57:18 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 343800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0658
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=658&key=order_52cbdd546c30f
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=658&order=order_52cbdd546c30f&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0
+)
+
+01-07-2014 @ 11:57:20 - Generating payment form for order #658. Notify URL: http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+01-07-2014 @ 11:57:20 - Digest calculation for 3438000658322742420978589799Q80438U005 is 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0.
+01-07-2014 @ 11:57:20 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 343800
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0658
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://extranet.visualtis.com/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://extranet.visualtis.com/ironman/?page_id=15&order=658&key=order_52cbdd546c30f
+    [Ds_Merchant_UrlKO] => http://extranet.visualtis.com/ironman/?order_id=658&order=order_52cbdd546c30f&cancel_order=true&_n=2c53b30730
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 1b73d581cab4dfe508a8d9bd4569fb1c291f86b0
+)
+
+01-09-2014 @ 20:06:53 - Generating payment form for order #695. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+01-09-2014 @ 20:06:53 - Digest calculation for 1999000695322742420978589799Q80438U005 is 821e7dabf94bae010062f175dc3a7758a85a7b16.
+01-09-2014 @ 20:06:53 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 199900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 0695
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/?page_id=15&order=695&key=order_52cef34c95d89
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=695&order=order_52cef34c95d89&cancel_order=true&_n=d30d4c520b
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 821e7dabf94bae010062f175dc3a7758a85a7b16
+)
+
+01-13-2014 @ 12:38:35 - Generating payment form for order #1015. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+01-13-2014 @ 12:38:35 - Digest calculation for 1999201015322742420978589799Q80438U005 is b1848735650a043fdd3d27fed79cc044b2fbbfe5.
+01-13-2014 @ 12:38:35 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 199920
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1015
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/?page_id=15&order=1015&key=order_52d3d03a07c11
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1015&order=order_52d3d03a07c11&cancel_order=true&_n=4e9de80ab5
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => b1848735650a043fdd3d27fed79cc044b2fbbfe5
+)
+
+01-13-2014 @ 12:39:17 - Generating payment form for order #1015. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+01-13-2014 @ 12:39:17 - Digest calculation for 1999201015322742420978589799Q80438U005 is b1848735650a043fdd3d27fed79cc044b2fbbfe5.
+01-13-2014 @ 12:39:17 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 199920
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1015
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/?page_id=15&order=1015&key=order_52d3d0642c258
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1015&order=order_52d3d0642c258&cancel_order=true&_n=4e9de80ab5
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => b1848735650a043fdd3d27fed79cc044b2fbbfe5
+)
+
+01-13-2014 @ 17:45:41 - Generating payment form for order #1033. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+01-13-2014 @ 17:45:41 - Digest calculation for 2499001033322742420978589799Q80438U005 is 610000489974a9f211187c133d98aa84cf0b00ca.
+01-13-2014 @ 17:45:41 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 249900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1033
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/?page_id=15&order=1033&key=order_52d418308d421
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1033&order=order_52d418308d421&cancel_order=true&_n=fcf666fd15
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 610000489974a9f211187c133d98aa84cf0b00ca
+)
+
+01-13-2014 @ 18:02:55 - Generating payment form for order #1035. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+01-13-2014 @ 18:02:55 - Digest calculation for 2799001035322742420978589799Q80438U005 is 9d18fcb2c07f772f720a58ec5b0a037143fa33f7.
+01-13-2014 @ 18:02:55 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 279900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1035
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/?page_id=15&order=1035&key=order_52d41c3e015fa
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1035&order=order_52d41c3e015fa&cancel_order=true&_n=fcf666fd15
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 9d18fcb2c07f772f720a58ec5b0a037143fa33f7
+)
+
+01-14-2014 @ 13:30:15 - Generating payment form for order #1038. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+01-14-2014 @ 13:30:15 - Digest calculation for 2799001038322742420978589799Q80438U005 is da998aea8f88defbf884a129e80a78583b05e130.
+01-14-2014 @ 13:30:15 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 279900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1038
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/?page_id=15&order=1038&key=order_52d52dd61eb0c
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1038&order=order_52d52dd61eb0c&cancel_order=true&_n=d1e010e7c5
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => da998aea8f88defbf884a129e80a78583b05e130
+)
+
+02-18-2014 @ 11:38:32 - Generating payment form for order #1402. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+02-18-2014 @ 11:38:32 - Digest calculation for 1249001402322742420978589799Q80438U005 is 2174f83602fe58df286b8ea5da3f7fcd941cfad8.
+02-18-2014 @ 11:38:32 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 124900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1402
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/realizar-pedido/pedido-recibido/?order=1402&key=order_530338255fcb4
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1402&order=order_530338255fcb4&cancel_order=true&_n=3ba08f8fb7
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 2174f83602fe58df286b8ea5da3f7fcd941cfad8
+)
+
+02-18-2014 @ 11:38:35 - Generating payment form for order #1402. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+02-18-2014 @ 11:38:35 - Digest calculation for 1249001402322742420978589799Q80438U005 is 2174f83602fe58df286b8ea5da3f7fcd941cfad8.
+02-18-2014 @ 11:38:35 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 124900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1402
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/realizar-pedido/pedido-recibido/?order=1402&key=order_530338255fcb4
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1402&order=order_530338255fcb4&cancel_order=true&_n=3ba08f8fb7
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 2174f83602fe58df286b8ea5da3f7fcd941cfad8
+)
+
+03-04-2014 @ 12:32:35 - Generating payment form for order #1605. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+03-04-2014 @ 12:32:35 - Digest calculation for 2657001605322742420978589799Q80438U005 is 2dd8ef86aff46073160e2a37217010b1ca345de6.
+03-04-2014 @ 12:32:35 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 265700
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1605
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/realizar-pedido/pedido-recibido/?order=1605&key=order_5315b9d1264a1
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1605&order=order_5315b9d1264a1&cancel_order=true&_n=aeb73d9a1a
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 2dd8ef86aff46073160e2a37217010b1ca345de6
+)
+
+03-14-2014 @ 07:17:31 - Generating payment form for order #1671. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+03-14-2014 @ 07:17:31 - Digest calculation for 24990016713227424209780http://ironmanrecovery.com/?wc-api=WC_Sermepa589799Q80438U005 is 5d36cd5f37eb91828d1f0eff4b06a11251b2744b.
+03-14-2014 @ 07:17:31 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 249900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1671
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/realizar-pedido/pedido-recibido/?order=1671&key=order_53229ef64afe1
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1671&order=order_53229ef64afe1&cancel_order=true&_n=1a84bbb075
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 5d36cd5f37eb91828d1f0eff4b06a11251b2744b
+)
+
+03-14-2014 @ 07:17:35 - Generating payment form for order #1671. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+03-14-2014 @ 07:17:35 - Digest calculation for 24990016713227424209780http://ironmanrecovery.com/?wc-api=WC_Sermepa589799Q80438U005 is 5d36cd5f37eb91828d1f0eff4b06a11251b2744b.
+03-14-2014 @ 07:17:35 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 249900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1671
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/realizar-pedido/pedido-recibido/?order=1671&key=order_53229ef64afe1
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1671&order=order_53229ef64afe1&cancel_order=true&_n=1a84bbb075
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 5d36cd5f37eb91828d1f0eff4b06a11251b2744b
+)
+
+03-14-2014 @ 07:18:34 - Generating payment form for order #1671. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+03-14-2014 @ 07:18:34 - Digest calculation for 24990016713227424209780http://ironmanrecovery.com/?wc-api=WC_Sermepa589799Q80438U005 is 5d36cd5f37eb91828d1f0eff4b06a11251b2744b.
+03-14-2014 @ 07:18:34 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 249900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1671
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/realizar-pedido/pedido-recibido/?order=1671&key=order_53229f36a1cd8
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1671&order=order_53229f36a1cd8&cancel_order=true&_n=1a84bbb075
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 5d36cd5f37eb91828d1f0eff4b06a11251b2744b
+)
+
+03-14-2014 @ 07:18:38 - Generating payment form for order #1671. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+03-14-2014 @ 07:18:38 - Digest calculation for 24990016713227424209780http://ironmanrecovery.com/?wc-api=WC_Sermepa589799Q80438U005 is 5d36cd5f37eb91828d1f0eff4b06a11251b2744b.
+03-14-2014 @ 07:18:38 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 249900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1671
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/realizar-pedido/pedido-recibido/?order=1671&key=order_53229f36a1cd8
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1671&order=order_53229f36a1cd8&cancel_order=true&_n=1a84bbb075
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 5d36cd5f37eb91828d1f0eff4b06a11251b2744b
+)
+
+03-14-2014 @ 07:31:18 - Generating payment form for order #1672. Notify URL: http://ironmanrecovery.com/?wc-api=WC_Sermepa
+03-14-2014 @ 07:31:18 - Digest calculation for 27490016723227424209780http://ironmanrecovery.com/?wc-api=WC_Sermepa589799Q80438U005 is 8a3ab7c1389494fec2090c580849fe5ae9b2e2c8.
+03-14-2014 @ 07:31:18 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 274900
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 1672
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://ironmanrecovery.com/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://ironmanrecovery.com/realizar-pedido/pedido-recibido/?order=1672&key=order_5322a231ecee7
+    [Ds_Merchant_UrlKO] => http://ironmanrecovery.com/?order_id=1672&order=order_5322a231ecee7&cancel_order=true&_n=1a84bbb075
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 8a3ab7c1389494fec2090c580849fe5ae9b2e2c8
+)
+
+08-27-2014 @ 04:45:06 - Generating payment form for order #2073. Notify URL: http://demos.ottra.es/ironman/?wc-api=WC_Sermepa
+08-27-2014 @ 04:45:06 - Digest calculation for 3520020733227424209780http://demos.ottra.es/ironman/?wc-api=WC_Sermepa589799Q80438U005 is 1866b777104bc55047bd752b91b2b06c3279b8f9.
+08-27-2014 @ 04:45:06 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 35200
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 2073
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://demos.ottra.es/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://demos.ottra.es/ironman/realizar-pedido/pedido-recibido/?order=2073&key=order_53fd8c8030713
+    [Ds_Merchant_UrlKO] => http://demos.ottra.es/ironman/?order_id=2073&order=order_53fd8c8030713&cancel_order=true&_n=c01246e171
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 1866b777104bc55047bd752b91b2b06c3279b8f9
+)
+
+08-27-2014 @ 04:46:11 - Generating payment form for order #2074. Notify URL: http://demos.ottra.es/ironman/?wc-api=WC_Sermepa
+08-27-2014 @ 04:46:11 - Digest calculation for 3520020743227424209780http://demos.ottra.es/ironman/?wc-api=WC_Sermepa589799Q80438U005 is 8a9df66ba3e0be8a9b57c7f67890be14aa0a4800.
+08-27-2014 @ 04:46:11 - Sending data to Sermepa Array
+(
+    [Ds_Merchant_Amount] => 35200
+    [Ds_Merchant_Currency] => 978
+    [Ds_Merchant_Order] => 2074
+    [Ds_Merchant_MerchantCode] => 322742420
+    [Ds_Merchant_Terminal] => 001
+    [Ds_Merchant_TransactionType] => 0
+    [Ds_Merchant_Titular] => Sermepa
+    [Ds_Merchant_MerchantName] => Sermepa
+    [Ds_Merchant_MerchantURL] => http://demos.ottra.es/ironman/?wc-api=WC_Sermepa
+    [Ds_Merchant_MerchantData] => sermepaNotification
+    [Ds_Merchant_ProductDescription] => Online order
+    [Ds_Merchant_ConsumerLanguage] => 0
+    [Ds_Merchant_UrlOK] => http://demos.ottra.es/ironman/realizar-pedido/pedido-recibido/?order=2074&key=order_53fd8cc25c4dd
+    [Ds_Merchant_UrlKO] => http://demos.ottra.es/ironman/?order_id=2074&order=order_53fd8cc25c4dd&cancel_order=true&_n=c01246e171
+    [Ds_Merchant_PayMethods] => T
+    [Ds_Merchant_MerchantSignature] => 8a9df66ba3e0be8a9b57c7f67890be14aa0a4800
+)
+

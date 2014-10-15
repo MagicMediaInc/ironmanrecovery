@@ -4,7 +4,7 @@
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Wishlist
- * @version 1.1.5
+ * @version 1.0.6
  */
 
 if ( !defined( 'YITH_WCWL' ) ) { exit; } // Exit if accessed directly
@@ -47,10 +47,7 @@ public static function popup_message() {
     public static function add_to_wishlist_button( $url, $product_type, $exists ) {
         global $yith_wcwl, $product;
 
-        $label_option = get_option( 'yith_wcwl_add_to_wishlist_text' );
-        $localize_label = function_exists( 'icl_translate' ) ? icl_translate( 'Plugins', 'plugin_yit_wishlist_button', $label_option ) : $label_option;
-
-        $label = apply_filters( 'yith_wcwl_button_label', $localize_label );
+        $label = apply_filters( 'yith_wcwl_button_label', get_option( 'yith_wcwl_add_to_wishlist_text' ) );
         $icon = get_option( 'yith_wcwl_add_to_wishlist_icon' ) != 'none' ? '<i class="' . get_option( 'yith_wcwl_add_to_wishlist_icon' ) . '"></i>' : '';
 
         $classes = get_option( 'yith_wcwl_use_button' ) == 'yes' ? 'class="add_to_wishlist single_add_to_wishlist button alt"' : 'class="add_to_wishlist"';
@@ -93,11 +90,7 @@ public static function popup_message() {
             $product = new WC_Product( $product_id );
 
         $url = $product->product_type == 'external' ? $yith_wcwl->get_affiliate_product_url( $product_id ) : $yith_wcwl->get_addtocart_url( $product_id );
-
-        $label_option = get_option( 'yith_wcwl_add_to_cart_text' );
-        $localize_label = function_exists( 'icl_translate' ) ? icl_translate( 'Plugins', 'plugin_yit_wishlist_button', $label_option ) : $label_option;
-
-        $label = $product->product_type == 'variable' ? apply_filters( 'variable_add_to_cart_text', __('Select options', 'yit') ) : apply_filters( 'yith_wcwl_add_to_cart_label', $localize_label );
+        $label = $product->product_type == 'variable' ? apply_filters( 'variable_add_to_cart_text', __('Select options', 'yit') ) : apply_filters( 'yith_wcwl_add_to_cart_label', get_option( 'yith_wcwl_add_to_cart_text' ) );
         $icon = get_option( 'yith_wcwl_use_button' ) == 'yes' && get_option( 'yith_wcwl_add_to_cart_icon' ) != 'none' ? '<i class="' . get_option( 'yith_wcwl_add_to_cart_icon' ) . '"></i>' : '';
 
         $cartlink = '';
@@ -108,8 +101,7 @@ public static function popup_message() {
             if( $product->product_type == 'external' ) {
                 $cartlink .= '<a target="_blank" class="add_to_cart button alt" href="' . $url . '"';
             } else {
-                $js_action = esc_attr( 'check_for_stock(\'' . $url . '\',\'' . $stock_status . '\',\'' . $redirect_to_cart . '\');' );
-                $cartlink .= '<a class="add_to_cart button alt" onclick="' . $js_action . '"';
+                $cartlink .= '<a class="add_to_cart button alt" onclick="check_for_stock(\'' . $url . '\',\'' . $stock_status . '\',\'' . $redirect_to_cart . '\');"';
             }
 
             $cartlink .= $style . '>' . $icon . $label . '</a>';
@@ -117,8 +109,7 @@ public static function popup_message() {
             if( $product->product_type == 'external' ) {
                 $cartlink .= '<a target="_blank" class="add_to_cart button alt" href="' . $url . '">' . $icon . $label . '</a>';
             } else {
-                $js_action = esc_attr( 'check_for_stock(\'' . $url . '\',\'' . $stock_status . '\',\'' . $redirect_to_cart . '\');' );
-                $cartlink .= '<a class="add_to_cart button alt" href="javascript:void(0);" onclick="' . $js_action . '">' . $icon . $label . '</a>';
+                $cartlink .= '<a class="add_to_cart button alt" href="javascript:void(0);" onclick="check_for_stock(\'' . $url . '\',\'' . $stock_status . '\',\'' . $redirect_to_cart . '\');">' . $icon . $label . '</a>';
             }
         }
 
@@ -136,7 +127,7 @@ public static function popup_message() {
     public static function get_share_links( $url ) {
         $normal_url = $url;
         $url = urlencode( $url );
-        $title = apply_filters( 'plugin_text', urlencode( get_option( 'yith_wcwl_socials_title' ) ) );
+        $title = urlencode( get_option( 'yith_wcwl_socials_title' ) );
         $twitter_summary = str_replace( '%wishlist_url%', '', get_option( 'yith_wcwl_socials_text' ) );
         $summary = urlencode( str_replace( '%wishlist_url%', $normal_url, get_option( 'yith_wcwl_socials_text' ) ) );
         $imageurl = urlencode( get_option( 'yith_wcwl_socials_image_url' ) );
@@ -145,20 +136,17 @@ public static function popup_message() {
         $html .= apply_filters( 'yith_wcwl_socials_share_title', '<h4>' . __( 'Share on:', 'yit' ) . '</h4>' );
         $html .= '<ul>';
 
-        if( get_option( 'yith_wcwl_share_fb' ) == 'yes' )
+        if( get_option( 'yith_wcwl_share_fb' ) )
         { $html .= '<li style="list-style-type: none; display: inline-block;"><a target="_blank" class="facebook" href="https://www.facebook.com/sharer.php?s=100&amp;p[title]=' . $title . '&amp;p[url]=' . $url . '&amp;p[summary]=' . $summary . '&amp;p[images][0]=' . $imageurl . '" title="' . __( 'Facebook', 'yit' ) . '"></a></li>'; }
 
-        if( get_option( 'yith_wcwl_share_twitter' ) == 'yes' )
+        if( get_option( 'yith_wcwl_share_twitter' ) )
         { $html .= '<li style="list-style-type: none; display: inline-block;"><a target="_blank" class="twitter" href="https://twitter.com/share?url=' . $url . '&amp;text=' . $twitter_summary . '" title="' . __( 'Twitter', 'yit' ) . '"></a></li>'; }
 
-        if( get_option( 'yith_wcwl_share_pinterest' ) == 'yes' )
+        if( get_option( 'yith_wcwl_share_pinterest' ) )
         { $html .= '<li style="list-style-type: none; display: inline-block;"><a target="_blank" class="pinterest" href="http://pinterest.com/pin/create/button/?url=' . $url . '&amp;description=' . $summary . '&media=' . $imageurl . '" onclick="window.open(this.href); return false;"></a></li>'; }
 
         if( get_option( 'yith_wcwl_share_googleplus' ) == 'yes' )
         { $html .= '<li style="list-style-type: none; display: inline-block;"><a target="_blank" class="googleplus" href="https://plus.google.com/share?url=' . $url . '&amp;title="' . $title . '" onclick=\'javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;\'></a></li>'; }
-
-        if( get_option( 'yith_wcwl_share_email' ) == 'yes' )
-        { $html .= '<li style="list-style-type: none; display: inline-block;"><a class="email" href="mailto:?subject=I wanted you to see this site&amp;body= ' . $url . '&amp;title="' . __('email', 'yit') . '" ></a></li>'; }
 
         $html .= '</ul>';
         $html .= '</div>';

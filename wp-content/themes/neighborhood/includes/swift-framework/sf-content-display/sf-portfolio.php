@@ -69,9 +69,9 @@
 			/* META VARIABLES
 			================================================== */
 			$thumb_image = $thumb_gallery = $video = $item_class = $link_config = '';
-			$thumb_width = 800;
-			$thumb_height = 600;
-			$video_height = 600;
+			$thumb_width = 420;
+			$thumb_height = 315;
+			$video_height = 315;
 
 			$thumb_type = get_post_meta($post->ID, 'sf_thumbnail_type', true);
 			$thumb_image = rwmb_meta('sf_thumbnail_image', 'type=image&size=full');
@@ -145,9 +145,9 @@
 				$item_class = "span4 ";
 				} else {
 				$item_class = "span6 ";
-				$thumb_width = 800;
-				$thumb_height = 600;
-				$video_height = 600;
+				$thumb_width = 600;
+				$thumb_height = 450;
+				$video_height = 450;
 				}
 			} else if ($columns == "3") {
 				if ($sidebars == "both-sidebars") {
@@ -226,10 +226,10 @@
 								
 					foreach ( $thumb_gallery as $image )
 					{
-					    $portfolio_items_output .= "<li><a ".$item_link['config']."><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' /></a></li>". "\n";
+					    $portfolio_items_output .= "<li><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' /></li>". "\n";
 					}
 																	
-					$portfolio_items_output .= '</ul></div>'. "\n";
+					$portfolio_items_output .= '</ul><div class="open-item"><a '.$link_config.'><i class="icon-plus"></i></a></div></div>'. "\n";
 					
 				} else {
 				
@@ -242,10 +242,10 @@
 						
 						$portfolio_items_output .= '<div class="overlay"><div class="thumb-info">'. "\n";
 						if ($display_type == "standard") {
-						$portfolio_items_output .= '<i class="fa-'.$item_icon.'"></i>'. "\n";
+						$portfolio_items_output .= '<i class="icon-'.$item_icon.'"></i>'. "\n";
 						} else {
 						$portfolio_items_output .= '<h4 itemprop="name headline">'.$item_title.'</h4>'. "\n";
-						$portfolio_items_output .= '<i class="fa-'.$item_icon.' small-icon"></i>'. "\n";
+						$portfolio_items_output .= '<i class="icon-'.$item_icon.' small-icon"></i>'. "\n";
 						}
 						$portfolio_items_output .= '</div></div>'. "\n";
 						
@@ -320,7 +320,7 @@
 		$filter_wrap_bg = $options['filter_wrap_bg'];
 		
 	    $filter_output .= '<div class="filter-wrap row clearfix">'. "\n";
-	    $filter_output .= '<a href="#" class="select"><i class="fa-align-justify"></i>'. __("Filter our work", "swiftframework") .'</a>'. "\n";
+	    $filter_output .= '<a href="#" class="select"><i class="icon-align-justify"></i>'. __("Filter our work", "swiftframework") .'</a>'. "\n";
 	    $filter_output .= '<div class="filter-slide-wrap span12 alt-bg '.$filter_wrap_bg.'">'. "\n";
 	    $filter_output .= '<ul class="portfolio-filter filtering row clearfix">'. "\n";
 	    $filter_output .= '<li class="all selected span2"><a data-filter="*" href="#"><span class="item-name">'. __("All", "swiftframework").'</span><span class="item-count">0</span></a></li>'. "\n";

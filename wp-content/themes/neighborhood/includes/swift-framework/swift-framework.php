@@ -65,6 +65,6 @@
 	/* THEME UPDATER FRAMEWORK
 	================================================== */  
 	require_once(SF_FRAMEWORK_PATH . '/wp-updates-theme.php');
-	new WPUpdatesThemeUpdater_318( 'http://wp-updates.com/api/2/theme', basename(get_template_directory()));
+	new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 318, basename(get_template_directory()) );	
 	
 ?>

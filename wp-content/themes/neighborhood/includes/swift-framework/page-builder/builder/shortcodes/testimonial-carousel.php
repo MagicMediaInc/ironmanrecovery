@@ -115,7 +115,7 @@ class SwiftPageBuilderShortcode_testimonial_carousel extends SwiftPageBuilderSho
         		
         $items .= '</ul></div>';
        	
-       	$items .= '<a href="#" class="prev"><i class="fa-chevron-left"></i></a><a href="#" class="next"><i class="fa-chevron-right"></i></a>';
+       	$items .= '<a href="#" class="prev"><i class="icon-chevron-left"></i></a><a href="#" class="next"><i class="icon-chevron-right"></i></a>';
        	
    		if ($page_link == "yes") {
 	        $options = get_option('sf_neighborhood_options');
@@ -128,7 +128,7 @@ class SwiftPageBuilderShortcode_testimonial_carousel extends SwiftPageBuilderSho
         	}
         
 			if ($testimonials_page && isset($testimonials_page_title)) {
-				$items .= '<a href="'.get_permalink($testimonials_page_id).'" class="read-more">'.__("More", "swiftframework").'<i class="fa-angle-right"></i></a>';
+				$items .= '<a href="'.get_permalink($testimonials_page_id).'" class="read-more">'.__("More", "swiftframework").'<i class="icon-angle-right"></i></a>';
 			}
 		}
 
