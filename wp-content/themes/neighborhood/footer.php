@@ -187,7 +187,7 @@
 						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com.br/aviso-legal/?lang=pt">Aviso legal</a> e <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=pt">Política de privacidade</a>.</p>
 					
 						
-					<?php echo $swiftideas_backlink; ?></p>
+					Designed by <a href="http://www.gallardodesgner.com.br" target="_new">Gallardo Designer</a></p>
 					<div class="beam-me-up three columns offset-by-one"><a href="#"><?php echo do_shortcode(stripslashes($go_top_text)); ?><i class="icon-arrow-up"></i></a></div>
 				</div>
 			<!--// CLOSE #copyright //-->
