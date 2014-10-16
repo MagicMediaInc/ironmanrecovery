@@ -61,12 +61,9 @@ function show_mini_cart() {
 
         <div class="bag-buttons">
         <?php
-        $language_myqtrans = qtrans_getLanguage();
-        if ($language_myqtrans =="es") {
-        $span="español";
-        }else {
-        $span="otro idiona";
-        }
+        
+        $span="portugues";
+        
         ?>
 
         <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('View shopping bag', 'swiftframework'); ?></span><span><?php _e('View shopping bag', 'swiftframework'); ?></span></a>
@@ -339,16 +336,8 @@ function show_mini_cart() {
 						} else if ($rev_slider_alias != "") { ?>
 							<div class="home-slider-wrap">
 								<?php
-									$language_myqtrans = qtrans_getLanguage();
-									if ($language_myqtrans == "es"){
-										putRevSlider("sliderHome");
-									}
-									if ($language_myqtrans == "fr"){
-										putRevSlider("sliderHomeFrances");
-									} 
-									if ($language_myqtrans == "pt"){
+									
 										putRevSlider("sliderHomePortugues");
-									}  
 								 ?>
 							</div>
 				<?php }
