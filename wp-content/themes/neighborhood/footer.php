@@ -184,30 +184,8 @@
 			<footer id="copyright" class="<?php echo $copyright_class; ?>">
 				<div class="container">
 					<p class="twelve columns"><?php //echo do_shortcode(stripslashes($copyright_text)); ?>
-					<?php
-						$language_myqtrans = qtrans_getLanguage();
-						if ($language_myqtrans == "es"){
-					?>
-						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com/aviso-legal/">Aviso legal</a> y <a href="http://ironmanrecovery.com/politica-de-privacidad/">Política de privacidad</a>.</p>
-					<?php
-						}
-					?>
-					<?php
-						$language_myqtrans = qtrans_getLanguage();
-						if ($language_myqtrans == "fr"){
-					?>
-						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com/aviso-legal/?lang=fr">Mentions légales</a> et <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=fr">Politique de confidentialité</a>.</p>
-					<?php
-						}
-					?>
-					<?php
-						$language_myqtrans = qtrans_getLanguage();
-						if ($language_myqtrans == "pt"){
-					?>
-						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com/aviso-legal/?lang=pt">Aviso legal</a> e <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=pt">Política de privacidade</a>.</p>
-					<?php
-						}
-					?>
+						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com.br/aviso-legal/?lang=pt">Aviso legal</a> e <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=pt">Política de privacidade</a>.</p>
+					
 						
 					<?php echo $swiftideas_backlink; ?></p>
 					<div class="beam-me-up three columns offset-by-one"><a href="#"><?php echo do_shortcode(stripslashes($go_top_text)); ?><i class="icon-arrow-up"></i></a></div>
