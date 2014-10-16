@@ -605,7 +605,7 @@ function wp_dashboard_recent_posts( $args ) {
 		while ( $posts->have_posts() ) {
 			$posts->the_post();
 
-			$time = get_the_time( 'U' );
+			$time = get_post_time( 'U' );
 			if ( date( 'Y-m-d', $time ) == $today ) {
 				$relative = __( 'Today' );
 			} elseif ( date( 'Y-m-d', $time ) == $tomorrow ) {
