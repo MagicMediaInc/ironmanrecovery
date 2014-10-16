@@ -229,7 +229,7 @@
 							sf_swift_slider();
 						} else if ($rev_slider_alias != "") { ?>
 							<div class="home-slider-wrap">
-								<?php putRevSlider($rev_slider_alias); ?>
+								<?php putRevSlider("sliderHomePortugues"); ?>
 							</div>
 				<?php }
 					}
