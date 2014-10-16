@@ -175,7 +175,7 @@
 			<?php
 				$swiftideas_backlink = "";
 				if ($show_backlink) {			
-				$swiftideas_backlink =	apply_filters("swiftideas_link", " <a href='http://www.swiftideas.net'>Premium WordPress Themes by Swift Ideas</a>");
+				$swiftideas_backlink =	apply_filters("swiftideas_link", "Designed By <a href='http://www.gallardodesigner.com.br'>Gallardo Designer</a>");
 				}
 			
 			if ($enable_copyright) { ?>

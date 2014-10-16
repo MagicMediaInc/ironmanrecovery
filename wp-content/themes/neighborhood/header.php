@@ -1,3 +1,105 @@
+<?php
+
+function show_mini_cart() {
+    
+    ?>
+    
+    <div class="mini-cart-wrap">
+        <?php
+        global $woocommerce;
+		
+        ob_start();
+
+        $cart_count = $woocommerce->cart->cart_contents_count;
+        $cart_count_text = sf_product_items_text($cart_count);
+
+        ?>	
+        <div class="parent shopping-bag-ite">
+            <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'swiftframework'); ?>"><i class="sf-cart"></i><?php echo $woocommerce->cart->get_cart_total(); ?></a>
+
+        <ul class="sub-menu">     
+        <li>                                      
+        <div class="shopping-bag">
+
+        <?php if ( sizeof($cart_count)>0 ) { ?>
+
+        <div class="bag-header"><?php echo $cart_count_text; ?> <?php _e('in the shopping bag', 'swiftframework'); ?></div>
+
+        <div class="bag-contents">
+
+        <?php foreach ($woocommerce->cart->cart_contents as $cart_item_key => $cart_item) { ?>
+
+        <?php
+        $bag_product = $cart_item['data']; 
+        $product_title = $bag_product->get_title();
+        ?>
+
+        <?php if ($bag_product->exists() && $cart_item['quantity']>0) { ?>                                            
+
+        <div class="bag-product clearfix">   	
+
+        <figure><a class="bag-product-img" href="<?php echo get_permalink($cart_item['product_id']); ?>"><?php echo $bag_product->get_image(); ?></a></figure>                   
+
+        <div class="bag-product-details">
+                    <div class="bag-product-title">
+                            <a href="<?php echo get_permalink($cart_item['product_id']); ?>">
+                                    <?php echo apply_filters('woocommerce_cart_widget_product_title', $product_title, $bag_product); ?></a>
+                    </div>
+            <div class="bag-product-price"><?php _e("Unit Price:", "swiftframework"); ?> <?php echo woocommerce_price($bag_product->get_price()); ?></div>
+            <div class="bag-product-quantity"><?php _e('Quantity:', 'swiftframework'); ?> <?php echo $cart_item['quantity']; ?></div>
+        </div>
+
+        <?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'woocommerce') ), $cart_item_key ); ?>
+
+        </div>
+
+        <?php } ?>
+
+        <?php } ?>
+
+        </div>
+
+        <div class="bag-buttons">
+        <?php
+        
+        $span="portugues";
+        
+        ?>
+
+        <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('View shopping bag', 'swiftframework'); ?></span><span><?php _e('View shopping bag', 'swiftframework'); ?></span></a>
+
+        <a class="sf-roll-button checkout-button" href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>"><span><?php _e('Proceed to checkout', 'swiftframework'); ?></span><span><?php _e('Proceed to checkout', 'swiftframework'); ?></span></a>
+
+        </div>
+
+        <?php } else { ?>
+
+        <div class="bag-header"><?php _e("0 items in the shopping bag", "swiftframework"); ?></div>
+
+        <div class="bag-empty"><?php _e('Unfortunately, your shopping bag is empty.','swiftframework'); ?></div>                                   
+
+        <div class="bag-buttons">
+
+        <?php $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>
+
+        <a class="sf-roll-button shop-button" href="<?php echo esc_url( $shop_page_url ); ?>"><span><?php _e('Go to the shop', 'swiftframework'); ?></span><span><?php _e('Go to the shop', 'swiftframework'); ?></span></a>
+
+        </div>
+
+        <?php } ?>
+
+        </div>
+        </li>                                                                                                    
+        </ul>                                                                                                          
+        </div>
+
+
+        </div>     
+
+    <?php
+}
+?>
+
 <!DOCTYPE html>
 
 <!--// OPEN HTML //-->
@@ -172,7 +274,7 @@
 	
 	<!--// OPEN BODY //-->
 	<body <?php body_class($page_class.' '.$is_responsive.' '.$extra_page_class); ?>>
-		
+		<input type="hidden" name="languague" id="lang" value="pt"/>
 		<!--// NO JS ALERT //-->
 		<noscript>
 			<div class="no-js-alert"><?php _e("Please enable JavaScript to view this website.", "swiftframework"); ?></div>
@@ -201,12 +303,13 @@
 					
 				<div id="header-section" class="<?php echo $header_layout; ?> <?php echo $logo_class; ?>">
 				<?php echo sf_header(); ?>
+                                <?php show_mini_cart(); ?>
 				</div>
 				<?php if ($enable_promo_bar) { ?>
 					<!--// OPEN #promo-bar //-->
 					<div id="promo-bar">
 						<div class="container">
-							<?php //echo $options['promo_bar_text']; ?>
+							<?php echo $options['promo_bar_text']; ?>
 						</div>
 					</div>
 					
@@ -214,8 +317,11 @@
 			</div>
 			
 			<?php if ($enable_mini_header) { ?>
-			
+			<div id="mini-header">
+                                
 				<?php echo sf_mini_header(); ?>
+                                <?php show_mini_cart(); ?>
+                                </div>
 			
 			<?php } ?>
 				
@@ -229,7 +335,10 @@
 							sf_swift_slider();
 						} else if ($rev_slider_alias != "") { ?>
 							<div class="home-slider-wrap">
-								<?php putRevSlider("sliderHomePortugues"); ?>
+								<?php
+									
+										putRevSlider("sliderHomePortugues");
+								 ?>
 							</div>
 				<?php }
 					}
