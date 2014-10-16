@@ -277,7 +277,7 @@ function show_mini_cart() {
 	
 	<!--// OPEN BODY //-->
 	<body <?php body_class($page_class.' '.$is_responsive.' '.$extra_page_class); ?>>
-		<input type="hidden" name="languague" id="lang" value="<?= qtrans_getLanguage(); ?>"/>
+		<input type="hidden" name="languague" id="lang" value="pt"/>
 		<!--// NO JS ALERT //-->
 		<noscript>
 			<div class="no-js-alert"><?php _e("Please enable JavaScript to view this website.", "swiftframework"); ?></div>
