@@ -206,7 +206,7 @@
 					<!--// OPEN #promo-bar //-->
 					<div id="promo-bar">
 						<div class="container">
-							<?php echo $options['promo_bar_text']; ?>
+							<?php echo //$options['promo_bar_text']; ?>
 						</div>
 					</div>
 					
