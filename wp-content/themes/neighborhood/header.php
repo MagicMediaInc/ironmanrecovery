@@ -289,7 +289,7 @@ function show_mini_cart() {
 			
 			<?php
 				if ($ss_enable) { 
-					echo sf_super_search();
+					// echo sf_super_search();
 				}
 			?>
 			
