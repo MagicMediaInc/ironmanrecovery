@@ -149,7 +149,7 @@
 			</div>
 				
 			<aside class="sidebar left-sidebar span3">
-				<?php dynamic_sidebar($left_sidebar); ?>
+				<?php //dynamic_sidebar($left_sidebar); ?>
 			</aside>
 		
 		<?php } else { ?>
