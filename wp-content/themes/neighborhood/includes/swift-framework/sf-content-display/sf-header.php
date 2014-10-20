@@ -423,7 +423,7 @@
 		
 		
 		// LOGO OUTPUT
-		$logo_output .= '<div id="logo" class="clearfix">'. "\n";//'<div id="logo" class="'.$logo_class.' clearfix">'. "\n";
+		$logo_output .= '<div id="logo" class="span4 logo-left clearfix">'. "\n";//'<div id="logo" class="'.$logo_class.' clearfix">'. "\n";
 		$logo_output .= '<a href="'.$logo_link_url.'">'. "\n";
 		$logo_output .= '<img class="standard" src="'.$logo.'" alt="'.$logo_alt.'" />'. "\n";
 		$logo_output .= '<img class="retina" src="'.$retina_logo.'" alt="'.$logo_alt.'" />'. "\n";
