@@ -91,11 +91,7 @@
 	
 	if (is_readable($locale_file)) {
 		require_once($locale_file);
-	}
-	else{
-		echo "is not readable";
-	}
-	
+	}	
 	
 	/* LOAD STYLES & SCRIPTS
 	================================================== */
