@@ -828,13 +828,14 @@ class WC_Product {
 		if ( $this->price > 0 ) {
 
 			if ( $this->is_on_sale() && isset( $this->regular_price ) ) {
-
+				echo "from_to";
 				$price .= $this->get_price_html_from_to( $this->regular_price, $this->get_price() );
 
 				$price = apply_filters( 'woocommerce_sale_price_html', $price, $this );
 
 			} else {
 
+				echo "else from_to";
 				$price .= woocommerce_price( $this->get_price() );
 
 				$price = apply_filters( 'woocommerce_price_html', $price, $this );
@@ -842,10 +843,12 @@ class WC_Product {
 			}
 		} elseif ( $this->price === '' ) {
 
+				echo "empty_price";
 			$price = apply_filters( 'woocommerce_empty_price_html', '', $this );
 
 		} elseif ( $this->price == 0 ) {
 
+				echo "free";
 			if ( $this->is_on_sale() && isset( $this->regular_price ) ) {
 
 				$price .= $this->get_price_html_from_to( $this->regular_price, __( 'Free!', 'woocommerce' ) );
