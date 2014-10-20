@@ -176,7 +176,7 @@ function show_mini_cart() {
 			global $post;
 			$extra_page_class = "";
 			if ($post) {
-			$extra_page_class = get_post_meta($post->ID, 'sf_extra_page_class', true);
+			// $extra_page_class = get_post_meta($post->ID, 'sf_extra_page_class', true);
 			}
 		?>
 		
