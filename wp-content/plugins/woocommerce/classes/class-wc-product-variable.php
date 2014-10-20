@@ -251,15 +251,13 @@ class WC_Product_Variable extends WC_Product {
 			} else {
 				if ( $this->min_variation_price !== $this->max_variation_price ){
 					$price .= $this->get_price_html_from_to($this->min_variation_price, $this->max_variation_price);
-					//echo 'precio:'.$price;
-				}else{
-					echo 'no precio';
+					echo 'precio:'.$price;
 				}
 
 				$price .= woocommerce_price( $this->get_price() );
 
 				$price = apply_filters('woocommerce_variable_price_html', $price, $this);
-				echo $price;
+				//echo $price;
 			}
 		} elseif ( $this->price === '' ) {
 			echo "empty price";
