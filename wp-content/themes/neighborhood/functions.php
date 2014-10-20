@@ -87,7 +87,7 @@
 	load_theme_textdomain('swiftframework', SF_TEMPLATE_PATH.'/language');
 	
 	$locale = get_locale();
-	$locale_file = SF_TEMPLATE_PATH."/language/$locale.php";
+	$locale_file = SF_TEMPLATE_PATH."/language/$locale.po";
 	
 	echo $locale_file;
 	if (is_readable($locale_file)) {
