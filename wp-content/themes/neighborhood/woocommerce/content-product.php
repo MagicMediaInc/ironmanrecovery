@@ -184,6 +184,7 @@
 		 *
 		 * @hooked woocommerce_template_loop_price - 10
 		 */
+		//echo get_locale();
 		do_action( 'woocommerce_after_shop_loop_item_title' );
 	?>
 

@@ -89,6 +89,7 @@
 	$locale = get_locale();
 	$locale_file = SF_TEMPLATE_PATH."/language/$locale.php";
 	
+	//echo $locale_file;
 	if (is_readable($locale_file)) {
 		require_once($locale_file);
 	}

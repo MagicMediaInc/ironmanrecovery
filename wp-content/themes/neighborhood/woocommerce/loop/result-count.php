@@ -36,7 +36,7 @@ if ( ! woocommerce_products_will_display() )
 		}
 		?>
 	</p>
-	<p class="woocommerce-show-products">
+	<p class="swiftframework-show-products">
 		<span><?php _e("View", "swiftframework"); ?> </span>
 		<a class="show-products-link" href="?show_products=24">24</a>/<a class="show-products-link" href="?show_products=48">48</a>/<a  class="show-products-link" href="<?php echo $shop_page_url; ?>?show_products=<?php echo $total;?>"><?php _e("All", "swiftframework"); ?></a>
 	</p>

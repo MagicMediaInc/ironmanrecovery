@@ -91,8 +91,7 @@
 	
 	if (is_readable($locale_file)) {
 		require_once($locale_file);
-	}
-	
+	}	
 	
 	/* LOAD STYLES & SCRIPTS
 	================================================== */

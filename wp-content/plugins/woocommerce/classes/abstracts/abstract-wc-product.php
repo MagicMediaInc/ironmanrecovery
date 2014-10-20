@@ -828,14 +828,14 @@ class WC_Product {
 		if ( $this->price > 0 ) {
 
 			if ( $this->is_on_sale() && isset( $this->regular_price ) ) {
-				echo "from_to";
+				//echo "from_to";
 				$price .= $this->get_price_html_from_to( $this->regular_price, $this->get_price() );
 
 				$price = apply_filters( 'woocommerce_sale_price_html', $price, $this );
 
 			} else {
 
-				echo "else from_to";
+				//echo "else from_to";
 				$price .= woocommerce_price( $this->get_price() );
 
 				$price = apply_filters( 'woocommerce_price_html', $price, $this );
@@ -843,12 +843,12 @@ class WC_Product {
 			}
 		} elseif ( $this->price === '' ) {
 
-				echo "empty_price";
+				//echo "empty_price";
 			$price = apply_filters( 'woocommerce_empty_price_html', '', $this );
 
 		} elseif ( $this->price == 0 ) {
 
-				echo "free";
+				//echo "free";
 			if ( $this->is_on_sale() && isset( $this->regular_price ) ) {
 
 				$price .= $this->get_price_html_from_to( $this->regular_price, __( 'Free!', 'woocommerce' ) );
@@ -885,8 +885,19 @@ class WC_Product {
 	 * @access public
 	 * @return string
 	 */
+	function get_price_html_to_text() {
+		return '<span class="from">' . _x('To:', 'min_price', 'woocommerce') . ' </span>';
+	}
+
+
+	/**
+	 * Functions for getting parts of a price, in html, used by get_price_html.
+	 *
+	 * @access public
+	 * @return string
+	 */
 	function get_price_html_from_to( $from, $to ) {
-		return '<del>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</del> <ins>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins>';
+		return $this->get_price_html_from_text().'<ins>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</ins> '.$this->get_price_html_to_text().' <ins>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins>';
 	}
 
 	/**
