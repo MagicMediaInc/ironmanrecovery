@@ -215,7 +215,7 @@
 
 		
 		<aside class="sidebar right-sidebar span3">
-			<?php dynamic_sidebar($right_sidebar); ?>
+			<?php //dynamic_sidebar($right_sidebar); ?>
 		</aside>
 	
 	<?php } ?>
