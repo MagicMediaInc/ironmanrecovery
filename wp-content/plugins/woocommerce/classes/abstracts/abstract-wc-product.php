@@ -885,8 +885,19 @@ class WC_Product {
 	 * @access public
 	 * @return string
 	 */
+	function get_price_html_to_text() {
+		return '<span class="from">' . _x('To:', 'min_price', 'woocommerce') . ' </span>';
+	}
+
+
+	/**
+	 * Functions for getting parts of a price, in html, used by get_price_html.
+	 *
+	 * @access public
+	 * @return string
+	 */
 	function get_price_html_from_to( $from, $to ) {
-		return '<ins>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</ins> - <ins>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins>';
+		return get_price_html_from_text().'<ins>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</ins> '.get_price_html_to_text().' <ins>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins>';
 	}
 
 	/**
