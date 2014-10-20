@@ -292,8 +292,8 @@
 		$header_output .= '<div class="container">'. "\n";
 		$header_output .= '<div class="row">'. "\n";
 		//$header_output .= '<div class="header-left span5">'.sf_woo_links('header-menu', 'logo-left').'</div>'. "\n";
-		$header_output .= sf_logo('span4');
-		//$header_output .= '<div class="header-right span4">'.sf_aux_links('header-menu', TRUE).'</div>'. "\n";
+		$header_output .= sf_logo('span4 logo-left clearfix');
+		$header_output .= '<div class="header-right span4">Entrena tu Descanso</div>'. "\n";//'<div class="header-right span4">'.sf_aux_links('header-menu', TRUE).'</div>'. "\n";
 		$header_output .= '</div> <!-- CLOSE .row -->'. "\n";
 		$header_output .= '</div> <!-- CLOSE .container -->'. "\n";
 		$header_output .= '</header>'. "\n";
