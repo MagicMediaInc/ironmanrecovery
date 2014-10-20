@@ -70,7 +70,6 @@
 <div class="row">
 	<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
 		<div class="heading-text">
-			<p>Freddo Godofredo </p>
 			<?php /* If this is a tag archive */ if( is_tag() ) { ?>
 			<h1><?php _e("Posts tagged with", "swiftframework"); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h1>
 			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
@@ -208,14 +207,14 @@
 	<?php } else if ($sidebar_config == "right-sidebar") { ?>
 		
 		<aside class="sidebar right-sidebar span4">
-			<?php //dynamic_sidebar($right_sidebar); ?>
+			<?php dynamic_sidebar($right_sidebar); ?>
 		</aside>
 		
 	<?php } else if ($sidebar_config == "both-sidebars") { ?>
 
 		
 		<aside class="sidebar right-sidebar span3">
-			<?php //dynamic_sidebar($right_sidebar); ?>
+			<?php dynamic_sidebar($right_sidebar); ?>
 		</aside>
 	
 	<?php } ?>
