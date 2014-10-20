@@ -240,7 +240,7 @@ class WC_Product_Variable extends WC_Product {
 		// Get the price
 		if ( $this->price > 0 ) {
 			if ( $this->is_on_sale() && isset( $this->min_variation_price ) && $this->min_variation_regular_price !== $this->get_price() ) {
-
+				echo "variation";
 				if ( ! $this->min_variation_price || $this->min_variation_price !== $this->max_variation_price )
 					$price .= $this->get_price_html_from_text();
 
@@ -249,7 +249,7 @@ class WC_Product_Variable extends WC_Product {
 				$price = apply_filters( 'woocommerce_variable_sale_price_html', $price, $this );
 
 			} else {
-
+				echo "else variation";
 				if ( $this->min_variation_price !== $this->max_variation_price )
 					$price .= $this->get_price_html_from_text();
 
@@ -259,11 +259,11 @@ class WC_Product_Variable extends WC_Product {
 
 			}
 		} elseif ( $this->price === '' ) {
-
+			echo "empty price";
 			$price = apply_filters('woocommerce_variable_empty_price_html', '', $this);
 
 		} elseif ( $this->price == 0 ) {
-
+			echo "free";
 			if ( $this->is_on_sale() && isset( $this->min_variation_regular_price ) && $this->min_variation_regular_price !== $this->get_price() ) {
 
 				if ( $this->min_variation_price !== $this->max_variation_price )
