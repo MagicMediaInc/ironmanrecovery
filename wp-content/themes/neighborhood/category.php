@@ -191,7 +191,7 @@
 	<?php } else if ($sidebar_config == "right-sidebar") { ?>
 		
 		<aside class="sidebar right-sidebar span4">
-			<?php dynamic_sidebar($right_sidebar); ?>
+			<?php //dynamic_sidebar($right_sidebar); ?>
 		</aside>
 		
 	<?php } else if ($sidebar_config == "both-sidebars") { ?>
