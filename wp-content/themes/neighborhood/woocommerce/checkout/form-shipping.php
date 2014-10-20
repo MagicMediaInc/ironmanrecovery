@@ -32,7 +32,7 @@ global $woocommerce;
 	<p class="form-row" id="shiptobilling">
 		<input id="shiptobilling-checkbox" class="input-checkbox" <?php checked($shiptobilling, 1); ?> type="checkbox" name="shiptobilling" value="1" />
 		<?php
-		$language_myqtrans = qtrans_getLanguage();
+		$language_myqtrans = 'pt';
 			
 			switch ($language_myqtrans) {
 				case "es":
