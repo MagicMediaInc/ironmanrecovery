@@ -900,6 +900,17 @@ class WC_Product {
 		return $this->get_price_html_from_text().'<ins>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</ins> '.$this->get_price_html_to_text().' <ins>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins>';
 	}
 
+
+	/**
+	 * Functions for getting parts of a price, in html, used by get_price_html.
+	 *
+	 * @access public
+	 * @return string
+	 */
+	function get_price_html_variation_from_to( $from, $vfrom, $to, $vto ) {
+		return $this->get_price_html_from_text().'<del>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</del> '.'<ins>' . ( ( is_numeric( $vfrom ) ) ? woocommerce_price( $vfrom ) : $vfrom ) . '</ins> '.$this->get_price_html_to_text().'<del>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</del> '.' <ins>' . ( ( is_numeric( $vto ) ) ? woocommerce_price( $vto ) : $vto ) . '</ins>';
+	}
+
 	/**
 	 * get_average_rating function.
 	 *

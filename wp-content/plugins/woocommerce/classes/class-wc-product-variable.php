@@ -240,9 +240,11 @@ class WC_Product_Variable extends WC_Product {
 		// Get the price
 		if ( $this->price > 0 ) {
 			if ( $this->is_on_sale() && isset( $this->min_variation_price ) && $this->min_variation_regular_price !== $this->get_price() ) {
-				echo "variation";
+				//echo "variation";
 				if ( ! $this->min_variation_price || $this->min_variation_price !== $this->max_variation_price )
 					$price .= $this->get_price_html_from_text();
+
+				echo $this->min_variation_price.' | '.$this->min_variation_regular_price.' | '.$this->max_variation_price.' | '.$this->max_variation_regular_price;
 
 				$price .= $this->get_price_html_from_to( $this->min_variation_regular_price, $this->get_price() );
 
