@@ -28,7 +28,7 @@ if ( ! woocommerce_products_will_display() )
 		$last     = min( $total, $wp_query->get( 'posts_per_page' ) * $paged );
 		
 		if ( 1 == $total ) {
-			_e( 'Showing the single product', 'swiftframework' );
+			_e( 'Showing the single product', 'neighborhood' );
 		} elseif ( $total <= $per_page ) {
 			printf( __( 'Showing all %d products', 'neighborhood' ), $total );
 		} else {
