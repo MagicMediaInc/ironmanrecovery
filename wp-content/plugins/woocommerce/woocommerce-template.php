@@ -359,6 +359,7 @@ if ( ! function_exists( 'woocommerce_template_loop_rating' ) ) {
 	 * @return void
 	 */
 	function woocommerce_template_loop_rating() {
+		echo "template";
 		woocommerce_get_template( 'loop/rating.php' );
 	}
 }
