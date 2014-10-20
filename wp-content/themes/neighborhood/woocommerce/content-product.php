@@ -178,7 +178,7 @@
 
 	<?php
 
-		echo $product->get_price();
+		//echo $product->get_price();
 		/**
 		 * woocommerce_after_shop_loop_item_title hook
 		 *
