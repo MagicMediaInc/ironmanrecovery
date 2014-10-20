@@ -96,9 +96,9 @@
 		
 		// Footer Styling
 		$footer_bg_color = get_option('footer_bg_color', '#252525');
-		$footer_text_color = get_option('footer_text_color', '#cccccc');
+		$footer_text_color = get_option('footer_text_color', '#ffffff');
 		$footer_link_color = get_option('footer_link_color', '#71747b');
-		$footer_border_color = get_option('footer_border_color', '#333333');
+		$footer_border_color = get_option('footer_border_color', '#ffffff');
 		$copyright_bg_color = get_option('copyright_bg_color', '#000000');
 		$copyright_text_color = get_option('copyright_text_color', '#666666');
 		$copyright_link_color = get_option('copyright_link_color', '#999999');
