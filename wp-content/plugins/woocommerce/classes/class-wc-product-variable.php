@@ -259,7 +259,7 @@ class WC_Product_Variable extends WC_Product {
 				$price .= woocommerce_price( $this->get_price() );
 
 				$price = apply_filters('woocommerce_variable_price_html', $price, $this);
-
+				echo $price;
 			}
 		} elseif ( $this->price === '' ) {
 			echo "empty price";
