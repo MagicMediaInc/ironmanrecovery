@@ -30,9 +30,9 @@ if ( ! woocommerce_products_will_display() )
 		if ( 1 == $total ) {
 			_e( 'Showing the single product', 'swiftframework' );
 		} elseif ( $total <= $per_page ) {
-			printf( __( 'Showing all %d products', 'swiftframework' ), $total );
+			printf( __( 'Showing all %d products', 'neighborhood' ), $total );
 		} else {
-			printf( __( 'Showing %1$d–%2$d of %3$d products', 'swiftframework' ), $first, $last, $total );
+			printf( __( 'Showing %1$d–%2$d of %3$d products', 'neighborhood' ), $first, $last, $total );
 		}
 		?>
 	</p>
