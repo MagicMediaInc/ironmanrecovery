@@ -292,7 +292,7 @@
 		$header_output .= '<div class="container">'. "\n";
 		$header_output .= '<div class="row">'. "\n";
 		//$header_output .= '<div class="header-left span5">'.sf_woo_links('header-menu', 'logo-left').'</div>'. "\n";
-		$header_output .= ;//sf_logo('logo-center');
+		$header_output .= sf_logo('span4 logo-center');
 		$header_output .= '<div class="header-right span4">'.sf_aux_links('header-menu', TRUE).'</div>'. "\n";
 		$header_output .= '</div> <!-- CLOSE .row -->'. "\n";
 		$header_output .= '</div> <!-- CLOSE .container -->'. "\n";
@@ -423,7 +423,7 @@
 		
 		
 		// LOGO OUTPUT
-		$logo_output .= '<div id="logo" class="'.$logo_class.' clearfix">'. "\n";
+		$logo_output .= '<div id="logo" class="clearfix">'. "\n";//'<div id="logo" class="'.$logo_class.' clearfix">'. "\n";
 		$logo_output .= '<a href="'.$logo_link_url.'">'. "\n";
 		$logo_output .= '<img class="standard" src="'.$logo.'" alt="'.$logo_alt.'" />'. "\n";
 		$logo_output .= '<img class="retina" src="'.$retina_logo.'" alt="'.$logo_alt.'" />'. "\n";
