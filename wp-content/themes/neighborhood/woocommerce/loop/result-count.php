@@ -28,16 +28,16 @@ if ( ! woocommerce_products_will_display() )
 		$last     = min( $total, $wp_query->get( 'posts_per_page' ) * $paged );
 		
 		if ( 1 == $total ) {
-			_e( 'Showing the single product', 'swiftframework' );
+			_e( 'Showing the single product', 'woocommerce' );
 		} elseif ( $total <= $per_page ) {
 			printf( __( 'Showing all %d products', 'woocommerce' ), $total );
 		} else {
-			printf( __( 'Showing %1$d–%2$d of %3$d products', 'neighborhood' ), $first, $last, $total );
+			printf( __( 'Showing %1$d–%2$d of %3$d products', 'woocommerce' ), $first, $last, $total );
 		}
 		?>
 	</p>
 	<p class="woocommerce-show-products">
-		<span><?php _e("View", "swiftframework"); ?> </span>
+		<span><?php _e("View", "woocommerce"); ?> </span>
 		<a class="show-products-link" href="?show_products=24">24</a>/<a class="show-products-link" href="?show_products=48">48</a>/<a  class="show-products-link" href="<?php echo $shop_page_url; ?>?show_products=<?php echo $total;?>"><?php _e("All", "swiftframework"); ?></a>
 	</p>
 </div>
