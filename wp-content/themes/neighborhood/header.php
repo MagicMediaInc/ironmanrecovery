@@ -310,6 +310,7 @@ function show_mini_cart() {
 					<div id="promo-bar">
 						<div class="container">
 							<?php echo $options['promo_bar_text']; ?>
+							texto de prueba
 						</div>
 					</div>
 					
