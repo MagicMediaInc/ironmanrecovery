@@ -2114,7 +2114,7 @@ msgstr ""
 #. Text in function
 #: neighborhood/woocommerce/loop/result-count.php:23
 msgid "Showing all %d products"
-msgstr ""
+msgstr "Mostrar todos %d produtos"
 
 #. Text in function
 #: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1

@@ -16,6 +16,5 @@ if ( get_option( 'woocommerce_enable_review_rating' ) == 'no' )
 ?>
 
 <?php if ( $rating_html = $product->get_rating_html() ) : ?>
-	template_rating
 	<?php echo $rating_html; ?>
 <?php endif; ?>
