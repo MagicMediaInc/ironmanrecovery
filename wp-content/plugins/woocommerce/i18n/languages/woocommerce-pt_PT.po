@@ -5939,6 +5939,12 @@ msgctxt "min_price"
 msgid "From:"
 msgstr "Desde:"
 
+#: classes/abstracts/abstract-wc-product.php:875
+#@ woocommerce
+msgctxt "max_price"
+msgid "From:"
+msgstr "Desde:"
+
 #: classes/shipping/flat-rate/class-wc-shipping-flat-rate.php:25
 #: classes/shipping/flat-rate/class-wc-shipping-flat-rate.php:85
 #@ woocommerce

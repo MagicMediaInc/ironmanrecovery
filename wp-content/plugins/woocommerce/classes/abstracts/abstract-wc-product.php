@@ -886,7 +886,7 @@ class WC_Product {
 	 * @return string
 	 */
 	function get_price_html_to_text() {
-		return '<span class="from">' . _x('To:', 'min_price', 'woocommerce') . ' </span>';
+		return '<span class="from">' . _x('To:', 'max_price', 'woocommerce') . ' </span>';
 	}
 
 
