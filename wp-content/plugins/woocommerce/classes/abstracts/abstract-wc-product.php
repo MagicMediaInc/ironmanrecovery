@@ -897,7 +897,7 @@ class WC_Product {
 	 * @return string
 	 */
 	function get_price_html_from_to( $from, $to ) {
-		return get_price_html_from_text().'<ins>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</ins> '.get_price_html_to_text().' <ins>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins>';
+		return $this->get_price_html_from_text().'<ins>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</ins> '.$this->get_price_html_to_text().' <ins>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins>';
 	}
 
 	/**
