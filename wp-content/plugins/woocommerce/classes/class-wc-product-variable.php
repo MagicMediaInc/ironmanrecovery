@@ -249,7 +249,7 @@ class WC_Product_Variable extends WC_Product {
 				$price = apply_filters( 'woocommerce_variable_sale_price_html', $price, $this );
 
 			} else {
-				echo "else variation: ".$this->min_variation_price.' | '.$this->min_variation_regular_price;
+				echo "else variation: ".$this->min_variation_price.' | '.$this->max_variation_price;
 				if ( $this->min_variation_price !== $this->max_variation_price )
 					$price .= $this->get_price_html_from_text();
 
