@@ -70,6 +70,7 @@
 <div class="row">
 	<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
 		<div class="heading-text">
+			<p>Freddo Godofredo </p>
 			<?php /* If this is a tag archive */ if( is_tag() ) { ?>
 			<h1><?php _e("Posts tagged with", "swiftframework"); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h1>
 			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
