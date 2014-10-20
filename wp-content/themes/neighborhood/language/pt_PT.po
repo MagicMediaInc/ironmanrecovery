@@ -1,0 +1,2691 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ironman\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: ironman\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"Language: pt_BR\n"
+
+#. Text in function
+#: neighborhood/comments.php:28
+msgid "% Comments"
+msgstr "% Comentarios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:1
+msgid "% items"
+msgstr "% produtos"
+
+#. Text in function
+#: neighborhood/comments.php:28
+msgid "0 Comments"
+msgstr "0 Comentarios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:1
+msgid "0 items"
+msgstr "0 produtos"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:165
+msgid "0 items in the shopping bag"
+msgstr "0 artículos en el carrito de compra"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:652
+msgid "1"
+msgstr "1"
+
+#. Text in function
+#: neighborhood/comments.php:28
+msgid "1 Comment"
+msgstr "1 Comentario"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:1
+msgid "1 item"
+msgstr "1 produto"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:165
+#: neighborhood/woocommerce/checkout/thankyou.php:41
+#: neighborhood/woocommerce/checkout/thankyou.php:87
+msgid "1. Sign In"
+msgstr "1. Registrarse"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:250
+msgid "1/2 + 1/2"
+msgstr "1/2 + 1/2"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:259
+msgid "1/2 + 1/4 + 1/4"
+msgstr "1/2 + 1/4 + 1/4"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:251
+msgid "1/3 + 1/3 + 1/3"
+msgstr "1/3 + 1/3 + 1/3"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:252
+msgid "1/3 + 2/3"
+msgstr "1/3 + 2/3"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:258
+msgid "1/4 + 1/2 + 1/4"
+msgstr "1/4 + 1/2 + 1/4"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:257
+msgid "1/4 + 1/4 + 1/2"
+msgstr "1/4 + 1/4 + 1/2"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:254
+msgid "1/4 + 1/4 + 1/4 + 1/4"
+msgstr "1/4 + 1/4 + 1/4 + 1/4"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:255
+msgid "1/4 + 3/4"
+msgstr "1/4 + 3/4"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:661
+msgid "10"
+msgstr "10"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:582
+msgid "11"
+msgstr "11"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:583
+msgid "12"
+msgstr "12"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:584
+msgid "13"
+msgstr "13"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:585
+msgid "14"
+msgstr "14"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:586
+msgid "15"
+msgstr "15"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:587
+msgid "16"
+msgstr "16"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:588
+msgid "17"
+msgstr "17"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:589
+msgid "18"
+msgstr "18"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:590
+msgid "19"
+msgstr "19"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:653
+msgid "2"
+msgstr "2"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:166
+#: neighborhood/woocommerce/checkout/thankyou.php:42
+#: neighborhood/woocommerce/checkout/thankyou.php:88
+msgid "2. Billing & Shipping"
+msgstr "2. Facturación y envío"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:253
+msgid "2/3 + 1/3"
+msgstr "2/3 + 1/3"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:591
+msgid "20"
+msgstr "20"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:592
+msgid "21"
+msgstr "21"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:593
+msgid "22"
+msgstr "22"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:594
+msgid "23"
+msgstr "23"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:595
+msgid "24"
+msgstr "24"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:596
+msgid "25"
+msgstr "25"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:597
+msgid "26"
+msgstr "26"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:598
+msgid "27"
+msgstr "27"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:599
+msgid "28"
+msgstr "28"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:600
+msgid "29"
+msgstr "29"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:654
+msgid "3"
+msgstr "3"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:167
+#: neighborhood/woocommerce/checkout/thankyou.php:43
+#: neighborhood/woocommerce/checkout/thankyou.php:89
+msgid "3. Review & Payment"
+msgstr "3. Revisar & Pagar"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:256
+msgid "3/4 + 1/4"
+msgstr "3/4 + 1/4"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:601
+msgid "30"
+msgstr "30"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:655
+msgid "4"
+msgstr "4"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:168
+#: neighborhood/woocommerce/checkout/thankyou.php:44
+#: neighborhood/woocommerce/checkout/thankyou.php:90
+msgid "4. Confirmation"
+msgstr "4. Confirmación"
+
+#. Text in echo
+#: neighborhood/404.php:10
+msgid "404"
+msgstr "404"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:656
+msgid "5"
+msgstr "5"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:657
+msgid "6"
+msgstr "6"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:658
+msgid "7"
+msgstr "7"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:659
+msgid "8"
+msgstr "8"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:660
+msgid "9"
+msgstr "9"
+
+#. Text in function
+#: neighborhood/search.php:80
+msgid "<h1>%1$s result for <span>%2$s</span></h1>"
+msgstr "<h1>%1$s resultado para <span>%2$s</span></h1>"
+
+#. Text in function
+#: neighborhood/search.php:82
+msgid "<h1>%1$s results for <span>%2$s</span></h1>"
+msgstr "<h1>%1$s resultados para <span>%2$s</span></h1>"
+
+#. Text in echo
+#: neighborhood/single.php:234
+msgid "<h4>Related Articles</h4>"
+msgstr "<h4>Articulos Relacionados</h4>"
+
+#. Text in function
+#: neighborhood/single-team.php:73
+#: neighborhood/single-portfolio.php:186
+msgid "<i class=\"icon-angle-left\"></i> <span class=\"nav-text\">%link</span>"
+msgstr "<i class=\"icon-angle-left\"></i> <span class=\"nav-text\">%link</span>"
+
+#. Text in function
+#: neighborhood/single.php:287
+msgid "<i class=\"icon-angle-left\"></i> <span class=\"nav-text\">%title</span>"
+msgstr "<i class=\"icon-angle-left\"></i> <span class=\"nav-text\">%title</span>"
+
+#. Text in function
+#: neighborhood/functions.php:1428
+msgid "<i class='icon-angle-left'></i> Previous"
+msgstr "<i class='icon-angle-left'></i> Previo"
+
+#. Text in function
+#: neighborhood/single-team.php:74
+#: neighborhood/single-portfolio.php:187
+msgid "<span class=\"nav-text\">%link</span><i class=\"icon-angle-right\"></i>"
+msgstr "<span class=\"nav-text\">%link</span><i class=\"icon-angle-right\"></i>"
+
+#. Text in function
+#: neighborhood/single.php:288
+msgid "<span class=\"nav-text\">%title</span><i class=\"icon-angle-right\"></i>"
+msgstr "<span class=\"nav-text\">%title</span><i class=\"icon-angle-right\"></i>"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:368
+msgid "Accent"
+msgstr "Accent"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Accent Alt Color"
+msgstr "Accent Alt Color"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Accent Color"
+msgstr "Accent Color"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:621
+msgid "Add (B&W)"
+msgstr "Añadir (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:622
+msgid "Add (Colour)"
+msgstr "Añadir (Color)"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+msgid "Add New Client"
+msgstr "Añadir Nuevo Cliente"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+msgid "Add New Job"
+msgstr "Añadir Nuevo Trabajo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+msgid "Add New Portfolio Item"
+msgstr "Añadir Nuevo Portafolio de Artículo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+msgid "Add New Question"
+msgstr "Añadir Nueva Pregunta"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+msgid "Add New Team Member"
+msgstr "Anadir Nuevo Miembro de Equipo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "Add New Testimonial"
+msgstr "Añadir Nueva Evaluación"
+
+#. Text in function
+#: neighborhood/woocommerce/single-product/add-to-cart/variable.php:83
+#: neighborhood/woocommerce/loop/add-to-cart.php:22
+#: neighborhood/woocommerce/single-product/add-to-cart/simple.php:44
+msgid "Add to shopping bag"
+msgstr "Adicionar ao carrinho carrinho"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:305
+msgid "Additional Information"
+msgstr "Información Adicional"
+
+#. Text in function
+#: neighborhood/woocommerce/myaccount/my-address.php:1
+#: neighborhood/woocommerce/myaccount/my-account.php:29
+msgid "Address Book"
+msgstr "Libreta de direcciones"
+
+#. Text in echo
+#: neighborhood/woocommerce/loop/result-count.php:41
+#: neighborhood/includes/swift-framework/sf-content-display/sf-portfolio.php:1
+msgid "All"
+msgstr "Todo"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Alt Background Color"
+msgstr "Alt Background Color"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:514
+msgid "Alt bordered pricing table"
+msgstr "Alt bordered pricing table"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/my-orders.php:51
+msgid "Amount"
+msgstr "Quantidade"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:278
+msgid "And we're done!"
+msgstr "Finalizado"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Any"
+msgstr "Ninguno"
+
+#. Text in echo
+#: neighborhood/archive.php:76
+#: neighborhood/archive.php:78
+#: neighborhood/archive.php:80
+msgid "Archive for"
+msgstr "Archivo para"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-blog.php:1
+#: neighborhood/includes/swift-framework/shortcodes.php:1
+msgid "Archives"
+msgstr "Archivos"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:623
+msgid "Arrow (B&W)"
+msgstr "Flecha (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:624
+msgid "Arrow (Colour)"
+msgstr "Flecha (Colour)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:625
+msgid "Article"
+msgstr "Produto"
+
+#. Text in echo
+#: neighborhood/functions.php:1384
+msgid "Author"
+msgstr "Autor"
+
+#. Text in echo
+#: neighborhood/archive.php:83
+msgid "Author archive for"
+msgstr "Autoría de archivo para"
+
+#. Text in echo
+#: neighborhood/woocommerce/wishlist.php:76
+#: neighborhood/woocommerce/myaccount/form-edit-address.php:31
+#: neighborhood/woocommerce/order/order-details.php:30
+msgid "Back to my account"
+msgstr "Volver a mi cuenta"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Background colour (bordered only)"
+msgstr "Color de fondo (solo bordeado)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:626
+msgid "Bar"
+msgstr "Bar"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:369
+msgid "Black"
+msgstr "Negro"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:229
+msgid "Blockquote Big"
+msgstr "Blockquote Grande"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:228
+msgid "Blockquote Medium"
+msgstr "Blockquote Medio"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:227
+msgid "Blockquote Standard"
+msgstr "Blockquote Estándar"
+
+#. Text in echo
+#: neighborhood/archive.php:85
+msgid "Blog Archives"
+msgstr "Archivos del blog"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Body Text Color"
+msgstr "Color del Texto del Cuerpo"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:156
+msgid "Bolt"
+msgstr "Bolt"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:627
+msgid "Bolt (B&W)"
+msgstr "Bolt (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:628
+msgid "Bolt (Colour)"
+msgstr "Bolt (Color)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:513
+msgid "Bordered pricing table"
+msgstr "Tabla de precios bordeada"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:342
+msgid "Bottom"
+msgstr "Abajo"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Boxed Content Coloured BG Color"
+msgstr "Boxed Content Coloured BG Color"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Breadcrumb Link Color"
+msgstr "Color del Link Breadcrumb"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Breadcrumb Text Color"
+msgstr "Color del Texto Breadcrumb"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:161
+msgid "Briefcase"
+msgstr "Portafolio"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/faqs.php:1
+msgid "Browse F.A.Q. Topics"
+msgstr "Navegador de Temas de Preguntas Frecuentes"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:54
+msgid "Button"
+msgstr "Boton"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:124
+msgid "Button URL"
+msgstr "Boton URL"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:88
+msgid "Button colour"
+msgstr "Color del boton"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:79
+msgid "Button size"
+msgstr "Tamaño del boton"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:120
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:121
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:397
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:537
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:605
+msgid "Button text"
+msgstr "Texto del boton"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:106
+msgid "Button type"
+msgstr "Tipo de boton"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:77
+msgid "Buttons"
+msgstr "Botones"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/posts-carousel.php:1
+#: neighborhood/includes/widgets/widget-posts.php:66
+msgid "By %1$s on %2$s"
+msgstr "Por %1$s en %2$s"
+
+#. Text in function
+#: neighborhood/functions.php:1419
+msgid "By %1$s on %2$s at %3$s"
+msgstr "Por %1$s en %2$s a %3$s"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-post-formats.php:1
+#: neighborhood/includes/swift-framework/sf-content-display/sf-post-formats-3.6.php:1
+msgid "By <a href=\"%2$s\">%1$s</a> on %3$s"
+msgstr "Por <a href=\"%2$s\">%1$s</a> en %3$s"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-blog.php:1
+#: neighborhood/includes/swift-framework/shortcodes.php:1
+msgid "Categories"
+msgstr "Categorias"
+
+#. Text in echo
+#: neighborhood/single-portfolio.php:147
+msgid "Category: "
+msgstr "Categoria:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:444
+msgid "Center"
+msgstr "Centro"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/my-account.php:30
+msgid "Change Password"
+msgstr "Cambiar Contraseña"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/form-change-password.php:18
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:55
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:157
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:412
+msgid "Chart"
+msgstr "Grafica"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:441
+msgid "Chart Align"
+msgstr "Alineacion de la Grafica"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:431
+msgid "Chart Bar Colour"
+msgstr "Color de la Barra de la Grafica"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:424
+msgid "Chart Size"
+msgstr "Tamaño de la Grafica"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:436
+msgid "Chart Track Colour"
+msgstr "Chart Track Colour"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:200
+msgid "Checkout as a guest"
+msgstr "Pedido como invitado"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:175
+msgid "Circular container"
+msgstr "Contenedor circular"
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Click here to cancel the reply"
+msgstr "Click aqui para cancelar la respuesta"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+msgid "Client Categories"
+msgstr "Categorias de clientes"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+msgid "Client Category"
+msgstr "Categoria del cliente"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-template-parts.php:1
+#: neighborhood/single-portfolio.php:144
+msgid "Client: "
+msgstr "Cliente:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:168
+msgid "Cloud"
+msgstr "Nube"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:153
+msgid "Cog"
+msgstr "Cog"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Accent"
+msgstr "Color - Acentuación"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Body"
+msgstr "Color - Cuerpo"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Footer"
+msgstr "Color - Pie"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Header"
+msgstr "Color - Cabecera"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Navigation"
+msgstr "Color - Navegación"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Page"
+msgstr "Color - Página"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Page Heading"
+msgstr "Color - Encabezado de Pagina"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Promo Bar"
+msgstr "Color - Barra Promo"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Color - Shortcodes"
+msgstr "Color - Shortcodes"
+
+#. Text in function
+#: neighborhood/functions.php:1
+msgid "Color Customizer"
+msgstr "Color Personalizado"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:207
+msgid "Colour"
+msgstr "Color"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:56
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:245
+msgid "Columns"
+msgstr "Columnas"
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Comment"
+msgstr "Comentario"
+
+#. Text in echo
+#: neighborhood/woocommerce/single-product/meta.php:24
+#: neighborhood/woocommerce/single-product/meta.php:44
+msgid "Contact Us"
+msgstr "Contactanos"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:419
+msgid "Content"
+msgstr "Contenido"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:209
+#: neighborhood/woocommerce/checkout/form-checkout.php:278
+msgid "Continue"
+msgstr "Continuar"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:210
+#: neighborhood/woocommerce/cart/cart-empty.php:
+#: neighborhood/woocommerce/checkout/thankyou.php:95
+msgid "Continue shopping"
+msgstr "Continuar comprando"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Copyright Background Color"
+msgstr "Color del Fondo Copyright"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Copyright Link Color"
+msgstr "Color Link Copyright"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Copyright Text Color"
+msgstr "Color del Texto Copyright"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/form-login.php:68
+#: neighborhood/woocommerce/checkout/form-checkout.php:197
+msgid "Create an account"
+msgstr "Crear una cuenta"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:209
+msgid "Dark"
+msgstr "Oscuro"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:164
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:629
+msgid "Date"
+msgstr "Fecha"
+
+#. Text in echo
+#: neighborhood/single-portfolio.php:146
+msgid "Date: "
+msgstr "Fecha:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:226
+msgid "Decorative Ampersand"
+msgstr "Ampersand decorativo"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:630
+msgid "Delete (B&W)"
+msgstr "Eliminar (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:631
+msgid "Delete (Colour)"
+msgstr "Eliminar (Color)"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:35
+#: neighborhood/woocommerce/checkout/review-order.php:22
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:286
+msgid "Description"
+msgstr "Descrição"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/my-orders.php:53
+msgid "Details"
+msgstr "Detalles"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:308
+msgid "Device Visiblity"
+msgstr "Visibilidad del dispositivo"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:339
+msgid "Direction"
+msgstr "Dirección"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/review-order.php:98
+msgid "Discount:"
+msgstr "Descuento:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:632
+msgid "Dot"
+msgstr "Punto"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:165
+msgid "Download"
+msgstr "Descargar"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:392
+msgid "Drop shadow effect"
+msgstr "Efecto sombra al soltar"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:231
+msgid "Dropcap Type 1"
+msgstr "Dropcap Tipo 1"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:232
+msgid "Dropcap Type 2"
+msgstr "Dropcap Tipo 2"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:233
+msgid "Dropcap Type 3"
+msgstr "Dropcap Tipo 3"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:234
+msgid "Dropcap Type 4"
+msgstr "Dropcap Tipo 4"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/team.php:1
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/team-carousel.php:1
+msgid "E:"
+msgstr "E:"
+
+#. Text in function
+#: neighborhood/functions.php:1389
+#: neighborhood/functions.php:1419
+msgid "Edit"
+msgstr "Edit"
+
+#. Text in function
+#: neighborhood/woocommerce/myaccount/my-address.php:68
+msgid "Edit %s address"
+msgstr "Editar %s dirección"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+msgid "Edit Client"
+msgstr "Editar Cliente"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+msgid "Edit Job"
+msgstr "Editar Trabajo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+msgid "Edit Portfolio Item"
+msgstr "Editar Portafolio del Articulo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+msgid "Edit Question"
+msgstr "Editar Pregunta"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+msgid "Edit Team Member"
+msgstr "Editar Miembro del Equipo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "Edit Testimonial"
+msgstr "Editar Evaluación"
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Email"
+msgstr "Email"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:355
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:365
+msgid "Email customer care"
+msgstr "E-mail de Atendimento ao Cliente"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:184
+msgid "Enter promotion code here"
+msgstr "Inserir o código promocional"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:166
+msgid "Envelope"
+msgstr "Envoltura"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:358
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:401
+msgid "F.A.Q.'s"
+msgstr "Perguntas frequentes"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-portfolio.php:1
+msgid "Filter our work"
+msgstr "Filtrar nuestro trabajo"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-flickr.php:34
+msgid "Flickr API Key"
+msgstr "Flickr API Key"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-flickr.php:39
+msgid "Flickr Username"
+msgstr "Nombre de usuario Flickr"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Footer Background Color"
+msgstr "Color del Fondo del Pie de Pagina"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Footer Border Color"
+msgstr "Color del Borde del Pie de Pagina"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Footer Text Color"
+msgstr "Color del Texto del Pie de Pagina"
+
+#. Text in function
+#: neighborhood/woocommerce/single-product/product-image.php:19
+#: neighborhood/woocommerce/content-product.php:171
+msgid "Free"
+msgstr "Gratis"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:162
+msgid "Gift"
+msgstr "Regalo"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:158
+msgid "Globe"
+msgstr "Globo"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:173
+msgid "Go to the shop"
+msgstr "Ir a la tienda"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Go to your wishlist"
+msgstr "Ir a la lista de deseos"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:375
+msgid "Green"
+msgstr "Verde"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:371
+msgid "Grey"
+msgstr "Gris"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "H1 Text Color"
+msgstr "Color del Texto H1"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "H2 Text Color"
+msgstr "Color del Texto H2"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "H3 Text Color"
+msgstr "Color del Texto H3"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "H4 Text Color"
+msgstr "Color del Texto H4"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "H5 Text Color"
+msgstr "Color del Texto H5"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "H6 Text Color"
+msgstr "Color del Texto H6"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:400
+msgid "Header"
+msgstr "Cabecera"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Header Background Color Gradient Bottom"
+msgstr "Pie Gradiente del Color del Fondo de la Cabecera"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Header Background Color Gradient Top"
+msgstr "Top Gradiente del Color del Fondo de la Cabecera"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:315
+msgid "Hidden - Desktop"
+msgstr "Ocultar - Escritorio"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:313
+msgid "Hidden - Phone"
+msgstr "Ocultar - Telefono"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:314
+msgid "Hidden - Tablet"
+msgstr "Ocultar - Tablet"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:225
+msgid "Highlight"
+msgstr "Subrayado"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:527
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:560
+msgid "Highlighted column"
+msgstr "Columna subrayada"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:179
+msgid "I already have an account"
+msgstr "Ya tengo una cuenta"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:192
+msgid "I'm new here"
+msgstr "Soy nuevo aquí"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Icon Color"
+msgstr "Color del Icono"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Icon Container Background Color"
+msgstr "Color de Fondo del Contenedor del Icono"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:182
+msgid "Icon float"
+msgstr "Icono flotante"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:150
+msgid "Icon image"
+msgstr "Imagen de Icono"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:141
+msgid "Icon size"
+msgstr "Tamaño de Icono"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:57
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:139
+msgid "Icons"
+msgstr "Iconos"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:37
+msgid "Image 1 Link"
+msgstr "Link Imagen 1"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:33
+msgid "Image 1 URL"
+msgstr "URL Imagen 1"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:45
+msgid "Image 2 Link"
+msgstr "Link Imagen 2"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:41
+msgid "Image 2 URL"
+msgstr "URL Imagen 2"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:53
+msgid "Image 3 Link"
+msgstr "Link Imagen 3"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:49
+msgid "Image 3 URL"
+msgstr "URL Imagen 3"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:61
+msgid "Image 4 Link"
+msgstr "Link Imagen 4"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:57
+msgid "Image 4 URL"
+msgstr "URL Imagen 4"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:69
+msgid "Image 5 Link"
+msgstr "Link Imagen 5"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:65
+msgid "Image 5 URL"
+msgstr "URL Imagen 5"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:77
+msgid "Image 6 Link"
+msgstr "Link Imagen 6"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:73
+msgid "Image 6 URL"
+msgstr "URL Imagen 6"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:85
+msgid "Image 7 Link"
+msgstr "Link Imagen 7"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:81
+msgid "Image 7 URL"
+msgstr "URL Imagen 7"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:93
+msgid "Image 8 Link"
+msgstr "Link Imagen 8"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-advertgrid.php:89
+msgid "Image 8 URL"
+msgstr "URL Imagen 8"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Impact Text Color"
+msgstr "Color del Texto Llamativo"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Inner page background color"
+msgstr "Color de fondo de pagina interior"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:673
+msgid "Insert Shortcode"
+msgstr "Insertar Shortcode"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/form-change-password.php:27
+msgid "It is not possible to change the password for the demo account."
+msgstr "No es posible cambiar la contraseña para una cuenta de prueba"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:34
+#: neighborhood/woocommerce/checkout/review-order.php:21
+#: neighborhood/woocommerce/order/order-details.php:41
+msgid "Item"
+msgstr "Artículo"
+
+#. Text in function
+#: neighborhood/woocommerce/loop/add-to-cart.php:22
+msgid "Item added to bag"
+msgstr "Artículo añadido al carrito"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+msgid "Job Categories"
+msgstr "Categorias de trabajo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+msgid "Job Category"
+msgstr "Categoria de trabajo"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:58
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:549
+msgid "Labelled Pricing Table"
+msgstr "Tabla de Etiquetado de Precios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Labelled Pricing Table Default Footer Background Color"
+msgstr "Color de Fondo para el Pie por Defecto de la Tabla de Etiquetado de Precios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Labelled Pricing Table Default Package Background Color"
+msgstr "Color de Fondo para el Paquete por Defecto de la Tabla de Etiquetado de Precios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Labelled Pricing Table Default Pricing Background Color"
+msgstr "Color de Fondo para el Precio por Defecto de la Tabla de Etiquetado de Precios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Labelled Pricing Table Primary Row Color"
+msgstr "Color de la Fila Primaria de la Tabla de Etiquetado de Precios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Labelled Pricing Table Secondary Row Color"
+msgstr "Color de la Fila Secundaria de la Tabla de Etiquetado de Precios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Language"
+msgstr "Idioma"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:362
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:427
+msgid "Large"
+msgstr "Grande"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:247
+msgid "Layout"
+msgstr "Layout"
+
+#. Text in echo
+#: neighborhood/woocommerce/single-product/meta.php:25
+#: neighborhood/woocommerce/single-product/meta.php:56
+msgid "Leave Feedback"
+msgstr "Dejanos tu opinión"
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Leave a reply"
+msgstr "Dejanos tu respuesta"
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Leave a reply to %s"
+msgstr "Deja una respuesta a %s"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:443
+msgid "Left"
+msgstr "Izquierda"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:163
+msgid "Legal"
+msgstr "Legal"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:208
+msgid "Light"
+msgstr "Luz"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:374
+msgid "Light Blue"
+msgstr "Luz Azul"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:372
+msgid "Light Grey"
+msgstr "Luz Gris"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:634
+msgid "Like"
+msgstr "Me gusta"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:633
+msgid "Like (B&W)"
+msgstr "Me gusta (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:376
+msgid "Lime Green"
+msgstr "Verde Lima"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:334
+msgid "Link"
+msgstr "Link"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Link Text Color"
+msgstr "Color Texto Link"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:619
+msgid "List type"
+msgstr "Tipo de lista"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:59
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:617
+msgid "Lists"
+msgstr "Listas"
+
+#. Text in function
+#: neighborhood/functions.php:1396
+msgid "Log in to reply."
+msgstr "Inicia sesión para responder."
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Sesión iniciada como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Sesión finalizada de esta cuenta\">Log out?</a>"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:170
+msgid "Magic"
+msgstr "Mágico"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:154
+msgid "Magnify"
+msgstr "Ampliar"
+
+#. Text in function
+#: neighborhood/functions.php:549
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:361
+msgid "Medium"
+msgstr "Medio"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:60
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:356
+msgid "Modal"
+msgstr "Modal"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:366
+msgid "Modal Button colour"
+msgstr "Color del Botón Modal"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:358
+msgid "Modal Button size"
+msgstr "Tamaño del Botón Modal"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:396
+msgid "Modal Button text"
+msgstr "Texto del Botón Modal"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:383
+msgid "Modal Button type"
+msgstr "Tipo del Botón Modal"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/testimonial-carousel.php:1
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/testimonial.php:1
+msgid "More"
+msgstr "Mas"
+
+#. Text in function
+#: neighborhood/includes/plugins/love-it-pro/includes/widgets.php:39
+msgid "Most Loved"
+msgstr "Lo que mas gusta"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:159
+msgid "Music"
+msgstr "Musica"
+
+#. Text in echo
+#: neighborhood/woocommerce/wishlist.php:74
+#: neighborhood/woocommerce/myaccount/form-edit-address.php:29
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/woocommerce/order/order-details.php:28
+#: neighborhood/woocommerce/myaccount/my-account.php:20
+msgid "My Account"
+msgstr "Mi cuenta"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/my-account.php:24
+msgid "My Downloads"
+msgstr "Mis descargas"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/my-account.php:22
+msgid "My Orders"
+msgstr "Mis pedidos"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/my-account.php:27
+msgid "My Wishlist"
+msgstr "Mi lista de deseos"
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Name"
+msgstr "Nombre"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Nav Divider Color"
+msgstr "Color Divisor Nav"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Nav Pointer Color"
+msgstr "Color Indicador Nav"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Nav Selected Text Color"
+msgstr "Color Texto Seleccionado Nav"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Nav Text Color"
+msgstr "Color Texto Nav"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Nav Text Hover Color"
+msgstr "Color Texto Hover Nav"
+
+#. Text in echo
+#: neighborhood/woocommerce/single-product/meta.php:24
+msgid "Need Help?"
+msgstr "¿Necesita ayuda?"
+
+#. Text in function
+#: neighborhood/woocommerce/single-product/product-image.php:19
+#: neighborhood/woocommerce/content-product.php:171
+msgid "New"
+msgstr "Nuevo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+msgid "New Client"
+msgstr "Nuevo Cliente"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+msgid "New Job"
+msgstr "Nuevo Trabajo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+msgid "New Portfolio Item"
+msgstr "Nuevo Portafolio de Artículo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+msgid "New Question"
+msgstr "Nueva pregunta"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+msgid "New Team Member"
+msgstr "Nuevo Miembro del Equipo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "New Testimonial"
+msgstr "Nueva evaluación"
+
+#. Text in function
+#: neighborhood/woocommerce/loop/pagination.php:18
+msgid "Next"
+msgstr "Siguiente"
+
+#. Text in function
+#: neighborhood/functions.php:1428
+msgid "Next <i class='icon-angle-right'></i>"
+msgstr "Siguiente <i class='icon-angle-right'></i>"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:469
+msgid "No"
+msgstr "No"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+msgid "No clients have been added yet"
+msgstr "Ningún cliente ha sido añadido todavia"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+msgid "No jobs have been added yet"
+msgstr "Ningún trabajo ha sido añadido todavia"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+msgid "No portfolio items have been added yet"
+msgstr "Ningún artículo ha sido añadido todavia"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+msgid "No questions have been added yet"
+msgstr "Ninguna pregunta ha sido añadida todavia"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+msgid "No team members have been added yet"
+msgstr "Ningún miembro del equipo ha sido añadido todavia"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "No testimonials have been added yet"
+msgstr "Ninguna evaluación ha sido añadida todavia"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:186
+msgid "None"
+msgstr "Nada"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/form-login.php:64
+msgid "Not registered? No problem"
+msgstr "No se ha registrado? No hay problema"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "Nothing found in Trash"
+msgstr "No he encontrado nada en la Papelera"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-flickr.php:44
+msgid "Number of Photos"
+msgstr "Número de fotos"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:474
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:518
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:551
+msgid "Number of columns"
+msgstr "Número de columnas"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:650
+msgid "Number of list items"
+msgstr "Número de artículos en la lista"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:486
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:570
+msgid "Number of rows"
+msgstr "Número de filas"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:128
+msgid "Open link in a new window?"
+msgstr "¿Abrir en una nueva ventana?"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:152
+msgid "Options / Tools"
+msgstr "Opciones / Herramientas"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:379
+msgid "Orange"
+msgstr "Naranja"
+
+#. Text in function
+#: neighborhood/woocommerce/single-product/product-image.php:19
+#: neighborhood/woocommerce/content-product.php:171
+msgid "Out of Stock"
+msgstr "Sin Stock"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:391
+msgid "Outer glow effect"
+msgstr "Efecto de resplandor exterior"
+
+#. Text in function
+#: neighborhood/woocommerce/single-product-reviews.php:179
+msgid "Overall Rating"
+msgstr "Clasificación global"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Page Heading Background Color"
+msgstr "Color de Fondo del Encabezamiento de página"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Page Heading Text Color"
+msgstr "Color del texto del Encabezamiento de página"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/shortcodes.php:1
+msgid "Pages"
+msgstr "Paginas"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:635
+msgid "Pen"
+msgstr "Bolígrafo"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:155
+msgid "Pencil"
+msgstr "Lápiz"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:271
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:414
+msgid "Percentage"
+msgstr "Porcentaje"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:169
+msgid "Phone"
+msgstr "Telefono"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:378
+msgid "Pink"
+msgstr "Rosa"
+
+#. Text in echo
+#: neighborhood/header.php:175
+msgid "Please enable JavaScript to view this website."
+msgstr "Por favor, active JavaScript para ver esta página web"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+msgid "Portfolio Categories"
+msgstr "Categorias de Portafolio"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+msgid "Portfolio Category"
+msgstr "Categoria de Portafolio"
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Post comment"
+msgstr "Enviar un comentario"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-post-formats.php:1
+#: neighborhood/single.php:190
+#: neighborhood/includes/swift-framework/sf-content-display/sf-post-formats-3.6.php:1
+msgid "Posted by"
+msgstr "Enviado por"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-template-parts.php:1
+msgid "Posted by "
+msgstr "Enviado por"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/shortcodes.php:1
+msgid "Posts"
+msgstr "Envios"
+
+#. Text in echo
+#: neighborhood/archive.php:74
+msgid "Posts tagged with"
+msgstr "Envios etiquetados con"
+
+#. Text in function
+#: neighborhood/woocommerce/loop/pagination.php:18
+msgid "Prev"
+msgstr "Anterior"
+
+#. Text in function
+#: neighborhood/functions.php:549
+msgid "Price\b"
+msgstr "Precio\b"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:61
+msgid "Pricing Table"
+msgstr "Tabla de Precios"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Pricing Table Primary Background Color"
+msgstr "Color de Fondo de la Tabla de Precios Primaria"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Pricing Table Secondary Background Color"
+msgstr "Color de Fondo de la Tabla de Precios Secundaria"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Pricing Table Tertiary Background Color"
+msgstr "Color de Fondo de la Tabla de Precios Terciaria"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:508
+msgid "Pricing Tables"
+msgstr "Tablas de Precios"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:204
+msgid "Proceed to Checkout"
+msgstr "Confirmar Compra"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:159
+msgid "Proceed to checkout"
+msgstr "Continuar con la Compra"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:241
+msgid "Proceed with purchase"
+msgstr "Continuar con la compra"
+
+#. Text in function
+#: neighborhood/functions.php:549
+msgid "Product Category"
+msgstr "Categoria del Producto"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:184
+msgid "Product added to wishlist."
+msgstr "Producto añadido a la lista de deseos"
+
+#. Text in echo
+#: neighborhood/woocommerce/single-product/meta.php:22
+msgid "Product code:"
+msgstr "Código del producto:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:62
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:269
+msgid "Progress Bar"
+msgstr "Barra de progreso"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:294
+msgid "Progress Bar Colour"
+msgstr "Color barra de progreso"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:286
+msgid "Progress Bar Type"
+msgstr "Tipo barra de progreso"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:276
+msgid "Progress Text"
+msgstr "Texto Progreso"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:281
+msgid "Progress Value"
+msgstr "Valor Progreso"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Promo Bar Background Color"
+msgstr "Color de Fondo de la Barra Promo"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Promo Bar Text Color"
+msgstr "Color del Texto de la Barra Promo"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/review-order.php:227
+msgid "Promo Codes:"
+msgstr "Códigos de promoción:"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:182
+msgid "Promotional Code"
+msgstr "Código Promocional"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:230
+msgid "Pull Quote"
+msgstr "Pull Quote"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:373
+msgid "Purple"
+msgstr "Morado"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/review-order.php:24
+#: neighborhood/woocommerce/order/order-details.php:43
+msgid "Quantity"
+msgstr "Quantidade"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:142
+msgid "Quantity:"
+msgstr "Quantidade:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:636
+msgid "Question mark (B&W)"
+msgstr "Signo de interrogación (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:637
+msgid "Question mark (Colour)"
+msgstr "Signo de interrogación (Color)"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-blog.php:1
+msgid "RSS"
+msgstr "RSS"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-post-formats.php:1
+#: neighborhood/includes/swift-framework/sf-content-display/sf-post-formats-3.6.php:1
+msgid "Read more"
+msgstr "Leer mas"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/form-login.php:75
+#: neighborhood/woocommerce/checkout/form-checkout.php:259
+msgid "Register"
+msgstr "Registro"
+
+#. Text in echo
+#: neighborhood/woocommerce/myaccount/form-login.php:29
+msgid "Registered customers"
+msgstr "Clientes registrados"
+
+#. Text in function
+#: neighborhood/functions.php:1396
+msgid "Reply"
+msgstr "Responder"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:306
+msgid "Responsive Visibility"
+msgstr "Visibilidad Responsiva"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:63
+msgid "Responsive Visiblity"
+msgstr "Visibilidad Responsiva"
+
+#. Text in echo
+#: neighborhood/404.php:19
+msgid "Return to the previous page"
+msgstr "Volver a la página anterior"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:357
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:389
+msgid "Returns & exchange\b"
+msgstr "Devoluções e trocas"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:318
+msgid "Reviews"
+msgstr "Comentarios"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:344
+msgid "Right"
+msgstr "Derecha"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:171
+msgid "Road"
+msgstr "Camino"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:389
+msgid "Rounded"
+msgstr "Redondeado"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:390
+msgid "Rounded with arrow"
+msgstr "Redondeado con flecha"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-blog.php:1
+#: neighborhood/searchform.php:12
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Search"
+msgstr "Pesquisa"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+msgid "Search Clients"
+msgstr "Buscar Clientes"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+msgid "Search Jobs"
+msgstr "Buscar Trabajos"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+msgid "Search Portfolio"
+msgstr "Buscar Portafolio"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+msgid "Search Questions"
+msgstr "Buscar Preguntas"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+msgid "Search Team Members"
+msgstr "Buscar Miembros de Equipo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "Search Testimonials"
+msgstr "Buscar recomendación"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Secondary Accent Alt Color"
+msgstr "Secondary Accent Alt Color"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Secondary Accent Color"
+msgstr "Secondary Accent Color"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Section divide color"
+msgstr "Section divide color"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:49
+msgid "Select a shortcode"
+msgstr "Selecciona un shortcode"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:638
+msgid "Settings (B&W)"
+msgstr "Configuración (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:639
+msgid "Settings (Colour)"
+msgstr "Configuración (Color)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:337
+msgid "Share"
+msgstr "Compartir"
+
+#. Text in echo
+#: neighborhood/single.php:215
+#: neighborhood/single-portfolio.php:164
+msgid "Share:"
+msgstr "Compartir:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:356
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:377
+msgid "Shipping information"
+msgstr "Informação sobre o envio"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/review-order.php:109
+msgid "Shipping:"
+msgstr "Frete:"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/totals.php:22
+msgid "Shopping bag summary"
+msgstr "RESUMO DO CARRINHO DE COMPRAS"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:51
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#. Text in function
+#: neighborhood/woocommerce/loop/result-count.php:23
+msgid "Showing %1$d–%2$d of %3$d products"
+msgstr "Mostrando %1$d–%2$d de %3$d productos"
+
+#. Text in function
+#: neighborhood/woocommerce/loop/result-count.php:23
+msgid "Showing all %d products"
+msgstr "Mostrando todos %d productos"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Sign Out"
+msgstr "Salir"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:387
+msgid "Slightly rounded"
+msgstr "Levemente redondeada"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:388
+msgid "Slightly rounded with arrow"
+msgstr "Levemente redondeada con flecha"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:360
+msgid "Small"
+msgstr "Pequeño"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:64
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:196
+msgid "Social"
+msgstr "Social"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:198
+msgid "Social Icon Size"
+msgstr "Tamaño Icono Social"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:205
+msgid "Social Icon Style"
+msgstr "Estilo Icono Social"
+
+#. Text in echo
+#: neighborhood/404.php:17
+msgid "Sorry but we couldn't find the page you are looking for. Please check to make sure you've typed the URL correctly. You may also want to search for what you are looking for."
+msgstr "Lo sentimos pero no podemos encontrar la pagina que usted esta buscando. Por favor, verifica si esta escribiendo correctamente la URL."
+
+#. Text in echo
+#: neighborhood/taxonomy-portfolio-category.php:53
+#: neighborhood/archive.php:140
+#: neighborhood/archive.php:186
+#: neighborhood/category.php:124
+#: neighborhood/category.php:170
+#: neighborhood/index.php:120
+#: neighborhood/index.php:166
+#: neighborhood/search.php:135
+#: neighborhood/search.php:181
+msgid "Sorry, there are no posts to display."
+msgstr "Lo sentimos, no hay mensajes para mostrar."
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:386
+msgid "Square with arrow"
+msgstr "Cuadrado con flecha"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:385
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:288
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:426
+msgid "Standard"
+msgstr "Estándar"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:461
+msgid "Standard bordered table"
+msgstr "Tabla bordeada estándar"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:459
+msgid "Standard minimal table"
+msgstr "Tabla estándar mínima"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:512
+msgid "Standard pricing table"
+msgstr "Tabla estándar de precios"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:160
+msgid "Star"
+msgstr "Estrella"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:640
+msgid "Star (B&W)"
+msgstr "Estrella (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:641
+msgid "Star (Colour)"
+msgstr "Estrella (Color)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:289
+msgid "Striped"
+msgstr "Listado"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:290
+msgid "Striped - Animated"
+msgstr "Listado - Animado"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:462
+msgid "Striped bordered table"
+msgstr "Striped bordered table"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:460
+msgid "Striped minimal table"
+msgstr "Striped minimal table"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Sub Menu Background Color"
+msgstr "Color de fondo del Sub Menu"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Sub Menu Background Hover Color"
+msgstr "Sub Menu Background Hover Color"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Sub Menu Selected Text Color"
+msgstr "Color del Texto Seleccionado del Sub Menu"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Sub Menu Text Color"
+msgstr "Color Texto Sub Menu"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Sub Menu Text Hover Color"
+msgstr "Sub Menu Text Hover Color"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Subscribe\b"
+msgstr "Suscribirse"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:38
+#: neighborhood/woocommerce/checkout/review-order.php:25
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/review-order.php:91
+msgid "Subtotal:"
+msgstr "Subtotal:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:19
+msgid "Swift Framework Shortcodes"
+msgstr "Swift Framework Shortcodes"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/team.php:1
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/team-carousel.php:1
+msgid "T:"
+msgstr "T:"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:65
+msgid "Table"
+msgstr "Tabla"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:466
+msgid "Table Head"
+msgstr "Cabecera de la Tabla"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:457
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:510
+msgid "Table style"
+msgstr "Estilo de la Tabla"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:455
+msgid "Tables"
+msgstr "Tablas"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-blog.php:1
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. Text in echo
+#: neighborhood/single.php:200
+msgid "Tags:"
+msgstr "Etiquetas:"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+msgid "Team Categories"
+msgstr "Categorías de Equipo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+msgid "Team Category"
+msgstr "Categoría del Equipo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "Testimonial Categories"
+msgstr "Categorias de evaluación"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "Testimonial Category"
+msgstr "Categoria de la evaluación"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:329
+msgid "Text"
+msgstr "Texto"
+
+#. Text in function
+#: neighborhood/functions.php:1
+msgid "Theme Options"
+msgstr "Opciones del tema"
+
+#. Text in function
+#: neighborhood/woocommerce/single-product-reviews.php:179
+msgid "There are no reviews yet, would you like to <a href=\"#review_form\" class=\"inline show_review_form\">submit yours</a>?"
+msgstr "No hay opiniones todavia, le gustaría <a href=\"#review_form\" class=\"inline show_review_form\">submit yours</a>?"
+
+#. Text in function
+#: neighborhood/woocommerce/single-product-reviews.php:179
+msgid "There are no reviews yet, would you like to <a href=\"#review_form\" class=\"inline\" data-toggle=\"modal\">submit yours</a>?"
+msgstr "No hay opiniones todavia, le gustaría <a href=\"#review_form\" class=\"inline\" data-toggle=\"modal\">submit yours</a>?"
+
+#. Text in echo
+#: neighborhood/comments.php:15
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Esta entrada está protegida. Introduzca la contraseña para ver los comentarios."
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:642
+msgid "Tick (B&W)"
+msgstr "Marcar (B&W)"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:643
+msgid "Tick (Colour)"
+msgstr "Marcar (Colour)"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-video.php:29
+#: neighborhood/includes/widgets/widget-advertgrid.php:29
+#: neighborhood/includes/widgets/widget-flickr.php:29
+msgid "Title"
+msgstr "Título"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:66
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:327
+msgid "Tooltip"
+msgstr "Información sobre la herramienta"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:341
+msgid "Top"
+msgstr "Top"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Top Bar Background Color"
+msgstr "Color del fondo de la barra superior"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Top Bar Divider Color"
+msgstr "Color divisor de la barra superior"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Top Bar Link Hover Color"
+msgstr "Top Bar Link Hover Color"
+
+#. Text in function
+#: neighborhood/functions.php:549
+msgid "Top Bar Menu"
+msgstr "Menu de la barra superior"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-customizer-options.php:1
+msgid "Top Bar Text Color"
+msgstr "Color del texto de la barra superior"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+msgid "Topic Category"
+msgstr "Categoría del tema"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+msgid "Topics Categories"
+msgstr "Categorías de los temas"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/review-order.php:241
+msgid "Total"
+msgstr "Total do pedido	"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:167
+msgid "Trophy"
+msgstr "Premio"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:377
+msgid "Turquoise"
+msgstr "Turquesa"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:222
+msgid "Type"
+msgstr "Tipo"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:67
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:220
+msgid "Typography"
+msgstr "Tipografía"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:167
+msgid "Unfortunately, your shopping bag is empty."
+msgstr "Desafortunadamente, su carrito esta vacío"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:36
+#: neighborhood/woocommerce/checkout/review-order.php:23
+msgid "Unit Price"
+msgstr "Preço por unidade"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:141
+msgid "Unit Price:"
+msgstr "Preço por unidade:"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:204
+msgid "Update Shopping Bag"
+msgstr "Atualizar o carrinho"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:644
+msgid "User"
+msgstr "Usuario"
+
+#. Text in echo
+#: neighborhood/includes/widgets/widget-video.php:33
+msgid "Video URL"
+msgstr "Video URL"
+
+#. Text in echo
+#: neighborhood/woocommerce/loop/result-count.php:40
+msgid "View"
+msgstr "Ver"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/clients-type.php:1
+msgid "View Client"
+msgstr "Ver Cliente"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/jobs-type.php:1
+msgid "View Job"
+msgstr "Ver Trabajo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/portfolio-type.php:1
+msgid "View Portfolio Item"
+msgstr "Ver Portafolio del Articulo"
+
+#. Text in echo
+#: neighborhood/single-portfolio.php:149
+msgid "View Project"
+msgstr "Ver Proyecto"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/faqs-type.php:1
+msgid "View Question"
+msgstr "Ver Pregunta"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/team-type.php:1
+msgid "View Team Member"
+msgstr "Ver Miembro del Equipo"
+
+#. Text in function
+#: neighborhood/includes/custom-post-types/testimonials-type.php:1
+msgid "View Testimonial"
+msgstr "Ver Evaluación"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/jobs-overview.php:1
+msgid "View all vacancies"
+msgstr "Ver todas las vacantes"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:157
+msgid "View shopping bag"
+msgstr "Ver el carrito"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:111
+msgid "View your shopping cart"
+msgstr "Ver tu carrito"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "View your wishlist"
+msgstr "Ver tu lista de deseos"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:312
+msgid "Visible - Desktop"
+msgstr "Visible - Escritorio"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:310
+msgid "Visible - Phone"
+msgstr "Visible - Telefono"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:311
+msgid "Visible - Tablet"
+msgstr "Visible - Tablet"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:646
+msgid "Warning"
+msgstr "Aviso"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:645
+msgid "Warning (B&W)"
+msgstr "Aviso (B&W)"
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "Website"
+msgstr "Sitio Web"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Welcome"
+msgstr "Bem-vindo"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:370
+msgid "White"
+msgstr "Blanco"
+
+#. Text in function
+#: neighborhood/woocommerce/single-product-reviews.php:179
+msgid "Write a review"
+msgstr "Escribir un comentario"
+
+#. Text in echo
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:468
+msgid "Yes"
+msgstr "Si"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:208
+msgid "You are already logged in, please continue to the next step."
+msgstr "Ya has iniciado sesión, por favor, continue con el siguiente paso."
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-shortcodes/interface.php:1
+msgid "You are not allowed to access this page"
+msgstr "No tiene acceso a esta pagina"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart-empty.php:16
+msgid "You currently have no items in your Shopping Bag."
+msgstr "Actualmente no tiene artículos en su Carrito."
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-products.php:1
+msgid "You haven't viewed any products yet."
+msgstr "No ha visto ningún producto todavia."
+
+#. Text in function
+#: neighborhood/comments.php:64
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Debe <a href=\"%s\">iniciar sesión</a> para escribir un comentario."
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart-empty.php:14
+msgid "Your Shopping Bag is empty"
+msgstr "Su carrito esta vacío"
+
+#. Text in echo
+#: neighborhood/woocommerce/checkout/form-checkout.php:250
+msgid "Your order summary"
+msgstr "RESUMO DO CARRINHO DE COMPRAS"
+
+#. Text in echo
+#: neighborhood/woocommerce/cart/cart.php:27
+msgid "Your selection"
+msgstr "SUA SELEÇÃO"
+
+#. Text in echo
+#: neighborhood/woocommerce/wishlist.php:166
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+msgid "Your wishlist is currently empty."
+msgstr "Su lista de deseos esta actualmente vacía."
+
+#. Text in echo
+#: neighborhood/functions.php:1424
+msgid "\\t\\t\\t\\t\\t<span class=\"unapproved\">Your trackback is awaiting moderation.</span>\\n"
+msgstr "\\t\\t\\t\\t\\t<span class=\"unapproved\">Su trackback esta pendiente de revisión.</span>\\n"
+
+#. Text in echo
+#: neighborhood/functions.php:1406
+msgid "\\t\\t\\t\\t\\t<span class='unapproved'>Your comment is awaiting moderation.</span>\\n"
+msgstr "\\t\\t\\t\\t\\t<span class='unapproved'>Su comentario esta pendiente de revisión.</span>\\n"
+
+#. Text in function
+#: neighborhood/functions.php:549
+msgid "ago"
+msgstr "atrás"
+
+#. Text in function
+#: neighborhood/footer.php:1
+msgid "footer_copyright_text"
+msgstr "footer_copyright_text"
+
+#. Text in function
+#: neighborhood/footer.php:1
+msgid "footer_gotop_text"
+msgstr "footer_gotop_text"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/sf-content-display/sf-header.php:1
+#: neighborhood/includes/swift-framework/sf-woocommerce.php:119
+msgid "in the shopping bag"
+msgstr "en el carrito"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/jobs-overview.php:1
+msgid "jobs_page"
+msgstr "jobs_page"
+
+#. Text in function
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/testimonial-carousel.php:1
+#: neighborhood/includes/swift-framework/page-builder/builder/shortcodes/testimonial.php:1
+msgid "testimonial_page"
+msgstr "testimonial_page"
+
+#. Text in function
+#: cart/cart.php:184
+msgid "Apply"
+msgstr "Ok"
+
