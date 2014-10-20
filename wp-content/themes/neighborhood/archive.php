@@ -172,7 +172,7 @@
 							} 
 						?>
 						<li class="blog-item <?php echo $item_class; ?> format-<?php echo $post_format; ?>">
-							<?php //echo sf_get_post_item($post->ID, $blog_type); ?>
+							<?php echo sf_get_post_item($post->ID, $blog_type); ?>
 						</li>
 			
 					<?php endwhile; ?>
@@ -223,4 +223,4 @@
 </div>
 
 <!--// WordPress Hook //-->
-<?php //get_footer(); ?>
+<?php get_footer(); ?>
