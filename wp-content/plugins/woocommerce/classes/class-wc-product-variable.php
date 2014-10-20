@@ -241,10 +241,10 @@ class WC_Product_Variable extends WC_Product {
 		if ( $this->price > 0 ) {
 			if ( $this->is_on_sale() && isset( $this->min_variation_price ) && $this->min_variation_regular_price !== $this->get_price() ) {
 				//echo "variation";
-				if ( ! $this->min_variation_price || $this->min_variation_price !== $this->max_variation_price )
-					$price .= $this->get_price_html_from_text();
+				//if ( ! $this->min_variation_price || $this->min_variation_price !== $this->max_variation_price )
+					//$price .= $this->get_price_html_from_text();
 
-				echo $this->min_variation_price.' | '.$this->min_variation_regular_price.' | '.$this->max_variation_price.' | '.$this->max_variation_sale_price.' | '.$this->min_variation_sale_price;
+				//echo $this->min_variation_price.' | '.$this->min_variation_regular_price.' | '.$this->max_variation_price.' | '.$this->max_variation_sale_price.' | '.$this->min_variation_sale_price;
 
 				//$price .= $this->get_price_html_from_to( $this->min_variation_regular_price, $this->get_price() );
 				$price .= $this->get_price_html_variation_from_to( $this->min_variation_regular_price, $this->min_variation_sale_price, $this->max_variation_regular_price, $this->max_variation_sale_price );
