@@ -254,7 +254,7 @@ class WC_Product_Variable extends WC_Product {
 			} else {
 				if ( $this->min_variation_price !== $this->max_variation_price ){
 					$price .= $this->get_price_html_from_to($this->min_variation_price, $this->max_variation_sale_price);
-					//echo 'precio:'.$price;
+					echo 'precio:'.$price;
 				}
 
 				//$price .= woocommerce_price( $this->get_price() );
@@ -263,11 +263,11 @@ class WC_Product_Variable extends WC_Product {
 				//echo $price;
 			}
 		} elseif ( $this->price === '' ) {
-			echo "empty price";
+
 			$price = apply_filters('woocommerce_variable_empty_price_html', '', $this);
 
 		} elseif ( $this->price == 0 ) {
-			echo "free";
+
 			if ( $this->is_on_sale() && isset( $this->min_variation_regular_price ) && $this->min_variation_regular_price !== $this->get_price() ) {
 
 				if ( $this->min_variation_price !== $this->max_variation_price )
