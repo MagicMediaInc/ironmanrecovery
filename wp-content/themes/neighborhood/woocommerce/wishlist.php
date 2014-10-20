@@ -131,7 +131,6 @@ $woocommerce->show_messages() ?>
 	                        </td>
 	                        <td class="product-price">
 	                            <?php
-	                            echo $product_obj->get_price();
 	                            if( get_option( 'woocommerce_display_cart_prices_excluding_tax' ) == 'yes' )
 	                                { echo apply_filters( 'woocommerce_cart_item_price_html', woocommerce_price( $product_obj->get_price_excluding_tax() ), $values, '' ); }
 	                            else
