@@ -9,7 +9,7 @@
 	$right_sidebar = $options['archive_sidebar_right'];
 	$blog_type = $options['archive_display_type'];
 	
-	var_dump($options);
+	//var_dump($options);
 	$page_wrap_class = '';
 	if ($sidebar_config == "left-sidebar") {
 	$page_wrap_class = 'has-left-sidebar has-one-sidebar row';
@@ -134,6 +134,7 @@
 			
 			<?php } else { ?>
 			
+			<?php echo "non-both sidebars"; ?>
 			<div class="page-content clearfix">
 	
 				<?php if(have_posts()) : ?>
