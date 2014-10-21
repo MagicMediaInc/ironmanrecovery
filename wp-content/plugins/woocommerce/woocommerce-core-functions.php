@@ -825,9 +825,13 @@ function woocommerce_price( $price, $args = array() ) {
 	$return          = '';
 	$num_decimals    = (int) get_option( 'woocommerce_price_num_decimals' );
 	$currency_pos    = get_option( 'woocommerce_currency_pos' );
-	$currency_symbol = get_woocommerce_currency_symbol();
-	$decimal_sep     = wp_specialchars_decode( stripslashes( get_option( 'woocommerce_price_decimal_sep' ) ), ENT_QUOTES );
-	$thousands_sep   = wp_specialchars_decode( stripslashes( get_option( 'woocommerce_price_thousand_sep' ) ), ENT_QUOTES );
+	/* ----- DECIMAL SEPARATORS CHANGES --------- */
+	//$currency_symbol = get_woocommerce_currency_symbol();
+	//$decimal_sep     = wp_specialchars_decode( stripslashes( get_option( 'woocommerce_price_decimal_sep' ) ), ENT_QUOTES );
+	//$thousands_sep   = wp_specialchars_decode( stripslashes( get_option( 'woocommerce_price_thousand_sep' ) ), ENT_QUOTES );
+	$currency_symbol = 'R$';
+	$decimal_sep = ',';
+	$thousands_sep = '.';
 
 	$price           = apply_filters( 'raw_woocommerce_price', (double) $price );
 	$price           = number_format( $price, $num_decimals, $decimal_sep, $thousands_sep );
@@ -844,8 +848,8 @@ function woocommerce_price( $price, $args = array() ) {
 }
 
 function get_woocommerce_price_format() {
-	$currency_pos = get_option( 'woocommerce_currency_pos' );
-
+	//$currency_pos = get_option( 'woocommerce_currency_pos' );
+	$currency_pos = 'left';
 	switch ( $currency_pos ) {
 		case 'left' :
 			$format = '%1$s%2$s';
