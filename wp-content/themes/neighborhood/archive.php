@@ -8,7 +8,7 @@
 	$left_sidebar = $options['archive_sidebar_left'];
 	$right_sidebar = $options['archive_sidebar_right'];
 	$blog_type = $options['archive_display_type'];
-	
+	var_dump($options);
 	$page_wrap_class = '';
 	if ($sidebar_config == "left-sidebar") {
 	$page_wrap_class = 'has-left-sidebar has-one-sidebar row';
