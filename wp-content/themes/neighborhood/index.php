@@ -93,8 +93,6 @@
 					<?php if(have_posts()) : ?>
 						
 						<div class="blog-wrap">
-						
-					<?php echo "non-both sidebars"; ?>
 							<!-- OPEN .blog-items -->
 							<ul class="blog-items row <?php echo $list_class; ?> clearfix">
 					
@@ -134,14 +132,14 @@
 				</aside>
 			
 			<?php } else { ?>
-			
-			<?php echo "non-both sidebars"; ?>
 			<div class="page-content clearfix">
 	
 				<?php if(have_posts()) : ?>
 					
 					<div class="blog-wrap">
 					
+			
+						<?php echo "non-both sidebars"; ?>
 						<!-- OPEN .blog-items -->
 						<ul class="blog-items row <?php echo $list_class; ?> clearfix">
 				
