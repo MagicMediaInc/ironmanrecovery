@@ -139,7 +139,6 @@
 					<div class="blog-wrap">
 					
 			
-						<?php echo "non-both sidebars"; ?>
 						<!-- OPEN .blog-items -->
 						<ul class="blog-items row <?php echo $list_class; ?> clearfix">
 				
@@ -187,8 +186,9 @@
 	
 		<?php } else if ($sidebar_config == "right-sidebar") { ?>
 			
+		<?php echo "right sidebars"; ?>
 			<aside class="sidebar right-sidebar span4">
-				<?php //dynamic_sidebar($right_sidebar); ?>
+				<?php dynamic_sidebar($right_sidebar); ?>
 			</aside>
 			
 		<?php } else if ($sidebar_config == "both-sidebars") { ?>
