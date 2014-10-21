@@ -90,11 +90,11 @@
 				
 				<div class="page-content span6 clearfix">
 				
-					<?php echo "non-both sidebars"; ?>
 					<?php if(have_posts()) : ?>
 						
 						<div class="blog-wrap">
 						
+					<?php echo "non-both sidebars"; ?>
 							<!-- OPEN .blog-items -->
 							<ul class="blog-items row <?php echo $list_class; ?> clearfix">
 					
