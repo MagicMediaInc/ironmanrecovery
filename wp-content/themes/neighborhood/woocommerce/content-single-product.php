@@ -86,10 +86,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 				$has_cat = get_the_terms( $post->ID, 'product_cat' );
 			?>
 			<?php if (function_exists('be_previous_post_link') && $has_cat != 0) { ?>
+			<!--
 			<div class="product-navigation">
 				<div class="nav-previous"><?php be_previous_post_link( '%link', '<i class="icon-angle-right"></i>', true, '', 'product_cat' ); ?></div>
 				<div class="nav-next"><?php be_next_post_link( '%link', '<i class="icon-angle-left"></i>', true, '', 'product_cat' ); ?></div>
 			</div>
+			-->
 			<?php } ?>
 		
 		</div>
