@@ -293,7 +293,7 @@
 		$header_output .= '<div class="row">'. "\n";
 		//$header_output .= '<div class="header-left span5">'.sf_woo_links('header-menu', 'logo-left').'</div>'. "\n";
 		$header_output .= sf_logo('span4 logo-left clearfix');
-		$header_output .= '<div class="header-right span8" style="text-align:right;">Another logo here</div>'. "\n";//'<div class="header-right span4">'.sf_aux_links('header-menu', TRUE).'</div>'. "\n";
+		$header_output .= '<div class="header-right span8" style="text-align:right;"><img src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/treneseudescanso.png" /></div>'. "\n";//'<div class="header-right span4">'.sf_aux_links('header-menu', TRUE).'</div>'. "\n";
 		$header_output .= '</div> <!-- CLOSE .row -->'. "\n";
 		$header_output .= '</div> <!-- CLOSE .container -->'. "\n";
 		$header_output .= '</header>'. "\n";
