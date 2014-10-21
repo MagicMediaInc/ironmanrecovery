@@ -90,6 +90,7 @@
 				
 				<div class="page-content span6 clearfix">
 				
+					<?php echo "non-both sidebars"; ?>
 					<?php if(have_posts()) : ?>
 						
 						<div class="blog-wrap">
