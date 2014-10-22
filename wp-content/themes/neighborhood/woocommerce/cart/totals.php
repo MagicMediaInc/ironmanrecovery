@@ -19,20 +19,20 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<?php if ( ! $woocommerce->shipping->enabled || $available_methods || ! $woocommerce->customer->get_shipping_country() || ! $woocommerce->customer->has_calculated_shipping() ) : ?>
 
-		<h3><?php _e( 'Shopping bag summary', 'swiftframework' ); ?></h3>
+		<h3><?php _e( 'Compras resumo saco', 'swiftframework' ); ?></h3>
 
 		<table cellspacing="0">
 			<tbody>
 
 				<tr class="cart-subtotal">
-					<th><?php _e( 'Cart Subtotal', 'woocommerce' ); ?></th>
+					<th><?php _e( 'Subtotal do carrinho', 'woocommerce' ); ?></th>
 					<td><?php echo $woocommerce->cart->get_cart_subtotal(); ?></td>
 				</tr>
 
 				<?php if ( $woocommerce->cart->get_discounts_before_tax() ) : ?>
 
 					<tr class="discount">
-						<th><?php _e( 'Cart Discount', 'woocommerce' ); ?> <a href="<?php echo add_query_arg( 'remove_discounts', '1', $woocommerce->cart->get_cart_url() ) ?>"><?php _e( '[Remove]', 'woocommerce' ); ?></a></th>
+						<th><?php _e( 'Carrinho de desconto', 'woocommerce' ); ?> <a href="<?php echo add_query_arg( 'remove_discounts', '1', $woocommerce->cart->get_cart_url() ) ?>"><?php _e( '[Remover]', 'woocommerce' ); ?></a></th>
 						<td>-<?php echo $woocommerce->cart->get_discounts_before_tax(); ?></td>
 					</tr>
 
@@ -43,7 +43,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
 					<tr class="shipping_ironman">
-						<th><?php _e( 'Shipping', 'woocommerce' ); ?></th>
+						<th><?php _e( 'Remessa', 'woocommerce' ); ?></th>
 						<td><b><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></b></td>
 					</tr>
 
@@ -139,7 +139,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 	
 								?>
 								<tr class="tax">
-									<th><?php _e('Tax', 'woocommerce'); ?></th>
+									<th><?php _e('Imposto', 'woocommerce'); ?></th>
 									<td><?php echo $woocommerce->cart->get_cart_tax(); ?></td>
 								</tr>
 								<?php
@@ -149,8 +149,8 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 	
 							?>
 							<tr class="tax">
-								<th><?php _e('Tax', 'woocommerce'); ?></th>
-								<td><?php _ex( 'N/A', 'Relating to tax', 'woocommerce' ); ?></td>
+								<th><?php _e('Imposto', 'woocommerce'); ?></th>
+								<td><?php _ex( 'N/D', 'Relating to tax', 'woocommerce' ); ?></td>
 							</tr>
 							<?php
 	
@@ -161,7 +161,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				<?php if ( $woocommerce->cart->get_discounts_after_tax() ) : ?>
 
 					<tr class="discount">
-						<th><?php _e( 'Order Discount', 'woocommerce' ); ?> <a href="<?php echo add_query_arg( 'remove_discounts', '2', $woocommerce->cart->get_cart_url() ) ?>"><?php _e( '[Remove]', 'woocommerce' ); ?></a></th>
+						<th><?php _e( 'Desconto de ordem', 'woocommerce' ); ?> <a href="<?php echo add_query_arg( 'remove_discounts', '2', $woocommerce->cart->get_cart_url() ) ?>"><?php _e( '[Remover]', 'woocommerce' ); ?></a></th>
 						<td>-<?php echo $woocommerce->cart->get_discounts_after_tax(); ?></td>
 					</tr>
 
@@ -170,7 +170,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				<?php do_action( 'woocommerce_cart_totals_before_order_total' ); ?>
 
 				<tr class="total">
-					<th><?php _e( 'Order Total', 'woocommerce' ); ?></th>
+					<th><?php _e( 'Total da Encomenda', 'woocommerce' ); ?></th>
 					<td>
 						<?php
 							if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) {
@@ -186,7 +186,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 									}
 	
 									if ( ! empty( $tax_string_array ) ) {
-										echo '<small class="includes_tax">' . sprintf( __( '(Includes %s)', 'woocommerce' ), implode( ', ', $tax_string_array ) ) . '</small>';
+										echo '<small class="includes_tax">' . sprintf( __( '(Inclui %s)', 'woocommerce' ), implode( ', ', $tax_string_array ) ) . '</small>';
 									}
 								}
 							} else {
@@ -211,7 +211,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 				$estimated_text = ( $woocommerce->customer->is_customer_outside_base() && ! $woocommerce->customer->has_calculated_shipping() ) ? sprintf( ' ' . __( ' (taxes estimated for %s)', 'woocommerce' ), $woocommerce->countries->estimated_for_prefix() . __( $woocommerce->countries->countries[ $woocommerce->countries->get_base_country() ], 'woocommerce' ) ) : '';
 
-				printf( __( 'Note: Shipping and taxes are estimated%s and will be updated during checkout based on your billing and shipping information.', 'woocommerce' ), $estimated_text );
+				printf( __( 'Nota: envio e impostos são estimados %s e será atualizado durante o checkout com base no seu faturamento e envio de informações.', 'woocommerce' ), $estimated_text );
 
 			?></small></p>
 
@@ -223,7 +223,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 			<div class="woocommerce-info">
 
-				<p><?php _e( 'No shipping methods were found; please recalculate your shipping and enter your state/county and zip/postcode to ensure there are no other available methods for your location.', 'woocommerce' ); ?></p>
+				<p><?php _e( 'Não foi possível encontrar métodos de transporte; por favor recalcular o frete e digitar o seu estado / município e zip / código postal para garantir que não haja outros métodos disponíveis para a sua localização.', 'woocommerce' ); ?></p>
 
 			</div>
 
@@ -235,7 +235,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 				echo apply_filters( 'woocommerce_cart_no_shipping_available_html',
 					'<div class="woocommerce-error"><p>' .
-					sprintf( __( 'Sorry, it seems that there are no available shipping methods for your location (%s).', 'woocommerce' ) . ' ' . __( 'If you require assistance or wish to make alternate arrangements please contact us.', 'woocommerce' ), $customer_location ) .
+					sprintf( __( 'Desculpe, parece que não há métodos de envio disponíveis para sua localização (%s).', 'woocommerce' ) . ' ' . __( 'Se você precisar de ajuda ou quiser fazer arranjos alternativos entre em contato conosco.', 'woocommerce' ), $customer_location ) .
 					'</p></div>'
 				);
 
