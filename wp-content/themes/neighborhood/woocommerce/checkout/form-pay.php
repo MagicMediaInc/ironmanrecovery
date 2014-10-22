@@ -59,7 +59,7 @@ global $woocommerce;
 						current( $available_gateways )->set_current();
 
 					foreach ( $available_gateways as $gateway ) {
-						var_dump($gateway);
+						//var_dump($gateway);
 						?>
 						<li>
 							<input type="radio" id="payment_method_<?php echo $gateway->id; ?>" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php if ($gateway->chosen) echo 'checked="checked"'; ?> />
