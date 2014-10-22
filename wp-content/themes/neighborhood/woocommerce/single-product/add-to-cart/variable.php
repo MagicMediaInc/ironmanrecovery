@@ -65,7 +65,7 @@ global $woocommerce, $product, $yith_wcwl, $post, $catalog_mode;
 						?>
 					</select> <?php
 						if ( sizeof($attributes) == $loop )
-							echo '<a class="reset_variations" href="#reset">' . __( 'Clear selection', 'woocommerce' ) . '</a>';
+							echo '<a class="reset_variations" href="#reset">' . __( 'Limpar seleção', 'woocommerce' ) . '</a>';
 					?></div></td>
 				</tr>
 	        <?php endforeach;?>
@@ -81,7 +81,7 @@ global $woocommerce, $product, $yith_wcwl, $post, $catalog_mode;
 			<input type="hidden" name="variation_id" value="" />
 			<?php woocommerce_quantity_input(); ?>
 			<?php 
-				$button_text = '<i class="icon-plus"></i>' . apply_filters('single_add_to_cart_text', __("Add to shopping bag", "swiftframework"), $product->product_type);
+				$button_text = '<i class="icon-plus"></i>' . apply_filters('single_add_to_cart_text', __("Adicionar ao carrinho de compras", "swiftframework"), $product->product_type);
 			?>			
 			<button type="submit" class="single_add_to_cart_button"><?php echo $button_text; ?></button>
 			<?php echo sf_wishlist_button(); ?>
