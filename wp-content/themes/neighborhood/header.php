@@ -303,7 +303,7 @@ function show_mini_cart() {
 					
 				<div id="header-section" class="<?php echo $header_layout; ?> <?php echo $logo_class; ?>">
 				<?php echo sf_header(); ?>
-                                <?php show_mini_cart(); ?>
+                                <?php //show_mini_cart(); ?>
 				</div>
 				<?php if ($enable_promo_bar) { ?>
 					<!--// OPEN #promo-bar //-->
