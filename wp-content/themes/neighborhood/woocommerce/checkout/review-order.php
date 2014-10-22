@@ -106,7 +106,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				<?php do_action('woocommerce_review_order_before_shipping'); ?>
 
 				<tr class="shipping">
-					<th><?php _e( 'Remessa:', 'swiftframework' ); ?></th>
+					<th><?php _e( 'Frete:', 'swiftframework' ); ?></th>
 					<td><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
 

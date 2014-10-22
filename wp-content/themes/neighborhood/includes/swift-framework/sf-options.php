@@ -2193,7 +2193,7 @@ function setup_framework_options(){
     							'title' => __('Help Bar Text', Redux_TEXT_DOMAIN), 
     							'sub_desc' => __('This text appears in the help bar on account / checkout pages.', Redux_TEXT_DOMAIN),
     							'desc' => '',
-    							'std' => 'Need help? Call customer services on 0800 123 4567.'
+    							'std' => 'Precisa de ajuda? Os serviços de chamadas de clientes em 0800 123 4567.'
     							),
     						array(
     							'id' => 'email_modal',
