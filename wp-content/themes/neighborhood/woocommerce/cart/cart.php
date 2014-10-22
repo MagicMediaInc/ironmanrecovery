@@ -201,7 +201,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 		
 		<?php woocommerce_cart_totals(); ?>
 		
-		<input type="submit" class="update-cart-button button" name="update_cart" value="<?php _e( 'Atualização Shopping Bag', 'swiftframework' ); ?>" /> <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e( 'Proceed to Checkout', 'swiftframework' ); ?>" />
+		<input type="submit" class="update-cart-button button" name="update_cart" value="<?php _e( 'Atualização Shopping Bag', 'swiftframework' ); ?>" /> <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e( 'Fazer o check-out', 'swiftframework' ); ?>" />
 		
 		<?php do_action('woocommerce_proceed_to_checkout'); ?>
 		
