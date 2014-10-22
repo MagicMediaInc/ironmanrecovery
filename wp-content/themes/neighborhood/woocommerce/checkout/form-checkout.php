@@ -238,7 +238,7 @@ jQuery(document).ready(function() {
 		</div>
 		
 		<div class="proceed clearfix">
-			<a class="sf-roll-button alt-button continue-button" href="#" data-target="#review"><span ><?php _e('Proceed with purchase', 'swiftframework'); ?></span><span><?php _e('Proceed with purchase', 'swiftframework'); ?></span></a>
+			<a class="sf-roll-button alt-button continue-button" href="#" data-target="#review"><span ><?php _e('Prosseguir com a compra', 'swiftframework'); ?></span><span><?php _e('Proceed with purchase', 'swiftframework'); ?></span></a>
 		</div>
 	
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
@@ -247,7 +247,7 @@ jQuery(document).ready(function() {
 	
 	<div class="checkout-pane" id="review" style="display: none;">
 		  	
-		<h4 id="order_review_heading" class="lined-heading"><span><?php _e( 'Your order summary', 'swiftframework' ); ?></span></h4>
+		<h4 id="order_review_heading" class="lined-heading"><span><?php _e( 'O resumo do pedido', 'swiftframework' ); ?></span></h4>
 		
 		<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 	
@@ -256,7 +256,7 @@ jQuery(document).ready(function() {
 	<div id="create-account" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="create-account-modal" aria-hidden="true">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3 id="create-account-modal"><?php _e("Register", "swiftframework"); ?></h3>
+			<h3 id="create-account-modal"><?php _e("Cadastre-se", "swiftframework"); ?></h3>
 		</div>
 		<div class="modal-body">
 			<?php do_action( 'woocommerce_before_checkout_registration_form', $checkout ); ?>
@@ -275,7 +275,7 @@ jQuery(document).ready(function() {
 		
 			<?php do_action( 'woocommerce_after_checkout_registration_form', $checkout ); ?>
 			
-			<a class="sf-roll-button alt-button continue-button" href="" data-dismiss="modal" data-target="#billing"><span ><?php _e("And we're done!", "swiftframework"); ?></span><span><?php _e('Continue', 'swiftframework'); ?></span></a>
+			<a class="sf-roll-button alt-button continue-button" href="" data-dismiss="modal" data-target="#billing"><span ><?php _e("E nós terminamos!", "swiftframework"); ?></span><span><?php _e('Continuar', 'swiftframework'); ?></span></a>
 	
 		</div>
 	</div>
