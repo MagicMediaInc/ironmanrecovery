@@ -205,8 +205,8 @@ jQuery(document).ready(function() {
 		<?php } else { ?>
 		
 		<div class="already-logged-in">
-			<p><?php _e("You are already logged in, please continue to the next step.", "swiftframework"); ?></p>
-			<a class="sf-roll-button alt-button continue-button" href="#" data-target="#billing"><span ><?php _e('Continue', 'swiftframework'); ?></span><span><?php _e('Continue', 'swiftframework'); ?></span></a>
+			<p><?php _e("Você já está logado, por favor, continue para a próxima etapa.", "swiftframework"); ?></p>
+			<a class="sf-roll-button alt-button continue-button" href="#" data-target="#billing"><span ><?php _e('Continuar', 'swiftframework'); ?></span><span><?php _e('Continuar', 'swiftframework'); ?></span></a>
 		</div>
 		
 		<?php } ?>
