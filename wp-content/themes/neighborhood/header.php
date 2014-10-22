@@ -15,7 +15,7 @@ function show_mini_cart() {
 
         ?>	
         <div class="parent shopping-bag-ite">
-            <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'swiftframework'); ?>"><i class="sf-cart"></i><?php echo $woocommerce->cart->get_cart_total(); ?></a>
+            <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Veja o seu carrinho', 'swiftframework'); ?>"><i class="sf-cart"></i><?php echo $woocommerce->cart->get_cart_total(); ?></a>
 
         <ul class="sub-menu">     
         <li>                                      
@@ -23,7 +23,7 @@ function show_mini_cart() {
 
         <?php if ( sizeof($cart_count)>0 ) { ?>
 
-        <div class="bag-header"><?php echo $cart_count_text; ?> <?php _e('in the shopping bag', 'swiftframework'); ?></div>
+        <div class="bag-header"><?php echo $cart_count_text; ?> <?php _e('na sacola de compras', 'swiftframework'); ?></div>
 
         <div class="bag-contents">
 
@@ -45,11 +45,11 @@ function show_mini_cart() {
                             <a href="<?php echo get_permalink($cart_item['product_id']); ?>">
                                     <?php echo apply_filters('woocommerce_cart_widget_product_title', $product_title, $bag_product); ?></a>
                     </div>
-            <div class="bag-product-price"><?php _e("Unit Price:", "swiftframework"); ?> <?php echo woocommerce_price($bag_product->get_price()); ?></div>
-            <div class="bag-product-quantity"><?php _e('Quantity:', 'swiftframework'); ?> <?php echo $cart_item['quantity']; ?></div>
+            <div class="bag-product-price"><?php _e("Preço Unitário:", "swiftframework"); ?> <?php echo woocommerce_price($bag_product->get_price()); ?></div>
+            <div class="bag-product-quantity"><?php _e('Quantidade:', 'swiftframework'); ?> <?php echo $cart_item['quantity']; ?></div>
         </div>
 
-        <?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'woocommerce') ), $cart_item_key ); ?>
+        <?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remover este item', 'woocommerce') ), $cart_item_key ); ?>
 
         </div>
 
@@ -66,9 +66,9 @@ function show_mini_cart() {
         
         ?>
 
-        <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('View shopping bag', 'swiftframework'); ?></span><span><?php _e('View shopping bag', 'swiftframework'); ?></span></a>
+        <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('Ver saco de compras', 'swiftframework'); ?></span><span><?php _e('View shopping bag', 'swiftframework'); ?></span></a>
 
-        <a class="sf-roll-button checkout-button" href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>"><span><?php _e('Proceed to checkout', 'swiftframework'); ?></span><span><?php _e('Proceed to checkout', 'swiftframework'); ?></span></a>
+        <a class="sf-roll-button checkout-button" href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>"><span><?php _e('Fazer o pagamento', 'swiftframework'); ?></span><span><?php _e('Proceed to checkout', 'swiftframework'); ?></span></a>
 
         </div>
 

@@ -258,7 +258,7 @@
 		if ($maintenance_mode) {
 		
 		    if ( !current_user_can( 'edit_themes' ) || !is_user_logged_in() ) {
-		        wp_die($custom_logo_output . '<p style="text-align:center">We are currently in maintenance mode, please check back shortly.</p>');
+		        wp_die($custom_logo_output . '<p style="text-align:center">Estamos atualmente em modo de manutenção, por favor, volte em breve.</p>');
 		    }
 	    
 	    }
