@@ -334,7 +334,7 @@
 		$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), false, '' );
 	?>
 		<div class="product-share clearfix">
-			<span><?php _e("Share", "swiftframework"); ?></span>
+			<span><?php _e("Compartilhar", "swiftframework"); ?></span>
 			<ul>
 			    <li><a href="mailto:?subject=<?php the_title(); ?>&body=<?php echo strip_tags(apply_filters( 'woocommerce_short_description', $post->post_excerpt )); ?> <?php the_permalink(); ?>" class="product_share_email"><i class="icon-envelope"></i></a></li>
 			    <li><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank" class="product_share_facebook"><i class="icon-facebook"></i></a></li>
