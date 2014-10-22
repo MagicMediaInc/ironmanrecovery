@@ -196,39 +196,39 @@ class WC_PagSeguro_Gateway extends WC_Payment_Gateway {
 	public function init_form_fields() {
 		$this->form_fields = array(
 			'enabled' => array(
-				'title'   => __( 'Enable/Disable', 'woocommerce-pagseguro' ),
+				'title'   => __( 'Ativar/Desativar', 'woocommerce-pagseguro' ),
 				'type'    => 'checkbox',
-				'label'   => __( 'Enable PagSeguro', 'woocommerce-pagseguro' ),
+				'label'   => __( 'Ativar PagSeguro', 'woocommerce-pagseguro' ),
 				'default' => 'yes'
 			),
 			'title' => array(
-				'title'       => __( 'Title', 'woocommerce-pagseguro' ),
+				'title'       => __( 'Título', 'woocommerce-pagseguro' ),
 				'type'        => 'text',
-				'description' => __( 'This controls the title which the user sees during checkout.', 'woocommerce-pagseguro' ),
+				'description' => __( 'Este controla o título que o usuário vê durante o pagamento.', 'woocommerce-pagseguro' ),
 				'desc_tip'    => true,
 				'default'     => __( 'PagSeguro', 'woocommerce-pagseguro' )
 			),
 			'description' => array(
-				'title'       => __( 'Description', 'woocommerce-pagseguro' ),
+				'title'       => __( 'Descrição', 'woocommerce-pagseguro' ),
 				'type'        => 'textarea',
-				'description' => __( 'This controls the description which the user sees during checkout.', 'woocommerce-pagseguro' ),
-				'default'     => __( 'Pay via PagSeguro', 'woocommerce-pagseguro' )
+				'description' => __( 'Isto controla a descrição que o usuário vê durante o pagamento.', 'woocommerce-pagseguro' ),
+				'default'     => __( 'Pagar com PagSeguro', 'woocommerce-pagseguro' )
 			),
 			'email' => array(
 				'title'       => __( 'PagSeguro Email', 'woocommerce-pagseguro' ),
 				'type'        => 'text',
-				'description' => __( 'Please enter your PagSeguro email address. This is needed in order to take payment.', 'woocommerce-pagseguro' ),
+				'description' => __( 'Digite seu endereço de e-mail PagSeguro. Isto é necessário, a fim de ter o pagamento.', 'woocommerce-pagseguro' ),
 				'desc_tip'    => true,
 				'default'     => ''
 			),
 			'token' => array(
 				'title'       => __( 'PagSeguro Token', 'woocommerce-pagseguro' ),
 				'type'        => 'text',
-				'description' => sprintf( __( 'Please enter your PagSeguro token. This is needed to process the payment and notifications. Is possible generate a new token %s.', 'woocommerce-pagseguro' ), '<a href="https://pagseguro.uol.com.br/integracao/token-de-seguranca.jhtml">' . __( 'here', 'woocommerce-pagseguro' ) . '</a>' ),
+				'description' => sprintf( __( 'Digite seu símbolo PagSeguro. Isso é necessário para processar o pagamento e notificações. É possível gerar um novo token %s.', 'woocommerce-pagseguro' ), '<a href="https://pagseguro.uol.com.br/integracao/token-de-seguranca.jhtml">' . __( 'here', 'woocommerce-pagseguro' ) . '</a>' ),
 				'default'     => ''
 			),
 			'method' => array(
-				'title'       => __( 'Integration method', 'woocommerce-pagseguro' ),
+				'title'       => __( 'Método de integração', 'woocommerce-pagseguro' ),
 				'type'        => 'select',
 				'description' => __( 'Choose how the customer will interact with the PagSeguro. Redirect (Client goes to PagSeguro page) or Lightbox (Inside your store)', 'woocommerce-pagseguro' ),
 				'desc_tip'    => true,
