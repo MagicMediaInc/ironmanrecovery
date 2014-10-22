@@ -66,9 +66,9 @@ function show_mini_cart() {
         
         ?>
 
-        <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('Ver saco de compras', 'swiftframework'); ?></span><span><?php _e('View shopping bag', 'swiftframework'); ?></span></a>
+        <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('Ver saco de compras', 'swiftframework'); ?></span><span><?php _e('Ver saco de compras', 'swiftframework'); ?></span></a>
 
-        <a class="sf-roll-button checkout-button" href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>"><span><?php _e('Fazer o pagamento', 'swiftframework'); ?></span><span><?php _e('Proceed to checkout', 'swiftframework'); ?></span></a>
+        <a class="sf-roll-button checkout-button" href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>"><span><?php _e('Fazer o pagamento', 'swiftframework'); ?></span><span><?php _e('Fazer o pagamento', 'swiftframework'); ?></span></a>
 
         </div>
 
@@ -82,7 +82,7 @@ function show_mini_cart() {
 
         <?php $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>
 
-        <a class="sf-roll-button shop-button" href="<?php echo esc_url( $shop_page_url ); ?>"><span><?php _e('Go to the shop', 'swiftframework'); ?></span><span><?php _e('Go to the shop', 'swiftframework'); ?></span></a>
+        <a class="sf-roll-button shop-button" href="<?php echo esc_url( $shop_page_url ); ?>"><span><?php _e('Ir para a loja', 'swiftframework'); ?></span><span><?php _e('Ir para a loja', 'swiftframework'); ?></span></a>
 
         </div>
 
