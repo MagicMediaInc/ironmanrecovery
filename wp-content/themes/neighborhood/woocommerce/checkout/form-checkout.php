@@ -27,12 +27,12 @@ if (isset($options['enable_one_page_checkout'])) {
 // If checkout registration is disabled and not logged in, the user cannot checkout
 if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) {
 	if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_user_logged_in() ) {
-		echo apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'woocommerce' ) );
+		echo apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'Você deve estar logado para checkout.', 'woocommerce' ) );
 		return;
 	}
 } else {
 	if (get_option('woocommerce_enable_signup_and_login_from_checkout')=="no" && get_option('woocommerce_enable_guest_checkout')=="no" && !is_user_logged_in()) :
-		echo apply_filters('woocommerce_checkout_must_be_logged_in_message', __('You must be logged in to checkout.', 'woocommerce'));
+		echo apply_filters('woocommerce_checkout_must_be_logged_in_message', __('Você deve estar logado para checkout.', 'woocommerce'));
 		return;
 	endif;
 }
@@ -162,10 +162,10 @@ jQuery(document).ready(function() {
 <?php sf_woo_help_bar(); ?>
 
 <ul class="checkout-process clearfix">
-	<li><a href="#sign-in"><?php _e("1. Sign In", "swiftframework"); ?></a></li>
-	<li><a href="#billing"><?php _e("2. Billing & Shipping", "swiftframework"); ?></a></li>
-	<li><a href="#review"><?php _e("3. Review & Payment", "swiftframework"); ?></a></li>
-	<li><p><?php _e("4. Confirmation", "swiftframework"); ?></p></li>
+	<li><a href="#sign-in"><?php _e("1. Assinar em", "swiftframework"); ?></a></li>
+	<li><a href="#billing"><?php _e("2. Faturamento e Expedição", "swiftframework"); ?></a></li>
+	<li><a href="#review"><?php _e("3. Comente e Pagamentos", "swiftframework"); ?></a></li>
+	<li><p><?php _e("4. Confirmação", "swiftframework"); ?></p></li>
 </ul>
 
 
@@ -176,7 +176,7 @@ jQuery(document).ready(function() {
 		<?php if (!is_user_logged_in()) { ?>
 		
 		<div class="col-1 login">
-			<h4 class="lined-heading"><span><?php _e("I already have an account", "swiftframework"); ?></span></h4>
+			<h4 class="lined-heading"><span><?php _e("Já tenho uma conta", "swiftframework"); ?></span></h4>
 			<?php
 				echo woocommerce_checkout_login_form(
 					array(
@@ -189,15 +189,15 @@ jQuery(document).ready(function() {
 		</div>
 	
 		<div class="col-2">
-			<h4 class="lined-heading"><span><?php _e("I'm new here", "swiftframework"); ?></span></h4>
+			<h4 class="lined-heading"><span><?php _e("Eu sou novo aqui", "swiftframework"); ?></span></h4>
 			<div class="new-here-text">
 				<?php echo $options['checkout_new_account_text']; ?>
 			</div>
 			<div class="bag-buttons">
-				<a id="checkout-create-account" class="sf-roll-button create-account-button" href="#create-account" data-toggle="modal"><span><?php _e('Create an account', 'swiftframework'); ?></span><span><?php _e('Create an account', 'swiftframework'); ?></span></a>
+				<a id="checkout-create-account" class="sf-roll-button create-account-button" href="#create-account" data-toggle="modal"><span><?php _e('Criar uma conta', 'swiftframework'); ?></span><span><?php _e('Criar uma conta', 'swiftframework'); ?></span></a>
 				
 				<?php if (get_option('woocommerce_enable_guest_checkout') == "yes") { ?>
-				<a class="sf-roll-button guest-button continue-button" href="#" data-target="#billing"><span ><?php _e('Checkout as a guest', 'swiftframework'); ?></span><span><?php _e('Checkout as a guest', 'swiftframework'); ?></span></a>
+				<a class="sf-roll-button guest-button continue-button" href="#" data-target="#billing"><span ><?php _e('Caixa como convidado', 'swiftframework'); ?></span><span><?php _e('Caixa como convidado', 'swiftframework'); ?></span></a>
 				<?php } ?>
 			</div>
 		</div>

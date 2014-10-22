@@ -30,14 +30,14 @@ if ( ! woocommerce_products_will_display() )
 		if ( 1 == $total ) {
 			_e( 'Showing the single product', 'swiftframework' );
 		} elseif ( $total <= $per_page ) {
-			printf( __( 'Showing all %d products', 'swiftframework' ), $total );
+			printf( __( 'Mostrando todos %d produtos', 'swiftframework' ), $total );
 		} else {
-			printf( __( 'Showing %1$d–%2$d of %3$d products', 'swiftframework' ), $first, $last, $total );
+			printf( __( 'Mostrando %1$d–%2$d de %3$d produtos', 'swiftframework' ), $first, $last, $total );
 		}
 		?>
 	</p>
 	<p class="swiftframework-show-products">
-		<span><?php _e("View", "swiftframework"); ?> </span>
-		<a class="show-products-link" href="?show_products=24">24</a>/<a class="show-products-link" href="?show_products=48">48</a>/<a  class="show-products-link" href="<?php echo $shop_page_url; ?>?show_products=<?php echo $total;?>"><?php _e("All", "swiftframework"); ?></a>
+		<span><?php _e("Vista", "swiftframework"); ?> </span>
+		<a class="show-products-link" href="?show_products=24">24</a>/<a class="show-products-link" href="?show_products=48">48</a>/<a  class="show-products-link" href="<?php echo $shop_page_url; ?>?show_products=<?php echo $total;?>"><?php _e("Todos", "swiftframework"); ?></a>
 	</p>
 </div>
