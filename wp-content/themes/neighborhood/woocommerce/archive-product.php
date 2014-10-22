@@ -129,7 +129,7 @@
 			</div>
 			<?php 
 				// BREADCRUMBS
-				echo sf_breadcrumbs();
+				//echo sf_breadcrumbs();
 			?>
 		</div>
 	</div>
