@@ -390,7 +390,7 @@
 		
 		$mobile_search_output = '';
 		
-		$mobile_search_output .= '<form method="get" class="mobile-search-form" action="'.home_url().'/"><input type="text" placeholder="'.__("Pesquisa", "swiftframework").'" name="s" autocomplete="off" /></form>';
+		$mobile_search_output .= '<form method="get" class="mobile-search-form" action="'.home_url().'/"><input type="text" placeholder="'.__("Search", "swiftframework").'" name="s" autocomplete="off" /></form>';
 	
 		return $mobile_search_output;
 	}
