@@ -352,9 +352,9 @@
 		<div class="help-bar clearfix">
 			<span><?php echo do_shortcode($options['help_bar_text']); ?></span>
 			<ul>
-			    <li><a href="#email-form" class="inline" data-toggle="modal"><?php _e("Email customer care", "swiftframework"); ?></a></li>
-			    <li><a href="#shipping-information" class="inline" data-toggle="modal"><?php _e("Shipping information", "swiftframework"); ?></a></li>
-			    <li><a href="#returns-exchange" class="inline" data-toggle="modal"><?php _e("Returns & exchange", "swiftframework"); ?></a></li>
+			    <li><a href="#email-form" class="inline" data-toggle="modal"><?php _e("E-mail de atendimento ao cliente", "swiftframework"); ?></a></li>
+			    <li><a href="#shipping-information" class="inline" data-toggle="modal"><?php _e("Informação do transporte", "swiftframework"); ?></a></li>
+			    <li><a href="#returns-exchange" class="inline" data-toggle="modal"><?php _e("De troca e devolução", "swiftframework"); ?></a></li>
 			    <li><a href="#faqs" class="inline" data-toggle="modal"><?php _e("F.A.Q.'s", "swiftframework"); ?></a></li>
 			</ul>
 		</div>
@@ -362,7 +362,7 @@
 		<div id="email-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="email-form-modal" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="email-form-modal"><?php _e("Email customer care", "swiftframework"); ?></h3>
+				<h3 id="email-form-modal"><?php _e("E-mail de atendimento ao cliente", "swiftframework"); ?></h3>
 			</div>
 			<div class="modal-body">
 				
@@ -374,7 +374,7 @@
 		<div id="shipping-information" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="shipping-modal" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="shipping-modal"><?php _e("Shipping information", "swiftframework"); ?></h3>
+				<h3 id="shipping-modal"><?php _e("Informação do transporte", "swiftframework"); ?></h3>
 			</div>
 			<div class="modal-body">
 				
@@ -386,7 +386,7 @@
 		<div id="returns-exchange" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="returns-modal" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="returns-modal"><?php _e("Returns & exchange", "swiftframework"); ?></h3>
+				<h3 id="returns-modal"><?php _e("De troca e devolução", "swiftframework"); ?></h3>
 			</div>
 			<div class="modal-body">
 				
