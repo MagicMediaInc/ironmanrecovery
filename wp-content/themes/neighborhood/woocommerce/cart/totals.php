@@ -43,7 +43,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
 					<tr class="shipping_ironman">
-						<th><?php _e( 'Remessa', 'woocommerce' ); ?></th>
+						<th><?php _e( 'Frete', 'woocommerce' ); ?></th>
 						<td><b><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></b></td>
 					</tr>
 
