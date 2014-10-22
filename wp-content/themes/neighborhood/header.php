@@ -12,8 +12,10 @@ function show_mini_cart() {
 
         $cart_count = $woocommerce->cart->cart_contents_count;
         $cart_count_text = sf_product_items_text($cart_count);
-
+			
         ?>	
+        <div id="breadcrumbs">
+			<img src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/bag-e1414004492490.png" />
         <div class="parent shopping-bag-ite">
             <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Veja o seu carrinho', 'swiftframework'); ?>"><i class="sf-cart"></i><?php echo $woocommerce->cart->get_cart_total(); ?></a>
 
@@ -94,6 +96,7 @@ function show_mini_cart() {
         </div>
 
 
+        </div>
         </div>     
 
     <?php
