@@ -16,7 +16,7 @@
 		
 		if ( function_exists('bcn_display') ) {
 			$breadcrumb_output .= '<div id="breadcrumbs">'. "\n";
-			$breadcrumb_output .= '<img src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/bag.png" /> '. "\n";
+			$breadcrumb_output .= '<img src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/bag-e1414004492490.png" /> '. "\n";
 			$breadcrumb_output .= show_mini_cart();//bcn_display(true);
 			$breadcrumb_output .= '</div>'. "\n";
 		} else if ( function_exists('yoast_breadcrumb') ) {
