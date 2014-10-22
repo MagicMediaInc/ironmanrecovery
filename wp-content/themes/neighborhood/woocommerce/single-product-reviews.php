@@ -105,7 +105,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 		if ( get_option('woocommerce_enable_review_rating') == 'yes' ) {
 	
-			$comment_form['comment_field'] = '<p class="comment-form-rating"><label for="rating">' . __( 'Overall Rating', 'swiftframework' ) .'</label><select name="rating" id="rating">
+			$comment_form['comment_field'] = '<p class="comment-form-rating"><label for="rating">' . __( 'Classificação geral', 'swiftframework' ) .'</label><select name="rating" id="rating">
 				<option value="">'.__( 'Rate&hellip;', 'woocommerce' ).'</option>
 				<option value="5">'.__( 'Perfect', 'woocommerce' ).'</option>
 				<option value="4">'.__( 'Good', 'woocommerce' ).'</option>
@@ -186,7 +186,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 			$title_reply = __('Be the first to review', 'woocommerce').' &ldquo;'.$post->post_title.'&rdquo;';
 	
-			echo '<p>'.__('There are no reviews yet, would you like to <a href="#review_form" class="inline show_review_form">submit yours</a>?', 'swiftframework').'</p>';
+			echo '<p>'.__('Não existem comentários ainda, gostaria de <a href="#review_form" class="inline show_review_form">enviar o seu</a>?', 'swiftframework').'</p>';
 	
 		endif;
 	
