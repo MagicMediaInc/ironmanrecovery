@@ -28,21 +28,21 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 				echo '<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" class="aggregate-rating">';
 	
-				echo '<div class="star-rating" title="'.sprintf(__( 'Rated %s out of 5', 'woocommerce' ), $average ).'"><span style="width:'.( ( $average / 5 ) * 100 ) . '%"><strong itemprop="ratingValue" class="rating">'.$average.'</strong> '.__( 'out of 5', 'woocommerce' ).'</span></div>';
+				echo '<div class="star-rating" title="'.sprintf(__( 'Classificado %s de 5', 'woocommerce' ), $average ).'"><span style="width:'.( ( $average / 5 ) * 100 ) . '%"><strong itemprop="ratingValue" class="rating">'.$average.'</strong> '.__( 'de 5', 'woocommerce' ).'</span></div>';
 	
-				echo '<h2>'.sprintf( _n('%s review for %s', '%s reviews for %s', $count, 'woocommerce'), '<span itemprop="ratingCount" class="count">'.$count.'</span>', wptexturize($post->post_title) ).'</h2>';
+				echo '<h2>'.sprintf( _n('%s comentário para %s', '%s reviews for %s', $count, 'woocommerce'), '<span itemprop="ratingCount" class="count">'.$count.'</span>', wptexturize($post->post_title) ).'</h2>';
 	
 				echo '</div>';
 	
 			} else {
 	
-				echo '<h2>'.__( 'Reviews', 'woocommerce' ).'</h2>';
+				echo '<h2>'.__( 'Comentarios', 'woocommerce' ).'</h2>';
 	
 			}
 	
 		} else {
 	
-			echo '<h2>'.__( 'Reviews', 'woocommerce' ).'</h2>';
+			echo '<h2>'.__( 'Comentarios', 'woocommerce' ).'</h2>';
 	
 		}
 	
@@ -58,22 +58,22 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 				<div class="navigation">
-					<div class="nav-previous"><?php previous_comments_link( __( '<span class="meta-nav">&larr;</span> Previous', 'woocommerce' ) ); ?></div>
-					<div class="nav-next"><?php next_comments_link( __( 'Next <span class="meta-nav">&rarr;</span>', 'woocommerce' ) ); ?></div>
+					<div class="nav-previous"><?php previous_comments_link( __( '<span class="meta-nav">&larr;</span> Anterior', 'woocommerce' ) ); ?></div>
+					<div class="nav-next"><?php next_comments_link( __( 'Próxima <span class="meta-nav">&rarr;</span>', 'woocommerce' ) ); ?></div>
 				</div>
 			<?php endif;
 			
-			$add_review_text = '<i class="icon-pencil"></i>' . __( 'Write a review', 'swiftframework' );
+			$add_review_text = '<i class="icon-pencil"></i>' . __( 'Escreva um comentário', 'swiftframework' );
 			
-			echo '<p class="add_review"><a href="#review_form" class="inline sf-roll-button" data-toggle="modal" title="' . __( 'Add Your Review', 'woocommerce' ) . '"><span>' . $add_review_text . '</span><span>' . $add_review_text . '</span></a></p>';
+			echo '<p class="add_review"><a href="#review_form" class="inline sf-roll-button" data-toggle="modal" title="' . __( 'Dê a sua opinião', 'woocommerce' ) . '"><span>' . $add_review_text . '</span><span>' . $add_review_text . '</span></a></p>';
 	
-			$title_reply = __( 'Add a review', 'woocommerce' );
+			$title_reply = __( 'Adicionar um comentário', 'woocommerce' );
 	
 		else :
 	
-			$title_reply = __( 'Be the first to review', 'woocommerce' ).' &ldquo;'.$post->post_title.'&rdquo;';
+			$title_reply = __( 'Seja o primeiro a comentar', 'woocommerce' ).' &ldquo;'.$post->post_title.'&rdquo;';
 	
-			echo '<p class="noreviews">'.__( 'There are no reviews yet, would you like to <a href="#review_form" class="inline" data-toggle="modal">submit yours</a>?', 'swiftframework' ).'</p>';
+			echo '<p class="noreviews">'.__( 'Não existem comentários ainda, gostaria de <a href="#review_form" class="inline" data-toggle="modal">enviar o seu</a>?', 'swiftframework' ).'</p>';
 	
 		endif;
 	
@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		
 		echo '<div class="modal-header">
 		  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		  <h2>'.__("Write a review", "swiftframework").'</h3>
+		  <h2>'.__("Escreva um comentário", "swiftframework").'</h3>
 		</div>';
 		
 		echo '<div class="modal-body">';
@@ -105,7 +105,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 		if ( get_option('woocommerce_enable_review_rating') == 'yes' ) {
 	
-			$comment_form['comment_field'] = '<p class="comment-form-rating"><label for="rating">' . __( 'Overall Rating', 'swiftframework' ) .'</label><select name="rating" id="rating">
+			$comment_form['comment_field'] = '<p class="comment-form-rating"><label for="rating">' . __( 'Classificação geral', 'swiftframework' ) .'</label><select name="rating" id="rating">
 				<option value="">'.__( 'Rate&hellip;', 'woocommerce' ).'</option>
 				<option value="5">'.__( 'Perfect', 'woocommerce' ).'</option>
 				<option value="4">'.__( 'Good', 'woocommerce' ).'</option>
@@ -157,7 +157,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 		else :
 	
-			echo '<h2>'.__('Reviews', 'woocommerce').'</h2>';
+			echo '<h2>'.__('Comentarios', 'woocommerce').'</h2>';
 	
 		endif;
 	
@@ -186,7 +186,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 			$title_reply = __('Be the first to review', 'woocommerce').' &ldquo;'.$post->post_title.'&rdquo;';
 	
-			echo '<p>'.__('There are no reviews yet, would you like to <a href="#review_form" class="inline show_review_form">submit yours</a>?', 'swiftframework').'</p>';
+			echo '<p>'.__('Não existem comentários ainda, gostaria de <a href="#review_form" class="inline show_review_form">enviar o seu</a>?', 'swiftframework').'</p>';
 	
 		endif;
 	
