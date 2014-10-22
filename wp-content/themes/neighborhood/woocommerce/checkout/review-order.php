@@ -19,9 +19,9 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 		<thead>
 			<tr>
 				<th class="product-img"><?php _e( 'Item', 'swiftframework' ); ?></th>
-				<th class="product-description"><?php _e( 'Description', 'swiftframework' ); ?></th>
-				<th class="product-unitprice"><?php _e( 'Unit Price', 'swiftframework' ); ?></th>
-				<th class="product-quantity"><?php _e( 'Quantity', 'swiftframework' ); ?></th>
+				<th class="product-description"><?php _e( 'Descrição', 'swiftframework' ); ?></th>
+				<th class="product-unitprice"><?php _e( 'Preço unitário', 'swiftframework' ); ?></th>
+				<th class="product-quantity"><?php _e( 'Quantidade', 'swiftframework' ); ?></th>
 				<th class="product-subtotal"><?php _e( 'Subtotal', 'swiftframework' ); ?></th>
 			</tr>
 		</thead>
@@ -65,7 +65,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 	
 	                   				// Backorder notification
 	                   				if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $values['quantity'] ) )
-	                   					echo '<p class="backorder_notification">' . __( 'Available on backorder', 'woocommerce' ) . '</p>';
+	                   					echo '<p class="backorder_notification">' . __( 'Disponível em ordem pendente', 'woocommerce' ) . '</p>';
 									
 							echo '</td>';
 							echo '<td class="product-unitprice">'.
@@ -106,7 +106,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				<?php do_action('woocommerce_review_order_before_shipping'); ?>
 
 				<tr class="shipping">
-					<th><?php _e( 'Shipping:', 'swiftframework' ); ?></th>
+					<th><?php _e( 'Remessa:', 'swiftframework' ); ?></th>
 					<td><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
 
@@ -202,7 +202,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 	
 							?>
 							<tr class="tax">
-								<th><?php _e('Tax', 'woocommerce'); ?></th>
+								<th><?php _e('Imposto', 'woocommerce'); ?></th>
 								<td><?php echo $woocommerce->cart->get_cart_tax(); ?></td>
 							</tr>
 							<?php
@@ -212,8 +212,8 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 	
 						?>
 						<tr class="tax">
-							<th><?php _e('Tax', 'woocommerce'); ?></th>
-							<td><?php _ex( 'N/A', 'Relating to tax', 'woocommerce' ); ?></td>
+							<th><?php _e('Imposto', 'woocommerce'); ?></th>
+							<td><?php _ex( 'N/D', 'Relating to tax', 'woocommerce' ); ?></td>
 						</tr>
 						<?php
 	
@@ -224,7 +224,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			<?php if ( $woocommerce->cart->get_discounts_after_tax() ) : ?>
 
 			<tr class="discount">
-				<th><?php _e( 'Promo Codes:', 'swiftframework' ); ?></th>
+				<th><?php _e( 'Códigos promocionais:', 'swiftframework' ); ?></th>
 				<td>-<?php echo $woocommerce->cart->get_discounts_after_tax(); ?></td>
 			</tr>
 
@@ -254,7 +254,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 								}
 	
 								if ( ! empty( $tax_string_array ) ) {
-									echo '<small class="includes_tax">' . sprintf( __( '(Includes %s)', 'woocommerce' ), implode( ', ', $tax_string_array ) ) . '</small>';
+									echo '<small class="includes_tax">' . sprintf( __( '(Inclui %s)', 'woocommerce' ), implode( ', ', $tax_string_array ) ) . '</small>';
 								}
 							}
 						} else {
@@ -309,9 +309,9 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				} else {
 
 					if ( ! $woocommerce->customer->get_country() )
-						echo '<p>' . __( 'Please fill in your details above to see available payment methods.', 'woocommerce' ) . '</p>';
+						echo '<p>' . __( 'Por favor, preencha os seus dados acima para ver os métodos de pagamento disponíveis.', 'woocommerce' ) . '</p>';
 					else
-						echo '<p>' . __( 'Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', 'woocommerce' ) . '</p>';
+						echo '<p>' . __( 'Desculpe, parece que não existem métodos de pagamento disponíveis para seu estado. Entre em contato conosco se você precisar de ajuda ou quiser fazer arranjos alternativos.', 'woocommerce' ) . '</p>';
 
 				}
 			?>
@@ -320,21 +320,21 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 		<div class="form-row place-order">
 
-			<noscript><?php _e( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.', 'woocommerce' ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Update totals', 'woocommerce' ); ?>" /></noscript>
+			<noscript><?php _e( 'Desde que seu navegador não suporta JavaScript, ou ele está desativado, por favor, certifique-se de clicar no <em>Atualizar totais</em> botão antes de colocar a sua encomenda. Você pode ser cobrado mais do que a quantidade indicada acima, se você deixar de fazê-lo.', 'woocommerce' ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Atualizar totais', 'woocommerce' ); ?>" /></noscript>
 
 			<?php $woocommerce->nonce_field('process_checkout')?>
 
 			<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
 			<?php
-			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'Place order', 'woocommerce' ));
+			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'A ordem do lugar', 'woocommerce' ));
 
 			echo apply_filters('woocommerce_order_button_html', '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" />' );
 			?>
 
 			<?php if (woocommerce_get_page_id('terms')>0) : ?>
 			<p class="form-row terms">
-				<label for="terms" class="checkbox"><?php _e( 'I have read and accept the', 'woocommerce' ); ?> <a href="<?php echo esc_url( get_permalink(woocommerce_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'terms &amp; conditions', 'woocommerce' ); ?></a></label>
+				<label for="terms" class="checkbox"><?php _e( 'Eu li e aceito o', 'woocommerce' ); ?> <a href="<?php echo esc_url( get_permalink(woocommerce_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'Termos e Condições', 'woocommerce' ); ?></a></label>
 				<input type="checkbox" class="input-checkbox" name="terms" <?php checked( isset( $_POST['terms'] ), true ); ?> id="terms" />
 			</p>
 			<?php endif; ?>
