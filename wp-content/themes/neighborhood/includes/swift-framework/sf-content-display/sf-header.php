@@ -430,7 +430,7 @@
 		$logo_output .= '</a>'. "\n";
 		$logo_output .= '<a href="#" class="visible-phone show-main-nav"><i class="icon-align-justify"></i></a>'. "\n";
 		if ($show_cart) {
-		//$logo_output .= '<a href="'.$woocommerce->cart->get_cart_url().'" class="visible-phone mobile-cart-link"><i class="sf-cart"></i></a>'. "\n";
+		$logo_output .= '<a href="'.$woocommerce->cart->get_cart_url().'" class="visible-phone mobile-cart-link"><i class="sf-cart"></i></a>'. "\n";
 		}
 		$logo_output .= '<a href="#" class="visible-phone mobile-search-link"><i class="icon-search"></i></a>'. "\n";
 		$logo_output .= '</div>'. "\n";
