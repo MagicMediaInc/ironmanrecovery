@@ -637,14 +637,14 @@
 			$cart_count = $woocommerce->cart->cart_contents_count;
 			$cart_count_text = sf_product_items_text($cart_count);
 			
-			$cart_output .= '<li class="parent shopping-bag-item"><a class="cart-contents" href="'.$woocommerce->cart->get_cart_url().'" title="'.__("View your shopping cart", "swiftframework").'"><i class="sf-cart"></i>'.$cart_total.'</a>';
+			$cart_output .= '<li class="parent shopping-bag-item"><a class="cart-contents" href="'.$woocommerce->cart->get_cart_url().'" title="'.__("Veja o seu carrinho", "swiftframework").'"><i class="sf-cart"></i>'.$cart_total.'</a>';
             $cart_output .= '<ul class="sub-menu">';     
             $cart_output .= '<li>';                                      
 			$cart_output .= '<div class="shopping-bag">';
 			 
             if ( sizeof($woocommerce->cart->cart_contents)>0 ) {
             	
-            	$cart_output .= '<div class="bag-header">'.$cart_count_text.' '.__('in the shopping bag', 'swiftframework').'</div>';
+            	$cart_output .= '<div class="bag-header">'.$cart_count_text.' '.__('na sacola de compras', 'swiftframework').'</div>';
             	
             	$cart_output .= '<div class="bag-contents">';
             	
@@ -659,11 +659,11 @@
                       	$cart_output .= '<figure><a class="bag-product-img" href="'.get_permalink($cart_item['product_id']).'">'.$bag_product->get_image().'</a></figure>';                      
                         $cart_output .= '<div class="bag-product-details">';
                         $cart_output .= '<div class="bag-product-title"><a href="'.get_permalink($cart_item['product_id']).'">' . apply_filters('woocommerce_cart_widget_product_title', $product_short_title, $bag_product) . '</a></div>';
-                        $cart_output .= '<div class="bag-product-price">'.__("Unit Price:", "swiftframework").' 
+                        $cart_output .= '<div class="bag-product-price">'.__("Preço Unitário:", "swiftframework").' 
                         '.woocommerce_price($bag_product->get_price()).'</div>';
-                        $cart_output .= '<div class="bag-product-quantity">'.__('Quantity:', 'swiftframework').' '.$cart_item['quantity'].'</div>';
+                        $cart_output .= '<div class="bag-product-quantity">'.__('Quantidade:', 'swiftframework').' '.$cart_item['quantity'].'</div>';
                         $cart_output .= '</div>';
-                        $cart_output .= apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'woocommerce') ), $cart_item_key );
+                        $cart_output .= apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remover este item', 'woocommerce') ), $cart_item_key );
                         
                         $cart_output .= '</div>';
                 	}
@@ -673,15 +673,15 @@
                 
                 $cart_output .= '<div class="bag-buttons">';
                 
-                $cart_output .= '<a class="sf-roll-button bag-button" href="'.esc_url( $woocommerce->cart->get_cart_url() ).'"><span>'.__('View shopping bag', 'swiftframework').'</span><span>'.__('View shopping bag', 'swiftframework').'</span></a>';
+                $cart_output .= '<a class="sf-roll-button bag-button" href="'.esc_url( $woocommerce->cart->get_cart_url() ).'"><span>'.__('Ver saco de compras', 'swiftframework').'</span><span>'.__('Ver saco de compras', 'swiftframework').'</span></a>';
                 
-                $cart_output .= '<a class="sf-roll-button checkout-button" href="'.esc_url( $woocommerce->cart->get_checkout_url() ).'"><span >'.__('Proceed to checkout', 'swiftframework').'</span><span>'.__('Proceed to checkout', 'swiftframework').'</span></a>';
+                $cart_output .= '<a class="sf-roll-button checkout-button" href="'.esc_url( $woocommerce->cart->get_checkout_url() ).'"><span >'.__('Fazer o pagamento', 'swiftframework').'</span><span>'.__('Fazer o pagamento', 'swiftframework').'</span></a>';
                                 
                	$cart_output .= '</div>';
                                                         
             } else {
            		
-           		$cart_output .= '<div class="bag-header">'.__("0 items in the shopping bag", "swiftframework").'</div>';
+           		$cart_output .= '<div class="bag-header">'.__("0 items na sacola de compras", "swiftframework").'</div>';
            		
            		$cart_output .= '<div class="bag-empty">'.__('Unfortunately, your shopping bag is empty.','swiftframework').'</div>';                                    
             	
@@ -689,7 +689,7 @@
             	
             	$cart_output .= '<div class="bag-buttons">';
             	
-            	$cart_output .= '<a class="sf-roll-button shop-button" href="'.esc_url( $shop_page_url ).'"><span>'.__('Go to the shop', 'swiftframework').'</span><span>'.__('Go to the shop', 'swiftframework').'</span></a>';
+            	$cart_output .= '<a class="sf-roll-button shop-button" href="'.esc_url( $shop_page_url ).'"><span>'.__('Ir para a loja', 'swiftframework').'</span><span>'.__('Ir para a loja', 'swiftframework').'</span></a>';
             	            	                
             	$cart_output .= '</div>';
             		
@@ -733,7 +733,7 @@
 			$count = 0;
 		}
 		
-		$wishlist_output .= '<li class="parent wishlist-item"><a class="wishlist-link" href="'.$yith_wcwl->get_wishlist_url().'" title="'.__("View your wishlist", "swiftframework").'"><i class="icon-star"></i><span>'.$count.'</span></a>';
+		$wishlist_output .= '<li class="parent wishlist-item"><a class="wishlist-link" href="'.$yith_wcwl->get_wishlist_url().'" title="'.__("Veja sua lista de desejos", "swiftframework").'"><i class="icon-star"></i><span>'.$count.'</span></a>';
 		$wishlist_output .= '<ul class="sub-menu">';
 		$wishlist_output .= '<li>';
 		$wishlist_output .= '<div class="wishlist-bag">';
