@@ -15,9 +15,7 @@
 		$breadcrumb_output = "";
 		
 		if ( function_exists('bcn_display') ) {
-			$breadcrumb_output .= '<div id="breadcrumbs">'. "\n";
 			$breadcrumb_output .= show_mini_cart();//bcn_display(true);
-			$breadcrumb_output .= '</div>'. "\n";
 		} else if ( function_exists('yoast_breadcrumb') ) {
 			$breadcrumb_output .= '<div id="breadcrumbs">'. "\n";
 			$breadcrumb_output .= 'el condicional breadcrumb';//yoast_breadcrumb("","",false);
