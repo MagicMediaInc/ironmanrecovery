@@ -1,525 +1,490 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://ironmanrecovery.hospedagemdesites.ws/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.8.4" -->
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://ironmanrecovery.com.br/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.8.4" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.4" -->
-<!-- generated-on="16 October, 2014 15:11" -->
-<!-- Debug: Total comment count: 4 -->
+<!-- generated-on="21 October, 2014 19:55" -->
+<!-- Debug: Total comment count: 11 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/</loc>
-		<lastmod>2014-10-16T15:10:33+00:00</lastmod>
+		<loc>http://ironmanrecovery.com.br/</loc>
+		<lastmod>2014-10-21T19:13:36+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2147</loc>
+		<loc>http://ironmanrecovery.com.br/t24-7/</loc>
+		<lastmod>2014-10-21T19:55:00+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/active-recovery/training-247/</loc>
+		<lastmod>2014-10-21T19:52:52+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/blog/</loc>
+		<lastmod>2014-10-21T14:51:14+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 1650: Comments: 0 of 11 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/a-tecnologia-thermic-o-microclima/</loc>
+		<lastmod>2014-10-16T20:11:16+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1097: Comments: 0 of 11 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/fluxo-de-sangue/</loc>
+		<lastmod>2014-10-16T20:05:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1104: Comments: 0 of 11 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/ironman-novamente-monterrey/</loc>
+		<lastmod>2014-10-16T20:00:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1110: Comments: 0 of 11 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/origem-ironman/</loc>
+		<lastmod>2014-10-16T19:25:55+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1101: Comments: 0 of 11 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/conexao-musica-e-resto/</loc>
+		<lastmod>2014-10-16T19:03:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1107: Comments: 0 of 11 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/numero-6-dificuldade/</loc>
+		<lastmod>2014-10-16T18:32:55+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/minha-conta/sair/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2139</loc>
+		<loc>http://ironmanrecovery.com.br/carrinho/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2140</loc>
+		<loc>http://ironmanrecovery.com.br/finalizar-compra/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2141</loc>
+		<loc>http://ironmanrecovery.com.br/minha-conta/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2142</loc>
+		<loc>http://ironmanrecovery.com.br/minha-conta/alterar-senha/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2143</loc>
+		<loc>http://ironmanrecovery.com.br/minha-conta/visualizar-pedido/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2144</loc>
+		<loc>http://ironmanrecovery.com.br/minha-conta/perdeu-a-senha/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2145</loc>
+		<loc>http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2146</loc>
+		<loc>http://ironmanrecovery.com.br/minha-conta/editar-endereco/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=497</loc>
+		<loc>http://ironmanrecovery.com.br/wishlist/</loc>
 		<lastmod>2014-10-16T09:47:01+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 1: Comments: 1 of 4 = 0.3 points -->
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1</loc>
-		<lastmod>2014-10-15T23:19:34+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2</loc>
+		<loc>http://ironmanrecovery.com.br/pagina-exemplo/</loc>
 		<lastmod>2014-10-15T23:19:34+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=2089</loc>
+		<loc>http://ironmanrecovery.com.br/tecnologia/unique-blend/</loc>
 		<lastmod>2014-10-01T10:12:23+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 1097: Comments: 0 of 4 = 0 points -->
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1097</loc>
-		<lastmod>2014-03-10T08:00:29+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1107: Comments: 0 of 4 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1107</loc>
-		<lastmod>2014-03-09T12:19:43+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1101: Comments: 0 of 4 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1101</loc>
-		<lastmod>2014-03-09T12:16:50+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1650: Comments: 0 of 4 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1650</loc>
-		<lastmod>2014-03-06T17:12:24+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1633: Comments: 0 of 4 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1633</loc>
-		<lastmod>2014-03-04T16:10:44+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=1537</loc>
+		<loc>http://ironmanrecovery.com.br/devoluciones/</loc>
 		<lastmod>2014-02-24T16:17:57+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 1509: Comments: 0 of 4 = 0 points -->
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1509</loc>
-		<lastmod>2014-02-21T07:40:44+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=1502</loc>
+		<loc>http://ironmanrecovery.com.br/politica-de-privacidad/</loc>
 		<lastmod>2014-02-20T17:21:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=1500</loc>
+		<loc>http://ironmanrecovery.com.br/aviso-legal/</loc>
 		<lastmod>2014-02-20T17:21:33+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 1468: Comments: 0 of 4 = 0 points -->
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1468</loc>
-		<lastmod>2014-02-20T11:27:19+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=1446</loc>
+		<loc>http://ironmanrecovery.com.br/gracias/</loc>
 		<lastmod>2014-02-20T10:36:39+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 1391: Comments: 0 of 4 = 0 points -->
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1391</loc>
-		<lastmod>2014-02-17T16:58:04+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=1120</loc>
-		<lastmod>2014-02-12T15:55:21+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-<!-- Debug: Priority report of postID 1110: Comments: 0 of 4 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1110</loc>
-		<lastmod>2014-02-12T12:21:26+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1104: Comments: 0 of 4 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?p=1104</loc>
-		<lastmod>2014-02-12T12:18:34+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=950</loc>
+		<loc>http://ironmanrecovery.com.br/garantia-ampliada-dos-ano/</loc>
 		<lastmod>2014-01-11T23:52:40+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=939</loc>
+		<loc>http://ironmanrecovery.com.br/consigue-2-anos-de-garantia-extra-y-ampliala-hasta-5-anos/</loc>
 		<lastmod>2014-01-11T22:37:16+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=703</loc>
+		<loc>http://ironmanrecovery.com.br/garantia-ampliada-un-ano/</loc>
 		<lastmod>2014-01-09T20:08:13+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=688</loc>
+		<loc>http://ironmanrecovery.com.br/shop/</loc>
 		<lastmod>2014-01-08T17:12:02+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=484</loc>
+		<loc>http://ironmanrecovery.com.br/campana/properties/almohadas/</loc>
 		<lastmod>2013-12-17T16:51:49+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=361</loc>
+		<loc>http://ironmanrecovery.com.br/condiciones-de-compra/</loc>
 		<lastmod>2013-12-13T10:36:45+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=354</loc>
-		<lastmod>2013-12-12T12:51:37+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=352</loc>
+		<loc>http://ironmanrecovery.com.br/campana-2/</loc>
 		<lastmod>2013-12-12T12:51:13+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=350</loc>
+		<loc>http://ironmanrecovery.com.br/opiniones/</loc>
 		<lastmod>2013-12-12T12:50:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=347</loc>
+		<loc>http://ironmanrecovery.com.br/beneficios/</loc>
 		<lastmod>2013-12-12T11:31:11+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=308</loc>
+		<loc>http://ironmanrecovery.com.br/wishlist-2/</loc>
 		<lastmod>2013-11-19T11:16:42+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=212</loc>
+		<loc>http://ironmanrecovery.com.br/garantia-y-certificaciones/</loc>
 		<lastmod>2013-11-04T10:27:37+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=210</loc>
+		<loc>http://ironmanrecovery.com.br/contacto/</loc>
 		<lastmod>2013-11-04T10:27:05+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=208</loc>
+		<loc>http://ironmanrecovery.com.br/home/valenti-sanjuan/</loc>
 		<lastmod>2013-11-04T10:25:53+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=206</loc>
+		<loc>http://ironmanrecovery.com.br/home/eneko-llanos/</loc>
 		<lastmod>2013-11-04T10:25:27+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=204</loc>
+		<loc>http://ironmanrecovery.com.br/home/mario-mola/</loc>
 		<lastmod>2013-11-04T10:25:05+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=202</loc>
+		<loc>http://ironmanrecovery.com.br/home/josef-ajram/</loc>
 		<lastmod>2013-11-04T10:24:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=176</loc>
+		<loc>http://ironmanrecovery.com.br/tecnologia/latex-natural/</loc>
 		<lastmod>2013-11-04T09:44:27+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=158</loc>
+		<loc>http://ironmanrecovery.com.br/stores/campana-2/</loc>
 		<lastmod>2013-10-30T17:06:58+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=148</loc>
+		<loc>http://ironmanrecovery.com.br/campana/</loc>
 		<lastmod>2013-10-30T17:03:55+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=144</loc>
+		<loc>http://ironmanrecovery.com.br/stores/</loc>
 		<lastmod>2013-10-30T17:03:12+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=142</loc>
+		<loc>http://ironmanrecovery.com.br/campana/product/</loc>
 		<lastmod>2013-10-30T17:02:56+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=140</loc>
+		<loc>http://ironmanrecovery.com.br/campana/properties/</loc>
 		<lastmod>2013-10-30T17:02:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=138</loc>
+		<loc>http://ironmanrecovery.com.br/tecnologia-2/</loc>
 		<lastmod>2013-10-30T17:02:22+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=136</loc>
+		<loc>http://ironmanrecovery.com.br/home/</loc>
 		<lastmod>2013-10-30T17:02:06+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=78</loc>
+		<loc>http://ironmanrecovery.com.br/active-recovery-app/community-users-resultsgraphics/</loc>
 		<lastmod>2013-10-21T09:02:18+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=76</loc>
+		<loc>http://ironmanrecovery.com.br/active-recovery-app/download/</loc>
 		<lastmod>2013-10-21T09:01:53+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=74</loc>
+		<loc>http://ironmanrecovery.com.br/active-recovery-app/about-active-recovery-app/</loc>
 		<lastmod>2013-10-21T09:01:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=71</loc>
+		<loc>http://ironmanrecovery.com.br/active-recovery-app/</loc>
 		<lastmod>2013-10-21T09:00:15+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=69</loc>
+		<loc>http://ironmanrecovery.com.br/estructura/rrss-monitoring/</loc>
 		<lastmod>2013-10-21T08:58:06+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=67</loc>
+		<loc>http://ironmanrecovery.com.br/estructura/news/</loc>
 		<lastmod>2013-10-21T08:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=65</loc>
+		<loc>http://ironmanrecovery.com.br/estructura/races/</loc>
 		<lastmod>2013-10-21T08:57:23+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=63</loc>
+		<loc>http://ironmanrecovery.com.br/estructura/teams/</loc>
 		<lastmod>2013-10-21T08:56:59+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=61</loc>
+		<loc>http://ironmanrecovery.com.br/estructura/trainers/</loc>
 		<lastmod>2013-10-21T08:56:30+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=59</loc>
+		<loc>http://ironmanrecovery.com.br/estructura/competitors/</loc>
 		<lastmod>2013-10-21T08:56:13+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=57</loc>
+		<loc>http://ironmanrecovery.com.br/estructura/the-challenge-intro/</loc>
 		<lastmod>2013-10-21T08:55:58+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=54</loc>
+		<loc>http://ironmanrecovery.com.br/estructura/</loc>
 		<lastmod>2013-10-21T08:55:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=51</loc>
+		<loc>http://ironmanrecovery.com.br/stores/producto/</loc>
 		<lastmod>2013-10-21T08:55:03+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=47</loc>
+		<loc>http://ironmanrecovery.com.br/tecnologia/celliant/</loc>
 		<lastmod>2013-10-21T08:54:17+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=44</loc>
+		<loc>http://ironmanrecovery.com.br/tecnologia/</loc>
 		<lastmod>2013-10-21T08:53:19+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=42</loc>
+		<loc>http://ironmanrecovery.com.br/active-recovery/prescripctores/</loc>
 		<lastmod>2013-10-21T08:52:40+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=40</loc>
-		<lastmod>2013-10-21T08:51:52+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=37</loc>
+		<loc>http://ironmanrecovery.com.br/active-recovery/sobre-active-recovery/</loc>
 		<lastmod>2013-10-21T08:51:04+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=34</loc>
+		<loc>http://ironmanrecovery.com.br/active-recovery/</loc>
 		<lastmod>2013-10-21T08:50:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=11</loc>
+		<loc>http://ironmanrecovery.com.br/mi-cuenta/ver-pedido/</loc>
 		<lastmod>2013-10-17T15:58:37+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=12</loc>
+		<loc>http://ironmanrecovery.com.br/mi-cuenta/cambiar-contrasena/</loc>
 		<lastmod>2013-10-17T15:58:37+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=14</loc>
+		<loc>http://ironmanrecovery.com.br/mi-cuenta/cerrar-sesion/</loc>
 		<lastmod>2013-10-17T15:58:37+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=15</loc>
+		<loc>http://ironmanrecovery.com.br/realizar-pedido/pagar/</loc>
 		<lastmod>2013-10-17T15:58:37+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=13</loc>
+		<loc>http://ironmanrecovery.com.br/realizar-pedido/pedido-recibido/</loc>
 		<lastmod>2013-10-17T15:58:37+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=6</loc>
+		<loc>http://ironmanrecovery.com.br/mi-cuenta/editar-direccion/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=7</loc>
+		<loc>http://ironmanrecovery.com.br/mi-cuenta/contrasena-perdida/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=8</loc>
+		<loc>http://ironmanrecovery.com.br/mi-cuenta/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=9</loc>
+		<loc>http://ironmanrecovery.com.br/realizar-pedido/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=10</loc>
+		<loc>http://ironmanrecovery.com.br/carro/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=5</loc>
+		<loc>http://ironmanrecovery.com.br/tienda/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.hospedagemdesites.ws/?page_id=1080</loc>
+		<loc>http://ironmanrecovery.com.br/pagina-ejemplo/</loc>
 		<lastmod>2013-10-16T08:41:34+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>

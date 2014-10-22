@@ -1265,8 +1265,8 @@ h4.spb_heading span, h4.lined-heading span {
 	font-size: 11px;
 	line-height: 22px;
 	margin: 0;
-	padding: 8px 10px 6px;
-	float: right;
+	/*padding: 8px 10px 6px;
+	float: right;*/
 	white-space: nowrap;
 	-moz-border-radius: 4px / 4px 4px 4px 4px;
 	-webkit-border-radius: 4px / 4px 4px 4px 4px;
@@ -1753,7 +1753,8 @@ nav .menu > li.shopping-bag-item ul.sub-menu {
     padding-right: 25px;
     position: absolute;
     right: 14px;
-    margin-top: -33px;
+    z-index:10;
+    margin-top: 13px; /*-33px*/
     text-align: right;
 }
 .mini-cart-wrap {
@@ -1778,7 +1779,7 @@ padding-left: 55px;
     background-position-y: 19px;
     padding-bottom: 14px;
     font-size: 14px;
-    color: #fff;
+    color: #000 !important;
 }
 .bag-header {
     text-align: left;
@@ -9520,8 +9521,8 @@ margin-top:-25px;margin-bottom:-5px;
 
 .newslettrain {
 position: relative; 
-top: -189px; 
-text-align: center; 
+top: -220px; 
+/*text-align: center; */
 left: 676px;
 }
 
@@ -9569,7 +9570,7 @@ float:none;
 }
 .newslettrain {
 position: relative; 
-top: -89px; 
+top: -220px; 
 left: 75px;
 background-color:#000000;
 width:120px;
