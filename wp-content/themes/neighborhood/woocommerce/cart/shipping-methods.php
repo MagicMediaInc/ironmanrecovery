@@ -40,7 +40,18 @@ if ( $available_methods ) {
 		echo wp_kses_post( $method->full_label ) . '<input type="hidden" name="shipping_method" id="shipping_method" value="' . esc_attr( $method->id ) . '" />';
 
 	// Show select boxes for methods
-	} elseif ( get_option('woocommerce_shipping_method_format') == 'select' ) {
+	} elseif ( get_option('woocommerce_shipping_method_format') == 'radio' ) {
+
+		echo '<ul id="shipping_method">';
+
+		foreach ( $available_methods as $method )
+			echo '<li><input type="radio" name="shipping_method" id="shipping_method_' . sanitize_title( $method->id ) . '" value="' . esc_attr( $method->id ) . '" ' . checked( $method->id, $woocommerce->session->chosen_shipping_method, false) . ' /> <label for="shipping_method_' . sanitize_title( $method->id ) . '">' . wp_kses_post( $method->full_label ) . '</label></li>';
+
+		echo '</ul>';
+
+	// Show radio buttons for methods
+	} else {
+		
 		echo '<select name="shipping_method" id="shipping_method">';
 
 		foreach ( $available_methods as $method )
@@ -48,16 +59,6 @@ if ( $available_methods ) {
 
 		echo '</select>';
 
-	// Show radio buttons for methods
-	} else {
-
-		echo 'shipping method:'.get_option('woocommerce_shipping_method_format').';';
-		echo '<ul id="shipping_method">';
-
-		foreach ( $available_methods as $method )
-			echo '<li><input type="radio" name="shipping_method" id="shipping_method_' . sanitize_title( $method->id ) . '" value="' . esc_attr( $method->id ) . '" ' . checked( $method->id, $woocommerce->session->chosen_shipping_method, false) . ' /> <label for="shipping_method_' . sanitize_title( $method->id ) . '">' . wp_kses_post( $method->full_label ) . '</label></li>';
-
-		echo '</ul>';
 	}
 
 // No shipping methods are available
