@@ -74,9 +74,9 @@ function show_mini_cart() {
 
         <?php } else { ?>
 
-        <div class="bag-header"><?php _e("0 items in the shopping bag", "swiftframework"); ?></div>
+        <div class="bag-header"><?php _e("0 itens na sacola de compras", "swiftframework"); ?></div>
 
-        <div class="bag-empty"><?php _e('Unfortunately, your shopping bag is empty.','swiftframework'); ?></div>                                   
+        <div class="bag-empty"><?php _e('Infelizmente, o seu saco de compras está vazio.','swiftframework'); ?></div>                                   
 
         <div class="bag-buttons">
 
