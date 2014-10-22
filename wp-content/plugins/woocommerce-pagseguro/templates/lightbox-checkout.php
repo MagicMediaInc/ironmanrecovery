@@ -12,10 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<p id="browser-has-javascript" style="display: none;"><?php _e( 'Thank you for your order, please wait a few seconds to make the payment with PagSeguro.', 'woocommerce-pagseguro' ); ?></p>
+<p id="browser-has-javascript" style="display: none;"><?php _e( 'Obrigado por sua ordem, por favor, aguarde alguns segundos para fazer o pagamento com PagSeguro.', 'woocommerce-pagseguro' ); ?></p>
 
-<p id="browser-no-has-javascript"><?php _e( 'Thank you for your order, please click the button below to pay with PagSeguro.', 'woocommerce-pagseguro' ); ?></p>
+<p id="browser-no-has-javascript"><?php _e( 'Obrigado por sua ordem, por favor clique no botão abaixo para pagar com PagSeguro.', 'woocommerce-pagseguro' ); ?></p>
 
-<a class="button cancel" id="cancel-payment" href="<?php echo esc_url( $cancel_order_url ); ?>"><?php _e( 'Cancel order &amp; restore cart', 'woocommerce-pagseguro' ); ?></a> <a id="submit-payment" class="button alt" href="<?php esc_url_raw( $payment_url ); ?>"><?php _e( 'Pay via PagSeguro', 'woocommerce-pagseguro' ); ?></a>
+<a class="button cancel" id="cancel-payment" href="<?php echo esc_url( $cancel_order_url ); ?>"><?php _e( 'Cancel order &amp; restore cart', 'woocommerce-pagseguro' ); ?></a> <a id="submit-payment" class="button alt" href="<?php esc_url_raw( $payment_url ); ?>"><?php _e( 'Pagar com PagSeguro', 'woocommerce-pagseguro' ); ?></a>
 
 <script type="text/javascript" src="<?php echo $lightbox_script_url; ?>"></script>
