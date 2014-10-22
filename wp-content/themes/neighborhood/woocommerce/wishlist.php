@@ -71,9 +71,9 @@ $woocommerce->show_messages() ?>
 
 <div class="my-account-left">
 
-	<h4 class="lined-heading"><span><?php _e("My Account", "swiftframework"); ?></span></h4>
+	<h4 class="lined-heading"><span><?php _e("Minha conta", "swiftframework"); ?></span></h4>
 	<ul class="nav my-account-nav">
-	  <li><a href="<?php echo $myaccount_page_url; ?>"><?php _e("Back to my account", "swiftframework"); ?></a></li>
+	  <li><a href="<?php echo $myaccount_page_url; ?>"><?php _e("Voltar para a minha conta", "swiftframework"); ?></a></li>
 	</ul>
 
 </div>
@@ -94,11 +94,11 @@ $woocommerce->show_messages() ?>
 	    	<thead>
 	    		<tr>
 	    			<th class="product-thumbnail"><span class="nobr"><?php _e( 'Item', 'yit' ) ?></span></th>
-	    			<th class="product-name"><span class="nobr"><?php _e( 'Product Name', 'yit' ) ?></span></th>
-	    			<th class="product-price"><span class="nobr"><?php _e( 'Unit Price', 'yit' ) ?></span></th>
-	    			<th class="product-stock-status"><span class="nobr"><?php _e( 'Stock Status', 'yit' ) ?></span></th>
+	    			<th class="product-name"><span class="nobr"><?php _e( 'Nome do produto', 'yit' ) ?></span></th>
+	    			<th class="product-price"><span class="nobr"><?php _e( 'Preço unitário', 'yit' ) ?></span></th>
+	    			<th class="product-stock-status"><span class="nobr"><?php _e( 'Status em estoque', 'yit' ) ?></span></th>
 	                <?php if (!$catalog_mode) { ?>
-	                <th class="product-add-to-bag"><span class="nobr"><?php _e( 'Actions', 'yit' ) ?></span></th>
+	                <th class="product-add-to-bag"><span class="nobr"><?php _e( 'Ações', 'yit' ) ?></span></th>
 	                <?php } ?>
 	    			<th class="product-remove"></th>
 	    		</tr>
@@ -144,10 +144,10 @@ $woocommerce->show_messages() ?>
 	                            
 	                            if( $stock_status == 'out-of-stock' ) {
 	                                $stock_status = "Out";
-	                                echo '<span class="wishlist-out-of-stock">' . __( 'Out of Stock', 'yit' ) . '</span>';   
+	                                echo '<span class="wishlist-out-of-stock">' . __( 'Fora de estoque', 'yit' ) . '</span>';   
 	                            } else {
 	                                $stock_status = "In";
-	                                echo '<span class="wishlist-in-stock">' . __( 'In Stock', 'yit' ) . '</span>';
+	                                echo '<span class="wishlist-in-stock">' . __( 'Em estoque', 'yit' ) . '</span>';
 	                            }
 	                            ?>
 	                        </td>
@@ -156,14 +156,14 @@ $woocommerce->show_messages() ?>
 	                            <?php echo YITH_WCWL_UI::add_to_cart_button( $values['prod_id'], $availability['class'] ) ?>
 	                        </td>
 	                        <?php } ?>
-	                        <td class="product-remove"><div><a href="javascript:void(0)" onclick="remove_item_from_wishlist( '<?php echo esc_url( $yith_wcwl->get_remove_url( $values['ID'] ) )?>', 'yith-wcwl-row-<?php echo $values['ID'] ?>');" class="remove" title="<?php _e( 'Remove this product', 'yit' ) ?>">&times;</a></td>
+	                        <td class="product-remove"><div><a href="javascript:void(0)" onclick="remove_item_from_wishlist( '<?php echo esc_url( $yith_wcwl->get_remove_url( $values['ID'] ) )?>', 'yith-wcwl-row-<?php echo $values['ID'] ?>');" class="remove" title="<?php _e( 'Remover este produto', 'yit' ) ?>">&times;</a></td>
 	                    </tr>
 	                    <?php
 	                    endif;
 	                endforeach;
 	            else: ?>
 	                <tr>
-	                    <td colspan="6" class="wishlist-empty"><?php _e( 'Your wishlist is currently empty.', 'swiftframework' ) ?></td>
+	                    <td colspan="6" class="wishlist-empty"><?php _e( 'A sua lista está vazia.', 'swiftframework' ) ?></td>
 	                </tr>       
 	            <?php
 	            endif;
