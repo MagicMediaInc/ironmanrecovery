@@ -24,7 +24,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 		
 		<div class="span9">
 		
-			<h3 class="bag-summary"><?php _e('Your selection', 'swiftframework');?> <span>(<?php echo $cart_count; ?>)</span></h3>
+			<h3 class="bag-summary"><?php _e('Sua seleção', 'swiftframework');?> <span>(<?php echo $cart_count; ?>)</span></h3>
 			
 			<?php do_action( 'woocommerce_before_cart_table' ); ?>
 			
@@ -32,9 +32,9 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 				<thead>
 					<tr>
 						<th class="product-thumbnail"><?php _e( 'Item', 'swiftframework' ); ?></th>
-						<th class="product-name"><?php _e( 'Description', 'swiftframework' ); ?></th>
-						<th class="product-price"><?php _e( 'Unit Price', 'swiftframework' ); ?></th>
-						<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
+						<th class="product-name"><?php _e( 'Descrição', 'swiftframework' ); ?></th>
+						<th class="product-price"><?php _e( 'Preço unitário', 'swiftframework' ); ?></th>
+						<th class="product-quantity"><?php _e( 'Quantidade', 'woocommerce' ); ?></th>
 						<th class="product-subtotal"><?php _e( 'Subtotal', 'swiftframework' ); ?></th>
 						<th class="product-remove">&nbsp;</th>
 					</tr>
@@ -124,7 +124,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 													$min 	= apply_filters( 'woocommerce_quantity_input_min', '', $_product );
 													$max 	= apply_filters( 'woocommerce_quantity_input_max', $_product->backorders_allowed() ? '' : $_product->get_stock_quantity(), $_product );
 				
-													$product_quantity = sprintf( '<div class="quantity"><input type="number" name="cart[%s][qty]" step="%s" min="%s" max="%s" value="%s" size="4" title="' . _x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) . '" class="input-text qty text" maxlength="12" /></div>', $cart_item_key, $step, $min, $max, esc_attr( $values['quantity'] ) );
+													$product_quantity = sprintf( '<div class="quantity"><input type="number" name="cart[%s][qty]" step="%s" min="%s" max="%s" value="%s" size="4" title="' . _x( 'Quantidade', 'Product quantity input tooltip', 'woocommerce' ) . '" class="input-text qty text" maxlength="12" /></div>', $cart_item_key, $step, $min, $max, esc_attr( $values['quantity'] ) );
 												}
 				
 												echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key );
@@ -157,7 +157,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 									<!-- Remove from cart link -->
 									<td class="product-remove">
 										<?php
-											echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove sf-roll-button" title="%s"><span>&times;</span><span>&times;</span></a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __( 'Remove this item', 'woocommerce' ) ), $cart_item_key );
+											echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove sf-roll-button" title="%s"><span>&times;</span><span>&times;</span></a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __( 'Remover este item', 'woocommerce' ) ), $cart_item_key );
 										?>
 									</td>
 								</tr>
@@ -179,9 +179,9 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 				<?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
 				<div class="coupon">
 					
-					<h4 class="lined-heading"><span><?php _e('Promotional Code', 'swiftframework'); ?></span></h4>
+					<h4 class="lined-heading"><span><?php _e('Código Promocional', 'swiftframework'); ?></span></h4>
 		
-					<input name="coupon_code" class="input-text" id="coupon_code" placeholder="<?php _e('Enter promotion code here', 'swiftframework'); ?>" value="" /> <input type="submit" class="apply-coupon" name="apply_coupon" value="<?php _e( 'Ok', 'woocommerce' ); ?>" />
+					<input name="coupon_code" class="input-text" id="coupon_code" placeholder="<?php _e('Digite o código de promoção aqui', 'swiftframework'); ?>" value="" /> <input type="submit" class="apply-coupon" name="apply_coupon" value="<?php _e( 'Ok', 'woocommerce' ); ?>" />
 		
 					<?php do_action('woocommerce_cart_coupon'); ?>
 		
@@ -201,13 +201,13 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 		
 		<?php woocommerce_cart_totals(); ?>
 		
-		<input type="submit" class="update-cart-button button" name="update_cart" value="<?php _e( 'Update Shopping Bag', 'swiftframework' ); ?>" /> <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e( 'Proceed to Checkout', 'swiftframework' ); ?>" />
+		<input type="submit" class="update-cart-button button" name="update_cart" value="<?php _e( 'Atualização Shopping Bag', 'swiftframework' ); ?>" /> <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e( 'Proceed to Checkout', 'swiftframework' ); ?>" />
 		
 		<?php do_action('woocommerce_proceed_to_checkout'); ?>
 		
 		<?php $woocommerce->nonce_field('cart') ?>
 		
-		<a class="continue-shopping" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"><?php _e('Continue shopping', 'swiftframework'); ?></a>
+		<a class="continue-shopping" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"><?php _e('Continuar com a compra', 'swiftframework'); ?></a>
 		
 		</div>
 		
