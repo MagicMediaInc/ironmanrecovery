@@ -41,7 +41,6 @@ if ( $available_methods ) {
 
 	// Show select boxes for methods
 	} elseif ( get_option('woocommerce_shipping_method_format') == 'select' ) {
-		echo 'shipping method:'.get_option('woocommerce_shipping_method_format').';';
 		echo '<select name="shipping_method" id="shipping_method">';
 
 		foreach ( $available_methods as $method )
@@ -52,6 +51,7 @@ if ( $available_methods ) {
 	// Show radio buttons for methods
 	} else {
 
+		echo 'shipping method:'.get_option('woocommerce_shipping_method_format').';';
 		echo '<ul id="shipping_method">';
 
 		foreach ( $available_methods as $method )
