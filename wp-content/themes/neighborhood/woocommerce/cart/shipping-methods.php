@@ -54,10 +54,10 @@ if ( $available_methods ) {
 		
 		echo '<select name="shipping_method" id="shipping_method" size="" required>';
 		foreach ( $available_methods as $method ):
-			echo '<option value="' . esc_attr( $method->id ) . '" ' . selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) . '>' . wp_kses_post( $method->full_label ) . '</option>';
+			echo '<option value="' . esc_attr( $method->id ) . '" ' . selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) . '>' .selected( $method->id, $woocommerce->session->chosen_shipping_method, false ). wp_kses_post( $method->full_label ) . '</option>';
 			//var_dump($method);
 		endforeach;
-		echo '<option selected>--- SELECCIONE ---</option>';
+		echo '<option>--- SELECCIONE ---</option>';
 		echo '</select>';
 
 	}
