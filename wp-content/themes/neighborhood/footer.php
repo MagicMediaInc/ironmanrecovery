@@ -175,7 +175,7 @@
 			<?php
 				$swiftideas_backlink = "";
 				if ($show_backlink) {			
-				$swiftideas_backlink =	apply_filters("swiftideas_link", "Designed By <a href='http://www.gallardodesigner.com.br'>Gallardo Designer</a>");
+				$swiftideas_backlink =	apply_filters("swiftideas_link", "");
 				}
 			
 			if ($enable_copyright) { ?>
