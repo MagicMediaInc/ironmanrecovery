@@ -295,7 +295,9 @@ function woocommerce_update_cart_action() {
  * @param bool $url (default: false)
  * @return void
  */
-function woocommerce_add_to_cart_action( $url = '/carrinho/' ) {
+function woocommerce_add_to_cart_action( $url = false ) {
+
+	die("entra en esta funcion");
 
 	if ( empty( $_REQUEST['add-to-cart'] ) || ! is_numeric( $_REQUEST['add-to-cart'] ) )
 		return;
