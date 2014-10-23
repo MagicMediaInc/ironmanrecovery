@@ -681,7 +681,7 @@
                                                         
             } else {
            		
-           		$cart_output .= '<div class="bag-header">'.__("0 items na sacola de compras", "swiftframework").'</div>';
+           		$cart_output .= '<div class="bag-header">'.__("0 itens na sacola de compras", "swiftframework").'</div>';
            		
            		$cart_output .= '<div class="bag-empty">'.__('Unfortunately, your shopping bag is empty.','swiftframework').'</div>';                                    
             	
