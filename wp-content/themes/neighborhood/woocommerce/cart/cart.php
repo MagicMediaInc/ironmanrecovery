@@ -215,6 +215,14 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 		
 </form>
 
+<script type="text/javascript">
+	jQuery('#formulario-conodetumadre').on('submit', function(e){
+		e.preventDefault();
+		console.log("Submit");
+		return false;
+	});
+</script>
+
 <div class="cart-collaterals">
 
 	<?php do_action('woocommerce_cart_collaterals'); ?>
