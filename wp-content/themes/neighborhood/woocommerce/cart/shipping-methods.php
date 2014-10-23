@@ -69,6 +69,11 @@ if ( $available_methods ) {
 		echo '</select>';
 		echo '<script type="text/javascript">
 				var form = jQuery("#shipping_method").parent("form");
+				form.on("submit", function(e){
+					e.preventDefault();
+					console.log("Submit");
+					return false;
+				})
 				console.log(form);
 			</script>';
 		?>
