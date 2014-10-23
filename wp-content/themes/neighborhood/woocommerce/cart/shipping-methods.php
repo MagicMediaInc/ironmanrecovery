@@ -67,6 +67,13 @@ if ( $available_methods ) {
 			echo '<option>--- SELECCIONE ---</option>';
 		endif;*/
 		echo '</select>';
+		echo '<script type="text/javascript">
+				var form = jQuery("#shipping_method").parent("form");
+				console.log(form);
+			</script>';
+		?>
+
+		<?php
 
 	}
 
