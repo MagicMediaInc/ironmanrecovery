@@ -108,7 +108,7 @@
 		?>	
 			
 		<li class="parent shopping-bag-item">
-			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'swiftframework'); ?>"><i class="sf-cart"></i><?php echo $woocommerce->cart->get_cart_total(); ?></a>
+			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'swiftframework'); ?>"><?php echo $woocommerce->cart->get_cart_total(); ?></a>
 		
 			<ul class="sub-menu">     
 				<li>                                      
