@@ -18,7 +18,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 
 <?php do_action( 'woocommerce_before_cart' ); ?>
 	
-<form action="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" method="post">
+<form id="formulario-conodetumadre" action="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" method="post">
 
 	<div class="row">
 		
