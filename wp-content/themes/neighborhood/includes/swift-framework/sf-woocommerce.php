@@ -116,7 +116,7 @@
 		 
 						<?php if ( sizeof($cart_count)>0 ) { ?>
 				
-							<div class="bag-header"><?php echo $cart_count_text; ?> <?php _e('in the shopping bag', 'swiftframework'); ?></div>
+							<div class="bag-header"><?php echo $cart_count_text; ?> <?php _e('no carrinho de compras', 'swiftframework'); ?></div>
 							
 							<div class="bag-contents">
 								
@@ -138,11 +138,11 @@
 								           			<a href="<?php echo get_permalink($cart_item['product_id']); ?>">
 								           				<?php echo apply_filters('woocommerce_cart_widget_product_title', $product_title, $bag_product); ?></a>
 								           		</div>
-								            	<div class="bag-product-price"><?php _e("Unit Price:", "swiftframework"); ?> <?php echo woocommerce_price($bag_product->get_price()); ?></div>
-								            	<div class="bag-product-quantity"><?php _e('Quantity:', 'swiftframework'); ?> <?php echo $cart_item['quantity']; ?></div>
+								            	<div class="bag-product-price"><?php _e("Preço unitário:", "swiftframework"); ?> <?php echo woocommerce_price($bag_product->get_price()); ?></div>
+								            	<div class="bag-product-quantity"><?php _e('Quantidade:', 'swiftframework'); ?> <?php echo $cart_item['quantity']; ?></div>
 								            </div>
 								            	
-								            <?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'woocommerce') ), $cart_item_key ); ?>
+								            <?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Removee este item', 'woocommerce') ), $cart_item_key ); ?>
 								            
 								    	</div>
 							    	
@@ -162,15 +162,15 @@
 			
 						<?php } else { ?>
 								
-							<div class="bag-header"><?php _e("0 items in the shopping bag", "swiftframework"); ?></div>
+							<div class="bag-header"><?php _e("0 items no carrinho de compras", "swiftframework"); ?></div>
 								
-							<div class="bag-empty"><?php _e('Unfortunately, your shopping bag is empty.','swiftframework'); ?></div>                                   
+							<div class="bag-empty"><?php _e('Infelizmente, o seu carrinho de compras está vazio.','swiftframework'); ?></div>                                   
 													
 							<div class="bag-buttons">
 								
 								<?php $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>
 							
-								<a class="sf-roll-button shop-button" href="<?php echo esc_url( $shop_page_url ); ?>"><span><?php _e('Go to the shop', 'swiftframework'); ?></span><span><?php _e('Go to the shop', 'swiftframework'); ?></span></a>
+								<a class="sf-roll-button shop-button" href="<?php echo esc_url( $shop_page_url ); ?>"><span><?php _e('Ir para a loja', 'swiftframework'); ?></span><span><?php _e('Ir para a loja', 'swiftframework'); ?></span></a>
 							            	                
 							</div>
 								
@@ -283,7 +283,7 @@
 			<div class="accordion-group">
 				<div class="accordion-heading">
 					<a class="accordion-toggle" data-toggle="collapse" data-parent="#product-accordion" href="#product-desc">
-						<?php _e("Description", "swiftframework"); ?>
+						<?php _e("Descrição", "swiftframework"); ?>
 					</a>
 		    	</div>
 		    	<div id="product-desc" class="accordion-body collapse in">
@@ -302,7 +302,7 @@
 			<div class="accordion-group">
 				<div class="accordion-heading">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#product-accordion" href="#additional-information">
-						<?php _e("Additional Information", "swiftframework"); ?>
+						<?php _e("Informações adicionais", "swiftframework"); ?>
 					</a>
 				</div>
 				<div id="additional-information" class="accordion-body collapse">
@@ -315,7 +315,7 @@
 			<div class="accordion-group">
 				<div class="accordion-heading">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#product-accordion" href="#reviews">
-						<?php _e("Reviews", "swiftframework"); ?> (<?php echo comments_number( '0', '1', '%' ); ?>)
+						<?php _e("Comentários", "swiftframework"); ?> (<?php echo comments_number( '0', '1', '%' ); ?>)
 					</a>
 				</div>
 				<div id="reviews" class="accordion-body collapse">
@@ -352,9 +352,9 @@
 		<div class="help-bar clearfix">
 			<span><?php echo do_shortcode($options['help_bar_text']); ?></span>
 			<ul>
-			    <li><a href="#email-form" class="inline" data-toggle="modal"><?php _e("Email customer care", "swiftframework"); ?></a></li>
-			    <li><a href="#shipping-information" class="inline" data-toggle="modal"><?php _e("Shipping information", "swiftframework"); ?></a></li>
-			    <li><a href="#returns-exchange" class="inline" data-toggle="modal"><?php _e("Returns & exchange", "swiftframework"); ?></a></li>
+			    <li><a href="#email-form" class="inline" data-toggle="modal"><?php _e("E-mail de atendimento ao cliente", "swiftframework"); ?></a></li>
+			    <li><a href="#shipping-information" class="inline" data-toggle="modal"><?php _e("Informação do transporte", "swiftframework"); ?></a></li>
+			    <li><a href="#returns-exchange" class="inline" data-toggle="modal"><?php _e("De troca e devolução", "swiftframework"); ?></a></li>
 			    <li><a href="#faqs" class="inline" data-toggle="modal"><?php _e("F.A.Q.'s", "swiftframework"); ?></a></li>
 			</ul>
 		</div>
@@ -362,7 +362,7 @@
 		<div id="email-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="email-form-modal" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="email-form-modal"><?php _e("Email customer care", "swiftframework"); ?></h3>
+				<h3 id="email-form-modal"><?php _e("E-mail de atendimento ao cliente", "swiftframework"); ?></h3>
 			</div>
 			<div class="modal-body">
 				
@@ -374,7 +374,7 @@
 		<div id="shipping-information" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="shipping-modal" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="shipping-modal"><?php _e("Shipping information", "swiftframework"); ?></h3>
+				<h3 id="shipping-modal"><?php _e("Informação do transporte", "swiftframework"); ?></h3>
 			</div>
 			<div class="modal-body">
 				
@@ -386,7 +386,7 @@
 		<div id="returns-exchange" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="returns-modal" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="returns-modal"><?php _e("Returns & exchange", "swiftframework"); ?></h3>
+				<h3 id="returns-modal"><?php _e("De troca e devolução", "swiftframework"); ?></h3>
 			</div>
 			<div class="modal-body">
 				

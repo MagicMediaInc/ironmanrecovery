@@ -42,7 +42,7 @@ if ( ! $product->is_purchasable() ) return;
 	 	?>
 	 	
 	 	<?php 
-	 		$button_text = '<i class="icon-plus"></i>' . apply_filters('single_add_to_cart_text', __("Add to shopping bag", "swiftframework"), $product->product_type);
+	 		$button_text = '<i class="icon-plus"></i>' . apply_filters('single_add_to_cart_text', __("Adicionar ao carrinho de compras", "swiftframework"), $product->product_type);
 	 	?>
 	 	
 	 	<button type="submit" class="single_add_to_cart_button"><?php echo $button_text; ?></button>
