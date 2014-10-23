@@ -53,10 +53,10 @@ if ( $available_methods ) {
 	} else {
 		$band = false;
 		echo '<select name="shipping_method" id="shipping_method" size="" required>';
-		var_dump($available_methods);
+		var_dump($woocommerce->session->chosen_shipping_method);
 		foreach ( $available_methods as $method ):
-			if(selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) != false)
-				$band = selected( $method->id, $woocommerce->session->chosen_shipping_method, false );
+			/*if(selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) != false)
+				$band = selected( $method->id, $woocommerce->session->chosen_shipping_method, false );*/
 			echo '<option value="' . esc_attr( $method->id ) . '" ' . selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) . '>' . wp_kses_post( $method->full_label ) . '</option>';
 			//var_dump($method);
 		endforeach;
