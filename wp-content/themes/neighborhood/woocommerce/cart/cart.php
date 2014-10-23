@@ -207,7 +207,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 		
 		<?php $woocommerce->nonce_field('cart') ?>
 		
-		<a class="continue-shopping" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"><?php _e('Continuar com a compra', 'swiftframework'); ?></a>
+		<a class="continue-shopping" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"><?php _e('Comprar mais', 'swiftframework'); ?></a>
 		
 		</div>
 		

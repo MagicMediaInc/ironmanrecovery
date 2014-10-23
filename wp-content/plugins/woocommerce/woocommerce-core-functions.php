@@ -849,7 +849,7 @@ function woocommerce_price( $price, $args = array() ) {
 
 function get_woocommerce_price_format() {
 	//$currency_pos = get_option( 'woocommerce_currency_pos' );
-	$currency_pos = 'left';
+	$currency_pos = 'left_space';
 	switch ( $currency_pos ) {
 		case 'left' :
 			$format = '%1$s%2$s';
