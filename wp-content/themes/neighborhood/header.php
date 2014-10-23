@@ -15,10 +15,8 @@ function show_mini_cart() {
 			
         ?>	
         <div id="breadcrumbs">
-			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Veja o seu carrinho', 'swiftframework'); ?>"><img style="width:50% !important" src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/icone-carrinho-grande-alerta1.png" /></a>
+			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Veja o seu carrinho', 'swiftframework'); ?>"><img style="width:50% !important" src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/icone-carrinho-grande-alerta1.png" /><span><?php echo $cart_count_text //$woocommerce->cart->get_cart_total(); ?></span></a>
         <div class="parent shopping-bag-ite">
-
-           <p class="cart-contents"><?php echo $cart_count_text //$woocommerce->cart->get_cart_total(); ?></p>
         <ul class="sub-menu">     
         <li>                                      
         <div class="shopping-bag">
