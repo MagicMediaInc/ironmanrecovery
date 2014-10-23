@@ -253,7 +253,7 @@ Custom jQuery functions.
 			
 			jQuery(window).scroll(function() { 
 				if ((jQuery(this).scrollTop() > 300) && !jQuery('body').hasClass('has-mini-header')) {
-					header.miniHeaderShow();
+					//header.miniHeaderShow();
 				} else if ((jQuery(this).scrollTop() < 250) && jQuery('body').hasClass('has-mini-header')) {
 					header.miniHeaderHide();
 				}
