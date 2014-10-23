@@ -59,7 +59,7 @@ if ( $available_methods ) {
 			//var_dump($method);
 		endforeach;
 
-		if($band == false):
+		if($band === false):
 
 			echo '<option selected>--- SELECCIONE ---</option>';
 		else:
