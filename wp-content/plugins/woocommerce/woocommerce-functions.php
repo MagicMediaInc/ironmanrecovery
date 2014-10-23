@@ -445,7 +445,7 @@ function woocommerce_add_to_cart_action( $url = false ) {
     // If we added the product to the cart we can now do a redirect, otherwise just continue loading the page to show errors
     if ( $was_added_to_cart ) {
 
-    	die(get_option('woocommerce_cart_redirect_after_add', 'yes').$woocommerce->error_count());
+    	//die(get_option('woocommerce_cart_redirect_after_add', 'yes').$woocommerce->error_count());
 
 		$url = apply_filters( 'add_to_cart_redirect', $url, $product_id );
 
@@ -456,7 +456,7 @@ function woocommerce_add_to_cart_action( $url = false ) {
 		}
 
 		// Redirect to cart option
-		elseif ( get_option('woocommerce_cart_redirect_after_add', 'yes') == 'yes' && $woocommerce->error_count() == 0 ) {
+		elseif ( /*get_option('woocommerce_cart_redirect_after_add', 'yes') == 'yes' &&*/ $woocommerce->error_count() == 0 ) {
 			wp_safe_redirect( $woocommerce->cart->get_cart_url() );
 			exit;
 		}
