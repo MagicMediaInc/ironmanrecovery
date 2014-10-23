@@ -452,7 +452,7 @@ function woocommerce_add_to_cart_action( $url = '/carrinho/' ) {
 		}
 
 		// Redirect to cart option
-		elseif ( get_option('woocommerce_cart_redirect_after_add') == 'yes' && $woocommerce->error_count() == 0 ) {
+		elseif ( get_option('woocommerce_cart_redirect_after_add', 'yes') == 'yes' && $woocommerce->error_count() == 0 ) {
 			wp_safe_redirect( $woocommerce->cart->get_cart_url() );
 			exit;
 		}
@@ -492,7 +492,7 @@ function woocommerce_add_to_cart_message( $product_id ) {
 	}
 
 	// Output success messages
-	if ( get_option( 'woocommerce_cart_redirect_after_add' ) == 'yes' ) :
+	if ( get_option( 'woocommerce_cart_redirect_after_add', 'yes' ) == 'yes' ) :
 
 		$return_to 	= apply_filters( 'woocommerce_continue_shopping_redirect', wp_get_referer() ? wp_get_referer() : home_url() );
 
