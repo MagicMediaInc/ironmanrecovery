@@ -15,7 +15,7 @@ function show_mini_cart() {
 			
         ?>	
         <div id="breadcrumbs">
-			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Veja o seu carrinho', 'swiftframework'); ?>"><img style="width:20px !important;height:auto;" src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/icone-carrinho-grande-alerta1.png" /><span><?php echo $cart_count_text //$woocommerce->cart->get_cart_total(); ?></span></a>
+			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Veja o seu carrinho', 'swiftframework'); ?>"><img style="width:30px !important;height:auto;" src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/icone-carrinho-grande-alerta1.png" /><span><?php if($woocommerce->cart->cart_contents_count==0):echo "Carrinho vazio"; else: echo $cart_count_text."no Carrinho"; endif; //$woocommerce->cart->get_cart_total(); ?></span></a>
         <div class="parent shopping-bag-ite">
         <ul class="sub-menu">     
         <li>                                      
@@ -23,7 +23,7 @@ function show_mini_cart() {
 
         <?php if ( sizeof($cart_count)>0 ) { ?>
 
-        <div class="bag-header"><?php echo $cart_count_text; ?> <?php _e('na sacola de compras', 'swiftframework'); ?></div>
+        <div class="bag-header"><?php echo $cart_count_text; ?> <?php _e('no carrinho de compras', 'swiftframework'); ?></div>
 
         <div class="bag-contents">
 
