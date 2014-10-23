@@ -297,8 +297,6 @@ function woocommerce_update_cart_action() {
  */
 function woocommerce_add_to_cart_action( $url = false ) {
 
-	die("entra en esta funcion");
-
 	if ( empty( $_REQUEST['add-to-cart'] ) || ! is_numeric( $_REQUEST['add-to-cart'] ) )
 		return;
 
@@ -441,7 +439,9 @@ function woocommerce_add_to_cart_action( $url = false ) {
 		}
 
     }
+    
 
+	die("entra en esta funcion");
     // If we added the product to the cart we can now do a redirect, otherwise just continue loading the page to show errors
     if ( $was_added_to_cart ) {
 
