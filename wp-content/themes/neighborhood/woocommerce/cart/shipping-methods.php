@@ -57,7 +57,7 @@ if ( $available_methods ) {
 		foreach ( $available_methods as $method ):
 			/*if(selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) != false)
 				$band = selected( $method->id, $woocommerce->session->chosen_shipping_method, false );*/
-			echo '<option value="' . esc_attr( $method->id ) . '" ' . selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) . '>' . esc_attr( $method->id ) === 'full_rate' ? wp_kses_post( $method->full_label ) :  wp_kses_post( $method->label )  . '</option>';
+			echo '<option value="' . esc_attr( $method->id ) . '" ' . selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) . '>' . ( esc_attr( $method->id ) === 'full_rate' ? wp_kses_post( $method->full_label ) :  wp_kses_post( $method->label ) ) . '</option>';
 			//var_dump($method);
 		endforeach;
 /*
