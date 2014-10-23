@@ -217,9 +217,12 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 
 <script type="text/javascript">
 	jQuery('#formulario-conodetumadre').on('submit', function(e){
-		e.preventDefault();
-		console.log("Submit");
-		return false;
+		if(jQuery('#shipping_method').val() == 'flat_rate'){
+			return false;
+		}
+		else{
+			return true;
+		}
 	});
 </script>
 
