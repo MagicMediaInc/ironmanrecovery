@@ -38,8 +38,8 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 				<?php endif; ?>
 				<tr>
-					<td colspan="2">
-						<p>Si o frete para você não encontra-se na lista, <a href="mailto:contato@ironmanrecovery.com.br">contate-nos</a></p>
+					<td colspan="2" align="center">
+						<p><span style="color:red; font-weight:900;">*</span><a href="mailto:contato@ironmanrecovery.com.br" style="color:navy;">Consulte-nos</a>, par outros destinos.</p>
 					</td>
 				</tr>
 				<tr>
