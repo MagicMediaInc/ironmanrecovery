@@ -299,7 +299,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 							<label style="display:none;"> for="payment_method_<?php echo $gateway->id; ?>"><?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?></label>
 							<?php
 								if ( $gateway->has_fields() || $gateway->get_description() ) :
-									echo '<div class="display:none; payment_box payment_method_' . $gateway->id . '" ' . ( $gateway->chosen ? '' : 'style="display:none;"' ) . '>';
+									echo '<div style="display:none;" class=" payment_box payment_method_' . $gateway->id . '" ' . ( $gateway->chosen ? '' : 'style="display:none;"' ) . '>';
 									$gateway->payment_fields();
 									echo '</div>';
 								endif;
