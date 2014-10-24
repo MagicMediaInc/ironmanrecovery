@@ -673,9 +673,9 @@
                 
                 $cart_output .= '<div class="bag-buttons">';
                 
-                $cart_output .= '<a class="sf-roll-button bag-button" href="'.esc_url( $woocommerce->cart->get_cart_url() ).'"><span>'.__('Ver saco de compras', 'swiftframework').'</span><span>'.__('Ver saco de compras', 'swiftframework').'</span></a>';
+                $cart_output .= '<a class="sf-roll-button bag-button" href="'.esc_url( $woocommerce->cart->get_cart_url() ).'"><span>'.__('Ver o carrinho compras', 'swiftframework').'</span><span>'.__('Ver o carrinho compras', 'swiftframework').'</span></a>';
                 
-                $cart_output .= '<a class="sf-roll-button checkout-button" href="'.esc_url( $woocommerce->cart->get_checkout_url() ).'"><span >'.__('Fazer o pagamento', 'swiftframework').'</span><span>'.__('Fazer o pagamento', 'swiftframework').'</span></a>';
+                //$cart_output .= '<a class="sf-roll-button checkout-button" href="'.esc_url( $woocommerce->cart->get_checkout_url() ).'"><span >'.__('Fazer o pagamento', 'swiftframework').'</span><span>'.__('Fazer o pagamento', 'swiftframework').'</span></a>';
                                 
                	$cart_output .= '</div>';
                                                         

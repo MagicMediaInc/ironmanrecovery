@@ -66,9 +66,9 @@ function show_mini_cart() {
         
         ?>
 
-        <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('Ver saco de compras', 'swiftframework'); ?></span><span><?php _e('Ver saco de compras', 'swiftframework'); ?></span></a>
+        <a class="sf-roll-button bag-button" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"><span><?php _e('Ver o carrinho de compras', 'swiftframework'); ?></span><span><?php _e('Ver o carrinho de compras', 'swiftframework'); ?></span></a>
 
-        <a class="sf-roll-button checkout-button" href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>"><span><?php _e('Fazer o pagamento', 'swiftframework'); ?></span><span><?php _e('Fazer o pagamento', 'swiftframework'); ?></span></a>
+        <!--<a class="sf-roll-button checkout-button" href="<?php //echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>"><span><?php //_e('Fazer o pagamento', 'swiftframework'); ?></span><span><?php //_e('Fazer o pagamento', 'swiftframework'); ?></span></a>-->
 
         </div>
 
