@@ -277,7 +277,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<div id="payment">
 		<?php if ($woocommerce->cart->needs_payment()) : ?>
-		<ul class="payment_methods methods">
+		<div class="">
 			<?php
 				$available_gateways = $woocommerce->payment_gateways->get_available_payment_gateways();
 				if ( ! empty( $available_gateways ) ) {
@@ -316,10 +316,10 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 				}
 			?>
-		</ul>
+		</div>
 		<?php endif; ?>
 
-		<div class="form-row place-order">
+		<ul class="payment_methods methods "><!--class="form-row place-order"-->
 
 			<noscript><?php _e( 'Desde que seu navegador não suporta JavaScript, ou ele está desativado, por favor, certifique-se de clicar no <em>Atualizar totais</em> botão antes de colocar a sua encomenda. Você pode ser cobrado mais do que a quantidade indicada acima, se você deixar de fazê-lo.', 'woocommerce' ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Atualizar totais', 'woocommerce' ); ?>" /></noscript>
 
