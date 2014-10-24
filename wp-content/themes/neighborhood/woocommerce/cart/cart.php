@@ -22,7 +22,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 
 	<div class="row">
 		
-		<div class="span9">
+		<div class="span8">
 		
 			<h3 class="bag-summary"><?php _e('Sua seleção', 'swiftframework');?> <span>(<?php echo $cart_count; ?>)</span></h3>
 			
