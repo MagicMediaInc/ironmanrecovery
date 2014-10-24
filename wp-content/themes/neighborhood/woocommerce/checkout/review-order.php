@@ -107,7 +107,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 				<tr class="shipping">
 					<th><?php _e( 'Frete:', 'swiftframework' ); ?></th>
-					<td><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
+					<td><?php $woocommerce->session->chosen_shipping_method; //woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
 
 				<?php do_action('woocommerce_review_order_after_shipping'); ?>
@@ -277,7 +277,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<div id="payment">
 		<?php if ($woocommerce->cart->needs_payment()) : ?>
-		<ul class="payment_methods methods">
+		<ul class="" style="display:none;">
 			<?php
 				$available_gateways = $woocommerce->payment_gateways->get_available_payment_gateways();
 				if ( ! empty( $available_gateways ) ) {
@@ -295,11 +295,11 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 						//var_dump($gateway);
 						?>
 						<li>
-							<input type="radio" id="payment_method_<?php echo $gateway->id; ?>" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?> />
-							<label for="payment_method_<?php echo $gateway->id; ?>"><?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?></label>
+							<input style="display:none;" type="radio" id="payment_method_<?php echo $gateway->id; ?>" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?> />
+							<label style="display:none;"> for="payment_method_<?php echo $gateway->id; ?>"><?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?></label>
 							<?php
 								if ( $gateway->has_fields() || $gateway->get_description() ) :
-									echo '<div class="payment_box payment_method_' . $gateway->id . '" ' . ( $gateway->chosen ? '' : 'style="display:none;"' ) . '>';
+									echo '<div style="display:none;" class=" payment_box payment_method_' . $gateway->id . '" ' . ( $gateway->chosen ? '' : 'style="display:none;"' ) . '>';
 									$gateway->payment_fields();
 									echo '</div>';
 								endif;
@@ -318,19 +318,21 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			?>
 		</ul>
 		<?php endif; ?>
-
 		<div class="form-row place-order">
-
-			<noscript><?php _e( 'Desde que seu navegador não suporta JavaScript, ou ele está desativado, por favor, certifique-se de clicar no <em>Atualizar totais</em> botão antes de colocar a sua encomenda. Você pode ser cobrado mais do que a quantidade indicada acima, se você deixar de fazê-lo.', 'woocommerce' ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Atualizar totais', 'woocommerce' ); ?>" /></noscript>
-
 			<?php $woocommerce->nonce_field('process_checkout')?>
 
 			<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
+			
+		</div>
+		<div class="payment_methods methods " style="border-top:1px solid #dfdbdf;padding: 25px 0 5px;"><!--class="form-row place-order"-->
+
+			<noscript><?php _e( 'Desde que seu navegador não suporta JavaScript, ou ele está desativado, por favor, certifique-se de clicar no <em>Atualizar totais</em> botão antes de colocar a sua encomenda. Você pode ser cobrado mais do que a quantidade indicada acima, se você deixar de fazê-lo.', 'woocommerce' ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Atualizar totais', 'woocommerce' ); ?>" /></noscript>
+
 
 			<?php
-			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'A ordem do lugar', 'woocommerce' ));
+			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'Finalizar o pagamento com', 'woocommerce' ));
 
-			echo apply_filters('woocommerce_order_button_html', '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" />' );
+			echo apply_filters('woocommerce_order_button_html', '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" /><img src="http://ironmanrecovery.com.br/wp-content/plugins/woocommerce-pagseguro/assets/images/pagseguro.png" />' );
 			?>
 
 			<?php if (woocommerce_get_page_id('terms')>0) : ?>
