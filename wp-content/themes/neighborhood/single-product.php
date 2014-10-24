@@ -65,7 +65,7 @@
 			<?php } ?>
 			</div>
 			<?php 
-				if (!$no_breadcrumbs) {
+				if ($no_breadcrumbs) {
 					// BREADCRUMBS
 					echo sf_breadcrumbs();
 				}

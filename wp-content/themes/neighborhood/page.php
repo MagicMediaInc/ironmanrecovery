@@ -58,7 +58,6 @@
 	$page_wrap_class .= ' no-top-spacing';
 	}
 ?>
-
 <?php if ($show_page_title) { ?>	
 	<div class="row">
 		<div class="page-heading span12 clearfix alt-bg <?php echo $page_title_bg; ?>">
