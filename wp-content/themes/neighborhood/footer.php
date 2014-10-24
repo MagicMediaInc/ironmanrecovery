@@ -184,7 +184,7 @@
 			<footer id="copyright" class="<?php echo $copyright_class; ?>">
 				<div class="container">
 					<p class="twelve columns"><?php //echo do_shortcode(stripslashes($copyright_text)); ?>
-						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <a href="http://ironmanrecovery.com.br/aviso-legal/?lang=pt">Aviso legal</a> e <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=pt">Política de privacidade</a>.</p>
+						<p class="twelve columns">©2014 Training Never Ends / <span class="ironman_footer">IRONMAN RECOVERY</span> - <!--<a href="http://ironmanrecovery.com.br/aviso-legal/?lang=pt">Aviso legal</a> e <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=pt">Política de privacidade</a>.--></p>
 					
 						
 					<?php echo $swiftideas_backlink; ?></p>
