@@ -196,7 +196,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 		
 		</div>
 		
-		<div class="span3">
+		<div class="span4">
 		
 		<?php woocommerce_cart_totals(); ?>
 		
