@@ -44,7 +44,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				</tr>
 				<tr>
 					<td colspan="2">
-						<div class="msg-error" style="display:none;background-color:#ffaaaa;color:#DD3333;width:100%;padding:1em;">
+						<div class="msg-error" style="display:none;background-color:#ffaaaa;color:#DD3333;width:100%;padding:1em 0;text-align: center;">
 							Você deve selecionar um método de envio
 						</div>
 					</td>
