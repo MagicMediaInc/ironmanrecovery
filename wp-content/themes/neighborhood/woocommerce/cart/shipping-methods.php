@@ -53,7 +53,7 @@ if ( $available_methods ) {
 	} else {
 		$band = false;
 		echo '<select name="shipping_method" id="shipping_method" size="" required>';
-		var_dump($woocommerce->session->chosen_shipping_method);
+		/*var_dump($woocommerce->session->chosen_shipping_method);*/
 		foreach ( $available_methods as $method ):
 			/*if(selected( $method->id, $woocommerce->session->chosen_shipping_method, false ) != false)
 				$band = selected( $method->id, $woocommerce->session->chosen_shipping_method, false );*/
