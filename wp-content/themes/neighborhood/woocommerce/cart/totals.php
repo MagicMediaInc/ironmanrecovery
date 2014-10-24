@@ -37,15 +37,11 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 					</tr>
 
 				<?php endif; ?>
+				
 				<tr>
 					<td colspan="2">
-						<p>Si o frete para você não encontra-se na lista, <a href="mailto:contato@ironmanrecovery.com.br">contate-nos</a></p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<div class="msg-error" style="display:none;background-color:#ffaaaa;color:#DD3333;width:100%;padding:1em;">
-							Você deve selecionar um método de envio
+						<div class="msg-error" style="display:none;background-color:#ffaaaa;color:#DD3333;width:100%;padding:1em 0;text-align: center;">
+							Você deve selecionar um destino
 						</div>
 					</td>
 				</tr>
@@ -57,11 +53,15 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 						<th><?php _e( 'Frete', 'woocommerce' ); ?></th>
 						<td><b><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></b></td>
 					</tr>
-
+					<tr>
+						<td colspan="2" align="center">
+							<p style="text-align:center;"><span style="color:red; font-weight:900;">*</span><a href="mailto:contato@ironmanrecovery.com.br" style="color:navy;">Consulte-nos</a>, para outros destinos.</p>
+						</td>
+					</tr>
 					<?php do_action( 'woocommerce_cart_totals_after_shipping' ); ?>
 
 				<?php endif ?>
-
+				
 				<?php 
 					if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) {
 						foreach ( $woocommerce->cart->get_fees() as $fee ) : ?>
