@@ -32,7 +32,7 @@ global $product;
 		switch ( $handler ) {
 			case "variable" :
 				$link['url'] 	= apply_filters( 'variable_add_to_cart_url', get_permalink( $product->id ) );
-				$link['label'] 	= apply_filters( 'variable_add_to_cart_text', __( 'Selecione as opções', 'woocommerce' ) );
+				$link['label'] 	= apply_filters( 'variable_add_to_cart_text', __( 'Selecione este produto', 'woocommerce' ) );
 			break;
 			case "grouped" :
 				$link['url'] 	= apply_filters( 'grouped_add_to_cart_url', get_permalink( $product->id ) );
