@@ -294,7 +294,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 					foreach ( $available_gateways as $gateway ) {
 						//var_dump($gateway);
 						?>
-						<li>
+						<!-- <li>
 							<input type="radio" id="payment_method_<?php echo $gateway->id; ?>" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?> />
 							<label for="payment_method_<?php echo $gateway->id; ?>"><?php echo $gateway->get_title(); ?> <?php echo $gateway->get_icon(); ?></label>
 							<?php
@@ -304,7 +304,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 									echo '</div>';
 								endif;
 							?>
-						</li>
+						</li> -->
 						<?php
 					}
 				} else {
@@ -328,9 +328,9 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
 			<?php
-			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'A ordem do lugar', 'woocommerce' ));
+			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'Finalizar o pagamento com', 'woocommerce' ));
 
-			echo apply_filters('woocommerce_order_button_html', '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" />' );
+			echo apply_filters('woocommerce_order_button_html', '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" /><img src="http://ironmanrecovery.com.br/wp-content/plugins/woocommerce-pagseguro/assets/images/pagseguro.png" />' );
 			?>
 
 			<?php if (woocommerce_get_page_id('terms')>0) : ?>

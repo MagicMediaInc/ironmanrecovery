@@ -19,6 +19,7 @@ if ( ! woocommerce_products_will_display() )
 	return;
 ?>
 <div class="woocommerce-count-wrap">
+<!--
 	<p class="woocommerce-result-count">
 		<?php
 		$paged    = max( 1, $wp_query->get( 'paged' ) );
@@ -40,4 +41,5 @@ if ( ! woocommerce_products_will_display() )
 		<span><?php _e("Vista", "swiftframework"); ?> </span>
 		<a class="show-products-link" href="?show_products=24">24</a>/<a class="show-products-link" href="?show_products=48">48</a>/<a  class="show-products-link" href="<?php echo $shop_page_url; ?>?show_products=<?php echo $total;?>"><?php _e("Todos", "swiftframework"); ?></a>
 	</p>
+	-->
 </div>
