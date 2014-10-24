@@ -20,7 +20,7 @@ global $woocommerce, $product, $yith_wcwl, $post, $catalog_mode;
 			<?php $loop = 0; foreach ( $attributes as $name => $options ) : $loop++; ?>
 				<tr>
 					<td class="value"><div><select id="<?php echo esc_attr( sanitize_title($name) ); ?>" name="attribute_<?php echo sanitize_title($name); ?>">
-						<option value=""><?php echo __( 'Seleccionar', 'woocommerce' ) ?> <?php echo $woocommerce->attribute_label( $name ); ?> &hellip;</option>
+						<option value=""><?php echo __( 'Selecione o', 'woocommerce' ) ?> <?php echo $woocommerce->attribute_label( $name ); ?> &hellip;</option>
 						<?php
 							if ( is_array( $options ) ) {
 
