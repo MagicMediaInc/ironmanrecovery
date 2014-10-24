@@ -277,7 +277,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<div id="payment">
 		<?php if ($woocommerce->cart->needs_payment()) : ?>
-		<!-- <ul class=""> -->
+		<ul class="" style="display:none;">
 			<?php
 				$available_gateways = $woocommerce->payment_gateways->get_available_payment_gateways();
 				if ( ! empty( $available_gateways ) ) {
@@ -316,7 +316,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 				}
 			?>
-		<!-- </ul> -->
+		</ul>
 		<?php endif; ?>
 
 		<div class="payment_methods methods " style="border-top:1px solid #dfdbdf;padding: 25px 0 5px;"><!--class="form-row place-order"-->
