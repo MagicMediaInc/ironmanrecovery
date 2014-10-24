@@ -188,7 +188,9 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 				</div>
 				<?php } ?>
 			<?php } ?>
-			
+			<div class="msg-error" style="display:none;background-color:#ffaaa;color:#DD3333;width:100%;padding:1em;">
+				Você deve selecionar um método de envio
+			</div>
 			<div class="shipping-calc">
 		
 				<?php woocommerce_shipping_calculator(); ?>
@@ -218,6 +220,9 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 <script type="text/javascript">
 	jQuery('#formulario-conodetumadre').on('submit', function(e){
 		if(jQuery('#shipping_method').val() == 'flat_rate'){
+			jQuery('.msg-error').css({
+				'display':'block',
+			});
 			return false;
 		}
 		else{

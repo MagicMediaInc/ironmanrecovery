@@ -37,7 +37,11 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 					</tr>
 
 				<?php endif; ?>
-
+				<tr>
+					<td colspan="2">
+						<p>Si o frete para você não encontra-se na lista, <a href="mailto:contato@ironmanrecovery.com.br">contate-nos</a></p>
+					</td>
+				</tr>
 				<?php if ( $woocommerce->cart->needs_shipping() && $woocommerce->cart->show_shipping() && ( $available_methods || get_option( 'woocommerce_enable_shipping_calc' ) == 'yes' ) ) : ?>
 
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
