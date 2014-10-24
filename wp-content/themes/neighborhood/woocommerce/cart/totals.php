@@ -41,7 +41,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				<tr>
 					<td colspan="2">
 						<div class="msg-error" style="display:none;background-color:#ffaaaa;color:#DD3333;width:100%;padding:1em 0;text-align: center;">
-							Você deve selecionar um método de envio
+							Você deve selecionar um destino
 						</div>
 					</td>
 				</tr>
@@ -55,7 +55,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 					</tr>
 					<tr>
 						<td colspan="2" align="center">
-							<p style="text-align:center;"><span style="color:red; font-weight:900;">*</span><a href="mailto:contato@ironmanrecovery.com.br" style="color:navy;">Consulte-nos</a>, par outros destinos.</p>
+							<p style="text-align:center;"><span style="color:red; font-weight:900;">*</span><a href="mailto:contato@ironmanrecovery.com.br" style="color:navy;">Consulte-nos</a>, para outros destinos.</p>
 						</td>
 					</tr>
 					<?php do_action( 'woocommerce_cart_totals_after_shipping' ); ?>
