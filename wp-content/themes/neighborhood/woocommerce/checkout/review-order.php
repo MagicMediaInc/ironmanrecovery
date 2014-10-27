@@ -107,7 +107,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 				<tr class="shipping">
 					<th><?php _e( 'Frete:', 'swiftframework' ); ?></th>
-					<td><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
+					<td><?php echo $woocommerce->session->chosen_shipping_method; //woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
 
 				<?php do_action('woocommerce_review_order_after_shipping'); ?>
@@ -277,7 +277,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<div id="payment">
 		<?php if ($woocommerce->cart->needs_payment()) : ?>
-		<ul class="payment_methods methods">
+		<ul class="" style="display:none;">
 			<?php
 				$available_gateways = $woocommerce->payment_gateways->get_available_payment_gateways();
 				if ( ! empty( $available_gateways ) ) {
@@ -318,14 +318,16 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			?>
 		</ul>
 		<?php endif; ?>
-
 		<div class="form-row place-order">
-
-			<noscript><?php _e( 'Desde que seu navegador não suporta JavaScript, ou ele está desativado, por favor, certifique-se de clicar no <em>Atualizar totais</em> botão antes de colocar a sua encomenda. Você pode ser cobrado mais do que a quantidade indicada acima, se você deixar de fazê-lo.', 'woocommerce' ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Atualizar totais', 'woocommerce' ); ?>" /></noscript>
-
 			<?php $woocommerce->nonce_field('process_checkout')?>
 
 			<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
+			
+		</div>
+		<div class="payment_methods methods " style="border-top:1px solid #dfdbdf;padding: 25px 0 5px;"><!--class="form-row place-order"-->
+
+			<noscript><?php _e( 'Desde que seu navegador não suporta JavaScript, ou ele está desativado, por favor, certifique-se de clicar no <em>Atualizar totais</em> botão antes de colocar a sua encomenda. Você pode ser cobrado mais do que a quantidade indicada acima, se você deixar de fazê-lo.', 'woocommerce' ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Atualizar totais', 'woocommerce' ); ?>" /></noscript>
+
 
 			<?php
 			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'Finalizar o pagamento com', 'woocommerce' ));
