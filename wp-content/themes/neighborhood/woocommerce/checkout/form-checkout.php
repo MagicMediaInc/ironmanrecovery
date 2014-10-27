@@ -253,8 +253,10 @@ jQuery(document).ready(function() {
 
 		<?php $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 ?>
-<div id="order_review">
-	<table class="shop_table">
+
+<!-- NEW TEMPLATE -->
+<div id="el-cono-de-tu-madre">
+	<table class="ahora-no-eres-shop_table">
 		<thead>
 			<tr>
 				<th class="product-img"><?php _e( 'Item', 'swiftframework' ); ?></th>
