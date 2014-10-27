@@ -59,7 +59,7 @@ jQuery(document).ready(function(){
             });
             
         }else if (lang =="pt") {
-            jQuery('.shipping td').html("Frete grátis");
+            /*jQuery('.shipping td').html("Frete grátis");
             
             jQuery('.variation dt').each(function() {
                 if (jQuery(this).html() == "Altura:"){
@@ -75,7 +75,7 @@ jQuery(document).ready(function(){
                 }
                 
             
-            });
+            });*/
             
         }
 
