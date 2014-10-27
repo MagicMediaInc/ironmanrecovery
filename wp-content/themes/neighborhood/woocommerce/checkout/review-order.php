@@ -115,6 +115,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 					?>
 					<th><?php _e( 'Frete ('.$selected_method->label.'):' , 'swiftframework' ); ?></th>
 					<td>
+					<input type="hidden" name="shipping_method" value="<?php echo $woocommerce->session->chosen_shipping_method; ?>"/>
 					<?php echo woocommerce_price( $selected_method->cost ) ?>
 					<?php //woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
