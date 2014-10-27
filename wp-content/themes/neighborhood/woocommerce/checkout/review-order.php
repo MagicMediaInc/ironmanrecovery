@@ -324,7 +324,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			?>
 		</ul>
 		<?php endif; ?>
-		<div class="form-row place-order">
+		<div >
 			<?php $woocommerce->nonce_field('process_checkout')?>
 
 			<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
