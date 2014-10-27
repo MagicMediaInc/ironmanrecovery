@@ -107,13 +107,14 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 				<tr class="shipping">
 					<th><?php _e( 'Frete:', 'swiftframework' ); ?></th>
 					<td><?php 
-						$chosen_mthd = null;
+						/*$chosen_mthd = null;
 						foreach ( $available_methods as $method ):
 							if($method->id == $woocommerce->session->chosen_shipping_method)
 								$chosen_mthd = $method->label;
 						endforeach;
-						echo $chosen_mthd;
-					//echo $woocommerce->session->chosen_shipping_method; //woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
+						echo $chosen_mthd;*/
+					//echo $woocommerce->session->chosen_shipping_method; 
+						woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
 
 				<?php do_action('woocommerce_review_order_after_shipping'); ?>
