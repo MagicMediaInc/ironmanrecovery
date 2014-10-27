@@ -114,7 +114,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 								if($woocommerce->session->chosen_shipping_method == $method->id)
 									$selected_method = $method;
 							endforeach;
-							echo $selected_method->label;
+							echo $selected_method->label. ' '. woocommerce_price( $selected_method->cost );
 						?>
 					<?php //woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
