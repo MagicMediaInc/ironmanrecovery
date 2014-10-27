@@ -349,12 +349,16 @@ jQuery(document).ready(function() {
 				<tr class="no-shipping">
 					<th><?php _e( 'Frete:', 'swiftframework' ); ?></th>
 					<td><?php 
-						$chosen_mthd = null;
-						foreach ( $available_methods as $method ):
-							if($method->id == $woocommerce->session->chosen_shipping_method)
-								$chosen_mthd = $method->label . woocommerce_price( $method->cost );
-						endforeach;
-						echo $chosen_mthd;
+						if($woocommerce->session->chosen_shipping_method == 'flat_rate'):
+							woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) );
+						else:
+							$chosen_mthd = null;
+							foreach ( $available_methods as $method ):
+								if($method->id == $woocommerce->session->chosen_shipping_method)
+									$chosen_mthd = $method->label . woocommerce_price( $method->cost );
+							endforeach;
+							echo $chosen_mthd;
+						endif;
 					//echo $woocommerce->session->chosen_shipping_method; 
 						//woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
