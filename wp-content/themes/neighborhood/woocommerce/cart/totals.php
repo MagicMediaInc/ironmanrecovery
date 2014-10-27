@@ -19,7 +19,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<?php if ( ! $woocommerce->shipping->enabled || $available_methods || ! $woocommerce->customer->get_shipping_country() || ! $woocommerce->customer->has_calculated_shipping() ) : ?>
 
-		<h3><?php _e( 'Resumen da compra', 'swiftframework' ); ?></h3>
+		<h3><?php _e( 'Resumo da compra', 'swiftframework' ); ?></h3>
 
 		<table cellspacing="0">
 			<tbody>
