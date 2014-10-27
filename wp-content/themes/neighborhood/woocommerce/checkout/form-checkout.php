@@ -323,7 +323,7 @@ jQuery(document).ready(function() {
 			?>
 		</tbody>
 	</table>
-	
+	<!--
 	<table class="totals_table">
 		<tbody>
 			<tr class="cart-subtotal">
@@ -519,7 +519,7 @@ jQuery(document).ready(function() {
 
 		</tbody>
 	</table>
-	
+	-->
 	<div class="clearfix"></div>
 
 	<div id="payment">
