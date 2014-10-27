@@ -14,7 +14,7 @@ global $woocommerce;
 $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 ?>
 <div id="order_review">
-
+	Order Review
 	<table class="shop_table">
 		<thead>
 			<tr>
