@@ -113,8 +113,9 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 								$selected_method = $method;
 						endforeach;
 					?>
-					<th><?php _e( 'Frete: '.$selected_method->label. ' '. woocommerce_price( $selected_method->cost ), 'swiftframework' ); ?></th>
+					<th><?php _e( 'Frete ('.$selected_method->label.'):' , 'swiftframework' ); ?></th>
 					<td>
+					<?php echo woocommerce_price( $selected_method->cost ) ?>
 					<?php //woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
 
