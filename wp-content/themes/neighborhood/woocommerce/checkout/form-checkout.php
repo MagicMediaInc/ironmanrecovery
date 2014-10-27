@@ -326,16 +326,16 @@ jQuery(document).ready(function() {
 		</tbody>
 	</table>
 	
-	<table class="totals_table">
+	<table class="ahora-no-eres-total_table">
 		<tbody>
-			<tr class="cart-subtotal">
+			<tr class="no-cart-subtotal">
 				<th><?php _e( 'Subtotal:', 'swiftframework' ); ?></th>
 				<td><?php echo $woocommerce->cart->get_cart_subtotal(); ?></td>
 			</tr>
 
 			<?php if ( $woocommerce->cart->get_discounts_before_tax() ) : ?>
 
-			<tr class="discount">
+			<tr class="no-discount">
 				<th><?php _e( 'Discount:', 'swiftframework' ); ?></th>
 				<td>-<?php echo $woocommerce->cart->get_discounts_before_tax(); ?></td>
 			</tr>
@@ -346,7 +346,7 @@ jQuery(document).ready(function() {
 
 				<?php do_action('woocommerce_review_order_before_shipping'); ?>
 
-				<tr class="shipping">
+				<tr class="no-shipping">
 					<th><?php _e( 'Frete:', 'swiftframework' ); ?></th>
 					<td><?php 
 						/*$chosen_mthd = null;
@@ -405,7 +405,7 @@ jQuery(document).ready(function() {
 							foreach ($taxes as $key => $tax) :
 								if ($woocommerce->cart->tax->is_compound( $key )) : $has_compound_tax = true; continue; endif;
 								?>
-								<tr class="tax-rate tax-rate-<?php echo $key; ?>">
+								<tr class="no-tax-rate tax-rate-<?php echo $key; ?>">
 									<th>
 										<?php
 										if ( get_option( 'woocommerce_display_totals_excluding_tax' ) == 'no' && get_option( 'woocommerce_prices_include_tax' ) == 'yes' ) {
@@ -422,7 +422,7 @@ jQuery(document).ready(function() {
 	
 							if ($has_compound_tax && !$woocommerce->cart->prices_include_tax) :
 								?>
-								<tr class="order-subtotal">
+								<tr class="no-order-subtotal">
 									<th><strong><?php _e('Subtotal', 'woocommerce'); ?></strong></th>
 									<td><strong><?php echo $woocommerce->cart->get_cart_subtotal( true ); ?></strong></td>
 								</tr>
@@ -432,7 +432,7 @@ jQuery(document).ready(function() {
 							foreach ($taxes as $key => $tax) :
 								if (!$woocommerce->cart->tax->is_compound( $key )) continue;
 								?>
-								<tr class="tax-rate tax-rate-<?php echo $key; ?>">
+								<tr class="no-tax-rate tax-rate-<?php echo $key; ?>">
 									<th>
 										<?php
 										if ( get_option( 'woocommerce_display_totals_excluding_tax' ) == 'no' && get_option( 'woocommerce_prices_include_tax' ) == 'yes' ) {
@@ -450,7 +450,7 @@ jQuery(document).ready(function() {
 						else :
 	
 							?>
-							<tr class="tax">
+							<tr class="no-tax">
 								<th><?php _e('Imposto', 'woocommerce'); ?></th>
 								<td><?php echo $woocommerce->cart->get_cart_tax(); ?></td>
 							</tr>
@@ -460,7 +460,7 @@ jQuery(document).ready(function() {
 					elseif ( get_option('woocommerce_display_cart_taxes_if_zero') == 'yes' ) :
 	
 						?>
-						<tr class="tax">
+						<tr class="no-tax">
 							<th><?php _e('Imposto', 'woocommerce'); ?></th>
 							<td><?php _ex( 'N/D', 'Relating to tax', 'woocommerce' ); ?></td>
 						</tr>
@@ -472,21 +472,21 @@ jQuery(document).ready(function() {
 
 			<?php if ( $woocommerce->cart->get_discounts_after_tax() ) : ?>
 
-			<tr class="discount">
+			<tr class="no-discount">
 				<th><?php _e( 'Códigos promocionais:', 'swiftframework' ); ?></th>
 				<td>-<?php echo $woocommerce->cart->get_discounts_after_tax(); ?></td>
 			</tr>
 
 			<?php endif; ?>
 			
-			<tr class="blank">
+			<tr class="no-blank">
 				<th></th>
 				<td></td>
 			</tr>
 
 			<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
-			<tr class="total">
+			<tr class="no-total">
 				<th><?php _e( 'Total', 'swiftframework' ); ?></th>
 				<td>
 					<?php
@@ -524,7 +524,7 @@ jQuery(document).ready(function() {
 	
 	<div class="clearfix"></div>
 
-	<div id="payment">
+	<div id="no-payment">
 		<?php if ($woocommerce->cart->needs_payment()) : ?>
 		<ul class="" style="display:none;">
 			<?php
