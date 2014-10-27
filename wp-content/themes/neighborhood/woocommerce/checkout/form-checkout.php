@@ -352,7 +352,7 @@ jQuery(document).ready(function() {
 						$chosen_mthd = null;
 						foreach ( $available_methods as $method ):
 							if($method->id == $woocommerce->session->chosen_shipping_method)
-								$chosen_mthd = $method->label;
+								$chosen_mthd = $method->full_label;
 						endforeach;
 						echo $chosen_mthd;
 					//echo $woocommerce->session->chosen_shipping_method; 
