@@ -352,9 +352,9 @@ jQuery(document).ready(function() {
 						$chosen_mthd = null;
 						foreach ( $available_methods as $method ):
 							if($method->id == $woocommerce->session->chosen_shipping_method)
-								$chosen_mthd = $method;
+								$chosen_mthd = $method->label . price_html($method->cost);
 						endforeach;
-						var_dump($chosen_mthd);
+						echo $chosen_mthd;
 					//echo $woocommerce->session->chosen_shipping_method; 
 						//woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></td>
 				</tr>
