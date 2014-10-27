@@ -286,7 +286,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<div id="payment">
 		<?php if ($woocommerce->cart->needs_payment()) : ?>
-		<ul class="payment_methods methods">
+		<ul style="display:none;">
 			<?php
 				$available_gateways = $woocommerce->payment_gateways->get_available_payment_gateways();
 				if ( ! empty( $available_gateways ) ) {
