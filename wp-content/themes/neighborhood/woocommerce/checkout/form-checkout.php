@@ -528,7 +528,7 @@ jQuery(document).ready(function() {
 	
 	<div class="clearfix"></div>
 
-	<div id="no-payment">
+	<div id="payment">
 		<?php if ($woocommerce->cart->needs_payment()) : ?>
 		<ul class="" style="display:none;">
 			<?php
