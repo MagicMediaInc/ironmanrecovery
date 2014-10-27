@@ -249,7 +249,7 @@ jQuery(document).ready(function() {
 		  	
 		<h4 id="order_review_heading" class="lined-heading"><span><?php _e( 'O resumo do pedido', 'swiftframework' ); ?></span></h4>
 		
-		<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+		<?php //do_action( 'woocommerce_checkout_order_review' ); ?>
 	
 	</div>
 	
