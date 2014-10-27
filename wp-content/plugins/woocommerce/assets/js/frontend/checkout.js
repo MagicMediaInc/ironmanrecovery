@@ -73,13 +73,13 @@ jQuery(document).ready(function($) {
 		});
 
 	}
-
+	/*
 	// Event for updating the checkout
 	$('body').bind('update_checkout', function() {
 		clearTimeout(updateTimer);
 		update_checkout();
 	});
-
+	*/
 	$('p.password, form.login, .checkout_coupon, div.shipping_address').hide();
 
 	$('input.show_password').change(function(){
