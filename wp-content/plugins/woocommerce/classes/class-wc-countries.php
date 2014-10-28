@@ -1072,7 +1072,7 @@ class WC_Countries {
 		if ( $type == 'billing_' ) {
 
 			$address_fields['billing_email'] = array(
-				'label' 		=> __( 'Email Address', 'woocommerce' ),
+				'label' 		=> __( 'E-mail', 'woocommerce' ),
 				'required' 		=> true,
 				'class' 		=> array( 'form-row-first' ),
 				'validate'		=> array( 'email' ),
