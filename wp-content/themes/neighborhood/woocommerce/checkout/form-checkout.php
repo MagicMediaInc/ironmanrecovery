@@ -247,7 +247,7 @@ jQuery(document).ready(function() {
 	
 	<div class="checkout-pane" id="review" style="display: none;">
 		  	
-		<h4 id="order_review_heading" class="lined-heading"><span><?php _e( 'O resumo do pedido', 'swiftframework' ); ?></span></h4>
+		<h4 id="order_review_heading" class="lined-heading"><span><?php _e( 'Resumo do Pedido', 'swiftframework' ); ?></span></h4>
 		
 		<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 	
