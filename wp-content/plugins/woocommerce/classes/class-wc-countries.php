@@ -685,7 +685,7 @@ class WC_Countries {
 				'class'             => array( 'form-row-first' ),
 			),
 			'last_name'          => array(
-				'label'             => __( 'Sobre Nome', 'woocommerce' ),
+				'label'             => __( 'Sobrenome', 'woocommerce' ),
 				'required'          => true,
 				'class'             => array( 'form-row-last' ),
 				'clear'             => true
