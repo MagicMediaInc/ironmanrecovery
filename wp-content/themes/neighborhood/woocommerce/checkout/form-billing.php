@@ -24,11 +24,11 @@ global $woocommerce;
 
 <?php do_action('woocommerce_before_checkout_billing_form', $checkout ); ?>
 
+<?php var_dump($checkout); ?>
+
 <?php foreach ($checkout->checkout_fields['billing'] as $key => $field) : ?>
 
-	<?php 
-		echo "preview";
-	woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
+	<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
 
 <?php endforeach; ?>
 
