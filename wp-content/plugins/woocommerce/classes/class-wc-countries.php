@@ -680,20 +680,21 @@ class WC_Countries {
 				'class'             => array( 'form-row-wide', 'address-field', 'update_totals_on_change' ),
 			),
 			'first_name'         => array(
-				'label'             => __( 'First Name', 'woocommerce' ),
+				'label'             => __( 'Nome', 'woocommerce' ),
 				'required'          => true,
 				'class'             => array( 'form-row-first' ),
 			),
 			'last_name'          => array(
-				'label'             => __( 'Last Name', 'woocommerce' ),
+				'label'             => __( 'Sobre Nome', 'woocommerce' ),
 				'required'          => true,
 				'class'             => array( 'form-row-last' ),
 				'clear'             => true
 			),
+			/*
 			'company'            => array(
 				'label'             => __( 'Company Name', 'woocommerce' ),
 				'class'             => array( 'form-row-wide' ),
-			),
+			),*/
 			'address_1'          => array(
 				'label'             => __( 'Address', 'woocommerce' ),
 				'placeholder'       => _x( 'Street address', 'placeholder', 'woocommerce' ),
@@ -722,8 +723,8 @@ class WC_Countries {
 			),
 			'state'              => array(
 				'type'              => 'state',
-				'label'             => __( 'State / County', 'woocommerce' ),
-				'placeholder'       => __( 'State / County', 'woocommerce' ),
+				'label'             => __( 'Estado', 'woocommerce' ),
+				'placeholder'       => __( 'Estado', 'woocommerce' ),
 				'required'          => true,
 				'class'             => array( 'form-row-first', 'address-field' ),
 				'custom_attributes' => array(
@@ -731,8 +732,8 @@ class WC_Countries {
 				)
 			),
 			'postcode'           => array(
-				'label'             => __( 'Postcode / Zip', 'woocommerce' ),
-				'placeholder'       => __( 'Postcode / Zip', 'woocommerce' ),
+				'label'             => __( 'CEP', 'woocommerce' ),
+				'placeholder'       => __( 'CEP', 'woocommerce' ),
 				'required'          => true,
 				'class'             => array( 'form-row-last', 'address-field' ),
 				'clear'             => true,
