@@ -1420,7 +1420,7 @@ msgstr "Nota do cliente sobre o pedido"
 #: classes/class-wc-countries.php:683
 #@ woocommerce
 msgid "First Name"
-msgstr "Primeiro nome"
+msgstr "Nome"
 
 #: admin/post-types/writepanels/writepanel-order_data.php:148
 #: admin/post-types/writepanels/writepanel-order_data.php:238
@@ -5705,7 +5705,7 @@ msgstr "Cliente Pagante?"
 #: admin/woocommerce-admin-users.php:196
 #@ woocommerce
 msgid "First name"
-msgstr "Primeiro nome"
+msgstr "Nome"
 
 #: admin/woocommerce-admin-users.php:151
 #: admin/woocommerce-admin-users.php:200

@@ -2238,7 +2238,7 @@ msgstr "Salvar/Atualizar o pedido"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:43
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:90
 msgid "First Name"
-msgstr "Primeiro nome"
+msgstr "Nome"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:47
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:94
