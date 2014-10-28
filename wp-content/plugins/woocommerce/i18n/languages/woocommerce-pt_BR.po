@@ -5710,7 +5710,7 @@ msgstr "Cliente Pagante?"
 #: admin/woocommerce-admin-users.php:147
 #: admin/woocommerce-admin-users.php:196
 msgid "First name"
-msgstr "Primeiro nome"
+msgstr "Nome"
 
 #@ woocommerce
 #: admin/woocommerce-admin-users.php:151
