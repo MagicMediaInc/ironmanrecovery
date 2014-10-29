@@ -340,7 +340,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			<?php
 			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'Finalizar o pagamento com', 'woocommerce' ));
 
-			echo '<div style="float:right;">'. apply_filters('woocommerce_order_button_html', '<img src="http://ironmanrecovery.com.br/wp-content/plugins/woocommerce-pagseguro/assets/images/pagseguro.png" /><input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" /></div>' );
+			echo '<div style="float:right;">'. apply_filters('woocommerce_order_button_html', '<img style="float:right;padding-top:10px;margin-left:5px;" src="http://ironmanrecovery.com.br/wp-content/plugins/woocommerce-pagseguro/assets/images/pagseguro.png" /><input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" /></div>' );
 			?>
 
 			<?php if (woocommerce_get_page_id('terms')>0) : ?>
