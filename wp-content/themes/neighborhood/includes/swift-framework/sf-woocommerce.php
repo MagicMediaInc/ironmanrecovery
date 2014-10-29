@@ -350,13 +350,13 @@
 		$options = get_option('sf_neighborhood_options');
 	?>
 		<div class="help-bar clearfix">
-			<span><?php echo do_shortcode($options['help_bar_text']); ?></span>
-			<ul>
-			    <li><a href="#email-form" class="inline" data-toggle="modal"><?php _e("E-mail de atendimento ao cliente", "swiftframework"); ?></a></li>
-			    <li><a href="#shipping-information" class="inline" data-toggle="modal"><?php _e("Informação do transporte", "swiftframework"); ?></a></li>
-			    <li><a href="#returns-exchange" class="inline" data-toggle="modal"><?php _e("De troca e devolução", "swiftframework"); ?></a></li>
-			    <li><a href="#faqs" class="inline" data-toggle="modal"><?php _e("F.A.Q.'s", "swiftframework"); ?></a></li>
-			</ul>
+			<span>Precisa de ajuda? Atendimento ao Cliente (11) 4242.3060.<?php //echo do_shortcode($options['help_bar_text']); ?></span>
+			<!--<ul>
+			    <li><a href="#email-form" class="inline" data-toggle="modal"><?php //_e("E-mail de atendimento ao cliente", "swiftframework"); ?></a></li>
+			    <li><a href="#shipping-information" class="inline" data-toggle="modal"><?php //_e("Informação do transporte", "swiftframework"); ?></a></li>
+			    <li><a href="#returns-exchange" class="inline" data-toggle="modal"><?php //_e("De troca e devolução", "swiftframework"); ?></a></li>
+			    <li><a href="#faqs" class="inline" data-toggle="modal"><?php //_e("F.A.Q.'s", "swiftframework"); ?></a></li>
+			</ul>-->
 		</div>
 		
 		<div id="email-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="email-form-modal" aria-hidden="true">
