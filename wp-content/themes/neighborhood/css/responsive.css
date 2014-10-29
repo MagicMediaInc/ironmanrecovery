@@ -1041,7 +1041,7 @@
 		width: 170px;
 	}
 	body.woocommerce .has-no-sidebar ul.products li.product, body.woocommerce .has-no-sidebar .upsells.products ul.products li.product {
-		width: 370px;
+		width:48%;/*width: 370px;*/
 	}
 	body.woocommerce .has-one-sidebar ul.products li.product, body.woocommerce .has-one-sidebar .upsells.products ul.products li.product {
 		width: 420px;
@@ -1209,7 +1209,7 @@
 		width: 104px;
 	}
 	body.woocommerce .has-no-sidebar ul.products li.product, body.woocommerce .has-no-sidebar .upsells.products ul.products li.product {
-		width: 228px;
+		width:48%;/*width: 228px;*/
 	}
 	body.woocommerce .has-one-sidebar ul.products li.product, body.woocommerce .has-one-sidebar .upsells.products ul.products li.product {
 		width: 166px;
@@ -1646,7 +1646,7 @@
 		width: 180px;
 	}
 	body.woocommerce .has-no-sidebar ul.products li.product, body.woocommerce .has-no-sidebar .upsells.products ul.products li.product {
-		width: 22%;
+		width: 48%;
 	}
 	body.woocommerce .has-one-sidebar ul.products li.product, body.woocommerce .has-one-sidebar .upsells.products ul.products li.product {
 		width: 30%;
