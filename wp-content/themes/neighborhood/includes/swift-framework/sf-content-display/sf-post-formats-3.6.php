@@ -521,14 +521,14 @@
 			if(function_exists('get_avatar')) {
 			$post_item .= '<div class="author-avatar">'. get_avatar(get_the_author_meta('ID'), '164') .'</div>';
 			}
-			$post_item .= '<span class="standard-post-author-name">'.__("Posted by", "swiftframework").' '.$post_author.'</span>';
+			$post_item .= '<span class="standard-post-author-name">'.__("Publicado por", "swiftframework").' '.$post_author.'</span>';
 			$post_item .= '</div>';
 			} else if ($sidebars == "right-sidebar" || $sidebars == "left-sidebar" || $sidebars == "one-sidebar") {
 			$post_item .= '<div class="standard-post-author span1">';
 			if(function_exists('get_avatar')) {
 			$post_item .= '<div class="author-avatar">'. get_avatar(get_the_author_meta('ID'), '164') .'</div>';
 			}
-			$post_item .= '<span class="standard-post-author-name">'.__("Posted by", "swiftframework").' '.$post_author.'</span>';
+			$post_item .= '<span class="standard-post-author-name">'.__("Publicado por", "swiftframework").' '.$post_author.'</span>';
 			$post_item .= '</div>';
 			}
 			
@@ -568,7 +568,7 @@
 				if(function_exists('get_avatar')) {
 				$post_item .= '<div class="author-avatar">'. get_avatar(get_the_author_meta('ID'), '164') .'</div>';
 				}
-				$post_item .= '<span class="standard-post-author-name">'.__("Posted by", "swiftframework").' '.$post_author.'</span>';
+				$post_item .= '<span class="standard-post-author-name">'.__("Publicado por", "swiftframework").' '.$post_author.'</span>';
 				$post_item .= '</div>';
 				}
 				$post_item .= '<span class="standard-post-date">'.$post_date.'</span>';
