@@ -67,7 +67,7 @@
 			<?php 
 				// BREADCRUMBS
 				if (!$remove_breadcrumbs) {
-					echo sf_breadcrumbs();
+					//echo sf_breadcrumbs();
 				}
 			?>
 		</div>
@@ -245,7 +245,7 @@
 						);
 					}
 					$related_posts_query = new wp_query($args);
-					if( $related_posts_query->have_posts() ) {
+					/*if( $related_posts_query->have_posts() ) {
 						_e("<h4>Related Articles</h4>", "swiftframework");
 						echo '<ul class="related-items row clearfix">';
 						while ($related_posts_query->have_posts()) {
@@ -275,6 +275,7 @@
 							</li>
 						<?php }
 						echo '</ul>';
+						*/
 					}
 												
 					wp_reset_query();
