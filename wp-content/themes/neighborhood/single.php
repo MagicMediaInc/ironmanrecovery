@@ -187,7 +187,7 @@
 					<div class="author-info-wrap clearfix">
 						<div class="author-avatar"><?php if(function_exists('get_avatar')) { echo get_avatar(get_the_author_meta('ID'), '164'); } ?></div>
 						<div class="post-info">
-							<div class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"><span><?php _e("Posted by", "swiftframework"); ?></span><a itemprop="url" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><span itemprop="name"><?php the_author_meta('display_name'); ?></span></a></div>
+							<div class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"><span><?php _e("Publicado por", "swiftframework"); ?></span><a itemprop="url" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><span itemprop="name"><?php the_author_meta('display_name'); ?></span></a></div>
 							<div class="post-date" itemprop="datePublished"><?php echo $post_date; ?></div>
 							<div class="post-categories"><?php echo $post_categories; ?></div>
 						</div>

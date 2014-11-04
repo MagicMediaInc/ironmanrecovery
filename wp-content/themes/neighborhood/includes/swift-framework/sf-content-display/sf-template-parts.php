@@ -137,7 +137,7 @@
 					$output .= '<span class="item-client">'.__("Client: ", "swiftframework").$post_client.'</span>'. "\n";
 					$output .= '<span class="item-categories">'.$post_categories.'</span>'. "\n";
 					} else {
-					$output .= '<span class="item-author">'.__("Posted by ", "swiftframework").$post_author.'</span>'. "\n";
+					$output .= '<span class="item-author">'.__("Publicado por ", "swiftframework").$post_author.'</span>'. "\n";
 					$output .= '<span class="item-categories">'.$post_categories.'</span>'. "\n";
 					}
 					$output .= '</div>';
@@ -171,7 +171,7 @@
 					$output .= '<span class="item-client">'.__("Client: ", "swiftframework").$post_client.'</span>'. "\n";
 					$output .= '<span class="item-categories">'.$post_categories.'</span>'. "\n";
 					} else {
-					$output .= '<span class="item-author">'.__("Posted by ", "swiftframework").$post_author.'</span>'. "\n";
+					$output .= '<span class="item-author">'.__("Publicado por ", "swiftframework").$post_author.'</span>'. "\n";
 					$output .= '<span class="item-categories">'.$post_categories.'</span>'. "\n";
 					}
 					$output .= '</div></div></div>'. "\n";
