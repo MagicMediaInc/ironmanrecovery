@@ -282,7 +282,7 @@
 				?>
 				</div>
 				
-				<?php } ?>
+				<?php //} ?>
 				
 				<div class="pagination-wrap blog-pagination clearfix">
 					<div class="nav-previous"><?php next_post_link('%link', __('<i class="icon-angle-left"></i> <span class="nav-text">%title</span>', 'swiftframework'), FALSE); ?></div>
