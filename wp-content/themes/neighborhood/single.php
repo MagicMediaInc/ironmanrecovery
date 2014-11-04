@@ -288,11 +288,11 @@
 					<div class="nav-next"><?php previous_post_link('%link', __('<span class="nav-text">%title</span><i class="icon-angle-right"></i>', 'swiftframework'), FALSE); ?></div>
 				</div>
 				
-				<?php if ( comments_open() ) { ?>
-				<div id="comment-area">
-					<?php comments_template('', true); ?>
-				</div>
-				<?php } ?>
+				<?php //if ( comments_open() ) { ?>
+				<!-- <div id="comment-area"> -->
+					<?php //comments_template('', true); ?>
+				<!-- </div> -->
+				<?php //} ?>
 			
 			</div>
 			
