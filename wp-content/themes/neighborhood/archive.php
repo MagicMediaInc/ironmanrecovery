@@ -69,7 +69,7 @@
 
 <div class="row">
 	<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
-		<h1>Estoy aqui</h1>
+		
 		<div class="heading-text">
 			<?php /* If this is a tag archive */ if( is_tag() ) { ?>
 			<h1><?php _e("Posts tagged with", "swiftframework"); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h1>
