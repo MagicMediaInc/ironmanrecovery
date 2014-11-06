@@ -79,7 +79,7 @@
 </div>
 
 <div class="inner-page-wrap <?php echo $page_wrap_class; ?> clearfix">
-		
+		<h1>Estoy aqui</h1>
 	<!-- OPEN page -->
 	<?php if ($sidebar_config == "left-sidebar" || $sidebar_config == "right-sidebar") { ?>
 	<div class="archive-page span8 clearfix">
