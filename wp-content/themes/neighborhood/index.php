@@ -74,6 +74,25 @@
 ?>
 
 <?php if ( is_front_page() || is_home() ) : ?>
+		<?php if ($show_page_title) { ?>	
+		<div class="row">
+			<div class="page-heading span12 clearfix alt-bg <?php echo $page_title_bg; ?>">
+				<div class="heading-text">
+				<?php if ($page_title_one) { ?>
+				<h1><?php echo $page_title_one; ?></h1>
+				<?php } else { ?>
+				<h1><?php the_title(); ?></h1>
+				<?php } ?>
+				</div>
+				<?php 
+					if ($no_breadcrumbs) {
+						// BREADCRUMBS
+						echo sf_breadcrumbs();
+					}
+				?>
+			</div>
+		</div>
+	<?php } ?>
 
 	<div class="inner-page-wrap <?php echo $page_wrap_class; ?> clearfix">
 	
