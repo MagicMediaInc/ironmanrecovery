@@ -18,7 +18,7 @@ global $woocommerce;
 
 <?php else : ?>
 
-	<h4 class="lined-heading"><span><?php _e( 'Billing Address', 'woocommerce' ); ?></span></h4>
+	<h4 class="lined-heading"><span><?php _e( 'Endereço de Faturamento', 'woocommerce' ); ?></span></h4>
 
 <?php endif; ?>
 
