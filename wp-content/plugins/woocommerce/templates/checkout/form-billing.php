@@ -14,7 +14,7 @@ global $woocommerce;
 
 <?php if ( $woocommerce->cart->ship_to_billing_address_only() && $woocommerce->cart->needs_shipping() ) : ?>
 
-	<h3><?php _e( 'Endereço de Faturação', 'woocommerce' ); ?></h3>
+	<h3><?php _e( 'Endereço de Faturamento', 'woocommerce' ); ?></h3>
 
 <?php else : ?>
 
