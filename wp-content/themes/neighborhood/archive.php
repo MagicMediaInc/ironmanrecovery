@@ -126,6 +126,7 @@
 								}
 							?>
 							<li class="blog-item <?php echo $item_class; ?> format-<?php echo $post_format; ?>">
+								<!-- Estoy dentro del loop del index -->
 								<?php echo sf_get_post_item($post->ID, $blog_type); ?>
 							</li>
 				
