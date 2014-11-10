@@ -93,7 +93,7 @@
 			} else {
 			$blog_items_output .= '<li itemscope itemtype="http://schema.org/BlogPosting" class="blog-item '.$item_class.' format-'.$post_format.'">';
 			}
-			$blog_items_output .= sf_get_post_item($post->ID, $blog_type, $show_title, $show_excerpt, $show_details, $excerpt_length, $content_output, $show_read_more);
+			$blog_items_output .= sf_get_post_item($post->ID, $blog_type, $show_title, $show_excerpt, $show_details, $excerpt_length, $content_output, "yes");//$show_read_more);
 			$blog_items_output .= '</li>';
 			
 			
