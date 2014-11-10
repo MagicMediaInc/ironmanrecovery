@@ -246,7 +246,7 @@
 	
 	/* GET POST ITEM
 	================================================== */ 
-	function sf_get_post_item($postID, $blog_type, $show_title = "yes", $show_excerpt = "yes", $show_details = "yes", $excerpt_length = "20", $content_output = "excerpt", $show_read_more = "no") {
+	function sf_get_post_item($postID, $blog_type, $show_title = "yes", $show_excerpt = "yes", $show_details = "yes", $excerpt_length = "40", $content_output = "excerpt", $show_read_more = "no") {
 	
 		$post_item = "";
 		
