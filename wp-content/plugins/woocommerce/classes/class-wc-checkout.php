@@ -563,7 +563,7 @@ class WC_Checkout {
 			}
 
 			// Validate passwords
-			if ( empty($this->posted['account_password']) )
+			/*if ( empty($this->posted['account_password']) )
 				$woocommerce->add_error( __( 'Please enter an account password.', 'woocommerce' ) );
 
 			if ( $this->posted['account_password-2'] !== $this->posted['account_password'] )
@@ -571,7 +571,7 @@ class WC_Checkout {
 
 			// Check the e-mail address
 			if ( email_exists( $this->posted['billing_email'] ) )
-				$woocommerce->add_error( __( 'An account is already registered with your email address. Please login.', 'woocommerce' ) );
+				$woocommerce->add_error( __( 'An account is already registered with your email address. Please login.', 'woocommerce' ) );*/
 
 		}
 
