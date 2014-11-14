@@ -217,32 +217,35 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 </form>
 
 <script type="text/javascript">
-	jQuery('#shipping_method').on('change', function(e){
-		jQuery('#shipping-duration-info').css({'display':'block'});
-		switch(jQuery('#shipping_method').val()){
-			case 'flat_rate:sp-capital':
-				jQuery('#shipping-duration-info').html('SP capital 10 dias da confirmação do pagamento');
-				break;
-			case 'flat_rate:sp-interior':
-				jQuery('#shipping-duration-info').html('SP interior 10 dias da confirmação do pagamento');
-				break;
-			case 'value="flat_rate:rj-capital"':
-				jQuery('#shipping-duration-info').html('RJ Capital e grande RJ 10 dias da confirmação do pagamento');
-				break;
-			case 'flat_rate:rj-interior':
-				jQuery('#shipping-duration-info').html('RJ interior  11 dias da confirmação do pagamento (atenção não tem RJ interior)');
-				break;
-			case 'flat_rate:mg-capital':
-				jQuery('#shipping-duration-info').html('MG Capital e grande MG 15 dias da confirmação do pagamento');
-				break;
-			case 'flat_rate:mg-interior':
-				jQuery('#shipping-duration-info').html('MG interior  16 dias da confirmação do pagamento (atenção não tem RJ interior)');
-				break;
-			default:
-				jQuery('#shipping-duration-info').css({'display':'none'});
-				break;
-		}
-	});
+	jQuery(document).on('ready', function(e){
+
+			jQuery('#shipping_method').on('change', function(e){
+				jQuery('#shipping-duration-info').css({'display':'block'});
+				switch(jQuery('#shipping_method').val()){
+					case 'flat_rate:sp-capital':
+						jQuery('#shipping-duration-info').html('SP capital 10 dias da confirmação do pagamento');
+						break;
+					case 'flat_rate:sp-interior':
+						jQuery('#shipping-duration-info').html('SP interior 10 dias da confirmação do pagamento');
+						break;
+					case 'value="flat_rate:rj-capital"':
+						jQuery('#shipping-duration-info').html('RJ Capital e grande RJ 10 dias da confirmação do pagamento');
+						break;
+					case 'flat_rate:rj-interior':
+						jQuery('#shipping-duration-info').html('RJ interior  11 dias da confirmação do pagamento (atenção não tem RJ interior)');
+						break;
+					case 'flat_rate:mg-capital':
+						jQuery('#shipping-duration-info').html('MG Capital e grande MG 15 dias da confirmação do pagamento');
+						break;
+					case 'flat_rate:mg-interior':
+						jQuery('#shipping-duration-info').html('MG interior  16 dias da confirmação do pagamento (atenção não tem RJ interior)');
+						break;
+					default:
+						jQuery('#shipping-duration-info').css({'display':'none'});
+						break;
+				}
+			});
+		});
 	jQuery('#formulario-conodetumadre').on('submit', function(e){
 		if(jQuery('#shipping_method').val() == 'flat_rate'){
 			jQuery('.msg-error').css({
