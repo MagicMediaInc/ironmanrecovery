@@ -53,9 +53,31 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 						<th><?php _e( 'Frete', 'woocommerce' ); ?></th>
 						<td><b><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></b></td>
 					</tr>
-					<tr>
-						<td colspan="2"><?php echo $woocommerce->session->chosen_shipping_method; ?></td>
-					</tr>
+					<?php 
+						switch($woocommerce->session->chosen_shipping_method){
+							case 'flat_rate:sp-capital':
+								echo '<tr><td colspan="2">SP capital 10 dias da confirmação do pagamento</td></tr>';
+								break;
+							case 'flat_rate:sp-interior':
+								echo '<tr><td colspan="2">SP interior 10 dias da confirmação do pagamento</td></tr>' ;
+								break;
+							case 'value="flat_rate:rj-capital"':
+								echo '<tr><td colspan="2">RJ Capital e grande RJ 10 dias da confirmação do pagamento</td></tr>' ;
+								break;
+							case 'flat_rate:rj-interior':
+								echo '<tr><td colspan="2">RJ interior  11 dias da confirmação do pagamento (atenção não tem RJ interior)</td></tr>' ;
+								break;
+							case 'flat_rate:mg-capital':
+								echo '<tr><td colspan="2">MG Capital e grande MG 15 dias da confirmação do pagamento</td></tr>' ;
+								break;
+							case 'flat_rate:mg-interior':
+								echo '<tr><td colspan="2">MG interior  16 dias da confirmação do pagamento (atenção não tem RJ interior)</td></tr>' ;
+								break;
+							default:
+								echo '' ;
+								break;
+						}
+					?>
 					<tr>
 						<td colspan="2" align="center">
 							<p style="text-align:center;"><span style="color:red; font-weight:900;">*</span><a href="mailto:contato@ironmanrecovery.com.br" style="color:navy;">Consulte-nos</a>, para outros destinos.</p>
