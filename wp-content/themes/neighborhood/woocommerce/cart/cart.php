@@ -172,8 +172,6 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 					<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 				</tbody>
 			</table>
-
-			<div id="shipping-duration-info" style="display:none"></div>
 		
 			<?php do_action( 'woocommerce_after_cart_table' ); ?>
 			
@@ -197,6 +195,8 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 			</div>
 		
 		</div>
+
+		<div id="shipping-duration-info" style="display:none"></div>
 		
 		<div class="span4">
 		
