@@ -54,6 +54,9 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 						<td><b><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></b></td>
 					</tr>
 					<tr>
+						<td colspan="2"><?php echo $woocommerce->session->chosen_shipping_method; ?></td>
+					</tr>
+					<tr>
 						<td colspan="2" align="center">
 							<p style="text-align:center;"><span style="color:red; font-weight:900;">*</span><a href="mailto:contato@ironmanrecovery.com.br" style="color:navy;">Consulte-nos</a>, para outros destinos.</p>
 						</td>
@@ -217,7 +220,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 		</table>
 
 		<script type="text/javascript">
-	
+
 		</script>
 
 		<?php if ( $woocommerce->cart->get_cart_tax() ) : ?>
