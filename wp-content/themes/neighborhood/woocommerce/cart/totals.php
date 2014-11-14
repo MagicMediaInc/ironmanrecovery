@@ -217,35 +217,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 		</table>
 
 		<script type="text/javascript">
-			jQuery(document).on('ready', function(e){
-
-				jQuery('#shipping_method').on('change', function(e){
-					jQuery('#shipping-duration-info').css({'display':'block'});
-					switch(jQuery('#shipping_method').val()){
-						case 'flat_rate:sp-capital':
-							jQuery('#shipping-duration-info').html('SP capital 10 dias da confirmação do pagamento');
-							break;
-						case 'flat_rate:sp-interior':
-							jQuery('#shipping-duration-info').html('SP interior 10 dias da confirmação do pagamento');
-							break;
-						case 'value="flat_rate:rj-capital"':
-							jQuery('#shipping-duration-info').html('RJ Capital e grande RJ 10 dias da confirmação do pagamento');
-							break;
-						case 'flat_rate:rj-interior':
-							jQuery('#shipping-duration-info').html('RJ interior  11 dias da confirmação do pagamento (atenção não tem RJ interior)');
-							break;
-						case 'flat_rate:mg-capital':
-							jQuery('#shipping-duration-info').html('MG Capital e grande MG 15 dias da confirmação do pagamento');
-							break;
-						case 'flat_rate:mg-interior':
-							jQuery('#shipping-duration-info').html('MG interior  16 dias da confirmação do pagamento (atenção não tem RJ interior)');
-							break;
-						default:
-							jQuery('#shipping-duration-info').css({'display':'none'});
-							break;
-					}
-				});
-			});
+	
 		</script>
 
 		<?php if ( $woocommerce->cart->get_cart_tax() ) : ?>
