@@ -172,6 +172,8 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 					<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 				</tbody>
 			</table>
+
+			<div id="shipping-duration-info" style="display:none"></div>
 		
 			<?php do_action( 'woocommerce_after_cart_table' ); ?>
 			
@@ -216,7 +218,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 
 <script type="text/javascript">
 	jQuery('#shipping_method').on('change', function(e){
-		jQuery('#shipping-duration').css({'display':'block'});
+		jQuery('#shipping-duration-info').css({'display':'block'});
 		switch(jQuery('#shipping_method').val()){
 			case 'flat_rate:sp-capital':
 				jQuery('#shipping-duration-info').html('SP capital 10 dias da confirmação do pagamento');
@@ -237,7 +239,7 @@ $cart_count = sf_product_items_text($woocommerce->cart->cart_contents_count);
 				jQuery('#shipping-duration-info').html('MG interior  16 dias da confirmação do pagamento (atenção não tem RJ interior)');
 				break;
 			default:
-				jQuery('#shipping-duration').css({'display':'none'});
+				jQuery('#shipping-duration-info').css({'display':'none'});
 				break;
 		}
 	});

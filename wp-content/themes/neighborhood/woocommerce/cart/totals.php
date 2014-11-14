@@ -53,9 +53,6 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 						<th><?php _e( 'Frete', 'woocommerce' ); ?></th>
 						<td><b><?php woocommerce_get_template( 'cart/shipping-methods.php', array( 'available_methods' => $available_methods ) ); ?></b></td>
 					</tr>
-					<tr id="shipping-duration" style="display:none">
-						<td colspan="2"><div id="shipping-duration-info"></div></td>
-					</tr>
 					<tr>
 						<td colspan="2" align="center">
 							<p style="text-align:center;"><span style="color:red; font-weight:900;">*</span><a href="mailto:contato@ironmanrecovery.com.br" style="color:navy;">Consulte-nos</a>, para outros destinos.</p>
