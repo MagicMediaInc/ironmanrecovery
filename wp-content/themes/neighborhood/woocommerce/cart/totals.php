@@ -219,11 +219,6 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			</tbody>
 		</table>
 
-		<script type="text/javascript">
-			jQuery(document).ready(function(){
-				console.log('Shipping');
-			});
-		</script>
 		<?php if ( $woocommerce->cart->get_cart_tax() ) : ?>
 
 			<p><small><?php
