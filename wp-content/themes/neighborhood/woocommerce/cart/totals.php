@@ -220,7 +220,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 		</table>
 
 		<script type="text/javascript">
-			$(document).on('ready', function(){
+			jQuery(document).ready(function(){
 				console.log('Shipping');
 			});
 		</script>
