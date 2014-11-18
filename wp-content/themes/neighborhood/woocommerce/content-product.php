@@ -170,7 +170,7 @@
 		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		<?php
 			$size = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
-			echo $product->get_categories( ', ', '<span class="posted_in">' . _n( '', '', $size, 'woocommerce' ) . ' ', '</span>' );
+			//echo $product->get_categories( ', ', '<span class="posted_in">' . _n( '', '', $size, 'woocommerce' ) . ' ', '</span>' );
 		?>
 	</div>
 
