@@ -195,7 +195,7 @@
 	/* GET POST ITEM
 	================================================== */ 
 	function sf_get_post_item($postID, $blog_type, $show_title = "yes", $show_excerpt = "yes", $show_details = "yes", $excerpt_length = "20", $content_output = "excerpt", $show_read_more = "no") {
-	
+		die("Prueba");
 		$post_item = "";
 		
 		$post_format = get_post_format($postID);
