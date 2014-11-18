@@ -194,7 +194,7 @@
 	
 	/* GET POST ITEM
 	================================================== */ 
-	function sf_get_post_item($postID, $blog_type, $show_title = "yes", $show_excerpt = "yes", $show_details = "yes", $excerpt_length = "20", $content_output = "excerpt", $show_read_more = "no") {
+	function sf_get_post_item($postID, $blog_type, $show_title = "yes", $show_excerpt = "yes", $show_details = "yes", $excerpt_length = "60", $content_output = "excerpt", $show_read_more = "no") {
 		
 		$post_item = "";
 		
@@ -215,23 +215,23 @@
 		$post_excerpt = '';
 		if ($content_output == "excerpt") {
 			if ($custom_excerpt != '') {
-				echo "custom_excerpt";
+				// echo "custom_excerpt";
 			$post_excerpt = custom_excerpt($custom_excerpt, $excerpt_length);
 			} else {
 			if ($post_format == "quote") {
-				echo "quote";
+				// echo "quote";
 			$post_excerpt = get_the_content_with_formatting();
 			} else {
-				echo "not quote";
+				// echo "not quote";
 			$post_excerpt = excerpt($excerpt_length);
 			}
 			}
 		} else {
-				echo "else";
+				// echo "else";
 			$post_excerpt = get_the_content_with_formatting();
 		}
 		if ($post_format == "chat") {
-				echo "chat";
+				// echo "chat";
 		$post_excerpt = sf_chat_post($postID);
 		}
 
