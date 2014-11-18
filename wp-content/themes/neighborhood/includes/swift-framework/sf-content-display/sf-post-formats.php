@@ -229,6 +229,8 @@
 		if ($post_format == "chat") {
 		$post_excerpt = sf_chat_post($postID);
 		}
+
+		var_dump($post_excerpt);
 		
 		$post_item = $thumb_image = $thumb_width = $thumb_height = $bordered_thumb_width = $bordered_thumb_height = $video = $video_height = $bordered_video_height = $item_class = $link_config = $item_icon = '';
 			
