@@ -26,7 +26,7 @@ class MC4WP_Lite_API {
 		return $this->connected;
 	}
 
-	public function subscribe($list_id, $email, array $merge_vars = array(), $email_type = 'html', $double_optin = true, $update_existing = false, $replace_interests = true, $send_welcome = false )
+	public function subscribe($list_id, $email, array $merge_vars = array(), $email_type = 'html', $double_optin = false, $update_existing = false, $replace_interests = true, $send_welcome = false )
 	{	
 		$data = array(
 			'id' => $list_id,
