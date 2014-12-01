@@ -105,7 +105,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 				<?php echo do_shortcode($product_short_description); ?>
 			</div>
 		<?php } ?>	
-					
+			start summary		
 		<?php
 			/**
 			* woocommerce_single_product_summary hook
