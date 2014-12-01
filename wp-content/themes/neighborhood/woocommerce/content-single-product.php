@@ -121,7 +121,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			do_action( 'woocommerce_single_product_summary' );
 		?>
 		
-
+		end summary
 	</div><!-- .summary -->
 	
 	<?php if ($enable_pb_product_pages) { ?>
