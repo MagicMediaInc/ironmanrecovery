@@ -104,8 +104,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			<div class="product-short">
 				<?php echo do_shortcode($product_short_description); ?>
 			</div>
-		<?php } ?>	
-			start summary		
+		<?php } ?>			
 		<?php
 			/**
 			* woocommerce_single_product_summary hook
@@ -121,7 +120,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			do_action( 'woocommerce_single_product_summary' );
 		?>
 		
-		end summary
 	</div><!-- .summary -->
 	
 	<?php if ($enable_pb_product_pages) { ?>
@@ -157,7 +155,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 		?>
 		
-		<?php the_content(); ?>
+		<?php //the_content(); ?>
 		
 	</div>
 	
