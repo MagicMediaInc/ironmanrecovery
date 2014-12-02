@@ -7325,6 +7325,7 @@ ul.products li.product a.quick-view-button {
 	position: relative;
 	padding-bottom: 320px;
 	margin-bottom: 20px;
+	border : 1px solid #999;
 	-webkit-box-shadow: 0 8px 6px -7px #999;
 	-moz-box-shadow: 0 8px 6px -7px #999;
 	box-shadow: 0 8px 6px -7px #999;
