@@ -49,7 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		
 		<div class="summary-top clearfix">
 			
-			<p itemprop="price" class="price"><?php var_dump($product->get_price_html()); ?></p>
+			<p itemprop="price" class="price"><?php var_dump(count(substr($product->get_price_html(),"R$"))); ?></p>
 			
 			<?php
 				if ( comments_open() ) {
