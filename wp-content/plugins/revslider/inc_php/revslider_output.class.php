@@ -530,7 +530,7 @@
 						break;
 						case "image":
 							$urlImage = UniteFunctionsRev::getVal($layer, "image_url");
-							$html = '<img src="'.$urlImage.'" alt="'.$text.'">';
+							$html = '<img src="'.$urlImage.'" alt="'.'">'.$text;
 							$imageLink = UniteFunctionsRev::getVal($layer, "link","");
 							if(!empty($imageLink)){
 								$openIn = UniteFunctionsRev::getVal($layer, "link_open_in","same");

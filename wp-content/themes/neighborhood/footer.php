@@ -183,11 +183,11 @@
 			<!--// OPEN #copyright //-->
 			<footer id="copyright" class="<?php echo $copyright_class; ?>">
 				<div class="container">
-					<p class="twelve columns"><?php //echo do_shortcode(stripslashes($copyright_text)); ?>
-						<p class="twelve columns"><b>©2014 Treine seu descanso / <span class="ironman_footer">IRONMAN RECOVERY MATTRESS...</span></b> <!--<a href="http://ironmanrecovery.com.br/aviso-legal/?lang=pt">Aviso legal</a> e <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=pt">Política de privacidade</a>.--></p>
+					<!-- <p class="twelve columns"><?php //echo do_shortcode(stripslashes($copyright_text)); ?> -->
+						<p class="span6" style="margin-left:0px;"><b>©2014 Treine seu descanso / <span class="ironman_footer">IRONMAN RECOVERY MATTRESS.</span></b> <!--<a href="http://ironmanrecovery.com.br/aviso-legal/?lang=pt">Aviso legal</a> e <a href="http://ironmanrecovery.com/politica-de-privacidad/?lang=pt">Política de privacidade</a>.--></p>
 					
 						
-					<?php echo $swiftideas_backlink; ?></p>
+					<?php echo $swiftideas_backlink; ?>
 					<div class="beam-me-up three columns offset-by-one"><a href="#"><?php echo do_shortcode(stripslashes($go_top_text)); ?><i class="icon-arrow-up"></i></a></div>
 				</div>
 			<!--// CLOSE #copyright //-->

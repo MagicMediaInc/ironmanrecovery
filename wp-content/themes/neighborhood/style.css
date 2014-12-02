@@ -1749,12 +1749,14 @@ nav .menu > li.shopping-bag-item ul.sub-menu {
 }
 
 .shopping-bag-ite {
-    background: transparent url('images/shopping_bag_icon.png') no-repeat top right;
-    padding-right: 25px;
+    /*background: transparent url('images/shopping_bag_icon.png') no-repeat top right;*/
+    /*padding-right: 25px;*/
     position: absolute;
-    right: 14px;
-    margin-top: -33px;
-    text-align: right;
+    right: 0px;
+    top:25px;
+    z-index: 9999;
+    /*margin-top: -33px;*/
+    /*text-align: right;*/
 }
 .mini-cart-wrap {
     width: 1170px;
@@ -2570,6 +2572,19 @@ figcaption .post-category {
 }
 .recent-post h5 a {
 	text-decoration: none;
+	font-weight: 900;
+}
+.mc4wp-form {
+margin: -2em 0;
+width: 100%;
+text-align: left;
+}
+
+.mc4wp-success {
+width: 37%;
+color: #468847;
+background-color: #dff0d8;
+border-color: #d6e9c6;
 }
 .recent-post .post-details {
 	margin-bottom: 8px;
@@ -7336,7 +7351,7 @@ ul.products li.product a.quick-view-button {
 	margin-bottom: 0;
 }
 .standard-browser ul.products li.product figure.product-transition:hover > a {
-	-webkit-transform: translate3d(0,-50%,0);
+	/*-webkit-transform: translate3d(0,-50%,0);
 	-moz-transform: translate3d(0,-50%,0);
 	-ms-transform: translate3d(0,-50%,0);
 	-o-transform: translate3d(0,-50%,0);
@@ -7345,7 +7360,7 @@ ul.products li.product a.quick-view-button {
 	-webkit-transition-delay: 0s;
 	-moz-transition: -moz-transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
 	-o-transition: -o-transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
-	transition: transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
+	transition: transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;*/
 }
 ul.products li.product .product-image > img {
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
