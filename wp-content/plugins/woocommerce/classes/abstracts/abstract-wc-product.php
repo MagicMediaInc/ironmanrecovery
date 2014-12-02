@@ -897,7 +897,7 @@ class WC_Product {
 	 * @return string
 	 */
 	function get_price_html_from_to( $from, $to ) {
-		return '<span class="from">De: '.'<ins style="font-size:18px;">' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</ins></span> '.'<span class="from">Por: '.' <ins class="amount">' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins></span>';
+		return '<span class="from">De: '.'<ins style="font-size:18px;">' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</ins></span> '.'<span class="from">Por: '.' <ins>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</ins></span>';
 	}
 
 
@@ -908,7 +908,7 @@ class WC_Product {
 	 * @return string
 	 */
 	function get_price_html_variation_from_to( $from, $vfrom, $to, $vto ) {
-		return $this->get_price_html_from_text().'<del>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</del> '.'<ins class="amount">' . ( ( is_numeric( $vfrom ) ) ? woocommerce_price( $vfrom ) : $vfrom ) . '</ins> '.$this->get_price_html_to_text().'<del>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</del> '.' <ins class="amount">' . ( ( is_numeric( $vto ) ) ? woocommerce_price( $vto ) : $vto ) . '</ins>';
+		return $this->get_price_html_from_text().'<del>' . ( ( is_numeric( $from ) ) ? woocommerce_price( $from ) : $from ) . '</del> '.'<ins>' . ( ( is_numeric( $vfrom ) ) ? woocommerce_price( $vfrom ) : $vfrom ) . '</ins> '.$this->get_price_html_to_text().'<del>' . ( ( is_numeric( $to ) ) ? woocommerce_price( $to ) : $to ) . '</del> '.' <ins>' . ( ( is_numeric( $vto ) ) ? woocommerce_price( $vto ) : $vto ) . '</ins>';
 	}
 
 	/**
