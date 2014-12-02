@@ -1,83 +1,384 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://ironmanrecovery.com.br/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.8.4" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.4" -->
-<!-- generated-on="21 October, 2014 19:55" -->
-<!-- Debug: Total comment count: 11 -->
+<!-- generated-on="2 December, 2014 14:19" -->
+<!-- Debug: Total comment count: 1 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://ironmanrecovery.com.br/</loc>
-		<lastmod>2014-10-21T19:13:36+00:00</lastmod>
+		<lastmod>2014-11-25T17:34:29+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
+<!-- Debug: Priority report of postID 2634: Comments: 0 of 1 = 0 points -->
 	<url>
-		<loc>http://ironmanrecovery.com.br/t24-7/</loc>
-		<lastmod>2014-10-21T19:55:00+00:00</lastmod>
+		<loc>http://ironmanrecovery.com.br/o-natal-esta-chegando/</loc>
+		<lastmod>2014-12-02T12:19:16+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2777: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/retrospectiva-de-carreira-as-competicoes-de-ana-lidia-borba/</loc>
+		<lastmod>2014-12-02T12:17:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/treine-seu-descanso/</loc>
+		<lastmod>2014-12-01T14:45:42+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/active-recovery/training-247/</loc>
-		<lastmod>2014-10-21T19:52:52+00:00</lastmod>
+		<loc>http://ironmanrecovery.com.br/estrutura/</loc>
+		<lastmod>2014-12-01T14:33:01+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 2682: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/challenge-termina-com-dominio-brasileiro-apos-3h-e-40-minutos/</loc>
+		<lastmod>2014-12-01T11:28:02+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2674: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/ana-lidia-borba-uma-triatleta-devotada/</loc>
+		<lastmod>2014-11-28T17:08:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2657: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/floripa-a-capital-do-triatlo-na-america-latina/</loc>
+		<lastmod>2014-11-26T13:55:43+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2637: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/segunda-parte-da-entrevista-cristiano-parente/</loc>
+		<lastmod>2014-11-25T20:35:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/distribuidores-exclusivos/</loc>
+		<lastmod>2014-11-24T13:48:05+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/blog/</loc>
-		<lastmod>2014-10-21T14:51:14+00:00</lastmod>
+		<loc>http://ironmanrecovery.com.br/quem-somos/</loc>
+		<lastmod>2014-11-20T17:31:17+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 1650: Comments: 0 of 11 = 0 points -->
 	<url>
-		<loc>http://ironmanrecovery.com.br/a-tecnologia-thermic-o-microclima/</loc>
-		<lastmod>2014-10-16T20:11:16+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1097: Comments: 0 of 11 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.com.br/fluxo-de-sangue/</loc>
-		<lastmod>2014-10-16T20:05:21+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1104: Comments: 0 of 11 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.com.br/ironman-novamente-monterrey/</loc>
-		<lastmod>2014-10-16T20:00:49+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1110: Comments: 0 of 11 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.com.br/origem-ironman/</loc>
-		<lastmod>2014-10-16T19:25:55+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1101: Comments: 0 of 11 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.com.br/conexao-musica-e-resto/</loc>
-		<lastmod>2014-10-16T19:03:21+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1107: Comments: 0 of 11 = 0 points -->
-	<url>
-		<loc>http://ironmanrecovery.com.br/numero-6-dificuldade/</loc>
-		<lastmod>2014-10-16T18:32:55+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
+		<loc>http://ironmanrecovery.com.br/opiniones/</loc>
+		<lastmod>2014-11-20T17:30:38+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/minha-conta/sair/</loc>
-		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
+		<loc>http://ironmanrecovery.com.br/produtos/</loc>
+		<lastmod>2014-11-20T17:30:02+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/garantia-y-certificaciones/</loc>
+		<lastmod>2014-11-20T17:29:40+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/contato/</loc>
+		<lastmod>2014-11-20T17:29:04+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/condiciones-de-compra/</loc>
+		<lastmod>2014-11-20T17:28:54+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/carro/</loc>
+		<lastmod>2014-11-20T17:28:35+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://ironmanrecovery.com.br/carrinho/</loc>
-		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
+		<lastmod>2014-11-20T17:28:24+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/campana-2/</loc>
+		<lastmod>2014-11-20T17:28:13+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/blog/</loc>
+		<lastmod>2014-11-20T17:27:59+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/beneficios/</loc>
+		<lastmod>2014-11-20T17:26:10+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/aviso-legal/</loc>
+		<lastmod>2014-11-20T17:25:58+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/garantia-ampliada-un-ano/</loc>
+		<lastmod>2014-11-20T17:25:48+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/active-recovery-app/about-active-recovery-app/</loc>
+		<lastmod>2014-11-20T17:24:56+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/active-recovery-app/download/</loc>
+		<lastmod>2014-11-20T17:24:30+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/active-recovery-app/community-users-resultsgraphics/</loc>
+		<lastmod>2014-11-20T17:23:33+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/active-recovery-app/</loc>
+		<lastmod>2014-11-20T17:22:42+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/stores/producto/</loc>
+		<lastmod>2014-11-20T17:22:26+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/stores/campana-2/</loc>
+		<lastmod>2014-11-20T17:22:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/stores/</loc>
+		<lastmod>2014-11-20T17:21:55+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/active-recovery/sobre-active-recovery/</loc>
+		<lastmod>2014-11-20T17:21:43+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/active-recovery/prescripctores/</loc>
+		<lastmod>2014-11-20T17:21:25+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/active-recovery/</loc>
+		<lastmod>2014-11-20T17:21:14+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/devoluciones/</loc>
+		<lastmod>2014-11-20T17:19:59+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 2573: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/e-do-brasil-o-melhor-personal-trainer-do-mundo/</loc>
+		<lastmod>2014-11-19T23:20:18+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2563: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/etapa-de-brasilia-do-brazil-run-series-define-campeao-da-temporada-2014/</loc>
+		<lastmod>2014-11-19T11:21:53+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2541: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/a-era-da-experiencia/</loc>
+		<lastmod>2014-11-18T14:41:23+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2560: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/agua-elemento-essencial-para-uma-plena-recuperacao/</loc>
+		<lastmod>2014-11-18T14:27:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2554: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/sono-personalizado/</loc>
+		<lastmod>2014-11-17T11:38:53+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2549: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/forum-academico-destaca-inovacoes-tecnologicas-voltadas-ao-esporte-saude-e-bem-estar/</loc>
+		<lastmod>2014-11-17T11:34:15+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2545: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/do-original-com-toda-a-nossa-forca/</loc>
+		<lastmod>2014-11-17T11:24:34+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/loja/</loc>
+		<lastmod>2014-11-10T15:08:52+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/tienda/</loc>
+		<lastmod>2014-11-10T15:08:40+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 2509: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/manocchio-vai-ao-podio-masculino-no-feminino-ariane-conquista-o-vice/</loc>
+		<lastmod>2014-11-10T14:30:37+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2491: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/entre-favoritos-prova-de-domingo-conta-com-presenca-do-casal-mirinda-carfrae-e-timothy-odonnell/</loc>
+		<lastmod>2014-11-08T10:20:03+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2404: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/espirito-ironman-move-fortaleza/</loc>
+		<lastmod>2014-11-08T10:19:33+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/tecnologia/latex-natural/</loc>
+		<lastmod>2014-11-07T13:07:41+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/tecnologia/celliant/</loc>
+		<lastmod>2014-11-07T13:06:01+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 1110: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/origem-ironman/</loc>
+		<lastmod>2014-11-04T12:15:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1107: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/numero-6-dificuldade/</loc>
+		<lastmod>2014-11-04T12:00:52+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/garantia/</loc>
+		<lastmod>2014-11-03T14:45:17+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 2379: Comments: 1 of 1 = 1 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/cinco-truques-para-acelerar-sua-recuperacao/</loc>
+		<lastmod>2014-11-03T12:21:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+<!-- Debug: Priority report of postID 2372: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/japones-de-103-anos-bate-recorde-mundial-dos-100-metros-rasos/</loc>
+		<lastmod>2014-11-03T12:10:17+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2369: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/o-que-comer-antes-de-seu-primeiro-triatlo/</loc>
+		<lastmod>2014-11-03T12:02:02+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2366: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/banana-ou-bebida-energetica-qual-das-opcoes-voce-acha-melhor-para-longos-treinamentos/</loc>
+		<lastmod>2014-11-03T11:55:27+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1101: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/conexao-musica-e-resto/</loc>
+		<lastmod>2014-11-03T11:49:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2357: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/natacao-inteligente/</loc>
+		<lastmod>2014-11-03T11:44:26+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1097: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/fluxo-de-sangue/</loc>
+		<lastmod>2014-10-28T16:33:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/tecnologia/unique-blend/</loc>
+		<lastmod>2014-10-24T14:22:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -94,7 +395,13 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/minha-conta/alterar-senha/</loc>
+		<loc>http://ironmanrecovery.com.br/minha-conta/perdeu-a-senha/</loc>
+		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/minha-conta/editar-endereco/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -106,19 +413,19 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/minha-conta/perdeu-a-senha/</loc>
+		<loc>http://ironmanrecovery.com.br/minha-conta/alterar-senha/</loc>
+		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://ironmanrecovery.com.br/minha-conta/sair/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/</loc>
-		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/minha-conta/editar-endereco/</loc>
 		<lastmod>2014-10-16T12:52:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -136,26 +443,8 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/tecnologia/unique-blend/</loc>
-		<lastmod>2014-10-01T10:12:23+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/devoluciones/</loc>
-		<lastmod>2014-02-24T16:17:57+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://ironmanrecovery.com.br/politica-de-privacidad/</loc>
 		<lastmod>2014-02-20T17:21:54+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/aviso-legal/</loc>
-		<lastmod>2014-02-20T17:21:33+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -178,62 +467,14 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/garantia-ampliada-un-ano/</loc>
-		<lastmod>2014-01-09T20:08:13+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/shop/</loc>
-		<lastmod>2014-01-08T17:12:02+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://ironmanrecovery.com.br/campana/properties/almohadas/</loc>
 		<lastmod>2013-12-17T16:51:49+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/condiciones-de-compra/</loc>
-		<lastmod>2013-12-13T10:36:45+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/campana-2/</loc>
-		<lastmod>2013-12-12T12:51:13+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/opiniones/</loc>
-		<lastmod>2013-12-12T12:50:47+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/beneficios/</loc>
-		<lastmod>2013-12-12T11:31:11+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://ironmanrecovery.com.br/wishlist-2/</loc>
 		<lastmod>2013-11-19T11:16:42+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/garantia-y-certificaciones/</loc>
-		<lastmod>2013-11-04T10:27:37+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/contacto/</loc>
-		<lastmod>2013-11-04T10:27:05+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -262,26 +503,8 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/tecnologia/latex-natural/</loc>
-		<lastmod>2013-11-04T09:44:27+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/stores/campana-2/</loc>
-		<lastmod>2013-10-30T17:06:58+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://ironmanrecovery.com.br/campana/</loc>
 		<lastmod>2013-10-30T17:03:55+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/stores/</loc>
-		<lastmod>2013-10-30T17:03:12+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -310,110 +533,50 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/active-recovery-app/community-users-resultsgraphics/</loc>
-		<lastmod>2013-10-21T09:02:18+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/active-recovery-app/download/</loc>
-		<lastmod>2013-10-21T09:01:53+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/active-recovery-app/about-active-recovery-app/</loc>
-		<lastmod>2013-10-21T09:01:35+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/active-recovery-app/</loc>
-		<lastmod>2013-10-21T09:00:15+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/estructura/rrss-monitoring/</loc>
+		<loc>http://ironmanrecovery.com.br/estrutura/rrss-monitoring/</loc>
 		<lastmod>2013-10-21T08:58:06+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/estructura/news/</loc>
+		<loc>http://ironmanrecovery.com.br/estrutura/news/</loc>
 		<lastmod>2013-10-21T08:57:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/estructura/races/</loc>
+		<loc>http://ironmanrecovery.com.br/estrutura/races/</loc>
 		<lastmod>2013-10-21T08:57:23+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/estructura/teams/</loc>
+		<loc>http://ironmanrecovery.com.br/estrutura/teams/</loc>
 		<lastmod>2013-10-21T08:56:59+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/estructura/trainers/</loc>
+		<loc>http://ironmanrecovery.com.br/estrutura/trainers/</loc>
 		<lastmod>2013-10-21T08:56:30+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/estructura/competitors/</loc>
+		<loc>http://ironmanrecovery.com.br/estrutura/competitors/</loc>
 		<lastmod>2013-10-21T08:56:13+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/estructura/the-challenge-intro/</loc>
+		<loc>http://ironmanrecovery.com.br/estrutura/the-challenge-intro/</loc>
 		<lastmod>2013-10-21T08:55:58+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/estructura/</loc>
-		<lastmod>2013-10-21T08:55:36+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/stores/producto/</loc>
-		<lastmod>2013-10-21T08:55:03+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/tecnologia/celliant/</loc>
-		<lastmod>2013-10-21T08:54:17+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://ironmanrecovery.com.br/tecnologia/</loc>
 		<lastmod>2013-10-21T08:53:19+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/active-recovery/prescripctores/</loc>
-		<lastmod>2013-10-21T08:52:40+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/active-recovery/sobre-active-recovery/</loc>
-		<lastmod>2013-10-21T08:51:04+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/active-recovery/</loc>
-		<lastmod>2013-10-21T08:50:38+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -448,13 +611,7 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/mi-cuenta/editar-direccion/</loc>
-		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/mi-cuenta/contrasena-perdida/</loc>
+		<loc>http://ironmanrecovery.com.br/realizar-pedido/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -466,19 +623,13 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/realizar-pedido/</loc>
+		<loc>http://ironmanrecovery.com.br/mi-cuenta/contrasena-perdida/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://ironmanrecovery.com.br/carro/</loc>
-		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://ironmanrecovery.com.br/tienda/</loc>
+		<loc>http://ironmanrecovery.com.br/mi-cuenta/editar-direccion/</loc>
 		<lastmod>2013-10-17T15:58:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
