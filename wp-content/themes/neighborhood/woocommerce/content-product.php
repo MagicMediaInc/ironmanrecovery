@@ -188,5 +188,5 @@
 		do_action( 'woocommerce_after_shop_loop_item_title' );
 	?>
 
-	<div class="clearfix"><a style="padding:5px 10px;float:left;" href="">Adicionar</a><a style="color:white; font-weight:700; background-color:#EF3F32; padding:5px 15px;float:right;" href="">Saiba mais</a></div>
+	<div class="clearfix" style="width:50%"><a style="padding:5px 15px;float:left;" href="">Adicionar</a><a style="color:white; font-weight:700; background-color:#EF3F32; padding:5px 15px;float:right;" href="">Saiba mais</a></div>
 </li>
