@@ -167,11 +167,12 @@
 	</figure>
 	
 	<div class="product-details">
-		<h3 style="color:red"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<h3 ><a style="color:red" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		<?php
 			$size = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
 			//echo $product->get_categories( ', ', '<span class="posted_in">' . _n( '', '', $size, 'woocommerce' ) . ' ', '</span>' );
 		?>
+		<div class="clearfix"><a style="color:red; padding:5px 10px;float:left;" href="">Adicionar</a><a style="color:red; padding:5px 10px;float:right;" href="">Saiba mais</a></div>
 	</div>
 
 	
