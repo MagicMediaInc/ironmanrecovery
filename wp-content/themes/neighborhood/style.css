@@ -7316,7 +7316,8 @@ ul.products li.product .star-rating {
 	background: #222;
 }
 ul.products li.product .price {
-	float: right;
+	/*float: right;*/
+	padding-top: 10px;
 	font-size: 18px;
 }
 .woocommerce ul.products li.product .price ins, .woocommerce-page ul.products li.product .price ins {
