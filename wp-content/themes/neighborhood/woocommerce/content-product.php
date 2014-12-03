@@ -172,7 +172,6 @@
 			$size = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
 			//echo $product->get_categories( ', ', '<span class="posted_in">' . _n( '', '', $size, 'woocommerce' ) . ' ', '</span>' );
 		?>
-		<div class="clearfix"><a style="color:red; padding:5px 10px;float:left;" href="">Adicionar</a><a style="color:red; padding:5px 10px;float:right;" href="">Saiba mais</a></div>
 	</div>
 
 	
@@ -189,4 +188,5 @@
 		do_action( 'woocommerce_after_shop_loop_item_title' );
 	?>
 
+	<div class="clearfix"><a style="padding:5px 10px;float:left;" href="">Adicionar</a><a style="background-color:red; padding:5px 10px;float:right;" href="">Saiba mais</a></div>
 </li>
