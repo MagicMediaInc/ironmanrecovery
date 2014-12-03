@@ -188,5 +188,5 @@
 		do_action( 'woocommerce_after_shop_loop_item_title' );
 	?>
 
-	<div class="clearfix" style="width:50%; margin:0px auto;"><a style="padding:5px 15px;float:left;border:1px solid #999" href="<?php the_permalink(); ?>"><img style="width:24px !important;height:auto;margin-right:5px;display:inline-block;box-shadow:0px;" src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/icone-carrinho-grande-alerta1.png">Adicionar</a><a style="color:white; font-weight:700; background-color:#EF3F32; padding:5px 15px;float:right;" href="<?php the_permalink(); ?>">Saiba mais</a></div>
+	<div class="clearfix" style="width:50%; margin:0px auto;"><a style="padding:5px 15px;float:left;border:1px solid #999" href="<?php the_permalink(); ?>"><img style="width:24px !important;height:auto;margin-right:5px;display:inline-block;box-shadow:none;" src="http://ironmanrecovery.com.br/wp-content/uploads/2014/10/icone-carrinho-grande-alerta1.png">Adicionar</a><a style="color:white; font-weight:700; background-color:#EF3F32; padding:5px 15px;float:right;" href="<?php the_permalink(); ?>">Saiba mais</a></div>
 </li>
