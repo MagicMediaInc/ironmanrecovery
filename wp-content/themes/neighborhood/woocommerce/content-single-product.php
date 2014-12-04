@@ -124,7 +124,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 	<?php if ($enable_pb_product_pages) { ?>
 	
-	<!-- <div id="product-display-area" class="clearfix">
+	<div id="product-display-area" class="clearfix">
 
 		<?php
 
@@ -155,7 +155,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		
 		<?php //the_content(); ?>
 		
-	</div> -->
+	</div>
 	
 	<?php } ?>
 	

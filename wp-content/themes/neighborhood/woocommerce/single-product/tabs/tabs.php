@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Each tab is an array containing title, callback and priority.
  * @see woocommerce_default_product_tabs()
  */
-$tabs = apply_filters( 'woocommerce_product_tabs', array() );
+/*$tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $tabs ) ) : ?>
 
@@ -38,4 +38,4 @@ if ( ! empty( $tabs ) ) : ?>
 		<?php endforeach; ?>
 	</div>
 
-<?php endif; ?>
+<?php endif; ?>*/
