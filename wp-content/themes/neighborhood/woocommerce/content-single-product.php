@@ -6,7 +6,7 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.1.0
+ * @version     1.6.4
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		$enable_pb_product_pages = false;
 	}
 	
-	$product_short_description = sf_get_post_meta($post->ID, 'sf_product_short_description', true);
+	$product_short_description = get_post_meta($post->ID, 'sf_product_short_description', true);
 	
 	/**
 	 * woocommerce_before_single_product hook
@@ -34,8 +34,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <div itemscope itemtype="http://schema.org/Product" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-	<div class="entry-title" itemprop="name"><?php the_title(); ?></div>
 
 	<?php
 		/**
@@ -51,15 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		
 		<div class="summary-top clearfix">
 			
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-			
-				<p itemprop="price" class="price"><?php echo $product->get_price_html(); ?></p>
-				
-				<meta itemprop="priceCurrency" content="<?php echo get_woocommerce_currency(); ?>" />
-				
-				<?php if (!$catalog_mode) { ?><link itemprop="availability" href="http://schema.org/<?php echo $product->is_in_stock() ? 'InStock' : 'OutOfStock'; ?>" /><?php } ?>
-			
-			</div>
+			<p itemprop="price" class="price"><?php echo $product->get_price_html(); ?></p>
 			
 			<?php
 				if ( comments_open() ) {
@@ -87,7 +77,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 											
 						$reviews_text = sprintf(_n('%d Review', '%d Reviews', $count, 'swiftframework'), $count);
 						
-				        echo '<div class="review-summary"><div class="star-rating" title="'.sprintf(__('Rated %s out of 5', 'woocommerce'), $average).'"><span style="width:'.($average*16).'px"><span class="rating">'.$average.'</span> '.__('out of 5', 'woocommerce').'</span></div><div class="reviews-text">'.$reviews_text.'</div></div>';
+				        echo '<div class="review-summary"><div class="star-rating" title="'.sprintf(__('Rated %s out of 5', 'woocommerce'), $average).'"><span style="width:'.($average*16).'px"><span itemprop="ratingValue" class="rating">'.$average.'</span> '.__('out of 5', 'woocommerce').'</span></div><div class="reviews-text">'.$reviews_text.'</div></div>';
 				
 				    }
 				}
@@ -95,25 +85,26 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			<?php
 				$has_cat = get_the_terms( $post->ID, 'product_cat' );
 			?>
-			<?php if ($has_cat != 0) { ?>
+			<?php if (function_exists('be_previous_post_link') && $has_cat != 0) { ?>
+			<!--
 			<div class="product-navigation">
-				<div class="nav-previous"><?php previous_post_link( '%link', '<i class="fa-angle-right"></i>', true, '', 'product_cat' ); ?></div>
-				<div class="nav-next"><?php next_post_link( '%link', '<i class="fa-angle-left"></i>', true, '', 'product_cat' ); ?></div>
+				<div class="nav-previous"><?php be_previous_post_link( '%link', '<i class="icon-angle-right"></i>', true, '', 'product_cat' ); ?></div>
+				<div class="nav-next"><?php be_next_post_link( '%link', '<i class="icon-angle-left"></i>', true, '', 'product_cat' ); ?></div>
 			</div>
+			-->
 			<?php } ?>
 		
 		</div>
+		
+		<?php if (!$catalog_mode) { ?>
+		<link itemprop="availability" href="http://schema.org/<?php echo $product->is_in_stock() ? 'InStock' : 'OutOfStock'; ?>" />
+		<?php } ?>	
 		
 		<?php if ($product_short_description != "") { ?>
 			<div class="product-short">
 				<?php echo do_shortcode($product_short_description); ?>
 			</div>
-		<?php } else { ?>
-			<div class="product-short">
-				<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
-			</div>
-		<?php } ?>	
-					
+		<?php } ?>			
 		<?php
 			/**
 			* woocommerce_single_product_summary hook
@@ -129,14 +120,40 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			do_action( 'woocommerce_single_product_summary' );
 		?>
 		
-
 	</div><!-- .summary -->
 	
 	<?php if ($enable_pb_product_pages) { ?>
 	
 	<div id="product-display-area" class="clearfix">
+
+		<?php
+
+		$tabs = apply_filters( 'woocommerce_product_tabs', array() );
+		// var_dump($tabs);
+		if ( ! empty( $tabs ) ) : ?>
+
+			<div class="woocommerce-tabs">
+				<ul class="tabs">
+					<?php foreach ( $tabs as $key => $tab ) : ?>
+
+						<li class="<?php echo $key ?>_tab">
+							<a href="#tab-<?php echo $key ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) ?></a>
+						</li>
+
+					<?php endforeach; ?>
+				</ul>
+				<?php foreach ( $tabs as $key => $tab ) : ?>
+
+					<div class="panel entry-content" id="tab-<?php echo $key ?>">
+						<?php call_user_func( $tab['callback'], $key, $tab ) ?>
+					</div>
+
+				<?php endforeach; ?>
+			</div>
+
+		<?php endif; ?>
 		
-		<?php the_content(); ?>
+		<?php //the_content(); ?>
 		
 	</div>
 	
