@@ -260,9 +260,9 @@
 	}
 	
 	if ($enable_default_tabs) {	
-	add_action( 'woocommerce_single_product_summary', 'sf_product_accordion', 35);	
-	} else {
 	add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 35);	
+	} else {
+	add_action( 'woocommerce_single_product_summary', 'sf_product_accordion', 35);	
 	}
 	add_action( 'woocommerce_single_product_summary', 'sf_product_share', 45);
 	
