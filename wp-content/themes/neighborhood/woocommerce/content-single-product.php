@@ -18,9 +18,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 	$options = get_option('sf_neighborhood_options');
 	if (isset($options['enable_pb_product_pages'])) {
-		$enable_pb_product_pages = false;
-	} else {
 		$enable_pb_product_pages = $options['enable_pb_product_pages'];
+	} else {
+		$enable_pb_product_pages = false;
 	}
 	
 	$product_short_description = get_post_meta($post->ID, 'sf_product_short_description', true);
