@@ -129,7 +129,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		<?php
 
 		$tabs = apply_filters( 'woocommerce_product_tabs', array() );
-
+		var_dump($tabs);
 		if ( ! empty( $tabs ) ) : ?>
 
 			<div class="woocommerce-tabs">
