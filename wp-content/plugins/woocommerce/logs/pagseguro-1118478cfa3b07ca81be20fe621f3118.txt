@@ -1,0 +1,1813 @@
+10-20-2014 @ 19:59:02 - Requesting token for order #2236 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2236]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[igor@gallardodesigner.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>1111</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>GO</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / T3.1 - Dimensiones: 158x198]]></description>
+      <amount>352.00</amount>
+      <quantity>2</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2236&key=order_544569867605b]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 19:59:03 - Error while parsing the PagSeguro response: String could not be parsed as XML
+10-20-2014 @ 19:59:03 - Error generating the PagSeguro payment token: Array
+(
+    [headers] => Array
+        (
+            [date] => Mon, 20 Oct 2014 19:59:03 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => text/plain;charset=ISO-8859-1
+            [content-length] => 12
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => Unauthorized
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+10-20-2014 @ 20:00:35 - Requesting token for order #2236 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2236]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[igor@gallardodesigner.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>1111</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>GO</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / T3.1 - Dimensiones: 158x198]]></description>
+      <amount>352.00</amount>
+      <quantity>2</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2236&key=order_544569e397ee8]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:00:36 - Error while parsing the PagSeguro response: String could not be parsed as XML
+10-20-2014 @ 20:00:36 - Error generating the PagSeguro payment token: Array
+(
+    [headers] => Array
+        (
+            [date] => Mon, 20 Oct 2014 20:00:36 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => text/plain;charset=ISO-8859-1
+            [content-length] => 12
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => Unauthorized
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+10-20-2014 @ 20:03:16 - Requesting token for order #2237 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2237]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[igor@gallardodesigner.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>1111</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>GO</state>
+      <country>BRA</country>
+    </address>
+    <cost>1050.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Dimensiones: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2237&key=order_54456a84e8375]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:03:17 - Error while parsing the PagSeguro response: String could not be parsed as XML
+10-20-2014 @ 20:03:17 - Error generating the PagSeguro payment token: Array
+(
+    [headers] => Array
+        (
+            [date] => Mon, 20 Oct 2014 20:03:17 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => text/plain;charset=ISO-8859-1
+            [content-length] => 12
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => Unauthorized
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+10-20-2014 @ 20:03:42 - Requesting token for order #2237 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2237]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[igor@gallardodesigner.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>1111</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>GO</state>
+      <country>BRA</country>
+    </address>
+    <cost>1050.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Dimensiones: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2237&key=order_54456a9e06927]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:03:42 - Error while parsing the PagSeguro response: String could not be parsed as XML
+10-20-2014 @ 20:03:42 - Error generating the PagSeguro payment token: Array
+(
+    [headers] => Array
+        (
+            [date] => Mon, 20 Oct 2014 20:03:42 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => text/plain;charset=ISO-8859-1
+            [content-length] => 12
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => Unauthorized
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+10-20-2014 @ 20:16:55 - Requesting token for order #2238 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2238]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[igor@gallardodesigner.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>1111</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>GO</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / T3.1 - Dimensiones: 158x198]]></description>
+      <amount>352.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2238&key=order_54456db7e8e32]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:16:56 - Error while parsing the PagSeguro response: String could not be parsed as XML
+10-20-2014 @ 20:16:56 - Error generating the PagSeguro payment token: Array
+(
+    [headers] => Array
+        (
+            [date] => Mon, 20 Oct 2014 20:16:56 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => text/plain;charset=ISO-8859-1
+            [content-length] => 12
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => Unauthorized
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+10-20-2014 @ 20:27:54 - Requesting token for order #2238 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2238]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[igor@gallardodesigner.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>1111</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>GO</state>
+      <country>BRA</country>
+    </address>
+    <cost>680.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / T3.1 - Dimensiones: 158x198]]></description>
+      <amount>352.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2238&key=order_5445704a06bfe]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:27:55 - Failed to generate the PagSeguro Payment Token: Array
+(
+    [headers] => Array
+        (
+            [date] => Mon, 20 Oct 2014 20:27:55 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => application/xml;charset=ISO-8859-1
+            [cache-control] => max-age=180
+            [expires] => Mon, 20 Oct 2014 20:30:54 GMT
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11017</code><message>shippingPostalCode invalid Value: 1111</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+10-20-2014 @ 20:28:59 - Requesting token for order #2238 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2238]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>2117</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>GO</state>
+      <country>BRA</country>
+    </address>
+    <cost>680.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / T3.1 - Dimensiones: 158x198]]></description>
+      <amount>352.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2238&key=order_5445708b5165b]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:29:00 - Failed to generate the PagSeguro Payment Token: Array
+(
+    [headers] => Array
+        (
+            [date] => Mon, 20 Oct 2014 20:29:00 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => application/xml;charset=ISO-8859-1
+            [cache-control] => max-age=180
+            [expires] => Mon, 20 Oct 2014 20:31:59 GMT
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11017</code><message>shippingPostalCode invalid Value: 2117</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+10-20-2014 @ 20:29:41 - Requesting token for order #2238 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2238]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>5200</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>GO</state>
+      <country>BRA</country>
+    </address>
+    <cost>680.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / T3.1 - Dimensiones: 158x198]]></description>
+      <amount>352.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2238&key=order_544570b5366e7]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:29:43 - Failed to generate the PagSeguro Payment Token: Array
+(
+    [headers] => Array
+        (
+            [date] => Mon, 20 Oct 2014 20:29:43 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => application/xml;charset=ISO-8859-1
+            [cache-control] => max-age=180
+            [expires] => Mon, 20 Oct 2014 20:32:41 GMT
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11017</code><message>shippingPostalCode invalid Value: 5200</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+10-20-2014 @ 20:30:29 - Requesting token for order #2238 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2238]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>680.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / T3.1 - Dimensiones: 158x198]]></description>
+      <amount>352.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2238&key=order_544570e593178]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:30:30 - PagSeguro Payment Token created with success! The Token is: 0336E62BB7B79A3AA4907F844281D10B
+10-20-2014 @ 20:49:07 - Requesting token for order #2239 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2239]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Dimensiones: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2239&key=order_54457543c61c4]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-20-2014 @ 20:49:10 - PagSeguro Payment Token created with success! The Token is: 1A1624AD4141436DD44BCFAD0C4F40AE
+10-21-2014 @ 11:21:14 - Requesting token for order #2241 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2241]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / LUX - Dimensiones: 193x103]]></description>
+      <amount>412.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2241&key=order_544641aa5af1e]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-21-2014 @ 11:21:17 - PagSeguro Payment Token created with success! The Token is: 8D47FD50F5F5146554010F864900AC1C
+10-21-2014 @ 12:00:41 - Requesting token for order #2242 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2242]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / LUX - Dimensiones: 193x103]]></description>
+      <amount>412.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2242&key=order_54464ae98a97f]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-21-2014 @ 12:00:43 - PagSeguro Payment Token created with success! The Token is: A64081251E1EA01DD4F41FBFEC1721B8
+10-21-2014 @ 12:01:10 - Requesting token for order #2243 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2243]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Dimensiones: 138x188]]></description>
+      <amount>2999.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2243&key=order_54464b06a5339]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-21-2014 @ 12:01:12 - PagSeguro Payment Token created with success! The Token is: 189644DAB7B7C07CC4FB4F9B8781004E
+10-21-2014 @ 13:07:54 - Requesting token for order #2244 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2244]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Dimensiones: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2244&key=order_54465aaad63dc]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-21-2014 @ 13:07:56 - PagSeguro Payment Token created with success! The Token is: 316A1F9C56563CBDD4BD0F8C67A703D5
+10-24-2014 @ 12:12:31 - Requesting token for order #2271 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2271]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Dimensiones: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2271&key=order_544a422f11377]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-24-2014 @ 12:12:32 - PagSeguro Payment Token created with success! The Token is: 8CD347DD1F1F958CC4394F98589631BC
+10-24-2014 @ 14:53:57 - Requesting token for order #2279 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2279]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / LUX - Dimensiones: 193x103]]></description>
+      <amount>412.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2279&key=order_544a680502659]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-24-2014 @ 14:53:58 - PagSeguro Payment Token created with success! The Token is: 58D9CF044D4DA2D1141B5FA9152F075A
+10-24-2014 @ 14:54:00 - Requesting token for order #2280 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2280]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Dimensiones: 138x188]]></description>
+      <amount>2999.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2280&key=order_544a68084c4f9]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-24-2014 @ 14:54:01 - PagSeguro Payment Token created with success! The Token is: 65880E6B3D3D282884921F81BACC221C
+10-24-2014 @ 15:11:23 - Requesting token for order #2281 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2281]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Dimensiones: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2281&key=order_544a6c1b407d9]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-24-2014 @ 15:11:25 - PagSeguro Payment Token created with success! The Token is: 53DD19FF4E4E27ACC4754F87651AE4BA
+10-24-2014 @ 16:01:08 - Requesting token for order #2282 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2282]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>1650.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / T3.1 - Dimensiones: 138x188]]></description>
+      <amount>423.00</amount>
+      <quantity>2</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Colchao + Box / LUX - Dimensiones: 158x198]]></description>
+      <amount>3599.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2282&key=order_544a77c456da8]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-24-2014 @ 16:01:09 - PagSeguro Payment Token created with success! The Token is: DBAAE324C5C570700454FFB28F8CE71F
+10-27-2014 @ 16:59:12 - Requesting token for order #2285 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2285]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>320.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - pa_dimensiones: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2285&key=order_544e79e077e3b]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-27-2014 @ 16:59:14 - PagSeguro Payment Token created with success! The Token is: 1D7E2423B0B07C7CC48A7FA610FCCCF4
+10-27-2014 @ 17:59:01 - Requesting token for order #2286 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2286]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>350.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Box / LUX - Tamanho: 158x198]]></description>
+      <amount>350.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2286&key=order_544e87e54cb0d]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-27-2014 @ 17:59:07 - PagSeguro Payment Token created with success! The Token is: EE43978FD1D1443004A40FB7415F0760
+10-27-2014 @ 18:01:27 - Requesting token for order #2287 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2287]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>180.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Tamanho: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2287&key=order_544e8877cd69c]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-27-2014 @ 18:01:28 - PagSeguro Payment Token created with success! The Token is: 16BDF997686887888455FFB34DDB3C4C
+10-27-2014 @ 18:47:24 - Requesting token for order #2288 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2288]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>500.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Tamanho: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2288&key=order_544e933c54ec6]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-27-2014 @ 18:47:26 - PagSeguro Payment Token created with success! The Token is: 2A22B4FB9E9E4254443D2FA715DDB6EA
+10-28-2014 @ 13:15:17 - Requesting token for order #2293 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2293]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>550.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Tamanho: 193x103]]></description>
+      <amount>4319.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2293&key=order_544f96e5920f0]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+10-28-2014 @ 13:15:19 - PagSeguro Payment Token created with success! The Token is: 76362139E0E05BEAA45DBF860557B774
+11-10-2014 @ 13:54:20 - Requesting token for order #2508 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2508]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>100.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Tamanho: 88x188x35]]></description>
+      <amount>2843.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2508&key=order_5460c38c0cf14]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-10-2014 @ 13:54:24 - PagSeguro Payment Token created with success! The Token is: EE0522CD8A8A655CC4EF9FA3FCC6A0D1
+11-10-2014 @ 19:22:34 - Requesting token for order #2525 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2525]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>200.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Tamanho: 158x198x35]]></description>
+      <amount>4768.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Tamanho: 193x203x35]]></description>
+      <amount>5278.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2525&key=order_5461107a43885]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-10-2014 @ 19:22:35 - PagSeguro Payment Token created with success! The Token is: 614ED555CECE9A16648EDF8657F0A9C6
+11-11-2014 @ 20:02:26 - Requesting token for order #2537 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2537]]></reference>
+  <sender>
+    <name><![CDATA[Igor Gallardo]]></name>
+    <email><![CDATA[igorgallardo@gmail.com]]></email>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>985067372</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. Dr. Candido]]></street>
+      <complement><![CDATA[552]]></complement>
+      <postalCode>05351000</postalCode>
+      <city><![CDATA[São Paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Tamanho: 193x203x35]]></description>
+      <amount>5278.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2537&key=order_54626b52e22c4]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-11-2014 @ 20:02:27 - PagSeguro Payment Token created with success! The Token is: 3E09C3930202A83DD4262FAF3EB40BFC
+11-12-2014 @ 20:15:13 - Requesting token for order #2538 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2538]]></reference>
+  <sender>
+    <name><![CDATA[ll ll]]></name>
+    <email><![CDATA[gul@yahoo.com.br]]></email>
+    <phone>
+      <areaCode>45</areaCode>
+      <number>852368</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[lllñññ]]></street>
+      <complement><![CDATA[l]]></complement>
+      <postalCode>06715430</postalCode>
+      <city><![CDATA[llll]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Tamanho: 138x188x35]]></description>
+      <amount>3599.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2538&key=order_5463bfd1c2a20]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-12-2014 @ 20:15:16 - Failed to generate the PagSeguro Payment Token: Array
+(
+    [headers] => Array
+        (
+            [date] => Wed, 12 Nov 2014 20:15:16 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => application/xml;charset=ISO-8859-1
+            [cache-control] => max-age=180
+            [expires] => Wed, 12 Nov 2014 20:18:13 GMT
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11014</code><message>senderPhone invalid value: 852368</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+11-12-2014 @ 20:16:18 - Requesting token for order #2538 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2538]]></reference>
+  <sender>
+    <name><![CDATA[ll ll]]></name>
+    <email><![CDATA[jpinera@ecusdobrasil.com.br]]></email>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>42423060</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[lllñññ]]></street>
+      <complement><![CDATA[l]]></complement>
+      <postalCode>06715430</postalCode>
+      <city><![CDATA[llll]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Tamanho: 138x188x35]]></description>
+      <amount>3599.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2538&key=order_5463c01263458]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-12-2014 @ 20:16:18 - PagSeguro Payment Token created with success! The Token is: 48DF28350B0BC7A3348C5FA1CDDB8600
+11-12-2014 @ 20:24:06 - Checking IPN request...
+11-12-2014 @ 20:24:07 - PagSeguro IPN is valid! The return is: SimpleXMLElement Object
+(
+    [date] => 2014-11-12T18:16:20.000-02:00
+    [code] => B05AB7E5-63F1-4D3E-8EB0-9AB5156C22DA
+    [reference] => EcommerceLoja -2538
+    [type] => 1
+    [status] => 1
+    [lastEventDate] => 2014-11-12T18:24:03.000-02:00
+    [paymentMethod] => SimpleXMLElement Object
+        (
+            [type] => 2
+            [code] => 202
+        )
+
+    [paymentLink] => https://pagseguro.uol.com.br/checkout/payment/booklet/print.jhtml?c=4ddfd65fa166f0c004bfd2c8bcb12f4940fd130f50e4c9904de26cb7bab772eafe68c80e731c68c5
+    [grossAmount] => 3599.00
+    [discountAmount] => 0.00
+    [feeAmount] => 179.99
+    [netAmount] => 3419.01
+    [extraAmount] => 0.00
+    [installmentCount] => 1
+    [itemCount] => 1
+    [items] => SimpleXMLElement Object
+        (
+            [item] => SimpleXMLElement Object
+                (
+                    [id] => 1
+                    [description] => Colchao + Box / T3.1 - Tamanho: 138x188x35
+                    [quantity] => 1
+                    [amount] => 3599.00
+                )
+
+        )
+
+    [sender] => SimpleXMLElement Object
+        (
+            [name] => ll ll
+            [email] => jpinera@ecusdobrasil.com.br
+            [phone] => SimpleXMLElement Object
+                (
+                    [areaCode] => 11
+                    [number] => 42423060
+                )
+
+        )
+
+    [shipping] => SimpleXMLElement Object
+        (
+            [address] => SimpleXMLElement Object
+                (
+                    [street] => RUA DAS GRINALDAS
+                    [number] => 236
+                    [complement] => l
+                    [district] => Paisagem Renoir
+                    [city] => COTIA
+                    [state] => SP
+                    [country] => BRA
+                    [postalCode] => 06715430
+                )
+
+            [type] => 3
+            [cost] => 0.00
+        )
+
+)
+
+11-12-2014 @ 20:24:07 - PagSeguro payment status for order #2538 is: 1
+11-13-2014 @ 17:34:39 - Requesting token for order #2539 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2539]]></reference>
+  <sender>
+    <name><![CDATA[Isabel Cristina Aparecida Moura]]></name>
+    <email><![CDATA[isabelmoura40@gmail.com]]></email>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>43999158</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Dr. Sergio Meira, 230]]></street>
+      <complement><![CDATA[apto 141 T2]]></complement>
+      <postalCode>01153010</postalCode>
+      <city><![CDATA[São Paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao / LUX - Tamanho: 138x188x35]]></description>
+      <amount>3149.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2539&key=order_5464ebaf1aa4f]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-13-2014 @ 17:34:39 - PagSeguro Payment Token created with success! The Token is: A624CECDF8F89F9664673FAC4CA1E517
+11-13-2014 @ 19:34:15 - Requesting token for order #2540 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2540]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / LUX - Tamanho: 158x198x35]]></description>
+      <amount>4768.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2540&key=order_546507b6ef329]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-13-2014 @ 19:34:15 - PagSeguro Payment Token created with success! The Token is: 244E351FD7D7642DD4678F9E480F6F63
+11-17-2014 @ 14:29:04 - Requesting token for order #2556 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2556]]></reference>
+  <sender>
+    <name><![CDATA[Enrique Grande]]></name>
+    <email><![CDATA[epgeditoracao@terra.com.br]]></email>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>989617562</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[rua rio doce]]></street>
+      <postalCode>06350030</postalCode>
+      <city><![CDATA[carapicuiba]]></city>
+      <state>DF</state>
+      <country>BRA</country>
+    </address>
+    <cost>170.00</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchao + Box / T3.1 - Tamanho: 158x198x35]]></description>
+      <amount>4768.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2556&key=order_546a0630be75b]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-17-2014 @ 14:29:05 - PagSeguro Payment Token created with success! The Token is: 3093082DF1F124FFF47E0FB61EDB06AD
+11-26-2014 @ 12:51:16 - Requesting token for order #2668 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2668]]></reference>
+  <sender>
+    <name><![CDATA[Juan Lopez]]></name>
+    <email><![CDATA[c93958730401363287643@sandbox.pagseguro.com.br]]></email>
+    <phone>
+      <areaCode>12</areaCode>
+      <number>34567890</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Brasil]]></street>
+      <postalCode>01046925</postalCode>
+      <city><![CDATA[sao paulo]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Conjunto LUX - Tamanho: 138x188x35]]></description>
+      <amount>3059.15</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <extraAmount>-152.96</extraAmount>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2668&key=order_5475ccc4cb6fd]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-26-2014 @ 12:51:17 - PagSeguro Payment Token created with success! The Token is: E4801BC4D2D2F8A4443CFF85ECB2054B
+11-26-2014 @ 15:30:31 - Requesting token for order #2670 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2670]]></reference>
+  <sender>
+    <name><![CDATA[Veronica Leal]]></name>
+    <email><![CDATA[veronicall@bol.com.br]]></email>
+    <phone>
+      <areaCode>42</areaCode>
+      <number>423060</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[rua das flores,138]]></street>
+      <complement><![CDATA[Apartamento, suite, casa, etc (opcional)]]></complement>
+      <postalCode>06725210</postalCode>
+      <city><![CDATA[cotia]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchão LUX - Tamanho: 193x203x35]]></description>
+      <amount>3853.05</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2670&key=order_5475f2172bb4e]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-26-2014 @ 15:30:31 - Failed to generate the PagSeguro Payment Token: Array
+(
+    [headers] => Array
+        (
+            [date] => Wed, 26 Nov 2014 15:30:31 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => application/xml;charset=ISO-8859-1
+            [cache-control] => max-age=180
+            [expires] => Wed, 26 Nov 2014 15:33:31 GMT
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11014</code><message>senderPhone invalid value: 423060</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+11-27-2014 @ 10:33:22 - Requesting token for order #2671 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2671]]></reference>
+  <sender>
+    <name><![CDATA[Veronica Leal]]></name>
+    <email><![CDATA[veronicall@bol.com.br]]></email>
+    <phone>
+      <areaCode>42</areaCode>
+      <number>423060</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[rua das flores,138]]></street>
+      <complement><![CDATA[Apartamento, suite, casa, etc (opcional)]]></complement>
+      <postalCode>06725210</postalCode>
+      <city><![CDATA[cotia]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchão LUX - Tamanho: 193x203x35]]></description>
+      <amount>3853.05</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <extraAmount>-192.65</extraAmount>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2671&key=order_5476fdf263f5c]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-27-2014 @ 10:33:23 - Failed to generate the PagSeguro Payment Token: Array
+(
+    [headers] => Array
+        (
+            [date] => Thu, 27 Nov 2014 10:33:22 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => application/xml;charset=ISO-8859-1
+            [cache-control] => max-age=180
+            [expires] => Thu, 27 Nov 2014 10:36:22 GMT
+            [vary] => User-Agent
+            [connection] => close
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11014</code><message>senderPhone invalid value: 423060</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+11-27-2014 @ 10:34:13 - Requesting token for order #2671 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[EcommerceLoja -2671]]></reference>
+  <sender>
+    <name><![CDATA[Veronica Leal]]></name>
+    <email><![CDATA[veronicall@bol.com.br]]></email>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>42423060</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[rua das flores,138]]></street>
+      <complement><![CDATA[Apartamento, suite, casa, etc (opcional)]]></complement>
+      <postalCode>06725210</postalCode>
+      <city><![CDATA[cotia]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Colchão LUX - Tamanho: 193x203x35]]></description>
+      <amount>3853.05</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <extraAmount>-192.65</extraAmount>
+  <redirectURL><![CDATA[http://ironmanrecovery.com.br/finalizar-compra/pedido-recebido/?order=2671&key=order_5476fe255a339]]></redirectURL>
+  <notificationURL><![CDATA[http://ironmanrecovery.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-27-2014 @ 10:34:13 - PagSeguro Payment Token created with success! The Token is: C3A0D7D6A5A534C004F28F8F2DD6A278
+11-29-2014 @ 09:24:47 - Checking IPN request...
+11-29-2014 @ 09:24:48 - PagSeguro IPN is valid! The return is: SimpleXMLElement Object
+(
+    [date] => 2014-11-12T18:16:20.000-02:00
+    [code] => B05AB7E5-63F1-4D3E-8EB0-9AB5156C22DA
+    [reference] => EcommerceLoja -2538
+    [type] => 1
+    [status] => 7
+    [cancellationSource] => INTERNAL
+    [lastEventDate] => 2014-11-29T07:24:43.000-02:00
+    [paymentMethod] => SimpleXMLElement Object
+        (
+            [type] => 2
+            [code] => 202
+        )
+
+    [paymentLink] => https://pagseguro.uol.com.br/checkout/payment/booklet/print.jhtml?c=4ddfd65fa166f0c004bfd2c8bcb12f4940fd130f50e4c9904de26cb7bab772eafe68c80e731c68c5
+    [grossAmount] => 3599.00
+    [discountAmount] => 0.00
+    [feeAmount] => 179.99
+    [netAmount] => 3419.01
+    [extraAmount] => 0.00
+    [installmentCount] => 1
+    [itemCount] => 1
+    [items] => SimpleXMLElement Object
+        (
+            [item] => SimpleXMLElement Object
+                (
+                    [id] => 1
+                    [description] => Colchao + Box / T3.1 - Tamanho: 138x188x35
+                    [quantity] => 1
+                    [amount] => 3599.00
+                )
+
+        )
+
+    [sender] => SimpleXMLElement Object
+        (
+            [name] => ll ll
+            [email] => jpinera@ecusdobrasil.com.br
+            [phone] => SimpleXMLElement Object
+                (
+                    [areaCode] => 11
+                    [number] => 42423060
+                )
+
+        )
+
+    [shipping] => SimpleXMLElement Object
+        (
+            [address] => SimpleXMLElement Object
+                (
+                    [street] => RUA DAS GRINALDAS
+                    [number] => 236
+                    [complement] => l
+                    [district] => Paisagem Renoir
+                    [city] => COTIA
+                    [state] => SP
+                    [country] => BRA
+                    [postalCode] => 06715430
+                )
+
+            [type] => 3
+            [cost] => 0.00
+        )
+
+)
+
+11-29-2014 @ 09:24:48 - PagSeguro payment status for order #2538 is: 7

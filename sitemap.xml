@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://ironmanrecovery.com.br/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.8.4" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.4" -->
-<!-- generated-on="2 December, 2014 14:19" -->
+<!-- generated-on="3 December, 2014 14:15" -->
 <!-- Debug: Total comment count: 1 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://ironmanrecovery.com.br/</loc>
@@ -9,6 +9,20 @@
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
+<!-- Debug: Priority report of postID 2805: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/cross-urbano-com-proposta-e-iniciativa-ineditas-no-brasil/</loc>
+		<lastmod>2014-12-03T11:37:37+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2793: Comments: 0 of 1 = 0 points -->
+	<url>
+		<loc>http://ironmanrecovery.com.br/organizacao-divulga-balanco-do-1-challenge/</loc>
+		<lastmod>2014-12-02T19:13:58+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
 <!-- Debug: Priority report of postID 2634: Comments: 0 of 1 = 0 points -->
 	<url>
 		<loc>http://ironmanrecovery.com.br/o-natal-esta-chegando/</loc>
