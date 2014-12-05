@@ -254,7 +254,9 @@
 	
 	$options = get_option('sf_neighborhood_options');
 	if (isset($options['enable_default_tabs'])) {
-		$enable_default_tabs = $options['enable_default_tabs'];
+		
+		$enable_default_tabs = false;
+		// $enable_default_tabs = $options['enable_default_tabs'];
 	} else {
 		$enable_default_tabs = false;
 	}
