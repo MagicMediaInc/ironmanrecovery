@@ -17,6 +17,6 @@ $heading = esc_html( apply_filters('woocommerce_product_description_heading', __
 <h2><?php echo $heading; ?></h2>
 <?php
 $product_description = get_post_meta($post->ID, 'sf_product_description', true);
-echo do_shortcode($product_description);
+// echo do_shortcode($product_description);
+the_content();
 ?>
-<!--<?php the_content(); ?> -->
