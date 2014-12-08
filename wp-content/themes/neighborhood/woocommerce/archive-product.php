@@ -89,7 +89,7 @@
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true )  && $default_show_page_heading) : ?>
 			
 	<div class="row">
-		<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
+		<div class="page-heading span12 clearfix alt-bg alt-three<?php //echo $default_page_heading_bg_alt; ?>">
 			<div class="heading-text">
 				
 				<?php if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) { ?>
