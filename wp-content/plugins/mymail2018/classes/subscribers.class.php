@@ -659,11 +659,57 @@ class mymail_subscribers {
 
 			}
 
+
+			$html = mymail('campaigns')->get_template_by_slug($template, $file, false, $editorstyle);
+
+			$campaign = get_post($id);
+
+			$placeholder = mymail('placeholder', $html);
+
+			$placeholder->set_campaign($campaign->ID);
+		
+			$unsubscribelink = mymail()->get_unsubscribe_link($campaign->ID);
+			$forwardlink = mymail()->get_forward_link($campaign->ID, $current_user->user_email);
+			$profilelink = mymail()->get_profile_link($campaign->ID, '');
+			
+			$placeholder->add(array(
+				'issue' => 0,
+				'subject' => $subject,
+				'webversion' => '<a href="{webversionlink}">' . mymail_text('webversion') . '</a>',
+				'webversionlink' => get_permalink($campaign->ID),
+				'unsub' => '<a href="{unsublink}">' . mymail_text('unsubscribelink') . '</a>',
+				'unsublink' => $unsubscribelink,
+				'forward' => '<a href="{forwardlink}">' . mymail_text('forward') . '</a>',
+				'forwardlink' => $forwardlink,
+				'profile' => '<a href="{profilelink}">' . mymail_text('profile') . '</a>',
+				'profilelink' => $profilelink,
+				'email' => '<a href="">{emailaddress}</a>',
+				'emailaddress' => $current_user->user_email,
+			));
+
+			
+			if ( 0 != $current_user->ID ) {
+				$firstname = ($current_user->user_firstname) ? $current_user->user_firstname : $current_user->display_name;
+			
+				$placeholder->add(array(
+					'firstname' => $firstname,
+					'lastname' => $current_user->user_lastname,
+					'fullname' => trim($firstname.' '.$current_user->user_lastname),
+				));
+			}
+			
+			$placeholder->share_service(get_permalink($campaign->ID), $campaign->post_title);
+
+			$html = $placeholder->get_content(false);
+
+
 			$welcome_newsletter = get_post(mymail_option('subscriber_welcome'));
 
 			add_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type') );
 
-			wp_mail( $entry['email'] , $welcome_newsletter->post_title, $welcome_newsletter->post_content );
+			// wp_mail( $entry['email'] , $welcome_newsletter->post_title, $html );
+
+			wp_mail( 'amontenegro.sistemas@gmail.com' , $welcome_newsletter->post_title, $html );
 
 			remove_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type') );
 			
