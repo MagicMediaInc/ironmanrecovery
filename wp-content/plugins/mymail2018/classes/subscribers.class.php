@@ -687,7 +687,7 @@ class mymail_subscribers {
 				'profile' => '<a href="{profilelink}">' . mymail_text('profile') . '</a>',
 				'profilelink' => $profilelink,
 				'email' => '<a href="">{emailaddress}</a>',
-				'emailaddress' => 'lo que sea',
+				'emailaddress' => $entry['email'],
 			));
 
 			
