@@ -342,7 +342,7 @@ wp_editor('', 'mymail-editor', array(
 	<p><strong class="link"></strong></p>
 	<p><?php _e('Clicks', 'mymail' ); ?>: <strong class="clicks">0</strong><br><?php _e('Total', 'mymail' ); ?>: <strong class="total">0</strong></p>
 </div>
-<textarea id="content" name="content" class="hidden" autocomplete="off"><?php echo $post->post_content ?></textarea>
+<!-- <textarea id="content" name="content" class="hidden" autocomplete="off"><?php echo $post->post_content ?></textarea> -->
 <textarea id="excerpt" name="excerpt" class="hidden" autocomplete="off"><?php echo $post->post_excerpt ?></textarea>
 <?php 
 	endif;
