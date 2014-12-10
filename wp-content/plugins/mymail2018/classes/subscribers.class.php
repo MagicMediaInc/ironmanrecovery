@@ -661,13 +661,13 @@ class mymail_subscribers {
 
 			$template = 'mymail';
 
-			/*$html = mymail('campaigns')->get_template_by_slug($template, $file, false, $editorstyle);
+			$html = mymail('campaigns')->get_template_by_slug($template, $file, false, $editorstyle);
 			$file = isset($_GET['file']) ? $_GET['file'] : 'index.html';
-			$editorstyle = ($_GET['editorstyle'] == '1');*/
+			$editorstyle = ($_GET['editorstyle'] == '1');
 
 			$campaign = get_post($id);
 
-			$placeholder = mymail('placeholder', $campaign->post_content);
+			$placeholder = mymail('placeholder', $html);
 
 			$placeholder->set_campaign($campaign->ID);
 		
