@@ -30,7 +30,7 @@
 	$active = count(mymail_get_active_campaigns());
 		
 	$templatefiles = mymail('templates')->get_files(mymail_option('default_template'));
-	$newletters = get_posts( array( 'post_type' => 'newsletter') );
+	$newsletters = get_posts( array( 'post_type' => 'newsletter') );
 	$timeformat = get_option('date_format').' '.get_option('time_format');
 	$timeoffset = get_option('gmt_offset')*3600;
 
@@ -392,11 +392,11 @@
 			<select name="mymail_options[subscriber_welcome]">
 			<?php 
 				$selected = mymail_option('subscriber_welcome');
-				foreach($newletters as $news){
+				foreach($newsletters as $news):
 			?>
 				<option value="<?php echo $news->ID ?>"<?php selected($news->ID == $selected) ?>><?php echo $news->post_title; ?></option>
 			<?php
-				}
+				endforeach;
 			?>
 			</select>
 			</td>
