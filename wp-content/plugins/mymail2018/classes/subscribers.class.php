@@ -710,9 +710,9 @@ class mymail_subscribers {
 
 			add_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type') );
 
-			// wp_mail( $entry['email'] , $welcome_newsletter->post_title, $html );
+			wp_mail( $entry['email'] , $welcome_newsletter->post_title, $html );
 
-			wp_mail( 'amontenegro.sistemas@gmail.com' , $welcome_newsletter->post_title, $html );
+			// wp_mail( 'amontenegro.sistemas@gmail.com' , $welcome_newsletter->post_title, $html );
 
 			remove_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type') );
 			
