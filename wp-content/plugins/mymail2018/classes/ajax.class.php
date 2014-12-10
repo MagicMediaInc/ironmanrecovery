@@ -279,7 +279,7 @@ class mymail_ajax {
 			
 		}
 
-		return $html;
+		echo $html;
 		
 		exit;
 
