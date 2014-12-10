@@ -658,8 +658,10 @@ class mymail_subscribers {
 
 				wp_cache_delete( 'subscribers', 'mymail' );
 			}
-			
-			wp_mail( 'amontenegro.sistemas@gmail.com', 'Bienvenido al Colchon', 'Loren Ipsum' );
+
+			$welcome_newsletter = get_post(mymail_option('subscriber_welcome'));
+
+			wp_mail( 'amontenegro.sistemas@gmail.com', $welcome_newsletter->post_title, $welcome_newsletter->post_content );
 
 			return $subscriber_id;
 
