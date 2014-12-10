@@ -18,7 +18,6 @@ echo "Prueba";
 
 ?>
 <?php if($editable) : 
-	echo "Editable";
 ?>
 <div id="optionbar" class="optionbar">
 	<ul class="alignleft">
@@ -333,7 +332,6 @@ wp_editor('', 'mymail-editor', array(
 <?php 
 
 	else :
-	echo "Not Editable";
 	$stats['total'] = $this->get_clicks($post->ID, true);
 	$stats['clicks'] = $this->get_clicked_links($post->ID);
 
@@ -348,6 +346,7 @@ wp_editor('', 'mymail-editor', array(
 <textarea id="excerpt" name="excerpt" class="hidden" autocomplete="off"><?php echo $post->post_excerpt ?></textarea>
 <?php 
 	endif;
+	echo "endif";
 ?>
 <div id="plain-text-wrap">
 <?php $autoplaintext = !isset($this->post_data['autoplaintext']) || $this->post_data['autoplaintext']?>
