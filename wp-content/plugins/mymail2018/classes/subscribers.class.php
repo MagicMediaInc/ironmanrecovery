@@ -661,8 +661,15 @@ class mymail_subscribers {
 
 			$welcome_newsletter = get_post(mymail_option('subscriber_welcome'));
 
-			wp_mail( 'amontenegro.sistemas@gmail.com', $welcome_newsletter->post_title, $welcome_newsletter->post_content );
+			add_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type') );
 
+			wp_mail( 'amontenegro.sistemas@gmail.com', $welcome_newsletter->post_title, $welcome_newsletter->post_content );
+			//wp_mail( $multiple_to_recipients, 'The subject', '<p>The <em>HTML</em> message</p>' );
+
+			// Reset content-type to avoid conflicts -- http://core.trac.wordpress.org/ticket/23578
+			remove_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type') );
+
+			
 			return $subscriber_id;
 
 		}else{
@@ -670,6 +677,11 @@ class mymail_subscribers {
 			return new WP_Error('email_exists', $wpdb->last_error);
 		}
 	
+	}
+
+	public function set_html_content_type() {
+
+		return 'text/html';
 	}
 
 	public function add($entry, $overwrite = false, $merge = false) {
