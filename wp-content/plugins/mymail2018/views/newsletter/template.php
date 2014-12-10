@@ -1,5 +1,5 @@
 <?php
-
+echo "Prueba"; 
 	$editable = !in_array($post->post_status, array('active', 'finished'));
 	if(isset($_GET['showstats']) && $_GET['showstats']) $editable = false;
 	
