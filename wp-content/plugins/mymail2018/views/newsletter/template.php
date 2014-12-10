@@ -17,7 +17,9 @@ echo "Prueba";
 	}
 
 ?>
-<?php if($editable) : ?>
+<?php if($editable) : 
+	echo "Editable";
+?>
 <div id="optionbar" class="optionbar">
 	<ul class="alignleft">
 		<li class="no-border-left"><a class="mymail-icon undo disabled" title="<?php _e('undo', 'mymail') ?>">&nbsp;</a></li>
@@ -331,7 +333,7 @@ wp_editor('', 'mymail-editor', array(
 <?php 
 
 	else :
-	
+	echo "Not Editable";
 	$stats['total'] = $this->get_clicks($post->ID, true);
 	$stats['clicks'] = $this->get_clicked_links($post->ID);
 
