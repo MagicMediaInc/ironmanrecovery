@@ -342,7 +342,7 @@ wp_editor('', 'mymail-editor', array(
 	<p><strong class="link"></strong></p>
 	<p><?php _e('Clicks', 'mymail' ); ?>: <strong class="clicks">0</strong><br><?php _e('Total', 'mymail' ); ?>: <strong class="total">0</strong></p>
 </div>
-<!-- <textarea id="content" name="content" class="hidden" autocomplete="off"><?php echo $post->post_content ?></textarea> -->
+<textarea id="content" name="content" class="hidden" autocomplete="off"><?php echo $post->post_content ?></textarea>
 <textarea id="excerpt" name="excerpt" class="hidden" autocomplete="off"><?php echo $post->post_excerpt ?></textarea>
 <?php 
 	endif;
@@ -370,7 +370,7 @@ wp_editor('', 'mymail-editor', array(
 	</div>
 	<p class="device-info"><?php _e('Your email may look different on mobile devices', 'mymail'); ?></p>
 </div></div>
-<!--<textarea id="content" class="hidden" autocomplete="off" name="content" ><?php echo $post->post_content ?></textarea>-->
+<textarea id="content" class="hidden" autocomplete="off" name="content" ><?php echo $post->post_content ?></textarea>
 <textarea id="modules" class="hidden" autocomplete="off"><?php echo $modules ?></textarea>
 <textarea id="head" name="mymail_data[head]" class="hidden" autocomplete="off"><?php echo isset($this->post_data['head']) ? $this->post_data['head'] : $this->templateobj->get_head(); ?></textarea>
 <?php echo "Fin"; ?>
