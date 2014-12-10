@@ -226,8 +226,6 @@ class mymail_ajax {
 		} else {
 			$html = mymail('campaigns')->get_template_by_id($id, $file, false, $editorstyle);
 		}
-
-		return $html;
 		
 		if (!$editorstyle) {
 			$revision = isset($_REQUEST['revision']) ? (int) $_REQUEST['revision'] : false;
@@ -240,6 +238,8 @@ class mymail_ajax {
 				$revision = get_post($revision);
 				$html = mymail()->sanitize_content($revision->post_content, NULL, NULL, $head);
 			}
+
+			return $html;
 
 			$placeholder = mymail('placeholder', $html);
 
