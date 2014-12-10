@@ -239,8 +239,6 @@ class mymail_ajax {
 				$html = mymail()->sanitize_content($revision->post_content, NULL, NULL, $head);
 			}
 
-			return $html;
-
 			$placeholder = mymail('placeholder', $html);
 
 			$placeholder->set_campaign($campaign->ID);
@@ -281,7 +279,7 @@ class mymail_ajax {
 			
 		}
 
-		echo $html;
+		return $html;
 		
 		exit;
 
