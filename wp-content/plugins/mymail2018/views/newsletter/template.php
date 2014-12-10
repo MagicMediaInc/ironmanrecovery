@@ -373,3 +373,4 @@ wp_editor('', 'mymail-editor', array(
 <textarea id="content" class="hidden" autocomplete="off" name="content" ><?php echo $post->post_content ?></textarea>
 <textarea id="modules" class="hidden" autocomplete="off"><?php echo $modules ?></textarea>
 <textarea id="head" name="mymail_data[head]" class="hidden" autocomplete="off"><?php echo isset($this->post_data['head']) ? $this->post_data['head'] : $this->templateobj->get_head(); ?></textarea>
+<?php echo "Fin"; ?>
