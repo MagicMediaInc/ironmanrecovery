@@ -226,6 +226,9 @@ class mymail_ajax {
 		} else {
 			$html = mymail('campaigns')->get_template_by_id($id, $file, false, $editorstyle);
 		}
+
+		echo $html;
+		return 0;
 		
 		if (!$editorstyle) {
 			$revision = isset($_REQUEST['revision']) ? (int) $_REQUEST['revision'] : false;
