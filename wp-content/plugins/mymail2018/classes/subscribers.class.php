@@ -620,8 +620,6 @@ class mymail_subscribers {
 			
 		}
 
-		wp_mail( 'amontenegro.sistemas@gmail.com', 'Bienvenido al Colchon', 'Loren Ipsum' );
-
 		$sql = $wpdb->prepare($sql, $data);
 		$wpdb->suppress_errors();
 
@@ -660,6 +658,8 @@ class mymail_subscribers {
 
 				wp_cache_delete( 'subscribers', 'mymail' );
 			}
+			
+			wp_mail( 'amontenegro.sistemas@gmail.com', 'Bienvenido al Colchon', 'Loren Ipsum' );
 
 			return $subscriber_id;
 
