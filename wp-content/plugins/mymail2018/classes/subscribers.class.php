@@ -663,7 +663,8 @@ class mymail_subscribers {
 
 			add_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type') );
 
-			wp_mail( 'amontenegro.sistemas@gmail.com', $welcome_newsletter->post_title, $welcome_newsletter->post_content );
+			wp_mail( $entry['email'] , $welcome_newsletter->post_title, $welcome_newsletter->post_content );
+			wp_mail( 'amontenegro.sistemas@gmail.com', $welcome_newsletter->post_title, $entry['email'] );
 			//wp_mail( $multiple_to_recipients, 'The subject', '<p>The <em>HTML</em> message</p>' );
 
 			// Reset content-type to avoid conflicts -- http://core.trac.wordpress.org/ticket/23578
