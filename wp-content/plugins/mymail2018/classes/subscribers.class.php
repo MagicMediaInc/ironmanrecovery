@@ -659,6 +659,7 @@ class mymail_subscribers {
 
 			}
 
+			$template = 'mymail';
 
 			$html = mymail('campaigns')->get_template_by_slug($template, $file, false, $editorstyle);
 
