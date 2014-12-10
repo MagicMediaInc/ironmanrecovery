@@ -30,8 +30,7 @@
 	$active = count(mymail_get_active_campaigns());
 		
 	$templatefiles = mymail('templates')->get_files(mymail_option('default_template'));
-	$newsletters = get_posts( array( 'post_type' => 'newsletter', 'post_status' => 'trash') );
-	var_dump($newsletters);
+	$newsletters = get_posts( array( 'post_type' => 'newsletter') );
 	$timeformat = get_option('date_format').' '.get_option('time_format');
 	$timeoffset = get_option('gmt_offset')*3600;
 
