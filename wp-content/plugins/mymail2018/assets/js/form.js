@@ -26,6 +26,8 @@ jQuery(document).ready(function(jQuery) {
 				form.removeClass('loading').find('div.mymail-wrapper').removeClass('error');
 				
 				info.removeClass('success error');
+
+				form.trigger("reset");;
 				
 				if(jQuery.isFunction(window.mymail_post_submit)){
 					c = window.mymail_post_submit.call(form[0], response);
@@ -37,7 +39,9 @@ jQuery(document).ready(function(jQuery) {
 				
 					(response.redirect)
 						? location.href = response.redirect
-						: info.addClass('success').html(response.html).slideDown(200);
+						: info.addClass('success').html(response.html).slideDown(200).hide(6000);
+						form.trigger("reset");
+
 					
 					
 				}else{
@@ -50,7 +54,9 @@ jQuery(document).ready(function(jQuery) {
 							form.find('.mymail-'+field+'-wrapper').addClass('error');
 							
 						})
-					info.addClass('error').html(response.html).slideDown(200);
+					info.addClass('error').html(response.html).slideDown(200).hide(6000);
+					form.trigger("reset");
+					
 				}
 				
 			}, 'JSON');
