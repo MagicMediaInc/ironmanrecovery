@@ -54,8 +54,8 @@ function woocommerce_meta_boxes() {
 		remove_meta_box( 'postexcerpt', 'product', 'normal' );
 		add_meta_box( 'postexcerpt', __( 'Product Short Description', 'woocommerce' ), 'woocommerce_product_short_description_meta_box', 'product', 'normal' );
 		add_meta_box( 'product_description', __( 'Product Description', 'woocommerce' ), 'woocommerce_product_description_meta_box', 'product', 'normal' );
-		add_meta_box( 'product_features', __( 'Features', 'woocommerce' ), 'woocommerce_product_features_meta_box', 'product', 'normal' );
-		add_meta_box( 'product_custom', __( 'Custom', 'woocommerce' ), 'woocommerce_product_custom_meta_box', 'product', 'normal' );
+		// add_meta_box( 'product_features', __( 'Features', 'woocommerce' ), 'woocommerce_product_features_meta_box', 'product', 'normal' );
+		// add_meta_box( 'product_custom', __( 'Custom', 'woocommerce' ), 'woocommerce_product_custom_meta_box', 'product', 'normal' );
 	}
 
 	// Comments/Reviews
