@@ -55,9 +55,9 @@ function woocommerce_meta_boxes() {
 		add_meta_box( 'postexcerpt', __( 'Product Short Description', 'woocommerce' ), 'woocommerce_product_short_description_meta_box', 'product', 'normal' );
 		remove_meta_box( 'postproductdescription', 'product', 'normal' );
 		add_meta_box( 'postproductdescription', __( 'Product Description', 'woocommerce' ), 'woocommerce_productdescription_meta_box', 'product', 'normal' );
-		remove_meta_box( 'postproductdescription', 'product', 'normal' );
+		remove_meta_box( 'postproductfeatures', 'product', 'normal' );
 		add_meta_box( 'postproductfeatures', __( 'Features', 'woocommerce' ), 'woocommerce_productfeatures_meta_box', 'product', 'normal' );
-		remove_meta_box( 'postproductdescription', 'product', 'normal' );
+		remove_meta_box( 'postproductcustom', 'product', 'normal' );
 		add_meta_box( 'postproductcustom', __( 'Custom', 'woocommerce' ), 'woocommerce_productcustom_meta_box', 'product', 'normal' );
 		
 	}
