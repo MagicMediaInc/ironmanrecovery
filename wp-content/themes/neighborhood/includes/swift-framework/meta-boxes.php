@@ -754,16 +754,16 @@
 			),
 			array(
 				'name' => 'Product Description Title',
-				'id'   => "productdescription",
+				'name'   => "productdescription",
 				'type' => 'hidden',
 			),
 			array(
 				'name' => 'Features Title',
-				'id'   => "productfeatures",
+				'name'   => "productfeatures",
 				'type' => 'hidden',
 			),array(
 				'name' => 'Custom Title',
-				'id'   => "productcustom",
+				'name'   => "productcustom",
 				'type' => 'hidden',
 			),
 			
