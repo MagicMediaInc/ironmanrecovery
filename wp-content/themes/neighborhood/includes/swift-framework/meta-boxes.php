@@ -722,7 +722,7 @@
 			
 			// PRODUCT DESCRIPTION
 			array(
-				'name' => 'Product Short Description',
+				'name' => 'Product Short Description',
 				'desc' => "You can optionally write a short description here, which shows above the variations/shopping bag options.",
 				'id'   => "{$prefix}product_short_description",
 				'type' => 'textarea',
@@ -734,8 +734,8 @@
 			),
 			
 			// PRODUCT DESCRIPTION
-			array(
-				'name' => 'Product Description',
+			/*array(
+				'name' => 'Product Description',
 				'desc' => "You can optionally write a product description here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
 				'id'   => "{$prefix}product_description",
 				'type' => 'textarea',
@@ -745,8 +745,8 @@
 				'cols' => '40',
 				'rows' => '8',
 				
-			),array(
-				'name' => 'Features ',
+			),*/array(
+				'name' => 'Features',
 				'desc' => "You can optionally write a Feature here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
 				'id'   => "{$prefix}product_features",
 				'type' => 'textarea',
@@ -756,8 +756,14 @@
 				'cols' => '40',
 				'rows' => '8',
 			),array(
-				'name' => 'Custom ',
-				'desc' => "You can optionally write a Feature here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
+				'name' => 'Custom Title',
+				'desc' => "You can optionally write a Custom Title here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
+				'id'   => "{$prefix}product_custom_title",
+				'type' => 'text',
+				'std'  => "",
+			),array(
+				'name' => 'Custom',
+				'desc' => "You can optionally write a Custom here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
 				'id'   => "{$prefix}product_custom",
 				'type' => 'textarea',
 				'quicktags' 	=> true,
