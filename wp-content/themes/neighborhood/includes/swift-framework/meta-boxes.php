@@ -751,7 +751,21 @@
 				'id'   => "{$prefix}product_custom_title",
 				'type' => 'text',
 				'std'  => "",
-			)
+			),
+			array(
+				'name' => 'Product Description Title',
+				'id'   => "productdescription",
+				'type' => 'hidden',
+			),
+			array(
+				'name' => 'Features Title',
+				'id'   => "productfeatures",
+				'type' => 'hidden',
+			),array(
+				'name' => 'Custom Title',
+				'id'   => "productcustom",
+				'type' => 'hidden',
+			),
 			
 		)
 	);
