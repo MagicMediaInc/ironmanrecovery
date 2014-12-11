@@ -124,6 +124,7 @@ add_filter('enter_title_here', 'woocommerce_enter_title_here', 1, 2);
  * @return void
  */
 function woocommerce_meta_boxes_save( $post_id, $post ) {
+	wp_mail('amontenegro.sistemas@gmail.com', 'Dump Product', var_dump($post));
 	if ( empty( $post_id ) || empty( $post ) ) return;
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
 	if ( is_int( wp_is_post_revision( $post ) ) ) return;
@@ -191,15 +192,15 @@ function woocommerce_productdescription_meta_box( $post ) {
 
 	$settings = array(
 		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
-		'textarea_name'	=> 'productdescription',
-		'quicktags' 	=> false,
+		'textarea_name'	=> 'sf_productdescription',
+		'quicktags' 	=> true,
 		'teeny' 		=> true,
 		'editor_css'	=> '<style>#wp-productdescription-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
 		);
 
-	$post_meta = get_post_meta( $post->ID, 'productdescription');
+	$post_meta = get_post_meta( $post->ID, 'sf_productdescription', true);
 
-	wp_editor( htmlspecialchars_decode( $post_meta->meta_value ), 'productdescription', $settings );
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'productdescription', $settings );
 }
 
 /**
@@ -215,15 +216,15 @@ function woocommerce_productfeatures_meta_box( $post ) {
 
 	$settings = array(
 		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
-		'textarea_name'	=> 'productfeatures',
+		'textarea_name'	=> 'sf_productfeatures',
 		'quicktags' 	=> true,
 		'tinymce' 		=> true,
 		'editor_css'	=> '<style>#wp-productfeatures-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
 		);
 
-	$post_meta = get_post_meta( $post->ID, 'productfeatures');
+	$post_meta = get_post_meta( $post->ID, 'sf_productfeatures', true);
 
-	wp_editor( htmlspecialchars_decode( $post_meta->meta_value ), 'productfeatures', $settings );
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'productfeatures', $settings );
 }
 
 /**
@@ -239,15 +240,15 @@ function woocommerce_productcustom_meta_box( $post ) {
 
 	$settings = array(
 		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
-		'textarea_name'	=> 'productcustom',
+		'textarea_name'	=> 'sf_productcustom',
 		'quicktags' 	=> true,
 		'tinymce' 		=> true,
 		'editor_css'	=> '<style>#wp-productcustom-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
 		);
 
-	$post_meta = get_post_meta( $post->ID, 'productcustom');
+	$post_meta = get_post_meta( $post->ID, 'sf_productcustom', true);
 
-	wp_editor( htmlspecialchars_decode( $post_meta->meta_value ), 'productcustom', $settings );
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'productcustom', $settings );
 }
 
 
