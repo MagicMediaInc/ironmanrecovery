@@ -118,7 +118,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 						<?php echo $product_description_title; ?>
 						</a>
 						</div>
-						<div id="collapseOne" class="accordion-body in collapse">
+						<div id="collapseOne" class="accordion-body collapse">
 							<div class="accordion-inner">
 							<?php echo $product_description; ?>
 							</div>
@@ -133,7 +133,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 						<?php echo $product_features_title; ?>
 						</a>
 						</div>
-						<div id="collapseOne" class="accordion-body in collapse">
+						<div id="collapseOne" class="accordion-body collapse">
 							<div class="accordion-inner">
 							<?php echo $product_features; ?>
 							</div>
@@ -148,7 +148,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 						<?php echo $product_custom_title; ?>
 						</a>
 						</div>
-						<div id="collapseOne" class="accordion-body in collapse">
+						<div id="collapseOne" class="accordion-body collapse">
 							<div class="accordion-inner">
 							<?php echo $product_custom; ?>
 							</div>
