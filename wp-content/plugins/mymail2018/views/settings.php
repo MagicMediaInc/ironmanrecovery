@@ -30,6 +30,8 @@
 	$active = count(mymail_get_active_campaigns());
 		
 	$templatefiles = mymail('templates')->get_files(mymail_option('default_template'));
+	$newsletters = get_posts( array( 'post_type' => 'newsletter', 'post_status' => 'paused') );
+	// var_dump($newsletters);
 	$timeformat = get_option('date_format').' '.get_option('time_format');
 	$timeoffset = get_option('gmt_offset')*3600;
 
@@ -385,6 +387,21 @@
 		<?php do_action('mymail_section_tab_subscribers') ?>
 
 	<table class="form-table">
+		<tr valign="top">
+			<th scope="row"><?php _e('Newsletter de Bienvenida' ,'mymail') ?></th>
+			<td>
+			<select name="mymail_options[subscriber_welcome]">
+			<?php 
+				$selected = mymail_option('subscriber_welcome');
+				foreach($newsletters as $news):
+			?>
+				<option value="<?php echo $news->ID ?>"<?php selected($news->ID == $selected) ?>><?php echo $news->post_title; ?></option>
+			<?php
+				endforeach;
+			?>
+			</select>
+			</td>
+		</tr>
 		<tr valign="top">
 			<th scope="row"><?php _e('Notification' ,'mymail') ?></th>
 			<td><label><input type="checkbox" name="mymail_options[subscriber_notification]" value="1" <?php checked(mymail_option('subscriber_notification')); ?>> <?php _e('Send a notification of new subscribers to following receivers (comma separated)' ,'mymail') ?> <input type="text" name="mymail_options[subscriber_notification_receviers]" value="<?php echo esc_attr(mymail_option('subscriber_notification_receviers')); ?>" class="regular-text"></label>

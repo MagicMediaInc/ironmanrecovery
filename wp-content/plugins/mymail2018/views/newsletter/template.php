@@ -17,7 +17,10 @@
 	}
 
 ?>
-<?php if($editable) : ?>
+
+<?php if($editable) : 
+?>
+
 <div id="optionbar" class="optionbar">
 	<ul class="alignleft">
 		<li class="no-border-left"><a class="mymail-icon undo disabled" title="<?php _e('undo', 'mymail') ?>">&nbsp;</a></li>
@@ -331,7 +334,7 @@ wp_editor('', 'mymail-editor', array(
 <?php 
 
 	else :
-	
+
 	$stats['total'] = $this->get_clicks($post->ID, true);
 	$stats['clicks'] = $this->get_clicked_links($post->ID);
 
@@ -346,6 +349,7 @@ wp_editor('', 'mymail-editor', array(
 <textarea id="excerpt" name="excerpt" class="hidden" autocomplete="off"><?php echo $post->post_excerpt ?></textarea>
 <?php 
 	endif;
+
 ?>
 <div id="plain-text-wrap">
 <?php $autoplaintext = !isset($this->post_data['autoplaintext']) || $this->post_data['autoplaintext']?>
@@ -372,3 +376,4 @@ wp_editor('', 'mymail-editor', array(
 <textarea id="content" class="hidden" autocomplete="off" name="content" ><?php echo $post->post_content ?></textarea>
 <textarea id="modules" class="hidden" autocomplete="off"><?php echo $modules ?></textarea>
 <textarea id="head" name="mymail_data[head]" class="hidden" autocomplete="off"><?php echo isset($this->post_data['head']) ? $this->post_data['head'] : $this->templateobj->get_head(); ?></textarea>
+
