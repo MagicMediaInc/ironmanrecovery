@@ -749,9 +749,6 @@
 				'std'  => "",
 				'cols' => '40',
 				'rows' => '8',
-			),
-			
-				
 			),array(
 				'name' => 'Custom ',
 				'desc' => "You can optionally write a Feature here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
