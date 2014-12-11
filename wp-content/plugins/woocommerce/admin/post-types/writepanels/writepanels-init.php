@@ -191,7 +191,7 @@ function woocommerce_productdescription_meta_box( $post ) {
 		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
 		'textarea_name'	=> 'productdescription',
 		'quicktags' 	=> false,
-		'tinymce' 		=> false,
+		'tinymce' 		=> true,
 		'editor_css'	=> '<style>#wp-productdescription-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
 		);
 
