@@ -701,6 +701,27 @@
 			
 		)
 	);
+
+	$meta_boxes[] = array(
+		'id' => 'productdescription',
+		'fields' => array(
+			array(
+				'name' => 'Product Description Title',
+				'type' => 'text',
+				'id' => 'productdescriptiontitle'
+				),
+			array(
+				'name' => 'Product Features Title',
+				'type' => 'text',
+				'id' => 'productfeaturestitle'
+				),
+			array(
+				'name' => 'Product Custom Title',
+				'type' => 'text',
+				'id' => 'productcustomtitle'
+				),
+			)
+		);
 	
 	
 	/* Product Meta Box
