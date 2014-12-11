@@ -102,7 +102,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		
 		<?php if ($product_short_description != "") { ?>
 			<div class="product-short">
-				<?php echo do_shortcode($product_short_description); ?>
+				<?php 
+					echo $post->post_excerpt;
+				//echo do_shortcode($product_short_description); ?>
 			</div>
 		<?php } ?>			
 		<?php

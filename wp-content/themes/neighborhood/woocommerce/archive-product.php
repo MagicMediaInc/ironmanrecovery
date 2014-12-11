@@ -87,7 +87,11 @@
 	?>
 
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true )  && $default_show_page_heading) : ?>
-			
+	<style>
+		.page-heading{
+			margin-top: -19px !important;
+		}
+	</style>		
 	<div class="row">
 		<div class="page-heading span12 clearfix alt-bg alt-three<?php //echo $default_page_heading_bg_alt; ?>">
 			<div class="heading-text">
@@ -141,7 +145,54 @@
 		
 		<!-- OPEN section -->
 		<section class="<?php echo $page_class; ?>">
-		
+			<style>
+.recent-post h5 a{
+   font-weigth:900;
+}
+
+.submit-button{
+background: none !important;
+-webkit-appearance: none !important;
+transition :none !important;
+-webkit-transition :none !important;
+font-weight: normal !important; 
+}
+form.mymail-form{
+bottom:0px !important;
+}
+
+@media (max-width: 1024px) {
+
+form.mymail-form{
+bottom:-14px !important;
+}
+
+#mymail-firstname-0, #mymail-email-0
+{
+   width:35% !important;
+}
+.submit-button{
+width:20% !important;
+}
+
+}
+
+@media (max-width:680px){
+.mymail-form{
+display:none;
+}
+}
+
+
+</style>
+
+<div style="position: relative; margin-bottom: 20px;"><img style="display: inline-block;" alt="" src="http://ironmanrecovery.com.br/wp-content/uploads/2014/12/Natal-Ironman-cs6-3_04.jpg" />
+<form class="mymail-form mymail-form-submit mymail-form-0 mymail-ajax-form " style="position: absolute; right: 20px; width: 50%; bottom: 0px;" action="http://ironmanrecovery.com.br/wp-admin/admin-ajax.php" method="post">
+<div class="mymail-form-info success"></div>
+<input type="hidden" name="_extern" value="0" /><input type="hidden" name="action" value="mymail_form_submit" /><input type="hidden" name="formid" value="0" />
+<div class="mymail-wrapper mymail-email-wrapper" style="display: block; text-align: right;"><input class="input mymail-firstname" id="mymail-firstname-0" style="display: inline-block; margin: 0px; margin-right: 10px; width: 40%; padding: 15px 10px;" tabindex="101" type="text" name="userdata[firstname]" placeholder="digite aqui seu nome" value="" /><input class="input mymail-email required" id="mymail-email-0" style="display: inline-block; margin: 0px; margin-right: 10px; width: 40%; padding: 15px 10px;" tabindex="100" type="text" name="userdata[email]" placeholder="digite aqui seu email" value="" /><input class="submit-button button" style="display: inline-block; margin: 0px; width: 15%; background-color: #005771; color: #fff; border: 0px; padding: 5px 10px;" tabindex="103" type="submit" name="submit" value="Enviar" /></div>
+</form></div>
+
 			<div class="page-content <?php echo $content_class; ?>">
 						
 			<?php if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) {
