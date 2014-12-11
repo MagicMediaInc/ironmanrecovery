@@ -186,7 +186,7 @@ function woocommerce_product_description_meta_box( $post ) {
 
 	$settings = array(
 		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
-		'textarea_name'	=> 'product_description',
+		'textarea_name'	=> 'excerpt',
 		'quicktags' 	=> true,
 		'tinymce' 		=> true,
 		'editor_css'	=> '<style>#wp-product_description-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
