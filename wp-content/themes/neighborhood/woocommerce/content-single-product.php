@@ -24,11 +24,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	}
 	
 	$product_description_title = get_post_meta($post->ID, 'sf_product_description_title', true);
-	$product_description = get_post_meta($post->ID, 'sf_product_description', true);
+	$product_description = get_post_meta($post->ID, 'sf_productdescription', true);
 	$product_features_title = get_post_meta($post->ID, 'sf_product_features_title', true);
-	$product_features = get_post_meta($post->ID, 'sf_product_features', true);
+	$product_features = get_post_meta($post->ID, 'sf_productfeatures', true);
 	$product_custom_title = get_post_meta($post->ID, 'sf_product_custom_title', true);
-	$product_custom = get_post_meta($post->ID, 'sf_product_custom', true);
+	$product_custom = get_post_meta($post->ID, 'sf_productcustom', true);
 	
 	/**
 	 * woocommerce_before_single_product hook
@@ -114,7 +114,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<?php if ($product_description_title != "" && $product_description != ""): ?>
 					<div class="accordion-group">
 						<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
 						<?php echo $product_description_title; ?>
 						</a>
 						</div>
@@ -144,7 +144,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<?php if ($product_custom_title != "" && $product_custom != ""): ?>
 					<div class="accordion-group">
 						<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseOne">
 						<?php echo $product_custom_title; ?>
 						</a>
 						</div>
