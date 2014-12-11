@@ -196,10 +196,10 @@ function woocommerce_product_description_meta_box( $post ) {
 		'textarea_name'	=> 'product_description',
 		'quicktags' 	=> true,
 		'tinymce' 		=> true,
-		'editor_css'	=> '<style>#wp-product_description-editor-container}</style>'
+		'editor_css'	=> '<style>#wp-product_description-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
 		);
 
-	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'product_description', $settings );
+	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'product_description'); //$settings );
 }
 
 /**
