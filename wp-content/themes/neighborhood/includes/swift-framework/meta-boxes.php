@@ -730,14 +730,6 @@
 		'pages' => array( 'product' ),
 		'context' => 'normal',
 		'fields' => array(
-						
-			// PRODUCT DESCRIPTION SECTION
-			array (
-				'name' 	=> '',
-				'title' => 'Accordion Titles',
-			    'id' 	=> "{$prefix}heading_custom_excerpt",
-			    'type' 	=> 'section'
-			),
 			
 			// PRODUCT DESCRIPTION
 			array(
@@ -772,80 +764,6 @@
 		'context' => 'normal',
 		'fields' => array(
 						
-			// PRODUCT DESCRIPTION SECTION
-			array (
-				'name' 	=> '',
-				'title' => 'Accordion',
-			    'id' 	=> "{$prefix}heading_custom_excerpt",
-			    'type' 	=> 'section'
-			),
-			
-			// PRODUCT DESCRIPTION
-			array(
-				'name' => 'Product Description Title',
-				'desc' => "You can optionally write a Description Title here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
-				'id'   => "{$prefix}product_description_title",
-				'type' => 'text',
-				'std'  => "",
-			),array(
-				'name' => 'Product Description',
-				'desc' => "You can optionally write a short description here, which shows above the variations/shopping bag options.",
-				'id'   => "{$prefix}product_description",
-				'type' => 'textarea',
-				'quicktags' 	=> true,
-				'tinymce' 		=> true,
-				'std'  => "",
-				'cols' => '40',
-				'rows' => '8',
-			),
-			
-			// PRODUCT DESCRIPTION
-			/*array(
-				'name' => 'Product Description',
-				'desc' => "You can optionally write a product description here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
-				'id'   => "{$prefix}product_description",
-				'type' => 'textarea',
-				'quicktags' 	=> true,
-				'tinymce' 		=> true,
-				'std'  => "",
-				'cols' => '40',
-				'rows' => '8',
-				
-			),*/
-			array(
-				'name' => 'Features Title',
-				'desc' => "You can optionally write a Features Title here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
-				'id'   => "{$prefix}product_features_title",
-				'type' => 'text',
-				'std'  => "",
-			),array(
-				'name' => 'Features',
-				'desc' => "You can optionally write a Feature here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
-				'id'   => "{$prefix}product_features",
-				'type' => 'textarea',
-				'quicktags' 	=> true,
-				'tinymce' 		=> true,
-				'std'  => "",
-				'cols' => '40',
-				'rows' => '8',
-			),array(
-				'name' => 'Custom Title',
-				'desc' => "You can optionally write a Custom Title here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
-				'id'   => "{$prefix}product_custom_title",
-				'type' => 'text',
-				'std'  => "",
-			),array(
-				'name' => 'Custom',
-				'desc' => "You can optionally write a Custom here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
-				'id'   => "{$prefix}product_custom",
-				'type' => 'textarea',
-				'quicktags' 	=> true,
-				'tinymce' 		=> true,
-				'std'  => "",
-				'cols' => '40',
-				'rows' => '8',
-			),
-
 			// MAIN DETAIL SECTION
 			array (
 				'name' 	=> '',
