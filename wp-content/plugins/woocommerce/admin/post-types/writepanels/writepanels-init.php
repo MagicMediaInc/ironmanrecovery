@@ -51,16 +51,16 @@ function woocommerce_meta_boxes() {
 
 	// Excerpt
 	if ( function_exists('wp_editor') ) {
-		remove_meta_box( 'postexcerpt', 'product', 'normal' );
+		//remove_meta_box( 'postexcerpt', 'product', 'normal' );
 		//add_meta_box( 'postexcerpt', __( 'Product Short Description', 'woocommerce' ), 'woocommerce_product_short_description_meta_box', 'product', 'normal' );
-		//add_meta_box( 'product_description', __( 'Product Description', 'woocommerce' ), 'woocommerce_product_description_meta_box', 'product', 'normal' );
+		//add_meta_box( 'productdescription', __( 'Product Description', 'woocommerce' ), 'woocommerce_productdescription_meta_box', 'product', 'normal' );
 		// add_meta_box( 'product_features', __( 'Features', 'woocommerce' ), 'woocommerce_product_features_meta_box', 'product', 'normal' );
 		// add_meta_box( 'product_custom', __( 'Custom', 'woocommerce' ), 'woocommerce_product_custom_meta_box', 'product', 'normal' );
 	}
 	if ( function_exists('wp_editor') ) {
-		remove_meta_box( 'product_description', 'product', 'normal' );
+		remove_meta_box( 'productdescription', 'product', 'normal' );
 		// add_meta_box( 'postexcerpt', __( 'Product Short Description', 'woocommerce' ), 'woocommerce_product_short_description_meta_box', 'product', 'normal' );
-		add_meta_box( 'product_description', __( 'Product Description', 'woocommerce' ), 'woocommerce_product_description_meta_box', 'product', 'normal' );
+		add_meta_box( 'productdescription', __( 'Product Description', 'woocommerce' ), 'woocommerce_productdescription_meta_box', 'product', 'normal' );
 		// add_meta_box( 'product_features', __( 'Features', 'woocommerce' ), 'woocommerce_product_features_meta_box', 'product', 'normal' );
 		// add_meta_box( 'product_custom', __( 'Custom', 'woocommerce' ), 'woocommerce_product_custom_meta_box', 'product', 'normal' );
 	}
@@ -189,7 +189,7 @@ function woocommerce_product_short_description_meta_box( $post ) {
  * @param mixed $post
  * @return void
  */
-function woocommerce_product_description_meta_box( $post ) {
+function woocommerce_productdescription_meta_box1( $post ) {
 
 	$settings = array(
 		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
@@ -211,17 +211,17 @@ function woocommerce_product_description_meta_box( $post ) {
  * @param mixed $post
  * @return void
  */
-function woocommerce_product_description_meta_box1( $post ) {
+function woocommerce_productdescription_meta_box( $post ) {
 
 	$settings = array(
 		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
 		'textarea_name'	=> 'excerpt',
 		'quicktags' 	=> true,
 		'tinymce' 		=> true,
-		'editor_css'	=> '<style>#wp-product_description-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
+		'editor_css'	=> '<style>#wp-productdescription-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
 		);
 
-	$post_meta = get_post_meta( $post->ID, 'product_description');
+	$post_meta = get_post_meta( $post->ID, 'productdescription');
 
 	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'excerpt', $settings );
 }
