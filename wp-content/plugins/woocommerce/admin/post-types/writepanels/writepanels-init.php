@@ -199,7 +199,7 @@ function woocommerce_product_description_meta_box( $post ) {
 		'editor_css'	=> '<style>#wp-product_description-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
 		);
 
-	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'product_description'); //$settings );
+	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'excerpt', $settings );
 }
 
 /**
