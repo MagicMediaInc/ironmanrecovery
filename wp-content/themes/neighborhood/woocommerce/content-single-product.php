@@ -111,15 +111,52 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					echo $post->post_excerpt;
 				?>
 					<div class="accordion-product" id="product-accordion">
+					<?php if ($product_description_title != "" && $product_description != ""): ?>
 					<div class="accordion-group">
 						<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-						Tecnologia Celliant®
+						<?php echo $product_description_title; ?>
 						</a>
 						</div>
+						<div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+							<div class="accordion-inner">
+							<?php echo $product_description; ?>
+							</div>
+						</div>
+					</div>
+					<?php endif; ?>
+
+					<?php if ($product_features_title != "" && $product_features != ""): ?>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						<?php echo $product_features_title; ?>
+						</a>
+						</div>
+						<div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+							<div class="accordion-inner">
+							<?php echo $product_features; ?>
+							</div>
+						</div>
+					</div>
+					<?php endif; ?>
+
+					<?php if ($product_custom_title != "" && $product_custom != ""): ?>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						<?php echo $product_custom_title; ?>
+						</a>
+						</div>
+						<div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+							<div class="accordion-inner">
+							<?php echo $product_custom; ?>
+							</div>
+						</div>
+					</div>
+					<?php endif; ?>
 				<?php
 				//echo do_shortcode($product_short_description); ?>
-					</div>
 					</div>
 			</div>
 		<?php } ?>			
