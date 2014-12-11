@@ -200,7 +200,7 @@ function woocommerce_productdescription_meta_box( $post ) {
 
 	$post_meta = get_post_meta( $post->ID, 'sf_productdescription', true);
 
-	wp_editor( htmlspecialchars_decode( $post_meta->meta_value ), 'productdescription', $settings );
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'productdescription', $settings );
 }
 
 /**
@@ -224,7 +224,7 @@ function woocommerce_productfeatures_meta_box( $post ) {
 
 	$post_meta = get_post_meta( $post->ID, 'sf_productfeatures', true);
 
-	wp_editor( htmlspecialchars_decode( $post_meta->meta_value ), 'productfeatures', $settings );
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'productfeatures', $settings );
 }
 
 /**
@@ -248,7 +248,7 @@ function woocommerce_productcustom_meta_box( $post ) {
 
 	$post_meta = get_post_meta( $post->ID, 'sf_productcustom', true);
 
-	wp_editor( htmlspecialchars_decode( $post_meta->meta_value ), 'productcustom', $settings );
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'productcustom', $settings );
 }
 
 
