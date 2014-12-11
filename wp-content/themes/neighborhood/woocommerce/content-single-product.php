@@ -114,7 +114,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<?php if ($product_description_title != "" && $product_description != ""): ?>
 					<div class="accordion-group">
 						<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
 						<?php echo $product_description_title; ?>
 						</a>
 						</div>
@@ -129,11 +129,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<?php if ($product_features_title != "" && $product_features != ""): ?>
 					<div class="accordion-group">
 						<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
 						<?php echo $product_features_title; ?>
 						</a>
 						</div>
-						<div id="collapseOne" class="accordion-body collapse">
+						<div id="collapseTwo" class="accordion-body collapse">
 							<div class="accordion-inner">
 							<?php echo $product_features; ?>
 							</div>
@@ -144,11 +144,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<?php if ($product_custom_title != "" && $product_custom != ""): ?>
 					<div class="accordion-group">
 						<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseOne">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
 						<?php echo $product_custom_title; ?>
 						</a>
 						</div>
-						<div id="collapseOne" class="accordion-body collapse">
+						<div id="collapseThree" class="accordion-body collapse">
 							<div class="accordion-inner">
 							<?php echo $product_custom; ?>
 							</div>
