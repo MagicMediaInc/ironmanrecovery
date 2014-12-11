@@ -53,6 +53,9 @@ function woocommerce_meta_boxes() {
 	if ( function_exists('wp_editor') ) {
 		remove_meta_box( 'postexcerpt', 'product', 'normal' );
 		add_meta_box( 'postexcerpt', __( 'Product Short Description', 'woocommerce' ), 'woocommerce_product_short_description_meta_box', 'product', 'normal' );
+		add_meta_box( 'product_description', __( 'Product Description', 'woocommerce' ), 'woocommerce_product_description_meta_box', 'product', 'normal' );
+		add_meta_box( 'product_features', __( 'Features', 'woocommerce' ), 'woocommerce_product_features_meta_box', 'product', 'normal' );
+		add_meta_box( 'product_custom', __( 'Custom', 'woocommerce' ), 'woocommerce_product_custom_meta_box', 'product', 'normal' );
 	}
 
 	// Comments/Reviews
@@ -168,6 +171,78 @@ function woocommerce_product_short_description_meta_box( $post ) {
 		);
 
 	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'excerpt', $settings );
+}
+
+/**
+ * Product Short Description.
+ *
+ * Replaces excerpt with a visual editor.
+ *
+ * @access public
+ * @param mixed $post
+ * @return void
+ */
+function woocommerce_product_description_meta_box( $post ) {
+
+	$settings = array(
+		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
+		'textarea_name'	=> 'product_description',
+		'quicktags' 	=> true,
+		'tinymce' 		=> true,
+		'editor_css'	=> '<style>#wp-product_description-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
+		);
+
+	$post_meta = get_post_meta( $post->ID, 'product_description');
+
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'product_description', $settings );
+}
+
+/**
+ * Product Short Description.
+ *
+ * Replaces excerpt with a visual editor.
+ *
+ * @access public
+ * @param mixed $post
+ * @return void
+ */
+function woocommerce_product_features_meta_box( $post ) {
+
+	$settings = array(
+		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
+		'textarea_name'	=> 'product_features',
+		'quicktags' 	=> true,
+		'tinymce' 		=> true,
+		'editor_css'	=> '<style>#wp-product_features-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
+		);
+
+	$post_meta = get_post_meta( $post->ID, 'product_features');
+
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'product_features', $settings );
+}
+
+/**
+ * Product Short Description.
+ *
+ * Replaces excerpt with a visual editor.
+ *
+ * @access public
+ * @param mixed $post
+ * @return void
+ */
+function woocommerce_product_custom_meta_box( $post ) {
+
+	$settings = array(
+		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
+		'textarea_name'	=> 'product_custom',
+		'quicktags' 	=> true,
+		'tinymce' 		=> true,
+		'editor_css'	=> '<style>#wp-product_custom-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
+		);
+
+	$post_meta = get_post_meta( $post->ID, 'product_custom');
+
+	wp_editor( htmlspecialchars_decode( $post_meta ), 'product_custom', $settings );
 }
 
 
