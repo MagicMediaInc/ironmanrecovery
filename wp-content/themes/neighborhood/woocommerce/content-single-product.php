@@ -23,7 +23,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		$enable_pb_product_pages = false;
 	}
 	
-	$product_short_description = get_post_meta($post->ID, 'sf_product_short_description', true);
+	$product_description_title = get_post_meta($post->ID, 'sf_product_description_title', true);
+	$product_description = get_post_meta($post->ID, 'sf_product_description', true);
+	$product_features_title = get_post_meta($post->ID, 'sf_product_features_title', true);
+	$product_features = get_post_meta($post->ID, 'sf_product_features', true);
+	$product_custom_title = get_post_meta($post->ID, 'sf_product_custom_title', true);
+	$product_custom = get_post_meta($post->ID, 'sf_product_custom', true);
 	
 	/**
 	 * woocommerce_before_single_product hook
@@ -100,11 +105,22 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		<link itemprop="availability" href="http://schema.org/<?php echo $product->is_in_stock() ? 'InStock' : 'OutOfStock'; ?>" />
 		<?php } ?>	
 		
-		<?php if ($product_short_description != "") { ?>
+		<?php if ($post->post_excerpt != "") { ?>
 			<div class="product-short">
 				<?php 
 					echo $post->post_excerpt;
+				?>
+					<div class="accordion-product" id="product-accordion">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						Tecnologia Celliant®
+						</a>
+						</div>
+				<?php
 				//echo do_shortcode($product_short_description); ?>
+					</div>
+					</div>
 			</div>
 		<?php } ?>			
 		<?php
