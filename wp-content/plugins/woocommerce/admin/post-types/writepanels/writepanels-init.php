@@ -189,7 +189,7 @@ function woocommerce_product_short_description_meta_box( $post ) {
  * @param mixed $post
  * @return void
  */
-function woocommerce_productdescription_meta_box1( $post ) {
+function woocommerce_productdescription_meta_box( $post ) {
 
 	$settings = array(
 		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
@@ -200,30 +200,6 @@ function woocommerce_productdescription_meta_box1( $post ) {
 		);
 
 	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'productdescription', $settings );
-}
-
-/**
- * Product Short Description.
- *
- * Replaces excerpt with a visual editor.
- *
- * @access public
- * @param mixed $post
- * @return void
- */
-function woocommerce_productdescription_meta_box( $post ) {
-
-	$settings = array(
-		'quicktags' 	=> array( 'buttons' => 'em,strong,link' ),
-		'textarea_name'	=> 'excerpt',
-		'quicktags' 	=> true,
-		'tinymce' 		=> true,
-		'editor_css'	=> '<style>#wp-productdescription-editor-container .wp-editor-area{height:175px; width:100%;}</style>'
-		);
-
-	$post_meta = get_post_meta( $post->ID, 'productdescription');
-
-	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'excerpt', $settings );
 }
 
 /**
