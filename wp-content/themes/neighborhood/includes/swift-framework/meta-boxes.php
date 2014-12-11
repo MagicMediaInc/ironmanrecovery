@@ -703,7 +703,7 @@
 	);
 
 	$meta_boxes[] = array(
-		'id' => 'productdescription',
+		'id' => 'productdescription2',
 		'fields' => array(
 			array(
 				'name' => 'Product Description Title',
