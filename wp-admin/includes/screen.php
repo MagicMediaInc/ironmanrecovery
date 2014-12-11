@@ -97,7 +97,7 @@ function get_hidden_meta_boxes( $screen ) {
 		$hidden = array();
 		if ( 'post' == $screen->base ) {
 			if ( 'post' == $screen->post_type || 'page' == $screen->post_type || 'attachment' == $screen->post_type )
-				$hidden = array('slugdiv', 'trackbacksdiv', 'postcustom', 'postexcerpt', 'commentstatusdiv', 'commentsdiv', 'authordiv', 'revisionsdiv','postproductdescription');
+				$hidden = array('slugdiv', 'trackbacksdiv', 'postcustom', 'postexcerpt', 'commentstatusdiv', 'commentsdiv', 'authordiv', 'revisionsdiv','postproductdescription','postproductfeatures','postproductcustom');
 			else
 				$hidden = array( 'slugdiv' );
 		}
