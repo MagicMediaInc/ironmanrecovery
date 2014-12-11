@@ -731,7 +731,7 @@
 				'name' => 'Product Description',
 				'desc' => "You can optionally write a short description here, which shows above the variations/shopping bag options.",
 				'id'   => "{$prefix}product_description",
-				'type' => 'textarea',
+				'type' => 'tinymce',
 				'quicktags' 	=> true,
 				'tinymce' 		=> true,
 				'std'  => "",
