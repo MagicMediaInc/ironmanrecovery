@@ -194,7 +194,7 @@ function woocommerce_product_description_meta_box( $post ) {
 
 	$post_meta = get_post_meta( $post->ID, 'product_description');
 
-	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'product_description', $settings );
+	wp_editor( htmlspecialchars_decode( $post->post_excerpt ), 'excerpt', $settings );
 }
 
 /**
