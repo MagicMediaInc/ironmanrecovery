@@ -701,8 +701,68 @@
 			
 		)
 	);
+
+	$meta_boxes[] = array(
+		'id' => 'productdescription2',
+		'fields' => array(
+			array(
+				'name' => 'Product Description Title',
+				'type' => 'text',
+				'id' => 'productdescriptiontitle'
+				),
+			array(
+				'name' => 'Product Features Title',
+				'type' => 'text',
+				'id' => 'productfeaturestitle'
+				),
+			array(
+				'name' => 'Product Custom Title',
+				'type' => 'text',
+				'id' => 'productcustomtitle'
+				),
+			)
+		);
 	
 	
+	$meta_boxes[] = array(
+		'id' => 'product_meta_box_titles',
+		'title' => 'Accordion Titles',
+		'pages' => array( 'product' ),
+		'context' => 'normal',
+		'fields' => array(
+						
+			// PRODUCT DESCRIPTION SECTION
+			array (
+				'name' 	=> '',
+				'title' => 'Accordion Titles',
+			    'id' 	=> "{$prefix}heading_custom_excerpt",
+			    'type' 	=> 'section'
+			),
+			
+			// PRODUCT DESCRIPTION
+			array(
+				'name' => 'Product Description Title',
+				'desc' => "You can optionally write a Description Title here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
+				'id'   => "{$prefix}product_description_title",
+				'type' => 'text',
+				'std'  => "",
+			),
+			array(
+				'name' => 'Features Title',
+				'desc' => "You can optionally write a Features Title here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
+				'id'   => "{$prefix}product_features_title",
+				'type' => 'text',
+				'std'  => "",
+			),array(
+				'name' => 'Custom Title',
+				'desc' => "You can optionally write a Custom Title here, which shows under the description accordion heading if you have the page builder enabled for product pages.",
+				'id'   => "{$prefix}product_custom_title",
+				'type' => 'text',
+				'std'  => "",
+			)
+			
+		)
+	);
 	/* Product Meta Box
 	================================================== */ 
 	$meta_boxes[] = array(
