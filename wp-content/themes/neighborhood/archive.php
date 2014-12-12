@@ -95,7 +95,7 @@
 	</div>
 </div>
 
-<div class="inner-page-wrap2 <?php echo $page_wrap_class; ?> clearfix">
+<div class="inner-page-wrap <?php echo $page_wrap_class; ?> clearfix">
 		
 	<!-- OPEN page -->
 	<?php if ($sidebar_config == "left-sidebar" || $sidebar_config == "right-sidebar") { ?>
