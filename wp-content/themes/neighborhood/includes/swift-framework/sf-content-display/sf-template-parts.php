@@ -17,9 +17,9 @@
 		if ( function_exists('bcn_display') ) {
 			$breadcrumb_output .= show_mini_cart();//bcn_display(true);
 		} else if ( function_exists('yoast_breadcrumb') ) {
-			$breadcrumb_output .= '<div id="breadcrumbs">'. "\n";
-			$breadcrumb_output .= 'el condicional breadcrumb';//yoast_breadcrumb("","",false);
-			$breadcrumb_output .= '</div>'. "\n";
+			// $breadcrumb_output .= '<div id="breadcrumbs">'. "\n";
+			// $breadcrumb_output .= 'el condicional breadcrumb';//yoast_breadcrumb("","",false);
+			// $breadcrumb_output .= '</div>'. "\n";
 		}
 		
 		return $breadcrumb_output;

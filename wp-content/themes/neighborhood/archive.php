@@ -113,7 +113,7 @@
 				<?php if(have_posts()) : ?>
 					
 					<div class="blog-wrap">
-						<h2>Estoy aqui</h2>
+						
 						<!-- OPEN .blog-items -->
 						<ul class="blog-items row <?php echo $list_class; ?> clearfix">
 				

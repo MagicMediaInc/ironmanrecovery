@@ -10,7 +10,7 @@
 	*/
 	
 	function sf_blog_items($blog_type, $show_title, $show_excerpt, $show_details, $excerpt_length, $content_output, $show_read_more, $item_count, $category, $exclude_categories, $pagination, $sidebar_config, $width) {
-	
+		$show_title=TRUE;
 		$blog_items_output = "";
 		
 		$options = get_option('sf_neighborhood_options');
