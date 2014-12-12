@@ -69,7 +69,7 @@
 
 <div class="row">
 	<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
-		<h2>Aqui</h2>
+
 		<div class="heading-text">
 			<?php /* If this is a tag archive */ if( is_tag() ) { ?>
 			<h1><?php _e("Posts tagged with", "swiftframework"); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h1>
@@ -113,7 +113,7 @@
 				<?php if(have_posts()) : ?>
 					
 					<div class="blog-wrap">
-					
+						<h2>Estoy aqui</h2>
 						<!-- OPEN .blog-items -->
 						<ul class="blog-items row <?php echo $list_class; ?> clearfix">
 				
