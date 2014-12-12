@@ -75,6 +75,33 @@
 
 <?php if ( is_front_page() || is_home() ) : ?>
 	
+	<div class="row">
+		<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
+			
+			<div class="heading-text">
+				<?php /* If this is a tag archive */ if( is_tag() ) { ?>
+				<h1><?php _e("Posts tagged with", "swiftframework"); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h1>
+				<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
+				<h1><?php _e("Archive for", "swiftframework"); ?> <?php the_time('F jS, Y'); ?></h1>
+				<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+				<h1><?php _e("Archive for", "swiftframework"); ?> <?php the_time('F, Y'); ?></h1>
+				<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+				<h1><?php _e("Archive for", "swiftframework"); ?> <?php the_time('Y'); ?></h1>
+				<?php /* If this is an author archive */ } elseif (is_author()) { ?>
+				<?php $author = get_userdata( get_query_var('author') );?>
+				<h1><?php _e("Author archive for", "swiftframework"); ?> <?php echo $author->display_name;?></h1>
+				<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+				<h1><?php _e("Blog Archives", "swiftframework"); ?></h1>
+				<?php } else { ?>
+				<h1><?php wp_title(''); ?></h1>
+				<?php } ?>
+			</div>
+			<?php 
+				// BREADCRUMBS
+				echo sf_breadcrumbs();
+			?>
+		</div>
+	</div>
 
 	<div class="inner-page-wrap <?php echo $page_wrap_class; ?> clearfix">
 	
