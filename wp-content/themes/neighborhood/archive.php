@@ -94,7 +94,7 @@
 		?>
 	</div>
 </div>
-
+lo que sea
 <div class="inner-page-wrap <?php echo $page_wrap_class; ?> clearfix">
 		
 	<!-- OPEN page -->
