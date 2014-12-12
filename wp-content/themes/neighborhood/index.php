@@ -76,7 +76,7 @@
 <?php if ( is_front_page() || is_home() ) : ?>
 	
 	<div class="row">
-		<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
+		<div class="page-heading span12 clearfix alt-bg alt-three<?php echo $default_page_heading_bg_alt; ?>">
 			
 			<div class="heading-text">
 				<?php /* If this is a tag archive */ if( is_tag() ) { ?>
