@@ -69,7 +69,7 @@
 
 <div class="row">
 	<div class="page-heading span12 clearfix alt-bg <?php echo $default_page_heading_bg_alt; ?>">
-		<h2>Cualquier cosa</h2>
+		
 		<div class="heading-text">
 			<?php /* If this is a tag archive */ if( is_tag() ) { ?>
 			<h1><?php _e("Posts tagged with", "swiftframework"); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h1>
@@ -94,8 +94,8 @@
 		?>
 	</div>
 </div>
-lo que sea
-<div class="inner-page-wrap <?php echo $page_wrap_class; ?> clearfix">
+
+<div class="inner-page-wrap2 <?php echo $page_wrap_class; ?> clearfix">
 		
 	<!-- OPEN page -->
 	<?php if ($sidebar_config == "left-sidebar" || $sidebar_config == "right-sidebar") { ?>
@@ -113,7 +113,7 @@ lo que sea
 				<?php if(have_posts()) : ?>
 					
 					<div class="blog-wrap">
-						
+					
 						<!-- OPEN .blog-items -->
 						<ul class="blog-items row <?php echo $list_class; ?> clearfix">
 				
