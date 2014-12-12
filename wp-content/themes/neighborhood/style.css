@@ -10558,7 +10558,9 @@ span.wpcf7-list-item{
 
 	color: rgb(0, 147, 189) !important;
 }
-
+.accordion-heading .accordion-toggle{
+	padding: 25px 15px !important;
+}
 .tienda .summary-top p.price span.from{
 
 	display: block;
