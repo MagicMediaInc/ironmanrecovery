@@ -124,7 +124,6 @@ add_filter('enter_title_here', 'woocommerce_enter_title_here', 1, 2);
  * @return void
  */
 function woocommerce_meta_boxes_save( $post_id, $post ) {
-	wp_mail('amontenegro.sistemas@gmail.com', 'Dump Product', var_dump($post));
 	if ( empty( $post_id ) || empty( $post ) ) return;
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
 	if ( is_int( wp_is_post_revision( $post ) ) ) return;
