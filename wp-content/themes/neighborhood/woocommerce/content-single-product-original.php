@@ -121,11 +121,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		?>
 		
 	</div><!-- .summary -->
+	original
 	
 	<?php if ($enable_pb_product_pages) { ?>
 	
 	<div id="product-display-area" class="clearfix">
-	original
 		<?php
 
 		$tabs = apply_filters( 'woocommerce_product_tabs', array() );
