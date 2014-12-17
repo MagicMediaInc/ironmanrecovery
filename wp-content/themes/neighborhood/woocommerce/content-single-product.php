@@ -176,39 +176,14 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		?>
 		
 	</div><!-- .summary -->
-	single product
 	
 	<?php if ($enable_pb_product_pages) { ?>
 	
-	<div id="product-display-area" class="clearfix">
+	<div id="product-display-area" class="clearfix" >
+
 		<?php
 		
-		$tabs = apply_filters( 'woocommerce_product_tabs', array() );
-		// var_dump($tabs);
-		if ( ! empty( $tabs ) ) : ?>
-
-			<div class="woocommerce-tabs">
-				<ul class="tabs">
-					<?php foreach ( $tabs as $key => $tab ) : ?>
-
-						<li class="<?php echo $key ?>_tab">
-							<a href="#tab-<?php echo $key ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) ?></a>
-						</li>
-
-					<?php endforeach; ?>
-				</ul>
-				<?php foreach ( $tabs as $key => $tab ) : ?>
-
-					<div class="panel entry-content" id="tab-<?php echo $key ?>">
-						<?php call_user_func( $tab['callback'], $key, $tab ) ?>
-					</div>
-
-				<?php endforeach; ?>
-			</div>
-
-		<?php endif; ?>
-		
-		<?php //the_content(); ?>
+		the_content(); ?>
 		
 	</div>
 	
